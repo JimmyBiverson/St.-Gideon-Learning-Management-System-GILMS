@@ -1,0 +1,1 @@
+import{t as e}from"./reviews-7IjVQx5g.js";export{e as default};

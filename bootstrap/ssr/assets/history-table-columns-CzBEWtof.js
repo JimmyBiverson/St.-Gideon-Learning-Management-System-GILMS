@@ -1,0 +1,1 @@
+import{t as e}from"./history-table-columns-Cn90g5Om.js";export{e as default};

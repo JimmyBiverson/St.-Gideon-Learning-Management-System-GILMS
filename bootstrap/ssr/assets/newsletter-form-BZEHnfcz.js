@@ -1,0 +1,1 @@
+import{t as e}from"./newsletter-form-lkK1mIly.js";export{e as default};

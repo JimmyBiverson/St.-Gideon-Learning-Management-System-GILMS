@@ -1,0 +1,1 @@
+import{t as e}from"./my-products-B80kRw15.js";export{e as default};

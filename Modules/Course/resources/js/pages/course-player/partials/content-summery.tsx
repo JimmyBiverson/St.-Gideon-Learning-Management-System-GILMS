@@ -1,0 +1,87 @@
+import { Renderer } from '@/components/rich-editor';
+import StudentFeedback from '@/components/student-feedback';
+import Tabs from '@/components/tabs';
+import { Separator } from '@/components/ui/separator';
+import { TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { usePage } from '@inertiajs/react';
+
+import ReviewForm from '../forms/review';
+import Forum from './forum';
+import Resource from './resource';
+
+const ContentSummery = () => {
+   const { props } = usePage<CoursePlayerProps>();
+   const { translate, type } = props;
+   const { button } = translate;
+   const watchingLesson =
+      type === 'lesson' ? (props.watching as SectionLesson) : null;
+   const isResource = Boolean(
+      watchingLesson && watchingLesson.resources.length > 0,
+   );
+
+   const tabs = [
+      {
+         value: 'summery',
+         label: button.summery,
+      },
+      {
+         value: 'resource',
+         label: 'Resource',
+      },
+      {
+         value: 'forum',
+         label: button.forum,
+      },
+      {
+         value: 'review',
+         label: button.review,
+      },
+   ];
+
+   return (
+      <Tabs
+         defaultValue="summery"
+         className="mx-auto grid w-full max-w-5xl overflow-hidden rounded-md pt-1 pb-10"
+      >
+         <div className="overflow-x-auto overflow-y-hidden">
+            <TabsList className="bg-transparent px-0 py-6">
+               {tabs.map(({ label, value }) => {
+                  if (value === 'resource' && !isResource) {
+                     return null;
+                  }
+
+                  return (
+                     <TabsTrigger
+                        key={value}
+                        value={value}
+                        className="relative flex cursor-pointer items-center justify-start gap-3 rounded-none border-primary bg-transparent px-8 py-4 text-start !shadow-none before:absolute before:right-0 before:bottom-0 before:left-0 before:h-1 before:rounded-t-xl data-[state=active]:!bg-muted data-[state=active]:before:bg-primary data-[state=active]:before:content-['.']"
+                     >
+                        <span>{label}</span>
+                     </TabsTrigger>
+                  );
+               })}
+            </TabsList>
+         </div>
+
+         <Separator className="mt-[1px]" />
+
+         <TabsContent value="summery" className="m-0 p-5">
+            <Renderer value={props.watching.summary as any} />
+         </TabsContent>
+         {isResource && (
+            <TabsContent value="resource" className="m-0 p-5">
+               <Resource />
+            </TabsContent>
+         )}
+         <TabsContent value="forum" className="m-0 p-5">
+            <Forum />
+         </TabsContent>
+         <TabsContent value="review" className="m-0 space-y-6 p-5">
+            <StudentFeedback totalReviews={props.totalReviews} />
+            <ReviewForm />
+         </TabsContent>
+      </Tabs>
+   );
+};
+
+export default ContentSummery;

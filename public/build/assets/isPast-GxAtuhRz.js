@@ -1,0 +1,1 @@
+import{a as e}from"./en-US-D545PdxC.js";function t(t){return+e(t)>Date.now()}function n(t){return+e(t)<Date.now()}export{t as n,n as t};

@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M15 3v18`,key:`14nvp0`}],[`rect`,{width:`18`,height:`18`,x:`3`,y:`3`,rx:`2`,key:`afitv7`}],[`path`,{d:`M21 9H3`,key:`1338ky`}],[`path`,{d:`M21 15H3`,key:`9uk58r`}]],i=t(`TableProperties`,r);export{n,i as t};

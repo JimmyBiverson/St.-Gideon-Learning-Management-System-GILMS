@@ -1,0 +1,134 @@
+import StudentFeedback from '@/components/student-feedback';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Textarea } from '@/components/ui/textarea';
+import TableFooter from '@/components/table/table-footer';
+import { cn } from '@/lib/utils';
+import { store as storeReview } from '@/routes/product-reviews';
+import { Form, usePage } from '@inertiajs/react';
+import { format } from 'date-fns';
+import { Star } from 'lucide-react';
+import { useState } from 'react';
+
+const Reviews = () => {
+   const { props } = usePage<ProductDetailsProps>();
+   const { product, reviews, totalReviews, auth } = props;
+   const [rating, setRating] = useState(5);
+
+   return (
+      <>
+         <StudentFeedback totalReviews={totalReviews} />
+
+         {auth.user && (
+            <div className="mt-6 border-t pt-6">
+               <h3 className="mb-4 text-lg font-semibold">Write a review</h3>
+               <Form
+                  {...storeReview.form()}
+                  transform={(formData) => ({
+                     ...formData,
+                     rating,
+                     user_id: auth.user.id,
+                     product_id: product.id,
+                  })}
+                  options={{ preserveScroll: true }}
+                  className="space-y-3"
+               >
+                  {({ processing }) => (
+                     <>
+                        <div className="flex gap-1">
+                           {[1, 2, 3, 4, 5].map((star) => (
+                              <button
+                                 key={star}
+                                 type="button"
+                                 onClick={() => setRating(star)}
+                              >
+                                 <Star
+                                    className={cn(
+                                       'h-5 w-5',
+                                       star <= rating
+                                          ? 'fill-amber-400 text-amber-400'
+                                          : 'text-gray-300',
+                                    )}
+                                 />
+                              </button>
+                           ))}
+                        </div>
+                        <Textarea
+                           name="review"
+                           placeholder="Share your experience with this product"
+                           className="min-h-[100px]"
+                        />
+                        <Button type="submit" disabled={processing}>
+                           Submit Review
+                        </Button>
+                     </>
+                  )}
+               </Form>
+            </div>
+         )}
+
+         <div className="mt-6 border-t pt-6">
+            <h3 className="mb-6 text-xl font-semibold">Reviews</h3>
+
+            <div className="space-y-6">
+               {reviews.data.length > 0 ? (
+                  reviews.data.map((review) => (
+                     <div key={review.id}>
+                        <div className="flex items-center gap-2">
+                           <Avatar className="mt-1 h-8 w-8">
+                              <AvatarImage
+                                 src={review.user?.photo || ''}
+                                 alt={review.user?.name}
+                                 className="object-cover"
+                              />
+                              <AvatarFallback>
+                                 {review.user?.name?.charAt(0)}
+                              </AvatarFallback>
+                           </Avatar>
+                           <div>
+                              <p className="font-semibold">
+                                 {review.user?.name}
+                              </p>
+                              <div className="flex items-center gap-2">
+                                 <div className="flex gap-1">
+                                    {[1, 2, 3, 4, 5].map((star) => (
+                                       <Star
+                                          key={star}
+                                          className={cn(
+                                             'h-4 w-4',
+                                             star <= review.rating
+                                                ? 'fill-amber-400 text-amber-400'
+                                                : 'text-gray-300',
+                                          )}
+                                       />
+                                    ))}
+                                 </div>
+                                 <p className="text-xs text-muted-foreground">
+                                    {format(
+                                       new Date(review.created_at),
+                                       'MMM d, yyyy h:mm a',
+                                    )}
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <p className="mt-3 text-sm">{review.review}</p>
+                     </div>
+                  ))
+               ) : (
+                  <p className="p-3 text-center">No reviews found</p>
+               )}
+            </div>
+
+            <TableFooter
+               className="mt-6"
+               routeName="products.details"
+               paginationInfo={reviews}
+               routeParams={{ slug: product.slug, id: product.id }}
+            />
+         </div>
+      </>
+   );
+};
+
+export default Reviews;

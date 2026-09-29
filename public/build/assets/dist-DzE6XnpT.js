@@ -1,0 +1,1 @@
+import{r as e}from"./chunk-z5H_xwo0.js";import{t}from"./react-XWPObGhY.js";var n=e(t(),1),r=globalThis?.document?n.useLayoutEffect:()=>{};export{r as t};

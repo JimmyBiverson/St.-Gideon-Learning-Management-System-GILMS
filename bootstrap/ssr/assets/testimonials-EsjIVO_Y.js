@@ -1,0 +1,1 @@
+import{t as e}from"./testimonials-CP1BaOkw.js";export{e as default};

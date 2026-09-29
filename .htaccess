@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+# That was ONLY to protect you from 500 errors
+# if your server did not have mod_rewrite enabled
+
+RewriteEngine On
+# RewriteBase /
+# NOT needed unless you're using mod_alias to redirect
+
+# The parentheses matter. The condition used to be a bare `!/public`, which is
+# a substring test, so any URL that merely *contained* the word public was
+# treated as if it were already inside the public directory and never reached
+# the front controller: /storage/public/uploads/x.png, /api/publications,
+# /publicity and so on. `/public` itself and `/public/...` are the only two
+# shapes that should be excluded.
+RewriteCond %{REQUEST_URI} !^/public(/|$)
+RewriteRule ^(.*)$ public/$1 [L]
+# Direct all requests to /public folder
+
+</IfModule>

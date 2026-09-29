@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`polygon`,{points:`6 3 20 12 6 21 6 3`,key:`1oa8hb`}]],i=t(`Play`,r);export{n,i as t};

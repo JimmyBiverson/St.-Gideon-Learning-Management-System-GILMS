@@ -1,0 +1,1 @@
+import{t as e}from"./resource-qztwXIeR.js";export{e as default};

@@ -1,0 +1,1 @@
+import{t as e}from"./applications-table-columns-BLKjWPNu.js";export{e as default};

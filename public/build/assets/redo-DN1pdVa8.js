@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M21 7v6h-6`,key:`3ptur4`}],[`path`,{d:`M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7`,key:`1kgawr`}]],i=t(`Redo`,r);export{n,i as t};

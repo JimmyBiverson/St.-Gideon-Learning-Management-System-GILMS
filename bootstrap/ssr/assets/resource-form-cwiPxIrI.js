@@ -1,0 +1,1 @@
+import{t as e}from"./resource-form-Dgs4jItt.js";export{e as default};

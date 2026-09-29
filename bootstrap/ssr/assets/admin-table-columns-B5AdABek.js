@@ -1,0 +1,1 @@
+import{t as e}from"./admin-table-columns-D5warDxE.js";export{e as default};

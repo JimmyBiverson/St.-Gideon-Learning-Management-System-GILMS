@@ -1,0 +1,47 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files. .env contains the database and mail credentials and the
+# application key, so it must never be committed. Only the example is tracked.
+.env
+.env.*
+!.env.example
+
+# Laravel runtime files
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Created by `php artisan storage:link`
+/public/storage
+
+# Vite dev-server marker. public/build IS tracked on purpose so the server can
+# run without Node or npm installed.
+/public/hot
+
+# Testing
+.phpunit.result.cache
+.phpunit.cache/
+/coverage
+
+# Logs and dumps
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

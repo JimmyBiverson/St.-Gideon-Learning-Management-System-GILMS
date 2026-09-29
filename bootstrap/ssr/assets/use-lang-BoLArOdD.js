@@ -1,0 +1,1 @@
+import{usePage as e}from"@inertiajs/react";function t(){let{props:t}=e();return t.translate}export{t};

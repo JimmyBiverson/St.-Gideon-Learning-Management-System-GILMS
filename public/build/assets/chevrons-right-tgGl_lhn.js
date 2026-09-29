@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`m6 17 5-5-5-5`,key:`xnjwq`}],[`path`,{d:`m13 17 5-5-5-5`,key:`17xmmf`}]],i=t(`ChevronsRight`,r);export{n,i as t};

@@ -1,0 +1,1 @@
+import{t as e}from"./question-type-badge-FFzEB6s0.js";export{e as default};

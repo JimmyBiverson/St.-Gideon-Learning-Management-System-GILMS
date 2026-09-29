@@ -1,0 +1,1 @@
+import{t as e}from"./course-certificate-DUfYN8Zz.js";export{e as default};

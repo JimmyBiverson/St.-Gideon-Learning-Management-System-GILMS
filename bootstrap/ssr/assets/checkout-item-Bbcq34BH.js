@@ -1,0 +1,1 @@
+import{t as e}from"./payments-BbU9MRHP.js";import{jsx as t}from"react/jsx-runtime";var n=({from:n=`web`,item:r,item_id:i,children:a,className:o})=>t(`a`,{href:e.index.url({from:n,item:r,id:i}),className:o,children:a});export{n as t};

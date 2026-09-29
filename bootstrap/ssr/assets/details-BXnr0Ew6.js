@@ -1,0 +1,1 @@
+import{t as e}from"./details-D6uAQ9GR.js";export{e as default};

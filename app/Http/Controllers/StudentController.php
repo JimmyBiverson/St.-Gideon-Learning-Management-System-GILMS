@@ -1,0 +1,104 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Requests\UpdateStudentProfileRequest;
+use App\Services\StudentService;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Inertia\Inertia;
+use Modules\Course\Services\CourseEnrollmentService;
+use Modules\Course\Services\CoursePlayerService;
+use Modules\Course\Services\ZoomLiveService;
+use Modules\Exam\Services\ExamAttemptService;
+use Modules\Exam\Services\ExamEnrollmentService;
+
+class StudentController extends Controller
+{
+    public function __construct(
+        protected StudentService $studentService,
+        protected ZoomLiveService $zoomLiveService,
+        protected CoursePlayerService $coursePlayerService,
+        protected CourseEnrollmentService $enrollmentService,
+        protected ExamEnrollmentService $examEnrollment,
+        protected ExamAttemptService $examAttempt,
+    ) {}
+
+    /**
+     * Display the student profile page.
+     */
+    public function index(Request $request, string $tab)
+    {
+        if ($tab !== 'courses' && ! $request->user()->hasVerifiedEmail()) {
+            return redirect()
+                ->route('student.index', ['tab' => 'courses'])
+                ->with('error', 'Please verify your email address.');
+        }
+
+        $props = $this->studentService->getStudentData($tab);
+
+        return Inertia::render('student/index', [
+            ...$props,
+            'tab' => $tab,
+            'status' => $request->session()->get('status'),
+        ]);
+    }
+
+    public function show_course(int $id, string $tab)
+    {
+        $user = Auth::user();
+        $course = $this->studentService->getEnrolledCourse($id, $user);
+        $props = $this->studentService->getEnrolledCourseOverview($id, $tab, $user);
+        $zoomConfig = $tab === 'live_classes' ? $this->zoomLiveService->zoomConfig : null;
+        $watchHistory = $this->coursePlayerService->getWatchHistory(['course_id' => $id]);
+        $completion = $course ? $this->coursePlayerService->calculateCompletion($course, $watchHistory) : null;
+
+        return Inertia::render('student/course', [
+            ...$props,
+            'tab' => $tab,
+            'course' => $course,
+            'watchHistory' => $watchHistory,
+            'zoomConfig' => $zoomConfig,
+            'completion' => $completion,
+        ]);
+    }
+
+    public function show_exam(Request $request, int $id, string $tab)
+    {
+        $user = Auth::user();
+        $exam = $this->examEnrollment->getEnrolledExam($id, $user);
+        $attempts = $this->examAttempt->getExamAttempts(['exam_id' => $id, 'user_id' => $user->id]);
+        $bestAttempt = $this->examAttempt->getBestExamAttempt($id, $user->id);
+        $props = $this->studentService->getEnrolledExamTabProps($id, $tab, $user);
+
+        if ($tab === 'resources') {
+            $exam->load('resources');
+        }
+
+        if ($tab === 'attempts' && $request->attempt) {
+            $attemptId = (int) $request->attempt;
+            $props['attempt'] = $this->examAttempt->getExamAttempt($attemptId, [
+                'user_id' => $user->id,
+                'relations' => ['exam', 'attempt_answers.exam_question.question_options'],
+            ]);
+        }
+
+        return Inertia::render('student/exam/index', [
+            ...$props,
+            'tab' => $tab,
+            'exam' => $exam,
+            'attempts' => $attempts,
+            'bestAttempt' => $bestAttempt,
+        ]);
+    }
+
+    /**
+     * Update the authenticated student's profile information.
+     */
+    public function update_profile(UpdateStudentProfileRequest $request)
+    {
+        $this->studentService->updateProfile($request->validated(), Auth::user()->id);
+
+        return redirect()->back()->with('success', 'Profile updated successfully');
+    }
+}

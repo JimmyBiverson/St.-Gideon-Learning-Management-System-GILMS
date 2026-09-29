@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`rect`,{width:`6`,height:`14`,x:`2`,y:`5`,rx:`2`,key:`dy24zr`}],[`rect`,{width:`6`,height:`10`,x:`12`,y:`7`,rx:`2`,key:`1ht384`}],[`path`,{d:`M22 2v20`,key:`40qfg1`}]],i=t(`AlignHorizontalJustifyEnd`,r);export{n,i as t};

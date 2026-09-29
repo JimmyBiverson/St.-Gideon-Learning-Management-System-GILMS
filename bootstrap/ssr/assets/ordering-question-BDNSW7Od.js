@@ -1,0 +1,1 @@
+import{t as e}from"./ordering-question-AT5641dL.js";export{e as default};

@@ -1,0 +1,1 @@
+import{t as e}from"./exam-certificate-DGCmgOR9.js";export{e as default};

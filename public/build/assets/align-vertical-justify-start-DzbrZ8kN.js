@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`rect`,{width:`14`,height:`6`,x:`5`,y:`16`,rx:`2`,key:`1i8z2d`}],[`rect`,{width:`10`,height:`6`,x:`7`,y:`6`,rx:`2`,key:`13squh`}],[`path`,{d:`M2 2h20`,key:`1ennik`}]],i=t(`AlignVerticalJustifyStart`,r);export{n,i as t};

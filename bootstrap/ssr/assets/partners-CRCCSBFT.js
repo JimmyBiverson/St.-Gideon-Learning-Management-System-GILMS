@@ -1,0 +1,1 @@
+import{t as e}from"./partners-frfhe_c8.js";export{e as default};

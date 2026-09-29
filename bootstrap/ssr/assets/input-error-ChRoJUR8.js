@@ -1,0 +1,1 @@
+import{t as e}from"./utils-CVqKv8hr.js";import{jsx as t}from"react/jsx-runtime";function n({message:n,className:r=``,...i}){return n?t(`p`,{...i,className:e(`text-sm text-red-600 dark:text-red-400`,r),children:n}):null}export{n as t};

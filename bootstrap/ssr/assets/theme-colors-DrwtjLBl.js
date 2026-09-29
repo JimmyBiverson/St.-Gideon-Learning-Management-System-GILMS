@@ -1,0 +1,6 @@
+var e={Orange:{light:{primary:`24.6 95% 53.1%`,primaryForeground:`60 9.1% 97.8%`},dark:{primary:`20.5 90.2% 48.2%`,primaryForeground:`60 9.1% 97.8%`}},Blue:{light:{primary:`221.2 83.2% 53.3%`,primaryForeground:`210 40% 98%`},dark:{primary:`217.2 91.2% 59.8%`,primaryForeground:`222.2 47.4% 11.2%`}},Green:{light:{primary:`142.1 76.2% 36.3%`,primaryForeground:`355.7 100% 97.3%`},dark:{primary:`142.1 70.6% 45.3%`,primaryForeground:`144.9 80.4% 10%`}},Rose:{light:{primary:`346.8 77.2% 49.8%`,primaryForeground:`355.7 100% 97.3%`},dark:{primary:`346.8 77.2% 49.8%`,primaryForeground:`355.7 100% 97.3%`}},Zinc:{light:{primary:`240 5.9% 10%`,primaryForeground:`0 0% 98%`},dark:{primary:`0 0% 98%`,primaryForeground:`240 5.9% 10%`}}};function t(t,n){t===`system`&&(t=window.matchMedia(`(prefers-color-scheme: dark)`).matches?`dark`:`light`);let i=e[n][t];for(let e in i)document.documentElement.style.setProperty(`--${r(e)}`,`hsl(${i[e]})`)}function n(t){let n=e[t],i=e=>{let t=`
+`;return Object.keys(e).forEach(n=>{t+=`--${r(n)}: hsl(${e[n]});\n`}),`{${t}}`};return`
+:root ${i(n.light)}
+
+.dark ${i(n.dark)}
+`}function r(e){return e.replace(/([A-Z])/g,`-$1`).toLowerCase()}export{t as n,n as t};

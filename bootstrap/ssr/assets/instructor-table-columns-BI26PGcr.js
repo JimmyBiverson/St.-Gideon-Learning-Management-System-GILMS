@@ -1,0 +1,1 @@
+import{t as e}from"./instructor-table-columns-fXF_MCyQ.js";export{e as default};

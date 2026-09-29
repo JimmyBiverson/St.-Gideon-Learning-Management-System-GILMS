@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M17 12H7`,key:`16if0g`}],[`path`,{d:`M19 18H5`,key:`18s9l3`}],[`path`,{d:`M21 6H3`,key:`1jwq7v`}]],i=t(`AlignCenter`,r);export{n,i as t};

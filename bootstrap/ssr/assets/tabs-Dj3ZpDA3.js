@@ -1,0 +1,1 @@
+import{t as e}from"./tabs-BzjdnCbx.js";import{usePage as t}from"@inertiajs/react";import"react";import{jsx as n}from"react/jsx-runtime";var r=({children:r,...i})=>n(e,{dir:t().props.direction,...i,children:r});export{r as t};

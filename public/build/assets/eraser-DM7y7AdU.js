@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21`,key:`182aya`}],[`path`,{d:`M22 21H7`,key:`t4ddhn`}],[`path`,{d:`m5 11 9 9`,key:`1mo9qw`}]],i=t(`Eraser`,r);export{n,i as t};

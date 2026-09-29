@@ -1,0 +1,1 @@
+import{t as e}from"./compiler-runtime-BVHq2g_I.js";import{t}from"./jsx-runtime-BN166stg.js";import{t as n}from"./switch-0KsxsW6E.js";var r=e(),i=t(),a=e=>{let t=(0,r.c)(4),a;if(t[0]!==e){let{children:n,...r}=e;a=r,t[0]=e,t[1]=a}else a=t[1];let o;return t[2]===a?o=t[3]:(o=(0,i.jsx)(n,{dir:`ltr`,...a,className:`cursor-pointer`}),t[2]=a,t[3]=o),o};export{a as t};

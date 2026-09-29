@@ -1,0 +1,341 @@
+@import 'tailwindcss';
+
+@import 'tw-animate-css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+/* Scan the editor safelist file for Tailwind classes without executing it as JS */
+@source '../../Modules/Frontend/resources/js/lib/tailwind-safelist.tsx';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+   --font-sans:
+      'Inter', sans-serif, ui-sans-serif, system-ui, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+
+   --radius: 0.625rem;
+   --radius-lg: var(--radius);
+   --radius-md: calc(var(--radius) - 2px);
+   --radius-sm: calc(var(--radius) - 4px);
+
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+
+   --color-card: var(--card);
+   --color-card-foreground: var(--card-foreground);
+
+   --color-popover: var(--popover);
+   --color-popover-foreground: var(--popover-foreground);
+
+   --color-primary: var(--primary);
+   --color-primary-foreground: var(--primary-foreground);
+   --color-primary-900: var(--primary-900);
+   --color-primary-800: var(--primary-800);
+   --color-primary-700: var(--primary-700);
+   --color-primary-600: var(--primary-600);
+   --color-primary-400: var(--primary-400);
+   --color-primary-300: var(--primary-300);
+   --color-primary-200: var(--primary-200);
+   --color-primary-100: var(--primary-100);
+   --color-primary-50: var(--primary-50);
+
+   --color-secondary: var(--secondary);
+   --color-secondary-foreground: var(--secondary-foreground);
+   --color-secondary-900: var(--secondary-900);
+   --color-secondary-800: var(--secondary-800);
+   --color-secondary-700: var(--secondary-700);
+   --color-secondary-600: var(--secondary-600);
+   --color-secondary-400: var(--secondary-400);
+   --color-secondary-300: var(--secondary-300);
+   --color-secondary-200: var(--secondary-200);
+   --color-secondary-100: var(--secondary-100);
+   --color-secondary-50: var(--secondary-50);
+
+   --color-muted: var(--muted);
+   --color-muted-light: var(--muted-light);
+   --color-muted-foreground: var(--muted-foreground);
+
+   --color-accent: var(--accent);
+   --color-accent-foreground: var(--accent-foreground);
+
+   --color-destructive: var(--destructive);
+   --color-destructive-foreground: var(--destructive-foreground);
+
+   --color-border: var(--border);
+   --color-input: var(--input);
+   --color-ring: var(--ring);
+
+   --color-chart-1: var(--chart-1);
+   --color-chart-2: var(--chart-2);
+   --color-chart-3: var(--chart-3);
+   --color-chart-4: var(--chart-4);
+   --color-chart-5: var(--chart-5);
+
+   --color-sidebar: var(--sidebar);
+   --color-sidebar-foreground: var(--sidebar-foreground);
+   --color-sidebar-primary: var(--sidebar-primary);
+   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+   --color-sidebar-accent: var(--sidebar-accent);
+   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+   --color-sidebar-border: var(--sidebar-border);
+   --color-sidebar-ring: var(--sidebar-ring);
+
+   --shadow-card: var(--card-shadow);
+   --shadow-card-md: var(--card-shadow-md);
+   --shadow-card-lg: var(--card-shadow-lg);
+   --shadow-card-hover: var(--card-shadow-hover);
+   --shadow-card-xs: var(--card-shadow-card-xs);
+}
+
+/*
+   The default border color has changed to `currentColor` in Tailwind CSS v4,
+   so we've added these compatibility styles to make sure everything still
+   looks the same as it did with Tailwind CSS v3.
+ 
+   If we ever want to remove these styles, we need to add an explicit border
+   color utility to any element that depends on these defaults.
+ */
+@layer base {
+   *,
+   ::after,
+   ::before,
+   ::backdrop,
+   ::file-selector-button {
+      border-color: var(--color-gray-200, currentColor);
+   }
+}
+
+:root {
+   --background: oklch(1 0 0);
+   --foreground: oklch(0.145 0 0);
+   --card: oklch(1 0 0);
+   --card-foreground: oklch(0.145 0 0);
+   --popover: oklch(1 0 0);
+   --popover-foreground: oklch(0.145 0 0);
+
+   --primary: oklch(0.265 0.0216 248.65);
+   --primary-foreground: oklch(0.985 0 0);
+   /* Auto-generated primary scale: 900-600 darker, 400-50 lighter */
+   --primary-900: color-mix(in oklch, var(--primary) 90%, black);
+   --primary-800: color-mix(in oklch, var(--primary) 80%, black);
+   --primary-700: color-mix(in oklch, var(--primary) 70%, black);
+   --primary-600: color-mix(in oklch, var(--primary) 60%, black);
+   --primary-400: color-mix(in oklch, var(--primary) 90%, white);
+   --primary-300: color-mix(in oklch, var(--primary) 80%, white);
+   --primary-200: color-mix(in oklch, var(--primary) 70%, white);
+   --primary-100: color-mix(in oklch, var(--primary) 60%, white);
+   --primary-50: color-mix(in oklch, var(--primary) 50%, white);
+
+   --secondary: oklch(0.643 0.144 160.62 / 10.2%);
+   --secondary-foreground: oklch(0.6468 0.144588 160.7462);
+   /* Auto-generated secondary scale based on the solid secondary-foreground color */
+   --secondary-900: color-mix(in oklch, var(--secondary-foreground) 90%, black);
+   --secondary-800: color-mix(in oklch, var(--secondary-foreground) 80%, black);
+   --secondary-700: color-mix(in oklch, var(--secondary-foreground) 70%, black);
+   --secondary-600: color-mix(in oklch, var(--secondary-foreground) 60%, black);
+   --secondary-400: color-mix(in oklch, var(--secondary-foreground) 80%, white);
+   --secondary-300: color-mix(in oklch, var(--secondary-foreground) 60%, white);
+   --secondary-200: color-mix(in oklch, var(--secondary-foreground) 40%, white);
+   --secondary-100: color-mix(in oklch, var(--secondary-foreground) 20%, white);
+   --secondary-50: color-mix(in oklch, var(--secondary-foreground) 10%, white);
+
+   --muted: oklch(0.97 0 0);
+   --muted-light: oklch(0.9722 0.0034 247.86);
+   --muted-foreground: oklch(0.556 0 0);
+
+   --accent: oklch(0.97 0 0);
+   --accent-foreground: oklch(0.205 0 0);
+
+   --destructive: oklch(0.577 0.245 27.325);
+   --destructive-foreground: oklch(0.985 0 0);
+
+   --border: oklch(0.922 0 0);
+   --input: oklch(0.922 0 0);
+   --ring: oklch(0.87 0 0);
+
+   --chart-1: oklch(0.646 0.222 41.116);
+   --chart-2: oklch(0.6 0.118 184.704);
+   --chart-3: oklch(0.398 0.07 227.392);
+   --chart-4: oklch(0.828 0.189 84.429);
+   --chart-5: oklch(0.769 0.188 70.08);
+
+   --radius: 0.625rem;
+
+   --sidebar: oklch(0.985 0 0);
+   --sidebar-foreground: oklch(0.145 0 0);
+   --sidebar-primary: oklch(0.205 0 0);
+   --sidebar-primary-foreground: oklch(0.985 0 0);
+   --sidebar-accent: oklch(0.97 0 0);
+   --sidebar-accent-foreground: oklch(0.205 0 0);
+   --sidebar-border: oklch(0.922 0 0);
+   --sidebar-ring: oklch(0.87 0 0);
+
+   --card-shadow:
+      0 0 2px 0 rgba(145 158 171 / 0.2),
+      0 12px 24px -4px rgba(145 158 171 / 0.12);
+   --card-shadow-hover: 0 24px 48px 0 rgba(145 158 171 / 16%);
+   --card-shadow-md:
+      0 3.75px 7.5px -2.25px rgba(107, 114, 128, 0.03),
+      0 6px 13.5px 0.75px rgba(107, 114, 128, 0.04),
+      0 2.25px 24.75px 1.5px rgba(107, 114, 128, 0.08);
+   --card-shadow-lg:
+      0 12px 24px -4px rgba(145, 158, 171, 0.12),
+      0 1px 2px 0 rgba(145, 158, 171, 0.2);
+   --card-shadow-card-xs:
+      0 0 2px 0 rgba(145 158 171 / 20%),
+      0 12px 24px -4px rgba(145 158 171 / 12%);
+}
+
+.dark {
+   --background: oklch(0.145 0 0);
+   --foreground: oklch(0.985 0 0);
+   --card: oklch(0.145 0 0);
+   --card-foreground: oklch(0.985 0 0);
+   --popover: oklch(0.145 0 0);
+   --popover-foreground: oklch(0.985 0 0);
+
+   --primary: oklch(0.985 0 0);
+   --primary-foreground: oklch(0.205 0 0);
+   /* Auto-generated primary scale: 500=base, lower=lighter, higher=darker */
+   --primary-900: color-mix(in oklch, var(--primary) 90%, black);
+   --primary-800: color-mix(in oklch, var(--primary) 80%, black);
+   --primary-700: color-mix(in oklch, var(--primary) 70%, black);
+   --primary-600: color-mix(in oklch, var(--primary) 60%, black);
+   --primary-400: color-mix(in oklch, var(--primary) 80%, white);
+   --primary-300: color-mix(in oklch, var(--primary) 60%, white);
+   --primary-200: color-mix(in oklch, var(--primary) 40%, white);
+   --primary-100: color-mix(in oklch, var(--primary) 20%, white);
+   --primary-50: color-mix(in oklch, var(--primary) 10%, white);
+
+   --secondary: oklch(0.643 0.144 160.62 / 10.2%);
+   --secondary-foreground: oklch(0.6468 0.144588 160.7462);
+   /* Auto-generated secondary scale: 500=base, lower=lighter, higher=darker */
+   --secondary-900: color-mix(in oklch, var(--secondary-foreground) 90%, black);
+   --secondary-800: color-mix(in oklch, var(--secondary-foreground) 80%, black);
+   --secondary-700: color-mix(in oklch, var(--secondary-foreground) 70%, black);
+   --secondary-600: color-mix(in oklch, var(--secondary-foreground) 60%, black);
+   --secondary-400: color-mix(in oklch, var(--secondary-foreground) 80%, white);
+   --secondary-300: color-mix(in oklch, var(--secondary-foreground) 60%, white);
+   --secondary-200: color-mix(in oklch, var(--secondary-foreground) 40%, white);
+   --secondary-100: color-mix(in oklch, var(--secondary-foreground) 20%, white);
+   --secondary-50: color-mix(in oklch, var(--secondary-foreground) 10%, white);
+
+   --muted: oklch(0.269 0 0);
+   --muted-light: oklch(0.22 0.005 247.86);
+   --muted-foreground: oklch(0.708 0 0);
+
+   --accent: oklch(0.269 0 0);
+   --accent-foreground: oklch(0.985 0 0);
+
+   --destructive: oklch(0.396 0.141 25.723);
+   --destructive-foreground: oklch(0.637 0.237 25.331);
+
+   --border: oklch(0.269 0 0);
+   --input: oklch(0.269 0 0);
+   --ring: oklch(0.439 0 0);
+
+   --chart-1: oklch(0.488 0.243 264.376);
+   --chart-2: oklch(0.696 0.17 162.48);
+   --chart-3: oklch(0.769 0.188 70.08);
+   --chart-4: oklch(0.627 0.265 303.9);
+   --chart-5: oklch(0.645 0.246 16.439);
+
+   --sidebar: oklch(0.205 0 0);
+   --sidebar-foreground: oklch(0.985 0 0);
+   --sidebar-primary: oklch(0.985 0 0);
+   --sidebar-primary-foreground: oklch(0.985 0 0);
+   --sidebar-accent: oklch(0.269 0 0);
+   --sidebar-accent-foreground: oklch(0.985 0 0);
+   --sidebar-border: oklch(0.269 0 0);
+   --sidebar-ring: oklch(0.439 0 0);
+
+   --card-shadow:
+      0 0 2px 0 rgba(0 0 0 / 0.3), 0 12px 24px -4px rgba(0 0 0 / 0.2);
+   --card-shadow-hover: 0 24px 48px 0 rgba(0 0 0 / 24%);
+   --card-shadow-md:
+      0 3.75px 7.5px -2.25px rgba(0, 0, 0, 0.08),
+      0 6px 13.5px 0.75px rgba(0, 0, 0, 0.1),
+      0 2.25px 24.75px 1.5px rgba(0, 0, 0, 0.14);
+   --card-shadow-lg:
+      0 12px 24px -4px rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+   --card-shadow-card-xs:
+      0 0 2px 0 rgba(145 158 171 / 20%),
+      0 12px 24px -4px rgba(145 158 171 / 12%);
+}
+
+@layer base {
+   * {
+      @apply border-border;
+   }
+
+   body {
+      @apply bg-background text-foreground;
+   }
+
+   a,
+   button {
+      @apply !shadow-none;
+   }
+}
+
+@layer utilities {
+   .container {
+      @apply mx-auto max-w-[1280px] px-5;
+   }
+
+   .horizontal-tabs-list {
+      @apply grid h-auto grid-cols-1 gap-y-1 overflow-hidden rounded-2xl border border-border bg-card px-0 py-5 text-card-foreground shadow;
+   }
+
+   .horizontal-tabs-trigger {
+      @apply relative flex cursor-pointer items-center justify-start gap-3 rounded-none border-primary px-5 py-3 text-start !shadow-none before:absolute before:top-0 before:bottom-0 before:left-0 before:rounded-r-xl hover:!bg-muted data-[state=active]:!bg-muted data-[state=active]:before:w-1 data-[state=active]:before:bg-primary;
+   }
+
+   .vertical-tabs-list {
+      @apply rounded-none bg-transparent px-0 py-6;
+   }
+
+   .vertical-tabs-trigger {
+      @apply relative flex cursor-pointer items-center justify-start gap-3 rounded-none border-primary bg-transparent px-8 py-4 text-start !shadow-none before:absolute before:right-0 before:bottom-0 before:left-0 before:h-1 before:rounded-t-xl data-[state=active]:!bg-muted data-[state=active]:before:bg-primary data-[state=active]:before:content-['.'];
+   }
+
+   .bg-card {
+      @apply border-muted shadow-card;
+   }
+
+   /* Intro Style */
+   .section-edit {
+      @apply relative border border-dashed border-gray-500;
+   }
+
+   /* Apply styles to Plyr elements */
+   .lesson-container {
+      @apply w-full overflow-hidden rounded-none border-none md:max-h-[calc(100vh-60px)] md:min-h-[80vh];
+   }
+   .plyr {
+      --plyr-color-main: var(--secondary-foreground);
+   }
+   .lesson-container .plyr--video {
+      @apply h-full w-full md:max-h-[calc(100vh-60px)] md:min-h-[80vh];
+   }
+}
+
+[data-slot='dialog-content'] .ring-offset-background {
+   @apply cursor-pointer;
+}
+
+button[data-orientation='vertical'] {
+   @apply cursor-pointer;
+}
+
+/* Richtor editor overrides */
+/* Fix margin and width for editor buttons */
+input.rte-input.\!mt-2.\!border.\!border-border {
+   margin-top: 6px !important;
+}
+button.rte-button.rte-button--primary.\!mt-3.\!w-full.cursor-pointer {
+   width: 100% !important;
+   margin-top: 12px !important;
+}

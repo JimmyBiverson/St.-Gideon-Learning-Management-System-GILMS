@@ -1,0 +1,1 @@
+import{jsx as e}from"react/jsx-runtime";var t=()=>e(`div`,{children:e(`h1`,{children:`DripContent`})});export{t as default};

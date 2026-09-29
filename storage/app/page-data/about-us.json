@@ -1,0 +1,1062 @@
+[
+    {
+        "id": "B9_beK5EXfDcxYGlWR9M8",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "uGZS6LSD0hBjjiZAnYHwW",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "relative bg-[rgba(255,222,99,0.06)] pt-[212px] pb-[100px]",
+                "content": [
+                    {
+                        "id": "RmmuwU_WgvRALezVLGLab",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "-w69ULh0vC62WkjOni_gl",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-center space-y-2",
+                                "content": [
+                                    {
+                                        "id": "7l-tuun843c3cDPHfScj8",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-center text-4xl font-bold md:text-[44px]",
+                                        "content": {
+                                            "innerText": "About Us",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "lIpIuiJ6EhmtyRBwc6kUW",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center gap-1 text-muted-foreground",
+                                        "content": [
+                                            {
+                                                "id": "UkdOG8mqJ3F5QpTNNXG3W",
+                                                "name": "Link",
+                                                "type": "link",
+                                                "styles": [],
+                                                "className": "flex items-center justify-center",
+                                                "content": [
+                                                    {
+                                                        "id": "B3sX1oz2AA5EvBF1oNlgW",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "text-foreground h-[18px] w-[18px]",
+                                                        "content": {
+                                                            "icon": "home"
+                                                        }
+                                                    }
+                                                ],
+                                                "htmlAttributes": {
+                                                    "href": "/",
+                                                    "type": "inertia"
+                                                }
+                                            },
+                                            {
+                                                "id": "Au36Y3GNs-CuBTJtP95Ok",
+                                                "name": "EditorIcon",
+                                                "type": "icon",
+                                                "styles": {
+                                                    "width": "24px",
+                                                    "height": "24px"
+                                                },
+                                                "className": "text-foreground h-[14px] w-[14px]",
+                                                "content": {
+                                                    "icon": "chevrons-right"
+                                                }
+                                            },
+                                            {
+                                                "id": "ngns8ZBdgmtA8H_aDlfVA",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-sm",
+                                                "content": {
+                                                    "innerText": "about-us"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "LoBRtDCqB_pWNESlyRxgG",
+                        "name": "Div",
+                        "type": "div",
+                        "styles": [],
+                        "className": "pointer-events-none absolute top-1/2 right-0 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                        "content": []
+                    }
+                ]
+            },
+            {
+                "id": "vUe3aDKunFm_fZm-o3L2M",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20 md:py-[120px]",
+                "content": [
+                    {
+                        "id": "bNtUYzEWdkKojaxnUO1HI",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "RFjiAo8YNjCaDl1dhClh-",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-center gap-7 md:flex-row",
+                                "content": [
+                                    {
+                                        "id": "nEia44LXcVGip_Rge0o19",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "grid w-full max-w-[692px] grid-cols-1 gap-7 md:grid-cols-2",
+                                        "content": [
+                                            {
+                                                "id": "f3UeJoFwBUfkm-NhwI1ZH",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "h-[356px]",
+                                                "content": [
+                                                    {
+                                                        "id": "7ReGfgQLPY-Wghw1_XrDY",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-full w-full rounded-2xl object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/team-1.jpg",
+                                                            "alt": "Our Mission"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "r6CSBGeK4jps8C-qEQobx",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "h-[356px]",
+                                                "content": [
+                                                    {
+                                                        "id": "w-weBR8GVZ2nMo1Un-kPi",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-full w-full rounded-2xl object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/team-2.jpg",
+                                                            "alt": "Our Value"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "lRWIm-bUHLjkExpgU1qEt",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "w-full space-y-7 md:max-w-[480px]",
+                                        "content": [
+                                            {
+                                                "id": "9Ct9Qzh4uR_9hCG7D37wk",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "zyAJXSXLG0jEJqhauZu56",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-2xl font-bold md:text-[30px]",
+                                                        "content": {
+                                                            "innerText": "Our Mission",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "BUwNxxt0ymUa3cYFZnY56",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "To democratize education by making high-quality learning accessible to everyone, everywhere. We strive to bridge the gap between knowledge and application. Meet our passionate team of educators, developers, and designers who believe in the power of learning to change lives."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "5coZxLrSuZ42F6FvusDeT",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "jCe6VBKU66-euo-FzgYSM",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-2xl font-bold md:text-[30px]",
+                                                        "content": {
+                                                            "innerText": "Our Value",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "t1bB2wH3ZkN1aN1nRCGOj",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "We believe in fostering a love for lifelong learning through innovative teaching methods, personalized experiences, and supportive communities. Meet our passionate team of educators, developers, and designers who believe in the power of learning to change lives."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "CtEbL8wbI3VEGx174s9u9",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "overflow-y-hidden bg-cover bg-center py-[120px]",
+                "content": [
+                    {
+                        "id": "Uf4IZ2xUCFx9Dlkiiuq2w",
+                        "name": "Section",
+                        "type": "section",
+                        "styles": [],
+                        "className": null,
+                        "content": [
+                            {
+                                "id": "rB5TvMTVeaBUpJuiZGXO2",
+                                "name": "Container",
+                                "type": "container",
+                                "styles": [],
+                                "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                                "content": [
+                                    {
+                                        "id": "UXH3qD3PWzwTi53_QKNcJ",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative z-10 flex flex-col items-center justify-center gap-7 md:flex-row",
+                                        "content": [
+                                            {
+                                                "id": "Zz2XXTHUxd1DCHKA7ttST",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "relative w-full space-y-7 md:max-w-[384px]",
+                                                "content": [
+                                                    {
+                                                        "id": "WDDH7ZiVs-F3Vk3lVoKnL",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "relative z-10 mb-6",
+                                                        "content": [
+                                                            {
+                                                                "id": "VRc2qZPQXAXxvqm7HPMvy",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "text-2xl font-bold md:text-[30px]",
+                                                                "content": {
+                                                                    "innerText": "Our Success Depends on Our Students Success",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "vo-IfD3_a0pLET0uxPoAU",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "mt-2 text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "We are proud of our students' achievements. Every milestone they reach is a testament to our commitment to quality education and their dedication to learning."
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "hgmoRflM2oo1ZMXPIvyyu",
+                                                        "name": "Link",
+                                                        "type": "link",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": [
+                                                            {
+                                                                "id": "v6CwWixXvDe87MCHSx9yI",
+                                                                "name": "Button",
+                                                                "type": "button",
+                                                                "styles": [],
+                                                                "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all px-4 py-2 bg-zinc-900 text-zinc-50 hover:bg-zinc-900/90 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 h-10 cursor-pointer bg-linear-to-r from-[#00A67F] to-[#0077B6]",
+                                                                "content": {
+                                                                    "innerText": "Browse Courses",
+                                                                    "buttonType": "button"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "htmlAttributes": {
+                                                            "href": "/courses/all",
+                                                            "type": "inertia"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "6t2etXVd0TBGvF8m-UPWH",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "relative z-10 flex items-center justify-center gap-2.5 lg:justify-start",
+                                                        "content": [
+                                                            {
+                                                                "id": "Y_iSe1GvJ0Ab74VnUcfvo",
+                                                                "name": "Div",
+                                                                "type": "div",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": [
+                                                                    {
+                                                                        "id": "FnOnI3NOt7FAJNHDu0f__",
+                                                                        "name": "Heading",
+                                                                        "type": "heading",
+                                                                        "styles": [],
+                                                                        "className": "text-2xl font-bold md:text-[30px]",
+                                                                        "content": {
+                                                                            "innerText": "100+",
+                                                                            "level": "h2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "oe2OcolDqu1t0VqDFdlJW",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": "text-sm text-muted-foreground",
+                                                                        "content": {
+                                                                            "innerText": "Courses"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "id": "0rdJPHDZ_Z5ATnOUEOTcc",
+                                                                "name": "Div",
+                                                                "type": "div",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": [
+                                                                    {
+                                                                        "id": "PDK1h-sr9yszyMaJKjJ94",
+                                                                        "name": "Heading",
+                                                                        "type": "heading",
+                                                                        "styles": [],
+                                                                        "className": "text-2xl font-bold md:text-[30px]",
+                                                                        "content": {
+                                                                            "innerText": "300+",
+                                                                            "level": "h2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "rp6QBWpp2D3GrT09tyWha",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": "text-sm text-muted-foreground",
+                                                                        "content": {
+                                                                            "innerText": "Students"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "id": "kcAGdGeVG-gOfp2wc8357",
+                                                                "name": "Div",
+                                                                "type": "div",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": [
+                                                                    {
+                                                                        "id": "OBxS5yuwD9V7A2s_cN4bX",
+                                                                        "name": "Heading",
+                                                                        "type": "heading",
+                                                                        "styles": [],
+                                                                        "className": "text-2xl font-bold md:text-[30px]",
+                                                                        "content": {
+                                                                            "innerText": "40k+",
+                                                                            "level": "h2"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "kXClXSToaAc8b-H9qRT8L",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": "text-sm text-muted-foreground",
+                                                                        "content": {
+                                                                            "innerText": "Enrollments"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "gjGreDYZhTmc1Ftcglc0R",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "grid grid-cols-1 gap-7 md:grid-cols-3",
+                                                "content": [
+                                                    {
+                                                        "id": "P2h1Fd6Burty392Hwj7Vg",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-[400px]",
+                                                        "content": [
+                                                            {
+                                                                "id": "7620XMzN5vTGW-_P-T4JX",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full rounded-2xl object-cover object-center",
+                                                                "content": {
+                                                                    "src": "/assets/images/students-1.jpg",
+                                                                    "alt": "Courses"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "B3vRMc7thF81p99ccAoo_",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-[400px]",
+                                                        "content": [
+                                                            {
+                                                                "id": "A_G9VBRjcSOpbsxIYb4Wj",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full rounded-2xl object-cover object-center",
+                                                                "content": {
+                                                                    "src": "/assets/images/students-2.jpg",
+                                                                    "alt": "Students"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "2Dy-CwNyd9JkzRD6A2bQx",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-[400px]",
+                                                        "content": [
+                                                            {
+                                                                "id": "M4TUwx4JmUW3SJSnGqHOx",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full rounded-2xl object-cover object-center",
+                                                                "content": {
+                                                                    "src": "/assets/images/students-3.jpg",
+                                                                    "alt": "Enrollments"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "c-lqmab9ydjeleAertF30",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute bottom-0 left-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(0,120,103,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                                        "content": []
+                                    },
+                                    {
+                                        "id": "9MDi2CYmV9mCjjUHl6tjn",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aq-gGSgwgso3m5g8yg67x",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20 md:py-[120px]",
+                "content": [
+                    {
+                        "id": "d9iTGbTFWnRBapoL5_7Yv",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "BBjRScDhRAU2S0CtxStkB",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "flex flex-col items-center justify-center gap-7 md:flex-row",
+                                "content": [
+                                    {
+                                        "id": "lVrBBwOHpfs1rKlNrv2fy",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative w-full space-y-7 md:max-w-[384px]",
+                                        "content": [
+                                            {
+                                                "id": "NUo8mCQ0-rgF9uwjyhlAl",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-2xl font-bold md:text-[30px]",
+                                                "content": {
+                                                    "innerText": "The Minds Behind the Mission",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "GQsl-JEZYc0IODMKI0b6t",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mt-4 text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "Meet our passionate team of educators, developers, and designers who believe in the power of learning to change lives. Meet our passionate team of educators, developers, and designers who believe in the power of learning to change lives."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "x0EfVJhaXchmwlBFV821W",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "grid w-full max-w-[828px] grid-cols-2 gap-7 md:grid-cols-4",
+                                        "content": [
+                                            {
+                                                "id": "edE4ilc1SjZ6mEhAnQzKy",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "Wyz3j_bhpKaFVFNqlWC3V",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-1.jpg",
+                                                            "alt": "John Doe"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "v0SgMXXPO3Zc8uCI_E2wg",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "rHzBFt0liRlw5bJ4MkTEe",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "John Doe"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "areGla6EmhzD3cP8eUnpV",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "CEO & Founder"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "lrqYpKKcpafRny-mJyJ9n",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "8x7UESzLWVjrqPIiu8AZv",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-2.jpg",
+                                                            "alt": "Jane Smith"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "RDJF4OXLKitbTrbyGAovz",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "NI0JqehVFJwdw-rbMorjg",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Jane Smith"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "aFj9hh8u6NyteHP4dm1W2",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Lead Instructor"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "MGU6jJQcXw8kcjMgbg6o8",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "rSURRGQeqdmMSiOeSIft6",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-3.jpg",
+                                                            "alt": "Mike Johnson"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "LcsYRU63SD-E3cAkCdqN9",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "dEvvpvhy48Vg_S0U-yuLd",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Mike Johnson"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "ueXdJzLZXed1k8pdV5Lca",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Course Developer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "fZTFhc_rXJUvZOZQl0afi",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "C7MZDE6WTlMvk5owBO0aH",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-4.jpg",
+                                                            "alt": "Sarah Williams"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "Il1krutOT-qxZa_CpwkA5",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "5TV6NvCzMlM-Ndvj4Z-Mm",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Sarah Williams"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "FyfCVD2BWLYgjYaZ35NXC",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Marketing Director"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "7Ct4Cytd7XKGcZu1l5fph",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "IlJkuY4rCjT7v3kDEyCtf",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-5.jpg",
+                                                            "alt": "David Brown"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "XnZJ1qDNk3Mj8jHP6z0l9",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "nJNdpQdG1AkDgRIxa24Eo",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "David Brown"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "CRoNrA2z9ZYbE2ZDjmOmm",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Technical Lead"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "f5W2Kl7quj_zZtgabyi_M",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "KnKrf2JeuF27cFo_eQp_6",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-6.jpg",
+                                                            "alt": "Emily Davis"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "B-loeUix1TlANoc7X-KWl",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "WLKqQhBcd0TTjqBJNxMD2",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Emily Davis"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "qAkcX6s7XPITsCQR-Z2eu",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Content Strategist"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "5FHzoIezwJXK5lDjyBewM",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "UgwKea4O4DkIKK9mD9LH5",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-7.jpg",
+                                                            "alt": "Robert Wilson"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "KO2vZOEn0MFAiW2ZSVD1r",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "6RexjNme9nmEu17M2yR2W",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Robert Wilson"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "Er0nd_abN34TSa9DZqSHu",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "UX Designer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "0RZBm5seMEIJci5o49cbc",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group relative h-[192px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "LbXNBZsQ4Kuv6qxWoQsNp",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-[192px] w-full rounded-lg object-cover object-center",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-8.jpg",
+                                                            "alt": "Lisa Anderson"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "uBhmScmU_72v0G9lrc7q2",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-linear-to-t from-primary p-4 text-center !opacity-0 transition-all duration-200 group-hover:!opacity-100 dark:from-primary-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "NMtCmQxMXBn6SQDYEpTXE",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-semibold text-white",
+                                                                "content": {
+                                                                    "innerText": "Lisa Anderson"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "OAWiSOj0XQmhAFpPDJSSC",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-xs text-white",
+                                                                "content": {
+                                                                    "innerText": "Community Manager"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Fdf88OpajNn3ymzpSDOil",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "border-secondary-100 bg-secondary-100er border-t py-20",
+                "content": [
+                    {
+                        "id": "S1dH9FGWY_0hnq_iLRI_A",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full space-y-5 rounded-4xl bg-[rgba(0,114,98,1)] bg-[url('/assets/images/intro/home-1/cta-bg-vector.png')] bg-cover bg-center px-6 py-[104px] text-center text-white",
+                        "content": [
+                            {
+                                "id": "pjbI3_puGMUW3jrtSTNHF",
+                                "name": "Heading",
+                                "type": "heading",
+                                "styles": [],
+                                "className": "text-2xl leading-tight font-bold md:text-3xl md:leading-9",
+                                "content": {
+                                    "innerText": "Subscribe to our newsletter to get the latest news and updates",
+                                    "level": "h2"
+                                }
+                            },
+                            {
+                                "id": "jwNu1Ahc7YGuUpMmwVjY1",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto w-full max-w-[420px] text-center",
+                                "content": [
+                                    {
+                                        "id": "ekXVlrGpPUBwEUge68_iV",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-3",
+                                        "content": {
+                                            "innerText": "Subscribe to our newsletter to get the latest news and updates. We will not spam you."
+                                        }
+                                    },
+                                    {
+                                        "id": "OKBFXBvmgWkEKI8h7YvHT",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": {
+                                            "componentRef": "email-subscribe-input",
+                                            "api": null,
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

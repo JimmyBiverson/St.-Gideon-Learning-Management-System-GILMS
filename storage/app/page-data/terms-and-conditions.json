@@ -1,0 +1,598 @@
+[
+    {
+        "id": "Qh1s2h3H_8qiWG-KPk97U",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "djuF_1rEWYwbQVRNI5KKs",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "relative bg-[rgba(255,222,99,0.06)] pt-[212px] pb-[100px]",
+                "content": [
+                    {
+                        "id": "wMl1uXQtWWPXBjaPy0dhj",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "dyMM4eojbCwen8-c2qnUt",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-center space-y-2",
+                                "content": [
+                                    {
+                                        "id": "ZO9XGnqrsdLY8iMxmn6H2",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-center text-4xl font-bold md:text-[44px]",
+                                        "content": {
+                                            "innerText": "Terms and Conditions",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "eMEVPp7_QkY-53-Ir9QRV",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center gap-1 text-muted-foreground",
+                                        "content": [
+                                            {
+                                                "id": "3CkMZ2E_Fb9T0cHUPBQuL",
+                                                "name": "Link",
+                                                "type": "link",
+                                                "styles": [],
+                                                "className": "flex items-center justify-center",
+                                                "content": [
+                                                    {
+                                                        "id": "IvJqeDZwGcCzbBj0GM47L",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "text-foreground h-[18px] w-[18px]",
+                                                        "content": {
+                                                            "icon": "home"
+                                                        }
+                                                    }
+                                                ],
+                                                "htmlAttributes": {
+                                                    "href": "/",
+                                                    "type": "inertia"
+                                                }
+                                            },
+                                            {
+                                                "id": "KRgkwIZWsqH-FZd8uD1RF",
+                                                "name": "EditorIcon",
+                                                "type": "icon",
+                                                "styles": {
+                                                    "width": "24px",
+                                                    "height": "24px"
+                                                },
+                                                "className": "text-foreground h-[14px] w-[14px]",
+                                                "content": {
+                                                    "icon": "chevrons-right"
+                                                }
+                                            },
+                                            {
+                                                "id": "oyeQneRvWQWcSI7vuGjM7",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-sm",
+                                                "content": {
+                                                    "innerText": "terms-and-conditions"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ADUt4wtHxmADktveUfee5",
+                        "name": "Div",
+                        "type": "div",
+                        "styles": [],
+                        "className": "pointer-events-none absolute top-1/2 right-0 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                        "content": []
+                    }
+                ]
+            },
+            {
+                "id": "p7oTXn8tjxFr-SNR-FIWi",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "mS3RYDIxnDOV5atjHXRQL",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "HVf3SfjeriyoB5puA6kga",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto max-w-3xl rounded-2xl bg-gray-50 p-8 md:p-12 dark:bg-gray-900",
+                                "content": [
+                                    {
+                                        "id": "00BMVoRgA9hcqjsnKA2fd",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-8 text-center text-3xl font-bold",
+                                        "content": {
+                                            "innerText": "Terms and Conditions",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "tDCaqXVyDOFiZNcbSCjxI",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "space-y-6",
+                                        "content": [
+                                            {
+                                                "id": "GA5qHShIzMJDPlULvfsdb",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": {
+                                                    "innerText": "Welcome to Mentor. By accessing and using our platform, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using our services."
+                                                }
+                                            },
+                                            {
+                                                "id": "y9UZsHKjSl6vquygvAT92",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "ReKUPb0u8ovF4cphcZ6J_",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "1. Acceptance of Terms",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "aYlCXkUwk2skT4p_Jqnxo",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "By accessing and using the website and services, you accept and agree to be bound by the terms and conditions. If you do not agree to any part of these terms, you should not use our services."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "XIfIOdUKhJOImY_xNM7Yx",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "bicNntWVxl07g_nVmKKFi",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "2. Use of the Platform",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "SyQ1HCaTXJE1faRm7-oTt",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "You may use Mentor for lawful purposes only. You must not use our platform in any way that breaches any applicable local, national, or international law or regulation."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "J1aQruWVvxoQu3m3VrBlA",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "7Bm--V6RBDd7xj7NXfwLE",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "3. Account Registration",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "frXyk0pl4j7wE1o33u4mm",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "To access certain features of Mentor, you may be required to create an account. You agree to provide accurate and complete information during the registration process and to keep your account information up to date."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "Gzf2V7lmMMlSQB5AM3fC-",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "KNuqH3Kixif1pAxfvgQ-W",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "4. User Conduct",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "19ymaiyevD6ZZCjG_fdCo",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mb-3",
+                                                        "content": {
+                                                            "innerText": "You agree not to use Mentor to:"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "hEjVQWYNg8_1Op2DGcIzX",
+                                                        "name": "List",
+                                                        "type": "ul",
+                                                        "styles": [],
+                                                        "className": "ml-6 space-y-2",
+                                                        "content": [
+                                                            {
+                                                                "id": "9vkzQYaJvTZhhbs98lKIl",
+                                                                "name": "ListItem",
+                                                                "type": "li",
+                                                                "styles": [],
+                                                                "className": "flex items-start gap-2",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "4G0C0mrleG11ztkqJOYuE",
+                                                                        "name": "Span",
+                                                                        "type": "span",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "\u2022"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "96YCqz10iXnzMcVKIIazr",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "Post, upload, or distribute any content that is unlawful, defamatory, abusive, or otherwise objectionable."
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "id": "Pl_cey6Jp0iZAJysKvrru",
+                                                                "name": "ListItem",
+                                                                "type": "li",
+                                                                "styles": [],
+                                                                "className": "flex items-start gap-2",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "xR82JYXh4zgs0ahqC6FXw",
+                                                                        "name": "Span",
+                                                                        "type": "span",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "\u2022"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "4NulNVwLT6CVjN-4yKFPl",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "Impersonate any person or entity, or falsely state or otherwise misrepresent your affiliation with a person or entity."
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "id": "avWjX2w5-gAENLUTA-Okr",
+                                                                "name": "ListItem",
+                                                                "type": "li",
+                                                                "styles": [],
+                                                                "className": "flex items-start gap-2",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "1ZIg25Mriwz8ZAcUEFufx",
+                                                                        "name": "Span",
+                                                                        "type": "span",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "\u2022"
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        "id": "UOU-TZjxymJOR_39nGht_",
+                                                                        "name": "Paragraph",
+                                                                        "type": "paragraph",
+                                                                        "styles": [],
+                                                                        "className": null,
+                                                                        "content": {
+                                                                            "innerText": "Infringe upon the intellectual rights of others."
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "Z3nGt8vGnRWal1xm3506d",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "EtMmU3khwgD5JtmCv4qS0",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "5. Intellectual Property",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "F3vPQvba0WgdVxuOEad6x",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "All content on Mentor, including but not limited to text, graphics, logos, and software, is the property of Mentor or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our prior written consent."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "MKhQGoz9_qXLw8jD_PmMS",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "lvbKPwzEk5NqbYV-p6qyq",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "6. Payment and Refunds",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "w5CiWvpvL1mUz3f4pTgxB",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "Certain courses and services on Mentor may be offered for a fee. All payments are non-refundable unless otherwise stated in our Refund Policy. Before making any payment, please review the terms applicable to the specific course or service."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "ixlYT0f2BkJv_umZLNCjL",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "XamXiuDGvPoKDAhp66bWJ",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "7. Termination",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "RAYEiM-IUCc1xxMaOhLst",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "Mentor reserves the right to terminate or suspend your account and access to our platform at any time, without prior notice, for any reason, including if we believe you have violated these terms or engaged in any fraudulent or illegal activity."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "sgQrQVVMAiFMfkO6oe4LH",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "ZvdyLtaMFL84QdAnvSbbB",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "8. Disclaimer of Warranties",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "k3vwZZjvXhcISvwUEgBU7",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "Mentor is provided on an \"as is\" and \"as available\" basis without any warranties of any kind, either express or implied. We do not guarantee that our services will be uninterrupted, secure, or error-free."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "8BRe3QX-wSCx8BJZkOZ6t",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "2-m4dc5NMKozK5WLQbX13",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "9. Limitation of Liability",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "yKj4CIjTfAkGWpQDVjmVW",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "In no event shall Mentor, nor any of our officers, directors, employees, or agents, be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to use our services."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "aXhEP-mhaiAXN9BlFLh1x",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "J9KGu7a66K1Q7j1cX090_",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "10. Changes to Terms",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ODe9DTA4xDyk90QZfJamG",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "Mentor reserves the right to modify these terms at any time. We will notify you of any changes by posting the new terms on this page. Your continued use of the platform after any changes constitutes your acceptance of the new terms."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "IA8sHKs15Vk0ax2X1lHJJ",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "9ACNHP9Dz-9ggpNhnZOzg",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-3 text-lg font-bold",
+                                                        "content": {
+                                                            "innerText": "11. Governing Law",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "Bj8kMDvhxj-A_yeDqfGwV",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which Mentor operates, without regard to its conflict of law principles."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

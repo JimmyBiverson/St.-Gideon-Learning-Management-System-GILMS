@@ -1,0 +1,1 @@
+import{t as e}from"./product-update-header-BZ_PP7LA.js";export{e as default};

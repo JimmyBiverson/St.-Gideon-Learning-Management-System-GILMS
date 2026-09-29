@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'change_email' => 'Change Email',
+    'confirm_description' => 'This is a secure area of the application. Please confirm your password before continuing.',
+    'confirm_title' => 'Confirm your password',
+    'continue_with' => 'Or continue with',
+    'forgot_description' => 'Enter your email to receive a password reset link',
+    'forgot_password' => 'Forgot Password',
+    'google_auth' => 'Google Auth',
+    'google_auth_description' => 'Google Auth Description',
+    'google_auth_settings' => 'Google Auth Settings',
+    'have_account' => 'Already have an account?',
+    'login_description' => 'Enter your email and password below to log in',
+    'login_title' => 'Log in to your account',
+    'no_account' => 'Don\'t have an account?',
+    'register_description' => 'Enter your details below to create your account',
+    'register_title' => 'Create an account',
+    'reset_description' => 'Please enter your new password below',
+    'reset_title' => 'Reset password',
+    'return_to_login' => 'Or, return to',
+    'verification_sent' => 'A new verification link has been sent to the email address you provided during registration.',
+    'verify_description' => 'Please verify your email address by clicking on the link we just emailed to you.',
+    'verify_title' => 'Verify email',
+];

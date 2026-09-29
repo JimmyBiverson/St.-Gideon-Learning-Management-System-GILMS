@@ -1,0 +1,1 @@
+import{t as e}from"./new-courses-BiuqEfsZ.js";export{e as default};

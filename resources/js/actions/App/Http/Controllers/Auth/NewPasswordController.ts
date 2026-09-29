@@ -1,0 +1,137 @@
+import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../../../../../wayfinder'
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
+    url: index.url(options),
+    method: 'get',
+})
+
+index.definition = {
+    methods: ["get","head"],
+    url: '/reset-password',
+} satisfies RouteDefinition<["get","head"]>
+
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+index.url = (options?: RouteQueryOptions) => {
+    return index.definition.url + queryParams(options)
+}
+
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
+    url: index.url(options),
+    method: 'get',
+})
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
+    url: index.url(options),
+    method: 'head',
+})
+
+    /**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+    const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: index.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+        indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: index.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Auth\NewPasswordController::index
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:23
+ * @route '/reset-password'
+ */
+        indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: index.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    index.form = indexForm
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::store
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:36
+ * @route '/reset-password'
+ */
+export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: store.url(options),
+    method: 'post',
+})
+
+store.definition = {
+    methods: ["post"],
+    url: '/reset-password',
+} satisfies RouteDefinition<["post"]>
+
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::store
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:36
+ * @route '/reset-password'
+ */
+store.url = (options?: RouteQueryOptions) => {
+    return store.definition.url + queryParams(options)
+}
+
+/**
+* @see \App\Http\Controllers\Auth\NewPasswordController::store
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:36
+ * @route '/reset-password'
+ */
+store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: store.url(options),
+    method: 'post',
+})
+
+    /**
+* @see \App\Http\Controllers\Auth\NewPasswordController::store
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:36
+ * @route '/reset-password'
+ */
+    const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        action: store.url(options),
+        method: 'post',
+    })
+
+            /**
+* @see \App\Http\Controllers\Auth\NewPasswordController::store
+ * @see app/Http/Controllers/Auth/NewPasswordController.php:36
+ * @route '/reset-password'
+ */
+        storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+            action: store.url(options),
+            method: 'post',
+        })
+    
+    store.form = storeForm
+const NewPasswordController = { index, store }
+
+export default NewPasswordController

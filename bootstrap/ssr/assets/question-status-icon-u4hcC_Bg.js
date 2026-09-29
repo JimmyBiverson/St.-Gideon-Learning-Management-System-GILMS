@@ -1,0 +1,1 @@
+import{jsx as e}from"react/jsx-runtime";import{Check as t,Clock as n,X as r}from"lucide-react";var i=({answer:i})=>{let a=(e=>e.exam_question??{})(i),o=i.marks_obtained||0,s=a.marks||0,c=s>0&&o===s;return i.is_correct===null?e(n,{className:`h-5 w-5 text-yellow-600`}):i.is_correct||c?e(t,{className:`h-5 w-5 text-green-600`}):e(r,{className:`h-5 w-5 text-red-600`})};export{i as t};

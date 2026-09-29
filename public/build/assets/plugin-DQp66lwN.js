@@ -1,0 +1,1 @@
+function e(e,t){return!e||!(t in e)?null:e[t]}export{e as t};

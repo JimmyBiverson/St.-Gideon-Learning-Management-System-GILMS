@@ -1,0 +1,76 @@
+<?php
+
+return [
+    [
+        'name' => 'Common Elements',
+        'slug' => 'common_elements',
+        'properties' => [
+            'type' => 'Type',
+            'csv' => 'CSV',
+            'resume' => 'Resume',
+            'view_resume' => 'View Resume',
+            'img_placeholder' => 'IMG',
+            'go_to_page' => 'Go to page:',
+            'previous' => 'Prev',
+            'delete_instructor_warning' => 'After deleting the instructor, the admin will be the assign as a new instructor, of this instructor all the courses.',
+            'delete_course_warning' => 'After deleting the course, all the related data, like, course sections, lessons, quizzes, enrollments, etc will be deleted automatically.',
+        ],
+    ],
+    [
+        'name' => 'Table Headers Management',
+        'slug' => 'table_headers_management',
+        'properties' => [
+            'name' => 'Name',
+            'role' => 'Role',
+            'slug' => 'Slug',
+            'title' => 'Title',
+            'use_case' => 'Use Case',
+            'sections' => 'Sections',
+            'creator' => 'Creator',
+            'enrolled_course' => 'Enrolled Course',
+            'enrolled_date' => 'Enrolled Date',
+            'expiry_date' => 'Expiry Date',
+            'payout_amount' => 'Payout amount',
+            'payout_method' => 'Payout Method',
+            'processed_date' => 'Processed Date',
+            'payout_date' => 'Payout Date',
+            'enrollments' => 'Enrollments',
+            'course_title' => 'Course Title',
+            'number_of_course' => 'Number Of Course',
+            'category_name' => 'Category Name',
+            'category_child' => 'Category Child',
+            'meta_description' => 'Meta Description',
+            'meta_keywords' => 'Meta Keywords',
+        ],
+    ],
+    [
+        'name' => 'Table Action Labels',
+        'slug' => 'table_action_labels',
+        'properties' => [
+            'action' => 'Action',
+            'status' => 'Status',
+        ],
+    ],
+    [
+        'name' => 'Table Actions & Status',
+        'slug' => 'table_actions_status',
+        'properties' => [
+            'pay' => 'Pay',
+            'print' => 'Print',
+            'select' => 'Select',
+            'selected' => 'Selected',
+            'edit_page' => 'Edit Page',
+            'copy_url' => 'Copy URL',
+            'preview_page' => 'Preview Page',
+            'lifetime_access' => 'Lifetime access',
+        ],
+    ],
+    [
+        'name' => 'Content Text Table Specific',
+        'slug' => 'content_text_table_specific',
+        'properties' => [
+            'best_single_instructor' => 'Best for Single Instructor',
+            'best_multiple_instructors' => 'Best for Multiple Instructors',
+        ],
+    ],
+];

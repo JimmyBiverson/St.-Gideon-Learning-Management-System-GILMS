@@ -1,0 +1,1 @@
+import{t as e}from"./ordering-form-BllFU3uN.js";export{e as default};

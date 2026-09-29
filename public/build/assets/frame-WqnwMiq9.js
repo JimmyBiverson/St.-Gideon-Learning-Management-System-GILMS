@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`line`,{x1:`22`,x2:`2`,y1:`6`,y2:`6`,key:`15w7dq`}],[`line`,{x1:`22`,x2:`2`,y1:`18`,y2:`18`,key:`1ip48p`}],[`line`,{x1:`6`,x2:`6`,y1:`2`,y2:`22`,key:`a2lnyx`}],[`line`,{x1:`18`,x2:`18`,y1:`2`,y2:`22`,key:`8vb6jd`}]],i=t(`Frame`,r);export{n,i as t};

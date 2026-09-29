@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z`,key:`a7tn18`}]],i=t(`Moon`,r);export{n,i as t};

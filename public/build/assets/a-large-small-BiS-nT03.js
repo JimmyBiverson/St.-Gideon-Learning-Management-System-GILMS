@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M21 14h-5`,key:`1vh23k`}],[`path`,{d:`M16 16v-3.5a2.5 2.5 0 0 1 5 0V16`,key:`1wh10o`}],[`path`,{d:`M4.5 13h6`,key:`dfilno`}],[`path`,{d:`m3 16 4.5-9 4.5 9`,key:`2dxa0e`}]],i=t(`ALargeSmall`,r);export{n,i as t};

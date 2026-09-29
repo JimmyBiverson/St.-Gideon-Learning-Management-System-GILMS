@@ -1,0 +1,1 @@
+import{t as e}from"./table-columns-BZCBC3-Z.js";export{e as default};

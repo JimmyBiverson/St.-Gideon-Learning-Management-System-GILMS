@@ -1,0 +1,1 @@
+import{t as e}from"./admin-table-columns-KTJ1kgh-.js";export{e as default};

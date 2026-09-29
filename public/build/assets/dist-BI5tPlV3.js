@@ -1,0 +1,1 @@
+import{r as e}from"./chunk-z5H_xwo0.js";import{t}from"./react-XWPObGhY.js";import{t as n}from"./jsx-runtime-BN166stg.js";var r=e(t(),1);n();var i=r.createContext(void 0);function a(e){let t=r.useContext(i);return e||t||`ltr`}export{a as t};

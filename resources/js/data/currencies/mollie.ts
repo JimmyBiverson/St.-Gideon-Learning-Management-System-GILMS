@@ -1,0 +1,45 @@
+// Mollie supported currencies (30 currencies for card payments)
+// Source: https://docs.mollie.com/docs/multicurrency
+const mollieCurrencies = [
+   {
+      label: 'United Arab Emirates Dirham',
+      value: 'AED',
+      symbol: 'د.إ',
+      locale: 'ar-AE',
+   },
+   { label: 'Australian Dollar', value: 'AUD', symbol: 'A$', locale: 'en-AU' },
+   { label: 'Bulgarian Lev', value: 'BGN', symbol: 'лв', locale: 'bg-BG' },
+   { label: 'Brazilian Real', value: 'BRL', symbol: 'R$', locale: 'pt-BR' },
+   { label: 'Canadian Dollar', value: 'CAD', symbol: 'C$', locale: 'en-CA' },
+   { label: 'Swiss Franc', value: 'CHF', symbol: 'CHF', locale: 'de-CH' },
+   { label: 'Czech Koruna', value: 'CZK', symbol: 'Kč', locale: 'cs-CZ' },
+   { label: 'Danish Krone', value: 'DKK', symbol: 'kr', locale: 'da-DK' },
+   { label: 'Euro', value: 'EUR', symbol: '€', locale: 'de-DE' },
+   { label: 'British Pound', value: 'GBP', symbol: '£', locale: 'en-GB' },
+   { label: 'Hong Kong Dollar', value: 'HKD', symbol: 'HK$', locale: 'zh-HK' },
+   { label: 'Hungarian Forint', value: 'HUF', symbol: 'Ft', locale: 'hu-HU' },
+   { label: 'Israeli Shekel', value: 'ILS', symbol: '₪', locale: 'he-IL' },
+   { label: 'Icelandic Króna', value: 'ISK', symbol: 'kr', locale: 'is-IS' },
+   { label: 'Japanese Yen', value: 'JPY', symbol: '¥', locale: 'ja-JP' },
+   { label: 'Mexican Peso', value: 'MXN', symbol: '$', locale: 'es-MX' },
+   { label: 'Malaysian Ringgit', value: 'MYR', symbol: 'RM', locale: 'ms-MY' },
+   { label: 'Norwegian Krone', value: 'NOK', symbol: 'kr', locale: 'nb-NO' },
+   {
+      label: 'New Zealand Dollar',
+      value: 'NZD',
+      symbol: 'NZ$',
+      locale: 'en-NZ',
+   },
+   { label: 'Philippine Peso', value: 'PHP', symbol: '₱', locale: 'en-PH' },
+   { label: 'Polish Zloty', value: 'PLN', symbol: 'zł', locale: 'pl-PL' },
+   { label: 'Romanian Leu', value: 'RON', symbol: 'lei', locale: 'ro-RO' },
+   { label: 'Russian Ruble', value: 'RUB', symbol: '₽', locale: 'ru-RU' },
+   { label: 'Swedish Krona', value: 'SEK', symbol: 'kr', locale: 'sv-SE' },
+   { label: 'Singapore Dollar', value: 'SGD', symbol: 'S$', locale: 'en-SG' },
+   { label: 'Thai Baht', value: 'THB', symbol: '฿', locale: 'th-TH' },
+   { label: 'U.S. Dollar', value: 'USD', symbol: '$', locale: 'en-US' },
+   { label: 'Taiwan New Dollar', value: 'TWD', symbol: 'NT$', locale: 'zh-TW' },
+   { label: 'South African Rand', value: 'ZAR', symbol: 'R', locale: 'en-ZA' },
+];
+
+export default mollieCurrencies;

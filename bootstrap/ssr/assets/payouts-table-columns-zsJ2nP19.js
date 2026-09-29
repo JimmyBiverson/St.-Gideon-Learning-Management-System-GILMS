@@ -1,0 +1,1 @@
+import{t as e}from"./payouts-table-columns-D6I7y7Ge.js";export{e as default};

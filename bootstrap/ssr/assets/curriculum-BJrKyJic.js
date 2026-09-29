@@ -1,0 +1,1 @@
+import{t as e}from"./curriculum-C8HvU19Z.js";export{e as default};

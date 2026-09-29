@@ -1,0 +1,1657 @@
+[
+    {
+        "id": "zqic7UOsEpsenvpyi0TOJ",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "8-W-SU12Dd8ff4_-a_Hnx",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "pt-20 pb-10",
+                "content": [
+                    {
+                        "id": "zeDVGWghJxLWqBzgVMQsT",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 flex flex-col items-center justify-between gap-12 md:flex-row md:gap-3",
+                        "content": [
+                            {
+                                "id": "TviSeLvI91EzYzoWnvMDj",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative w-full md:max-w-[480px]",
+                                "content": [
+                                    {
+                                        "id": "Ym2AIJXpN71HVsHs0WqPl",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative z-10 mb-6",
+                                        "content": [
+                                            {
+                                                "id": "4urJtpMBCb3mj0tHBuXI3",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-2 text-lg font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "YOUR JOURNEY BEGINS HERE"
+                                                }
+                                            },
+                                            {
+                                                "id": "sZIyqDAb1WUzYeL3yVcqM",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-3xl leading-tight font-bold md:text-4xl lg:text-[42px] lg:leading-14",
+                                                "content": {
+                                                    "innerText": "Grow Your Knowledge with Leading Online Courses",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "GOlvouXAnviTUKd2DwmjD",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mt-4 text-lg text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "Start learning today with top-rated courses and instructors Take your team's learning and development to new heights Take your team's learning"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "HtG1wzHm05o7UymJWxDO5",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": "relative z-10 mb-10 md:mb-14",
+                                        "content": [
+                                            {
+                                                "id": "fWlp0mQvF-ywPZPzFuQfF",
+                                                "name": "Button",
+                                                "type": "button",
+                                                "styles": [],
+                                                "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all px-4 py-2 bg-zinc-900 text-zinc-50 hover:bg-zinc-900/90 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
+                                                "content": {
+                                                    "innerText": "Browse Courses",
+                                                    "buttonType": "button"
+                                                }
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/courses/all",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "szulu_BpIg3D5Vn2rSLQ5",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative z-10 flex items-center gap-3",
+                                        "content": [
+                                            {
+                                                "id": "BFigHmlhj9kdx5R0Fq1X9",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "flex -space-x-4 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background *:data-[slot=avatar]:grayscale",
+                                                "content": [
+                                                    {
+                                                        "id": "Gb9Nt96zYGHO-SNWQGMP2",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-11 !w-11 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-1.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "RqGlxf7F1mQVb3GsSCh1e",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-11 !w-11 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-2.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "q8avthVAXcHp2jtuxrfvT",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-11 !w-11 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-3.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "DK5PxYbPlE3DWNSSAnaxr",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-11 !w-11 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-4.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "cGvXAr_grbIiXjYnWD9JL",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-11 !w-11 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-5.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "2ZmRfwzARQ9WiOGTT1dku",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "86Mz_yLWm18UqbW1q3ePz",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "flex items-center gap-2",
+                                                        "content": [
+                                                            {
+                                                                "id": "VafeYAFYCGDGoR6ednccn",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "-mb-0.5 h-4 w-4 p-0 text-yellow-500",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "vI_84Qg6u_C8eNlkve9LY",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "-mb-0.5 h-4 w-4 p-0 text-yellow-500",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "QfH2d7UkjNYt0_JGgNQt1",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "-mb-0.5 h-4 w-4 p-0 text-yellow-500",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e2WcISa3rWOj79M7fHKbJ",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "-mb-0.5 h-4 w-4 p-0 text-yellow-500",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "I2FgF-xSZOjdw31qCmmQH",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "-mb-0.5 h-4 w-4 p-0 text-yellow-500",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "--8ULAM6p7GBoLaLjlhE7",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "font-medium",
+                                                                "content": {
+                                                                    "innerText": "5.0"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "kmMz2MekvmuSmB7rKrPTW",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-sm text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "+2000 readers worldwide"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "wCxGXfAakjGxKxuZfaKRL",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -top-120 -right-120 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-22 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "_Y9VngaQcCd5kaI47IXI1",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative w-full max-w-[640px]",
+                                "content": [
+                                    {
+                                        "id": "M4B0wLDh2P2sbKX3sTCdS",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "relative z-10 h-full w-full",
+                                        "content": {
+                                            "src": "/assets/images/intro/home-1/hero-image.png",
+                                            "alt": "Student learning online"
+                                        }
+                                    },
+                                    {
+                                        "id": "KYrs18-htziEcRj9v_5pe",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -right-120 -bottom-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "4On9whNAHh3DUW8zU7U5_",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "DdlDWTeNwA3MtMoI7zAhS",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "74gjEBjfAAVtkfZVoaQUQ",
+                                "name": "Paragraph",
+                                "type": "paragraph",
+                                "styles": [],
+                                "className": "mb-8 text-center text-muted-foreground",
+                                "content": {
+                                    "innerText": "Trusted by over 100 leading companies worldwide"
+                                }
+                            },
+                            {
+                                "id": "sMxTTCU1kc049fkkaeUdk",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "p-y-12 md:p-y-16 grid grid-cols-2 justify-center gap-12 md:grid-cols-3 lg:grid-cols-6",
+                                "content": [
+                                    {
+                                        "id": "4FXrZXpWoilJZ51pdBLS4",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-1.png",
+                                            "alt": "Image"
+                                        }
+                                    },
+                                    {
+                                        "id": "PlcWBNpIFQMw6B-83ACnN",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-2.png",
+                                            "alt": "Image"
+                                        }
+                                    },
+                                    {
+                                        "id": "17CWdovURv1OPCJ_Hpetp",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-3.png",
+                                            "alt": "Image"
+                                        }
+                                    },
+                                    {
+                                        "id": "Ze05F6cFIpS7OSRBtufEi",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-4.png",
+                                            "alt": "Image"
+                                        }
+                                    },
+                                    {
+                                        "id": "46hlEH7O0as1mTD6YILQi",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-5.png",
+                                            "alt": "Image"
+                                        }
+                                    },
+                                    {
+                                        "id": "GbwAaeCzTPaoJv46svqe6",
+                                        "name": "Image",
+                                        "type": "image",
+                                        "styles": [],
+                                        "className": "w-full",
+                                        "content": {
+                                            "src": "/assets/logos/logo-6.png",
+                                            "alt": "Image"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Rkn-q3SIOwm7QFBfziQdU",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "z-10 py-20",
+                "content": [
+                    {
+                        "id": "i2Y7YmD0AB3Zxg3gHvI1P",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "rSROnr-hLjnvEJzBHJYKi",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto mb-10 bg-secondary/10 text-center md:max-w-2xl",
+                                "content": [
+                                    {
+                                        "id": "8-lRQNFTNMtY4YVHpI6gL",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Top Categories"
+                                        }
+                                    },
+                                    {
+                                        "id": "37F_z4IHymdsyzwRZucbX",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-3xl font-bold sm:text-4xl",
+                                        "content": {
+                                            "innerText": "Featured category",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "28zZsf8VNegYh6p_0deaD",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "These are the most popular courses among listen courses learners worldwide"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "eromlfxRHsCwKhpS8KK2E",
+                                "name": "Dynamic Wrapper",
+                                "type": "dynamicWrapper",
+                                "styles": [],
+                                "className": null,
+                                "content": {
+                                    "componentRef": "top-course-categories-1",
+                                    "api": "api/collections/course_categories/top",
+                                    "apiMethod": "GET",
+                                    "apiParams": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aGGGSSwDY2Z4n3CKvrmt7",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "overflow-hidden bg-[url('/assets/images/intro/home-1/bg-line.png')] bg-cover bg-center py-20",
+                "content": [
+                    {
+                        "id": "SManDC4IbwQCMdW6WhmJ3",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "ETNghsijsSJChJA_x4h0B",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10",
+                                "content": [
+                                    {
+                                        "id": "Q48hr1z1NffzDo2GqYM1q",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "mx-auto text-center md:max-w-xl",
+                                        "content": [
+                                            {
+                                                "id": "NHkXWv9nzA9Ub286QYtmZ",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-1 font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "Courses"
+                                                }
+                                            },
+                                            {
+                                                "id": "Lyi53BQXzMwejIx7u4bnj",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "mb-4 text-3xl font-bold sm:text-4xl",
+                                                "content": {
+                                                    "innerText": "Popular Courses",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "iEW6xALm9uEMPjmYn4StO",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "Your professional development is supported by Mentor covering everything from technical subjects to essential abilities."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "4cS210o6IGDL-LIqzQHqq",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": {
+                                            "componentRef": "top-courses-carousel-1",
+                                            "api": "api/collections/courses/top",
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "2D8-FUX0Ob8Hz58ojZSjR",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -top-40 -right-60 h-[800px] w-[800px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-50 content-['']",
+                                "content": []
+                            },
+                            {
+                                "id": "Iiqi-n4p_2Ytmw8BPBlWp",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -bottom-60 -left-60 h-[800px] w-[800px] rounded-full bg-[radial-gradient(circle,rgba(0,120,103,0.45)_0%,transparent_70%)] opacity-50 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "YhMokvB6FYqIp80_XMmTS",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "A0H7IfS2YBOzhn6GifOMQ",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 text-center",
+                        "content": [
+                            {
+                                "id": "MF3EWWdwZRSE0hXkSKKvz",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-4",
+                                "content": [
+                                    {
+                                        "id": "N6cslbMqGkKjGjQJ-pXJt",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "rounded-3xl border-none bg-[rgba(52,105,154,0.1)] px-6 py-10 !shadow-none md:py-12",
+                                        "content": [
+                                            {
+                                                "id": "y4OrKA5YD5u3ms4HC_fMQ",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(52,105,154,1)]",
+                                                "content": [
+                                                    {
+                                                        "id": "FMiCvsu3C6f2ZhXmqDdLD",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "h-8 w-8 text-white",
+                                                        "content": {
+                                                            "icon": "users"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "41-JYf4Whuug_wMmu-LS4",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mt-4 space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "paOtYUMwHS77kq2kw1J2k",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-4xl font-semibold md:text-[44px]",
+                                                        "content": {
+                                                            "innerText": "68k+",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "fyaIhySnz3DyGMEAcJtm0",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mt-6 text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "Join 68k+ students already mastering new skills."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "NBVLqjWGzEeaypeE-hpTa",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "rounded-3xl border-none bg-[rgba(255,203,97,0.1)] px-6 py-10 !shadow-none md:py-12",
+                                        "content": [
+                                            {
+                                                "id": "ZF6bygnhzY-DAyY-JEloA",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(255,203,97,1)]",
+                                                "content": [
+                                                    {
+                                                        "id": "WzLjMKq5jtbc3P3NnyNo3",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "h-8 w-8 text-white",
+                                                        "content": {
+                                                            "icon": "download"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "4njTpfLVe1PiZ3Lx1GzKn",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mt-4 space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "wxSId63PJjFleVoeE2Zv3",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-4xl font-semibold md:text-[44px]",
+                                                        "content": {
+                                                            "innerText": "32k+",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "o4F1IXOa5oVIS7K-qDS7E",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mt-6 text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "Downloaded over 32,000 times by users worldwide."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "9Su5wGWjtNPeqj1t58oZt",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "rounded-3xl border-none bg-[rgba(74,151,130,0.1)] px-6 py-10 !shadow-none md:py-12",
+                                        "content": [
+                                            {
+                                                "id": "LMsCk_xjjZ9nyttNtAv5C",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(74,151,130,1)]",
+                                                "content": [
+                                                    {
+                                                        "id": "zGxj6GRg-d_NmjiUBZX9Y",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "h-8 w-8 text-white",
+                                                        "content": {
+                                                            "icon": "heart"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "3hscqMt2e_PHPDJDaEedD",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mt-4 space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "uSMB4ibTimYjp9agTzU9-",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-4xl font-semibold md:text-[44px]",
+                                                        "content": {
+                                                            "innerText": "45k+",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "M5Btn_qT62z6Vcl3sadbm",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mt-6 text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "Loved by learners with 45k+ great reviews."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "kAFIcfK-2AU9gWDvii_0Z",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "rounded-3xl border-none bg-[rgba(121,158,255,0.1)] px-6 py-10 !shadow-none md:py-12",
+                                        "content": [
+                                            {
+                                                "id": "awFyu36Pgxw_e2urjYSeo",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(121,158,255,1)]",
+                                                "content": [
+                                                    {
+                                                        "id": "tGu0THTqc4Kqb1-jVbgWF",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "h-8 w-8 text-white",
+                                                        "content": {
+                                                            "icon": "award"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "f7Hk4IEh43gp672ieT6_2",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "mt-4 space-y-2",
+                                                "content": [
+                                                    {
+                                                        "id": "3R-ZIjb9haWLQ-C4iRR2f",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "text-4xl font-semibold md:text-[44px]",
+                                                        "content": {
+                                                            "innerText": "1.2k+",
+                                                            "level": "h2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "i2wdO4Z7PsNDdV14X5Zgm",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mt-6 text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "Recognized with more than 1,200 prestigious accolades."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "xjLyICAvDRERj_fV1dyva",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "overflow-hidden bg-[url('/assets/images/intro/home-1/bg-line.png')] bg-cover bg-center py-20",
+                "content": [
+                    {
+                        "id": "UpMufG48z3ZKzhZBWxR-S",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "oPw94DWYn9w9qbKGEoSC3",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10",
+                                "content": [
+                                    {
+                                        "id": "3BZUA8g3DS_JlDJSTiohi",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "mx-auto text-center md:max-w-xl",
+                                        "content": [
+                                            {
+                                                "id": "jKghzAr65Hq-dYlziK8Lh",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-1 font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "Courses"
+                                                }
+                                            },
+                                            {
+                                                "id": "YVYUWPh49QDMIdAB5NPtG",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "mb-4 text-3xl font-bold sm:text-4xl",
+                                                "content": {
+                                                    "innerText": "Latest Courses",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "b78cgTFRPnCSWqIsu3Ijr",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "Your professional development is supported by Mentor covering everything from technical subjects to essential abilities."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "sVud6UI2u0tahi73DfIjQ",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": {
+                                            "componentRef": "new-courses-carousel-1",
+                                            "api": "api/collections/courses/new",
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Bco6v64UIlMZRt_Fi8iAJ",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -top-40 -right-60 h-[800px] w-[800px] rounded-full bg-[radial-gradient(circle,rgba(0,120,103,0.45)_0%,transparent_70%)] opacity-50 content-['']",
+                                "content": []
+                            },
+                            {
+                                "id": "iWg2CIaTxgdqkTDbKogeE",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -bottom-40 -left-60 h-[800px] w-[800px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-50 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "a0f2lAG6dVX5TNgT8Pdb7",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": null,
+                "content": [
+                    {
+                        "id": "wQ8PZxja4JGqoqjXQ_EWQ",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 py-20",
+                        "content": [
+                            {
+                                "id": "6Hd-naTzdXA_fGKdwEK8P",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto mb-10 text-center md:max-w-[480px]",
+                                "content": [
+                                    {
+                                        "id": "t6nUjTFUcPS8VoSkgNZw9",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Top Instructors"
+                                        }
+                                    },
+                                    {
+                                        "id": "q0hNtDAQieH9AzxIEmLOm",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-3xl font-bold sm:text-4xl",
+                                        "content": {
+                                            "innerText": "Meet Our Experts",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "6KRgZgKoHIwKPOya20lhG",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "They efficiently serve large number of students on our platform"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "jIziXRspLid5uVmq12Uoh",
+                                "name": "Dynamic Wrapper",
+                                "type": "dynamicWrapper",
+                                "styles": [],
+                                "className": null,
+                                "content": {
+                                    "componentRef": "top-instructors-carousel-1",
+                                    "api": "api/collections/instructors/top",
+                                    "apiMethod": "GET",
+                                    "apiParams": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "n2sypyxBuph-t4vxaxek3",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "overflow-hidden py-20",
+                "content": [
+                    {
+                        "id": "_iQF3LzggiE-EfV_anbeS",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "CJoH3OOmrCmAgGob1sXb7",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 grid grid-cols-1 gap-7 md:grid-cols-2",
+                                "content": [
+                                    {
+                                        "id": "sXH-UDOkmHpqpKZX88nC-",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "md:max-w-lg",
+                                        "content": [
+                                            {
+                                                "id": "wA1ntF1Qw6_QE_pnVxNfr",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-1 font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "FAQ"
+                                                }
+                                            },
+                                            {
+                                                "id": "oxE0srglAvgITUMT3YGdU",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                                "content": {
+                                                    "innerText": "Frequently Asked Questions!",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "JvvMd71iIFwEfPVFa_iIW",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "These are the most popular courses among listen courses learners worldwide these are the most popular courses among listen"
+                                                }
+                                            },
+                                            {
+                                                "id": "h1wjEOT_XJl1677MccXkg",
+                                                "name": "Image",
+                                                "type": "image",
+                                                "styles": [],
+                                                "className": "mx-auto mt-6 max-w-[268px]",
+                                                "content": {
+                                                    "src": "/assets/images/intro/home-1/faqs.png",
+                                                    "alt": "Image"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "-BCokqEicx_IPQeX1mKed",
+                                        "name": "Accordion",
+                                        "type": "accordion",
+                                        "styles": [],
+                                        "className": "w-full space-y-4",
+                                        "content": [
+                                            {
+                                                "id": "pSAZl1kK0fjQwus_pnn6A",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "EKib_TeLG1TY87VzbWTEy",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "pe7PHswIBjuHuE2nfiK3s",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-lg font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Do I need any prior experience to take your courses?"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "RL-Xx5T8ww_XWNopKzvRZ",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "text-foreground h-5 w-5",
+                                                                "content": {
+                                                                    "icon": "chevron-down"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "uzCecCse7EF7KQ-uXHr4Q",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "YAcAOyXh5NQm35JhNFVHP",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Not at all! My courses are designed for learners of all levels. Whether you're a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "4pK10wicmCiem2TqwLENl",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "LiJt2O24SxlgutyZqeHM6",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "adEl896ckoLKJKp64xhui",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-lg font-semibold",
+                                                                "content": {
+                                                                    "innerText": "How long do I have access to the course materials"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "vAuShYkVlAmQquAsWDUJv",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "text-foreground h-5 w-5",
+                                                                "content": {
+                                                                    "icon": "chevron-down"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "2o9VZ-iJbvgvcqsdA6t7-",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "JKXMQfXMkfNnLH1zm-BCH",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Once enrolled, you have lifetime access to all course materials. You can learn at your own pace and revisit content whenever you need a refresher."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "F9Hed7tIYhooOGGXOclbV",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "MbjsigMQ1gB3ASS6AF_7Q",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "du46P7YNZ3I63lw79JNYs",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-lg font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Will I get a certificate after completing a course?"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "7FnmOA5jPuT7UtcoJHI0-",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "text-foreground h-5 w-5",
+                                                                "content": {
+                                                                    "icon": "chevron-down"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "4F3BpHpLapWG8I-CTnepz",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "7CVJP5cSpKhBlBf8pYyGo",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Yes! Upon successful completion of a course, you'll receive a certificate of completion that you can share on your LinkedIn profile or include in your portfolio."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "7iRf8m8giiCH7Frrvft66",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "3uC_nnz5CFI9Ofd9VHFHE",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "1Wt06Ly_TVlqS_67iOMwn",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-lg font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Can I ask questions or get support during the course?"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "44VJAPWjWDytzqo3tXy8D",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "text-foreground h-5 w-5",
+                                                                "content": {
+                                                                    "icon": "chevron-down"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "3MBVVUiIUXpsX0zBnc_Cv",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "oBXd280ZbJ0py--kpiMh7",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Absolutely! Each course includes a discussion section where you can ask questions, share insights, and connect with other learners. I personally monitor and respond to questions."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "kJ2dJazRohMX8U1CMAXt2",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "S06C1UU48_U3ic_XRU2LS",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "ALku24IA-iayzQKNw7JDi",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-lg font-semibold",
+                                                                "content": {
+                                                                    "innerText": "What if I'm not satisfied with the course?"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "2g4_xTlG6IOo2CyJExWT1",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "text-foreground h-5 w-5",
+                                                                "content": {
+                                                                    "icon": "chevron-down"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "KXBu_7QxPa1RwB1cTmSAL",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "sLPlTqnsi0XNOByCGPO17",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "I offer a 30-day money-back guarantee. If you're not completely satisfied with your purchase, you can request a full refund within 30 days of enrollment."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "oIgp-qTcNyr51FrYyOhNH",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -top-100 -left-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                "content": []
+                            },
+                            {
+                                "id": "iHxF7JIIUpwEVILMVJz40",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute top-1/2 -right-100 h-[1200px] w-[1200px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Amzch7tNn6D5xmyV2YFfe",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": null,
+                "content": [
+                    {
+                        "id": "lf5g56JI8_jGUg6Iky4xk",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 z-10 py-20",
+                        "content": [
+                            {
+                                "id": "kEcdl007yOIWRSh3K0paZ",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto text-center md:max-w-2xl",
+                                "content": [
+                                    {
+                                        "id": "-FCnJrcRQngKpfyb_TbyL",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Blogs"
+                                        }
+                                    },
+                                    {
+                                        "id": "Z_LsNs-9htRXR7toPVnrM",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-3xl font-bold sm:text-4xl",
+                                        "content": {
+                                            "innerText": "Our Latest Post",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "EVuTq2V8mXQ6QPkLCuAFr",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "These are the most popular courses among listen courses learners worldwide"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Lo2box0zD5i8GFOEe36B3",
+                                "name": "Dynamic Wrapper",
+                                "type": "dynamicWrapper",
+                                "styles": [],
+                                "className": null,
+                                "content": {
+                                    "componentRef": "new-blogs-carousel",
+                                    "api": "api/collections/blogs/new",
+                                    "apiMethod": "GET",
+                                    "apiParams": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "zg1gdEkwmuctGxkLJMDYg",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "bg-secondary-100er py-20",
+                "content": [
+                    {
+                        "id": "srqfv3AWetA1pvWhOMlWp",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 rounded-4xl bg-[rgba(0,114,98,1)]",
+                        "content": [
+                            {
+                                "id": "Jrm-mD1t0jgMnV1hYKnBk",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "space-y-5 bg-[url('/assets/images/intro/home-1/cta-bg-vector.png')] bg-cover bg-center px-6 py-14 text-center text-white",
+                                "content": [
+                                    {
+                                        "id": "4uxESazfSuxofixx51M1o",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-2xl leading-tight font-bold md:text-3xl md:leading-9",
+                                        "content": {
+                                            "innerText": "Subscribe Our Newsletter",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "6E2pubSfJI-WxVmnGNl1B",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "mx-auto w-full max-w-[420px] text-center",
+                                        "content": [
+                                            {
+                                                "id": "clLfzwKUTSINfqlG-tOZv",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-3",
+                                                "content": {
+                                                    "innerText": "Subscribe to our newsletter to get the latest news and updates. We will not spam you."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "4ize0T0LKGdS3BHUURBCl",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center justify-center",
+                                        "content": [
+                                            {
+                                                "id": "EWeLBZMAmdraEKVLGYh9s",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background *:data-[slot=avatar]:grayscale",
+                                                "content": [
+                                                    {
+                                                        "id": "ONPuOBeuxwyf_1_IKQo_f",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-1.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "-RO6X-Pe39qGuFOZs7v9p",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-2.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "3giDzDNDspMyqzTQGPudn",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-3.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "3b6e-l_v2nS7zjKt41dlP",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-4.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "q4rmeNU3rKgK7rjDYqVeo",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-5.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "jTYFhqECmxhlZJOlMvqlw",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "!h-8 !w-8 rounded-full",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-6.png",
+                                                            "alt": "Image"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "WOWQSnJU4EPFZIKnLg1oT",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "font-medium",
+                                                "content": {
+                                                    "innerText": "+2000 readers worldwide"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

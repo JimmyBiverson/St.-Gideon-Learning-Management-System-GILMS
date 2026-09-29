@@ -1,0 +1,1 @@
+import{t as e}from"./instructors-table-columns-B7bllLlE.js";export{e as default};

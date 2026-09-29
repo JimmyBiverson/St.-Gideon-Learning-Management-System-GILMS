@@ -1,0 +1,12 @@
+{
+   "Blog": true,
+   "Course": true,
+   "Installer": true,
+   "Language": true,
+   "Frontend": true,
+   "Billing": true,
+   "Maintenance": true,
+   "Exam": true,
+   "Certification": true,
+   "Store": true
+}

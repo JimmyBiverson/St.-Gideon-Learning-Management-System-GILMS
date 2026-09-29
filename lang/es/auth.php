@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'google_auth_settings' => 'Configuración de Google Auth',
+    'google_auth_description' => 'Descripción de Google Auth',
+    'failed' => 'Estas credenciales no coinciden con nuestros registros.',
+    'password' => 'La contraseña proporcionada es incorrecta.',
+    'throttle' => 'Demasiados intentos de inicio de sesión. Inténtalo de nuevo en :seconds segundos.',
+    'login_title' => 'Inicia sesión en tu cuenta',
+    'login_description' => 'Ingresa tu correo electrónico y contraseña para iniciar sesión',
+    'forgot_password' => 'Olvidé mi Contraseña',
+    'continue_with' => 'O continuar con',
+    'no_account' => '¿No tienes una cuenta?',
+    'google_auth' => 'Google Auth',
+    'register_title' => 'Crear una cuenta',
+    'register_description' => 'Ingresa tus datos a continuación para crear tu cuenta',
+    'have_account' => '¿Ya tienes una cuenta?',
+    'forgot_description' => 'Ingresa tu correo electrónico para recibir un enlace de restablecimiento de contraseña',
+    'return_to_login' => 'O, regresar a',
+    'reset_title' => 'Restablecer contraseña',
+    'reset_description' => 'Por favor, ingresa tu nueva contraseña a continuación',
+    'confirm_title' => 'Confirma tu contraseña',
+    'confirm_description' => 'Esta es un área segura de la aplicación. Por favor, confirma tu contraseña antes de continuar.',
+    'change_email' => 'Cambiar Correo Electrónico',
+    'verify_title' => 'Verificar correo electrónico',
+    'verify_description' => 'Por favor, verifica tu dirección de correo electrónico haciendo clic en el enlace que te acabamos de enviar.',
+    'verification_sent' => 'Se ha enviado un nuevo enlace de verificación a la dirección de correo electrónico que proporcionaste durante el registro.',
+];

@@ -1,0 +1,1 @@
+import{t as e}from"./instructor-DI0jDJNN.js";export{e as default};

@@ -1,0 +1,1 @@
+import{t as e}from"./courses-table-columns-C5t3k7D1.js";export{e as default};

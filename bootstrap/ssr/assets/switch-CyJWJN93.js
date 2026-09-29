@@ -1,0 +1,1 @@
+import{t as e}from"./switch-CSJsRULP.js";import{jsx as t}from"react/jsx-runtime";var n=({children:n,...r})=>t(e,{dir:`ltr`,...r,className:`cursor-pointer`});export{n as t};

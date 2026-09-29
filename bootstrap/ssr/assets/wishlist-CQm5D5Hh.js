@@ -1,0 +1,1 @@
+import{t as e}from"./wishlist-BaZayLfC.js";export{e as default};

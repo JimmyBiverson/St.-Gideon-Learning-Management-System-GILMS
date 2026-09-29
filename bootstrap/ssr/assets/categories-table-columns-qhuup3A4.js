@@ -1,0 +1,1 @@
+import{t as e}from"./categories-table-columns-Cn7-3LUd.js";export{e as default};

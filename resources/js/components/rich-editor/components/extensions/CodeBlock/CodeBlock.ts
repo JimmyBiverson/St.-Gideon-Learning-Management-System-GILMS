@@ -1,0 +1,94 @@
+import type { CodeBlockLowlightOptions } from '@tiptap/extension-code-block-lowlight';
+import { CodeBlockLowlight as TiptapCodeBlockLowlight } from '@tiptap/extension-code-block-lowlight';
+import type { ExtendedRegExpMatchArray } from '@tiptap/react';
+import { isNodeActive, textblockTypeInputRule } from '@tiptap/react';
+import plaintext from 'highlight.js/lib/languages/plaintext';
+import { createLowlight } from 'lowlight';
+import { CODE_BLOCK_LANGUAGUE_SYNTAX_DEFAULT } from '@/components/rich-editor/constants/code-languages';
+import { findLanguage, loadLanguage } from '../../../lib/codeLanguageLoader';
+import { LowlightPlugin } from './lowlight-plugin';
+
+export const backtickInputRegex = /^```([a-z]+)?[\s\n]$/;
+export const tildeInputRegex = /^~~~([a-z]+)?[\s\n]$/;
+
+const lowlight = createLowlight();
+lowlight.register('plaintext', plaintext);
+
+export const CodeBlock = TiptapCodeBlockLowlight.extend({
+   addOptions() {
+      return {
+         ...this.parent?.(),
+         lowlight,
+         languageClassPrefix: 'language-',
+         defaultLanguage: CODE_BLOCK_LANGUAGUE_SYNTAX_DEFAULT,
+      } as CodeBlockLowlightOptions;
+   },
+
+   addInputRules() {
+      const findAndLoadLanguage = (match: ExtendedRegExpMatchArray) => {
+         const language = findLanguage(match[1]);
+         const syntax = language?.syntax || CODE_BLOCK_LANGUAGUE_SYNTAX_DEFAULT;
+         loadLanguage(syntax, lowlight);
+
+         return { language: syntax };
+      };
+
+      return [
+         textblockTypeInputRule({
+            find: backtickInputRegex,
+            type: this.type,
+            getAttributes: findAndLoadLanguage,
+         }),
+         textblockTypeInputRule({
+            find: tildeInputRegex,
+            type: this.type,
+            getAttributes: findAndLoadLanguage,
+         }),
+      ];
+   },
+
+   addProseMirrorPlugins() {
+      return [
+         LowlightPlugin({
+            lowlight,
+            name: this.name,
+            defaultLanguage: CODE_BLOCK_LANGUAGUE_SYNTAX_DEFAULT,
+         }),
+      ];
+   },
+
+   //   renderHTML({ node }) {
+   //     return [
+   //       "pre",
+   //       {
+   //         "data-language": node.attrs.language ?? null,
+   //       },
+   //       [
+   //         "code",
+   //         //   {
+   //         //     "data-language": node.attrs.language ?? null,
+   //         //   },
+   //         0,
+   //       ],
+   //     ];
+   //   },
+
+   addKeyboardShortcuts() {
+      return {
+         ...this.parent?.(),
+         Tab: ({ editor }) => {
+            const { state, view } = editor;
+
+            if (isNodeActive(editor.state, this.type)) {
+               view.dispatch(state.tr.insertText('\t'));
+
+               return true;
+            }
+
+            return false;
+         },
+      };
+   },
+}).configure({
+   lowlight,
+});

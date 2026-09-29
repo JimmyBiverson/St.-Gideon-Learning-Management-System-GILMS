@@ -1,0 +1,1 @@
+import{useEffect as e,useState as t}from"react";function n(n){let[r,i]=t(0);return e(()=>{if(!n)return;let e=()=>i(n.selectedScrollSnap());return n.on(`select`,e),()=>{n.off(`select`,e)}},[n]),r}export{n as t};

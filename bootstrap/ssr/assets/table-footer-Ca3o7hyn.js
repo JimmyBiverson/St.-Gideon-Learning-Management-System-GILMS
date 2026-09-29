@@ -1,0 +1,1 @@
+import{t as e}from"./table-footer-C1xHrS91.js";export{e as default};

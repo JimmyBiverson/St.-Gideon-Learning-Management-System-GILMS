@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M8 3v3a2 2 0 0 1-2 2H3`,key:`hohbtr`}],[`path`,{d:`M21 8h-3a2 2 0 0 1-2-2V3`,key:`5jw1f3`}],[`path`,{d:`M3 16h3a2 2 0 0 1 2 2v3`,key:`198tvr`}],[`path`,{d:`M16 21v-3a2 2 0 0 1 2-2h3`,key:`ph8mxp`}]],i=t(`Minimize`,r);export{n,i as t};

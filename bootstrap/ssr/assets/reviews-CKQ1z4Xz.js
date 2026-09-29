@@ -1,0 +1,1 @@
+import{t as e}from"./reviews-CHgxH_fA.js";export{e as default};

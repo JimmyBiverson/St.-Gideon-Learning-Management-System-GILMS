@@ -1,0 +1,1 @@
+import{useCallback as e,useEffect as t,useRef as n}from"react";function r(e){e.current!==null&&(clearTimeout(e.current),e.current=null)}function i(e,t,n=0){r(e),e.current=setTimeout(()=>{e.current=null,t()},n)}function a(a=0){let o=n(null);t(()=>()=>{r(o)},[]);let s=e(()=>{r(o)},[]);return{runDeferred:e(e=>{i(o,e,a)},[a]),cancel:s}}export{a as t};

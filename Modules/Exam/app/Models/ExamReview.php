@@ -1,0 +1,41 @@
+<?php
+
+namespace Modules\Exam\Models;
+
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+/**
+ * @property int $id
+ * @property int $user_id
+ * @property int $exam_id
+ * @property float $rating
+ * @property string|null $review
+ */
+class ExamReview extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'exam_id',
+        'rating',
+        'review',
+    ];
+
+    protected $casts = [
+        'rating' => 'integer',
+    ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function exam(): BelongsTo
+    {
+        return $this->belongsTo(Exam::class);
+    }
+}

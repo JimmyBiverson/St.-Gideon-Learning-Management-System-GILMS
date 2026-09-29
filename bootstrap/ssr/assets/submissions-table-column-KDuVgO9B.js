@@ -1,0 +1,1 @@
+import{t as e}from"./submissions-table-column-ClSr4fAo.js";export{e as default};

@@ -1,0 +1,1 @@
+import{t as e}from"./partners-eoxJZM5X.js";export{e as default};

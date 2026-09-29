@@ -1,0 +1,1 @@
+import{t as e}from"./new-courses-BCS0EHSp.js";export{e as default};

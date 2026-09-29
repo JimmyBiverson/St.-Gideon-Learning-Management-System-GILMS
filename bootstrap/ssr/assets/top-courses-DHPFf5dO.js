@@ -1,0 +1,1 @@
+import{t as e}from"./top-courses-DhYD0Hb1.js";export{e as default};

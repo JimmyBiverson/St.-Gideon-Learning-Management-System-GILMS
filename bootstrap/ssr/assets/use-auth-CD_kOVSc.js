@@ -1,0 +1,1 @@
+import{usePage as e}from"@inertiajs/react";function t(){let{props:t}=e(),{auth:n}=t;return{user:n?.user,isAdmin:n?.user?.role===`admin`,isStudent:n?.user?.role===`student`,isInstructor:n?.user?.role===`instructor`,isLoggedIn:!!n?.user}}export{t};

@@ -1,0 +1,1 @@
+import{useSyncExternalStore as e}from"react";var t=typeof window>`u`?void 0:window.matchMedia(`(max-width: 767px)`);function n(e){return t?(t.addEventListener(`change`,e),()=>{t.removeEventListener(`change`,e)}):()=>{}}function r(){return t?.matches??!1}function i(){return!1}function a(){return e(n,r,i)}export{a as t};

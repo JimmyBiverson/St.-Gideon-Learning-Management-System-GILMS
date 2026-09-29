@@ -1,0 +1,1 @@
+import{t as e}from"./course-update-header-BGh3ByuT.js";export{e as default};

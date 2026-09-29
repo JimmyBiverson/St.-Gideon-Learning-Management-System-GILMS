@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M21 12H9`,key:`dn1m92`}],[`path`,{d:`M21 18H7`,key:`1ygte8`}],[`path`,{d:`M21 6H3`,key:`1jwq7v`}]],i=t(`AlignRight`,r);export{n,i as t};

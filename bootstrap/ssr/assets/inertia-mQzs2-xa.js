@@ -1,0 +1,1 @@
+var e=(e,t,n)=>{let r=e.target;if(r.type===`file`){let e=r.files;e&&e[0]&&(t(r.name,e[0]),n?.(URL.createObjectURL(e[0])))}else t(r.name,r.value)},t=(e,t)=>{let n=e.target;if(n.type===`file`){let e=n.files;e&&e[0]&&t(URL.createObjectURL(e[0]))}};export{e as n,t};

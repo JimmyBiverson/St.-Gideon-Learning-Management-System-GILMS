@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`m3 16 4 4 4-4`,key:`1co6wj`}],[`path`,{d:`M7 20V4`,key:`1yoxec`}],[`path`,{d:`m21 8-4-4-4 4`,key:`1c9v7m`}],[`path`,{d:`M17 4v16`,key:`7dpous`}]],i=t(`ArrowDownUp`,r);export{n,i as t};

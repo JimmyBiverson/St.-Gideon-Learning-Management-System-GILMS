@@ -1,0 +1,40 @@
+<?php
+
+namespace Modules\Exam\Models;
+
+use App\Models\BaseModel;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+class ExamOutcome extends BaseModel
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'exam_id',
+        'outcome',
+        'sort',
+    ];
+
+    protected $casts = [
+        'sort' => 'integer',
+    ];
+
+    /**
+     * Boot the model and set up event listeners
+     */
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($model) {
+            $maxSort = self::max('sort');
+            $model->sort = $maxSort ? (int) $maxSort + 1 : 1;
+        });
+    }
+
+    public function exam(): BelongsTo
+    {
+        return $this->belongsTo(Exam::class);
+    }
+}

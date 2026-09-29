@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`polyline`,{points:`4 7 4 4 20 4 20 7`,key:`1nosan`}],[`line`,{x1:`9`,x2:`15`,y1:`20`,y2:`20`,key:`swin9y`}],[`line`,{x1:`12`,x2:`12`,y1:`4`,y2:`20`,key:`1tx1rr`}]],i=t(`Type`,r);export{n,i as t};

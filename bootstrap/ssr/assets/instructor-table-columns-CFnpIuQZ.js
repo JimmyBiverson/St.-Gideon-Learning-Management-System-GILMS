@@ -1,0 +1,1 @@
+import{t as e}from"./instructor-table-columns-BFr-2f-O.js";export{e as default};

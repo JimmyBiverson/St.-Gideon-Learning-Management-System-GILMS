@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`polyline`,{points:`22 17 13.5 8.5 8.5 13.5 2 7`,key:`1r2t7k`}],[`polyline`,{points:`16 17 22 17 22 11`,key:`11uiuu`}]],i=t(`TrendingDown`,r);export{n,i as t};

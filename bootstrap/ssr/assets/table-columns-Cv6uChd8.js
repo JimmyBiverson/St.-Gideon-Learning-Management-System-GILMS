@@ -1,0 +1,1 @@
+import{t as e}from"./table-columns-CUpK9yiD.js";export{e as default};

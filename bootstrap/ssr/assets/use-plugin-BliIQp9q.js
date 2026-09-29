@@ -1,0 +1,1 @@
+import{t as e}from"./plugin-BAz9LK90.js";import{usePage as t}from"@inertiajs/react";function n(n){let{props:r}=t(),{pluginStatuses:i}=r;return e(i,n)}export{n as t};

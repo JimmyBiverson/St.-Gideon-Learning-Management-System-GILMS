@@ -1,0 +1,1 @@
+import{t as e}from"./new-courses-CXPyMhdA.js";export{e as default};

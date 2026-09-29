@@ -1,0 +1,1 @@
+import{t as e}from"./top-courses-B1xl7LPP.js";export{e as default};

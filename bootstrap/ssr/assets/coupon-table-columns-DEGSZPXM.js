@@ -1,0 +1,1 @@
+import{t as e}from"./coupon-table-columns-CHjnkUBk.js";export{e as default};

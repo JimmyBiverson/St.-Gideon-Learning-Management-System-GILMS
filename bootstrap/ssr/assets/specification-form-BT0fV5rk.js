@@ -1,0 +1,1 @@
+import{t as e}from"./specification-form-CuqVmL0K.js";export{e as default};

@@ -1,0 +1,135 @@
+services:
+   php:
+      image: mentor-lms-php:latest
+      env_file:
+         - ./docker.env
+      expose:
+         - '9000'
+      volumes:
+         - ./:/var/www/html:delegated
+         - logs:/var/log/php
+      depends_on:
+         mysql:
+            condition: service_healthy
+         redis:
+            condition: service_started
+
+   mysql:
+      image: mysql:8.0
+      env_file:
+         - ./docker/env/mysql.env
+      command: --default-authentication-plugin=mysql_native_password
+      ports:
+         - '3307:3306'
+      volumes:
+         - mysql_data:/var/lib/mysql
+      healthcheck:
+         test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost']
+         interval: 10s
+         timeout: 5s
+         retries: 5
+         start_period: 30s
+   # Apache Web Server (commented out - using Nginx instead)
+   # apache:
+   #   build:
+   #     context: .
+   #     dockerfile: docker/dockerfiles/apache.dockerfile
+   #   ports:
+   #     - '8000:80'
+   #   volumes:
+   #     - ./:/var/www/html
+   #   depends_on:
+   #     php:
+   #       condition: service_started
+   #     mysql:
+   #       condition: service_healthy
+
+   # Nginx Web Server (active)
+   nginx:
+      image: mentor-lms-nginx:latest
+      ports:
+         - '8000:80'
+      volumes:
+         - ./:/var/www/html
+         - logs:/var/log/nginx
+      depends_on:
+         php:
+            condition: service_started
+         mysql:
+            condition: service_healthy
+
+   redis:
+      image: redis:7-alpine
+      ports:
+         - '6379:6379'
+
+   mailhog:
+      image: mailhog/mailhog
+      ports:
+         - '1025:1025'
+         - '8025:8025'
+
+   phpmyadmin:
+      image: phpmyadmin:latest
+      container_name: mentor-lms-phpmyadmin
+      ports:
+         - '8080:80'
+      environment:
+         PMA_HOST: mysql
+         PMA_PORT: 3306
+         PMA_USER: root
+         PMA_PASSWORD: secret
+      depends_on:
+         mysql:
+            condition: service_healthy
+
+   # Tool services (uncomment when needed)
+   # Note: profiles require docker-compose >= 1.28.0
+   # To use these services, uncomment them and run:
+   # docker-compose run --rm composer install
+   # docker-compose run --rm artisan migrate
+   # docker-compose run --rm npm install
+
+   composer:
+      build:
+        context: .
+        dockerfile: docker/dockerfiles/composer.dockerfile
+      env_file:
+        - ./docker.env
+      volumes:
+        - ./:/var/www/html
+
+   # artisan:
+   #   build:
+   #     context: .
+   #     dockerfile: docker/dockerfiles/php.dockerfile
+   #   env_file:
+   #     - ./docker.env
+   #   volumes:
+   #     - ./:/var/www/html
+   #   entrypoint: ['php', '/var/www/html/artisan']
+   #   depends_on:
+   #     mysql:
+   #       condition: service_healthy
+   #     redis:
+   #       condition: service_started
+
+   # npm:
+   #   image: node:20-alpine
+   #   working_dir: /var/www/html
+   #   entrypoint: ['npm']
+   #   volumes:
+   #     - ./:/var/www/html
+
+   # vite:
+   #   image: node:20-alpine
+   #   working_dir: /var/www/html
+   #   command: ['npm', 'run', 'dev', '--', '--host', '0.0.0.0', '--port', '5173']
+   #   ports:
+   #     - '5173:5173'
+   #   volumes:
+   #     - ./:/var/www/html
+
+volumes:
+   mysql_data:
+   logs:

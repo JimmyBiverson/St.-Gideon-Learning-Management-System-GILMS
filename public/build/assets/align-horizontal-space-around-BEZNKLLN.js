@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-z5H_xwo0.js";import{t}from"./createLucideIcon-Cx7X0SCC.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`rect`,{width:`6`,height:`10`,x:`9`,y:`7`,rx:`2`,key:`yn7j0q`}],[`path`,{d:`M4 22V2`,key:`tsjzd3`}],[`path`,{d:`M20 22V2`,key:`1bnhr8`}]],i=t(`AlignHorizontalSpaceAround`,r);export{n,i as t};

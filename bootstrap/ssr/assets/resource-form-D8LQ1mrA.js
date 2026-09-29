@@ -1,0 +1,1 @@
+import{t as e}from"./resource-form-BoSE0-qJ.js";export{e as default};

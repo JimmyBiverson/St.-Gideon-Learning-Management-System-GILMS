@@ -1,0 +1,748 @@
+[
+    {
+        "id": "omD3HIZTcphCyiOxxD_EZ",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "rEyP8sBdtdiP9EF7Epjh0",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "relative bg-[rgba(255,222,99,0.06)] pt-[212px] pb-[100px]",
+                "content": [
+                    {
+                        "id": "0sinU3IB0EaPXO7r-gOxF",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "aL2GzQih8lqoryxuapPht",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-center space-y-2",
+                                "content": [
+                                    {
+                                        "id": "_louFr-p-aLFkQoeDJQQ4",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-center text-4xl font-bold md:text-[44px]",
+                                        "content": {
+                                            "innerText": "Our Team",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "btL-Y3J7Lb_PiD-SWaux-",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center gap-1 text-muted-foreground",
+                                        "content": [
+                                            {
+                                                "id": "OqOlc5kCkKlD7RpUz6_g2",
+                                                "name": "Link",
+                                                "type": "link",
+                                                "styles": [],
+                                                "className": "flex items-center justify-center",
+                                                "content": [
+                                                    {
+                                                        "id": "eoq3VLqnwAdcgiQwxK0AO",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "text-foreground h-[18px] w-[18px]",
+                                                        "content": {
+                                                            "icon": "home"
+                                                        }
+                                                    }
+                                                ],
+                                                "htmlAttributes": {
+                                                    "href": "/",
+                                                    "type": "inertia"
+                                                }
+                                            },
+                                            {
+                                                "id": "xbhs0q1f8v5lguuVegOZu",
+                                                "name": "EditorIcon",
+                                                "type": "icon",
+                                                "styles": {
+                                                    "width": "24px",
+                                                    "height": "24px"
+                                                },
+                                                "className": "text-foreground h-[14px] w-[14px]",
+                                                "content": {
+                                                    "icon": "chevrons-right"
+                                                }
+                                            },
+                                            {
+                                                "id": "J5fOMpplP9D_C_OZRwge1",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-sm",
+                                                "content": {
+                                                    "innerText": "our-team"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "q7py7yfd7qlL8186KLIJX",
+                        "name": "Div",
+                        "type": "div",
+                        "styles": [],
+                        "className": "pointer-events-none absolute top-1/2 right-0 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                        "content": []
+                    }
+                ]
+            },
+            {
+                "id": "UenXNEkdaxxR3bNqwKjCx",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "w2Fg0YMSIIk1ceQiav8NE",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "os38VeK7B94vAVS3_1HVN",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto mb-10 max-w-lg text-center",
+                                "content": [
+                                    {
+                                        "id": "1mCJ9WvPJnIjxU_egeaiH",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-2 text-3xl font-bold sm:text-4xl",
+                                        "content": {
+                                            "innerText": "Meet Our Experts",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "KvE0IrluvU9uTw-762BdT",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "Our team is a group of passionate educators, developers, & designers who believe in the power of learning to change lives."
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3zEzkmvhGs-nGOfOiKhpL",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4",
+                                "content": [
+                                    {
+                                        "id": "jSh_73uIcU2k0A1eXu1Y1",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "orXN9YjmVReLD9K1h4zy1",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "xQRyPjWbIn1T-RMm8csQj",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "BkHhoXUKhs6rmlyqYKB2h",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-1.jpg",
+                                                                    "alt": "Sarah Johnson"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "OyxPzkxiSQM9QtL0EsS-6",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "LjQ1zOf_dUl1jgnCeXnO6",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Sarah Johnson",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "KXwafot8JDKShTJzLT8XV",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Lead Instructor"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/1",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "XzrCVa4DbqJmMIwyxohjr",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "g5ebY56WdsAOIYFhMxJ_W",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "1Qsu8ky-3g7lIw7dF5gZv",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "trIYvniEoYR57JXxh2iOg",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-2.jpg",
+                                                                    "alt": "Michael Chen"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "9J1KTinly-ZCFBYf1Ug5n",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "i6mDHnE_l_Z6voBi8JD8_",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Michael Chen",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "DGD6UCinx58NMx1BQQks7",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Course Designer"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/2",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "I9dZQAIsKh-ivHNnC_RyK",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "wbBxY7ID0UThPoXBmkA33",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "WPJhoXF1YIu8QePctQMHf",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "X7ga-DIjso6AfcU332fLG",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-3.jpg",
+                                                                    "alt": "Emily Rodriguez"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "3BZFNaruMjbSygWRQYYUx",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "0HeUBAK8LPyCtyqfZHZe4",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Emily Rodriguez",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "qr0kHA-aKIdCMNWbLQX7R",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Learning Experience Manager"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/3",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "95wW-KL6DOcNAS5cYbpxv",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "4Wu88PFG7-4ybkzWgIELF",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "UXdkibKKwKfCNpcuMXXmV",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "3Ybj0-NwtH1DHldwYJ7Ez",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-4.jpg",
+                                                                    "alt": "David Thompson"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "if3lSHHr4eNErk4y4Ep2y",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "RWxCgTp5dnm4fCnvuQZn7",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "David Thompson",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "itmh3QhTCbYRemy11S0Ah",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Technology Director"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/4",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "BLg8j-bAXSIJk1nxCndf7",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "agNoQ_a5ECH1FI4PirmcV",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "k6U_nycOf4_jSvgA3gwdh",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "QF_V73W51bBdhfq8vPGP0",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-5.jpg",
+                                                                    "alt": "Lisa Wang"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "MX9dQB_dxFEjXUs30y2eq",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "aZymghje9cbnCdkERQ9ub",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Lisa Wang",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "jPZEV2HvVrRsnZFhxFfg9",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Student Success Coordinator"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/5",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "pAaa67wiyAaaKTO6vRlkJ",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "rUDOHJACWUOvJJSx_MQnk",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "TqH8MZf1mSCHwlfg9pDx5",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "mvZpIjFz8Bi2PI7AzCm6q",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-6.jpg",
+                                                                    "alt": "James Miller"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "lGctjk5maQJBGkYg3ghv-",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "dDjI3mEtVV0Cc-HAwHjL7",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "James Miller",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "E8c_Iwy7JbaZK01n0OI0o",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Content Strategist"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/6",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "vvmaxlzvUFvvOyxRYQxGH",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "0Be5dkpB8GCjiX-WtbPe_",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "7wd-yTNUk6G9tXoT8-MNf",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "FbqB6hnSXM3-A54bJ7Z6U",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-7.jpg",
+                                                                    "alt": "Amanda Davis"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "nhZFu00GtzL_w4O0efxnt",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "qmiME86kpJSeB7hn0aKcq",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Amanda Davis",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "bJqJCXbKBlEfJyFpcBv9e",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Quality Assurance Lead"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/7",
+                                            "type": "inertia"
+                                        }
+                                    },
+                                    {
+                                        "id": "5mscNNfNEHZnE2nsEH0uV",
+                                        "name": "Link",
+                                        "type": "link",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "ct1eYZgN5NuHBpPGvB34l",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "group rounded-2xl border bg-white p-3 shadow-sm transition-shadow hover:shadow-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "0ejZZlehozu6F2w2uPS-d",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "mb-4 h-[260px] overflow-hidden rounded-lg",
+                                                        "content": [
+                                                            {
+                                                                "id": "FiCFrL0vb-fKjEwHpsH1w",
+                                                                "name": "Image",
+                                                                "type": "image",
+                                                                "styles": [],
+                                                                "className": "h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105",
+                                                                "content": {
+                                                                    "src": "/assets/images/users/user-8.jpg",
+                                                                    "alt": "Robert Kim"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "A2HA5MjXjyECZaFdQBzlH",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "text-center",
+                                                        "content": [
+                                                            {
+                                                                "id": "fXxel5Ttw07rZyF9fjs8-",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "Robert Kim",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "-Xw6xjzMotyvOqbk5UHNj",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Community Manager"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "htmlAttributes": {
+                                            "href": "/instructors/8",
+                                            "type": "inertia"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

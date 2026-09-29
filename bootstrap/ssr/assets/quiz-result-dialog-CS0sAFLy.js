@@ -1,0 +1,1 @@
+import{t as e}from"./quiz-result-dialog-DyX1thE6.js";export{e as default};

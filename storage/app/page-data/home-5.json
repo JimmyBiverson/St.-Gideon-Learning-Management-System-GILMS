@@ -1,0 +1,1791 @@
+[
+    {
+        "id": "7mEorF_16Sg8EIGGsYZ-C",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "ZauRXYEANCjAeOX76zksC",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "PU2LQUE500FSuXZxDxaKT",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "6TNEowbeCuyY1A5wj7NjT",
+                                "name": "Dynamic Wrapper",
+                                "type": "dynamicWrapper",
+                                "styles": [],
+                                "className": null,
+                                "content": {
+                                    "componentRef": "top-courses-1",
+                                    "api": "api/collections/courses/top",
+                                    "apiMethod": "GET",
+                                    "apiParams": []
+                                }
+                            },
+                            {
+                                "id": "nZz1eSEMeQ_ui7Kz8T8pB",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -bottom-100 -left-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                "content": []
+                            },
+                            {
+                                "id": "yon4gK5k9F5yijuKvv2Pt",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute -top-100 -right-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "QFOCQNaRLy1muhSmvf-v6",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "relative z-10 py-11",
+                "content": [
+                    {
+                        "id": "NIEFiFfcq9iSyUOZwnHxh",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "ObOyA9R52YKhnGb7wVrna",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "grid grid-cols-2 gap-20 rounded-lg border-none bg-[#004B50] p-10 text-white shadow-none md:grid-cols-4 md:flex-row md:gap-28 md:px-[120px]",
+                                "content": [
+                                    {
+                                        "id": "MhqU6bFnUFKZWqzCpar-X",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "Dg6UlMAEylKg8r1UJ3Jkt",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-4xl font-bold md:text-6xl",
+                                                "content": {
+                                                    "innerText": "64k",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "1YG6rQhPgh6XR2rt8-MPG",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-lg",
+                                                "content": {
+                                                    "innerText": "Users"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "ci4RONBwMBbVNn3HF4fSc",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "wzlLYiRvdriXBDLxs0g8R",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-4xl font-bold md:text-6xl",
+                                                "content": {
+                                                    "innerText": "45k",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "-LCdw8vUDGIR2oFC02b8t",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-lg",
+                                                "content": {
+                                                    "innerText": "Active Learners"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "vmc75egApQPh21_S3Nv8O",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "lfEFjJnMliegcGbO5ssca",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-4xl font-bold md:text-6xl",
+                                                "content": {
+                                                    "innerText": "32k",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "uYiPqB3Lu5Ylp19lmry7Q",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-lg",
+                                                "content": {
+                                                    "innerText": "Enrolled Courses"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "ysrAC4_zxSCzBoU0_XRLO",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": [
+                                            {
+                                                "id": "jn3B1BcBG21WRcF3Jthji",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "text-4xl font-bold md:text-6xl",
+                                                "content": {
+                                                    "innerText": "429k+",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "rMxnZABHw5-A6hWveHBPw",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-lg",
+                                                "content": {
+                                                    "innerText": "Course Completed"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "47kpF_y3A5BTSBM3qlpzZ",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "cL_VKVD8LowjbwIweHr33",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "vwV3L-yS8HYksBTPWeje4",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-between gap-10 md:flex-row",
+                                "content": [
+                                    {
+                                        "id": "9g7b7lbuCiHNRXc0UXuap",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "w-full md:max-w-[360px]",
+                                        "content": [
+                                            {
+                                                "id": "bHoCBYoXhqPKE-0EsPyWB",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-1 font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "Top Categories"
+                                                }
+                                            },
+                                            {
+                                                "id": "PUBTMVrsTDcVo2KwEgoRN",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                                "content": {
+                                                    "innerText": "Featured Categories",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "Nwe27pxSpmiS76FJ6NXF6",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "These are the most popular courses among listen courses learners worldwide these are the most popular courses among listen courses learners worldwide categories"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "3ymmn0Zu3-hPC1yRjVWXJ",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "z-10 w-full max-w-[800px]",
+                                        "content": [
+                                            {
+                                                "id": "YzxNbDrcMW7tbq98O6vS6",
+                                                "name": "Dynamic Wrapper",
+                                                "type": "dynamicWrapper",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": {
+                                                    "componentRef": "top-course-categories-6",
+                                                    "api": "api/collections/course_categories/top",
+                                                    "apiMethod": "GET",
+                                                    "apiParams": []
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "rhaXM7MZu0aHGtZx1RoR0",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute top-1/2 left-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-20 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "NdLxb21pX0Z9jNJrraV7e",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "WrnU7pgJV74P8tnMX11cZ",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "3o5tX6CjOD3DQ_BAT5c_n",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "grid grid-cols-1 items-end gap-20 md:grid-cols-2 md:gap-28",
+                                "content": [
+                                    {
+                                        "id": "DLewmVhz7cqsFXAg3cp_K",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative",
+                                        "content": [
+                                            {
+                                                "id": "6Lrmsk_9StDwOb-w-tXJn",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "relative z-10 mb-10",
+                                                "content": [
+                                                    {
+                                                        "id": "-LsfEg7KoxKLsxGMCEwdI",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                                        "content": {
+                                                            "innerText": "FEATURED COURSE"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "HWFhEGoHji1z4PuJUpRIz",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                                        "content": {
+                                                            "innerText": "HTML5 & CSS3: Complete Guide for Modern Web Development",
+                                                            "level": "h2"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "RwbRmwqPu_eTYUuh_kjbU",
+                                                "name": "Image",
+                                                "type": "image",
+                                                "styles": [],
+                                                "className": "relative z-10 w-full rounded-xl object-cover object-center",
+                                                "content": {
+                                                    "src": "/assets/images/courses/html-css-development.jpg",
+                                                    "alt": "Featured Course"
+                                                }
+                                            },
+                                            {
+                                                "id": "xuTCKQ2xHZnx-IzmQ7OPI",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "pointer-events-none absolute top-1/2 left-1/2 h-[1200px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                                "content": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "66VK-ulH5DNBXTZagQVt1",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative",
+                                        "content": [
+                                            {
+                                                "id": "LBRjHHVE6Ri1KkfUHIIuk",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "relative z-10 grid grid-cols-1 gap-7 pt-12 pb-7 sm:grid-cols-2",
+                                                "content": [
+                                                    {
+                                                        "id": "TPb4pqT_TDIScDg9a7KNs",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "rounded-lg border bg-background px-6 py-7 shadow-sm",
+                                                        "content": [
+                                                            {
+                                                                "id": "pPbgIlq3t7meWMVRnGgap",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "mb-2 font-bold sm:text-3xl",
+                                                                "content": {
+                                                                    "innerText": "12h 30m",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "3bFfwYpewbfewf9J1EPg4",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Course Duration"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "oOrBE2z_kkr-gisj-NATe",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "rounded-lg border bg-background px-6 py-7 shadow-sm",
+                                                        "content": [
+                                                            {
+                                                                "id": "vd_zCCyV_ztyKznB_jph8",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "mb-2 font-bold sm:text-3xl",
+                                                                "content": {
+                                                                    "innerText": "24",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "sF0Bayz_dfI8fqmLtCMJa",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Course Lessons"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "L3bHuQHW4a0kQwL0VfVFm",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "rounded-lg border bg-background px-6 py-7 shadow-sm",
+                                                        "content": [
+                                                            {
+                                                                "id": "qKv-7g9t8a-YRNu4a9wTX",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "mb-2 font-bold sm:text-3xl",
+                                                                "content": {
+                                                                    "innerText": "8",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "ysufgF13pzQo2UrFZTJcS",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Total Quizzes"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "bxSRfcOHSSPSrH-xR-9Rg",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "rounded-lg border bg-background px-6 py-7 shadow-sm",
+                                                        "content": [
+                                                            {
+                                                                "id": "vK0dAlJZYo4UaTQdhR_ry",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "mb-2 font-bold sm:text-3xl",
+                                                                "content": {
+                                                                    "innerText": "2.4k",
+                                                                    "level": "h2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "9alIIIRryx3U7KlwJFO44",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Enrolled Students"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "Rfq_DUbLbn8YY2mnIPK9p",
+                                                "name": "Link",
+                                                "type": "link",
+                                                "styles": [],
+                                                "className": "relative z-10 mt-10 cursor-pointer md:mt-14",
+                                                "content": [
+                                                    {
+                                                        "id": "tkuCbtEC1U-HI8ZDRDJ1K",
+                                                        "name": "Button",
+                                                        "type": "button",
+                                                        "styles": [],
+                                                        "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-zinc-900 text-zinc-50 hover:bg-zinc-900/90 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 cursor-pointer bg-linear-to-r from-[#00A67F] to-[#0077B6] px-6 py-3",
+                                                        "content": {
+                                                            "innerText": "Browse Courses",
+                                                            "buttonType": "button"
+                                                        }
+                                                    }
+                                                ],
+                                                "htmlAttributes": {
+                                                    "href": "/courses/all",
+                                                    "type": "inertia"
+                                                }
+                                            },
+                                            {
+                                                "id": "rFylFjMkm37cZCOpM74t3",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "pointer-events-none absolute -right-80 -bottom-80 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                                "content": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "emlidkjWInyRirUjbu2lP",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "xgZddc88BnjTs-oiytPNG",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "d5MQ-dp34htbbMuINx_sf",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto mb-10 max-w-lg text-center",
+                                "content": [
+                                    {
+                                        "id": "tzNwSgUyIHDoCvWemU0Kk",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Courses"
+                                        }
+                                    },
+                                    {
+                                        "id": "JO9-RFNYlara7Ml1inj5_",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                        "content": {
+                                            "innerText": "Latest Courses",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "8wGyzf078Tj0-aZcM4_W0",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "These are the most popular courses among listen courses learners worldwide these are the most popular courses among courses"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "ZUAkZY0jAyG56C4_4uLfj",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative",
+                                "content": [
+                                    {
+                                        "id": "XAv7nWGei0wCVxQp26uQY",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": null,
+                                        "content": {
+                                            "componentRef": "new-courses-1",
+                                            "api": "api/collections/courses/new",
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    },
+                                    {
+                                        "id": "1mQdp5Zo_u0npF4TvkXtV",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -bottom-100 -left-100 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                        "content": []
+                                    },
+                                    {
+                                        "id": "eRoucvqnf119OUMZPqWc0",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -top-100 -right-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "VB8pP2WsmqD0B-fnJF_kK",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "-SEniZn1AIUEWes3RK_a1",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "TarDphCS0i1Hla2ojuwsw",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto mb-10 w-full text-center md:max-w-lg",
+                                "content": [
+                                    {
+                                        "id": "5uP6mfzuD4GgVDiPtPOo9",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-2 text-3xl font-bold sm:text-4xl",
+                                        "content": {
+                                            "innerText": "Reasons to Learn with Me",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "dTC3oSSY806KPQxcLwLpg",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "These are the most popular courses among listen courses learners worldwide these are the most popular courses among listen"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "vNLwHq2XJLxMlPeX-LDw0",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto grid w-full max-w-[964px] grid-cols-1 gap-8 md:grid-cols-3",
+                                "content": [
+                                    {
+                                        "id": "h8AUeosoMxQPkEEm_HiN_",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "space-y-12",
+                                        "content": [
+                                            {
+                                                "id": "TSUFkyq5qXQWE-wNPlnI_",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "2Zm7rvIoXM0U2qU6Km_ks",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-10 w-10 rounded bg-background p-2 shadow-card-md",
+                                                        "content": [
+                                                            {
+                                                                "id": "B5FVFUYArCsdKtiff3QGk",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "h-6 w-6 text-secondary-foreground",
+                                                                "content": {
+                                                                    "icon": "graduation-cap"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "Z_FWLgR03AyAauc6v_J_z",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "pt-4 pb-2 font-semibold",
+                                                        "content": {
+                                                            "innerText": "10+ Years Experience",
+                                                            "level": "h3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "59Y2vPeedBPvrJBor-gje",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-sm text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "Every course includes real-world projects to help you build a strong, job-ready portfolio"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "bnCeEnQMqs7rAE-tLtC-S",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "cgegqY8RPc1seBhURVLO-",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-10 w-10 rounded bg-background p-2 shadow-card-md",
+                                                        "content": [
+                                                            {
+                                                                "id": "VSS5qeIAdSWTm9H58r0PJ",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "h-6 w-6 text-secondary-foreground",
+                                                                "content": {
+                                                                    "icon": "users"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "zHI-xKcPKpxkrzliuN6Aa",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "pt-4 pb-2 font-semibold",
+                                                        "content": {
+                                                            "innerText": "15k+ Students Taught",
+                                                            "level": "h3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "azjGE1-LdngmX-xLsjviW",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-sm text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "With over a decade of hands-on experience in web design and development, I bring practical insights you won\u2019t find in textbooks."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "Xu97V66V24rLdgHcidFlH",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "space-y-6 rounded-2xl border p-5 !shadow-card-hover",
+                                        "content": [
+                                            {
+                                                "id": "qpOmLWF0qbq1T1uYUvWLR",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "h-[190px] overflow-hidden rounded-lg",
+                                                "content": [
+                                                    {
+                                                        "id": "-o2o46AGfAFGD2qjMc2RK",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "w-full object-cover object-top",
+                                                        "content": {
+                                                            "src": "/assets/images/users/user-7.jpg",
+                                                            "alt": "John Doe"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "Lze4piOFeBGxRbq4PED_J",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "space-y-6",
+                                                "content": [
+                                                    {
+                                                        "id": "nz-Dqefc7DTSJ09HsJ1_m",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "space-y-2",
+                                                        "content": [
+                                                            {
+                                                                "id": "x21_EHP6icmj4fM11yrmo",
+                                                                "name": "Heading",
+                                                                "type": "heading",
+                                                                "styles": [],
+                                                                "className": "font-semibold",
+                                                                "content": {
+                                                                    "innerText": "John Doe",
+                                                                    "level": "h3"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "uv8KrD2Kms80czl1zYQG5",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Senior Design Instructor"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "6WZMGNxvkZ8RYVi0k15U5",
+                                                                "name": "Paragraph",
+                                                                "type": "paragraph",
+                                                                "styles": [],
+                                                                "className": "text-sm text-muted-foreground",
+                                                                "content": {
+                                                                    "innerText": "Passionate educator dedicated to helping students master modern design tools and techniques."
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "xWQzPNoO7eW3XC0XBPmjA",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "flex items-center gap-3 py-0",
+                                                        "content": [
+                                                            {
+                                                                "id": "ZgGNoWeSJHYttwYor7r24",
+                                                                "name": "Link",
+                                                                "type": "link",
+                                                                "styles": [],
+                                                                "className": "cursor-pointer",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "DB4_esasCziih9Ur8UP4w",
+                                                                        "name": "Div",
+                                                                        "type": "div",
+                                                                        "styles": [],
+                                                                        "className": "flex h-8 w-8 items-center justify-center rounded-lg bg-muted",
+                                                                        "content": [
+                                                                            {
+                                                                                "id": "06--_nPHY6ggD2HpU_uBG",
+                                                                                "name": "EditorIcon",
+                                                                                "type": "icon",
+                                                                                "styles": {
+                                                                                    "width": "24px",
+                                                                                    "height": "24px"
+                                                                                },
+                                                                                "className": "text-foreground h-4 w-4",
+                                                                                "content": {
+                                                                                    "icon": "facebook"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "htmlAttributes": {
+                                                                    "href": "https://facebook.com",
+                                                                    "type": "inertia"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "7wGUUKzM5Lwo0ZTrhnbA6",
+                                                                "name": "Link",
+                                                                "type": "link",
+                                                                "styles": [],
+                                                                "className": "cursor-pointer",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "ZSdTgPEi9261MP2lbsnx9",
+                                                                        "name": "Div",
+                                                                        "type": "div",
+                                                                        "styles": [],
+                                                                        "className": "flex h-8 w-8 items-center justify-center rounded-lg bg-muted",
+                                                                        "content": [
+                                                                            {
+                                                                                "id": "bLHBx9H-dyq3dZx_NeA_Z",
+                                                                                "name": "EditorIcon",
+                                                                                "type": "icon",
+                                                                                "styles": {
+                                                                                    "width": "24px",
+                                                                                    "height": "24px"
+                                                                                },
+                                                                                "className": "text-foreground h-4 w-4",
+                                                                                "content": {
+                                                                                    "icon": "twitter"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "htmlAttributes": {
+                                                                    "href": "https://twitter.com",
+                                                                    "type": "inertia"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "23JO5gBxVaoqBMvjRyPeQ",
+                                                                "name": "Link",
+                                                                "type": "link",
+                                                                "styles": [],
+                                                                "className": "cursor-pointer",
+                                                                "content": [
+                                                                    {
+                                                                        "id": "dvCc8V0OMko-imHeIwxEp",
+                                                                        "name": "Div",
+                                                                        "type": "div",
+                                                                        "styles": [],
+                                                                        "className": "flex h-8 w-8 items-center justify-center rounded-lg bg-muted",
+                                                                        "content": [
+                                                                            {
+                                                                                "id": "jO0txf5xdoqFSTMruWljh",
+                                                                                "name": "EditorIcon",
+                                                                                "type": "icon",
+                                                                                "styles": {
+                                                                                    "width": "24px",
+                                                                                    "height": "24px"
+                                                                                },
+                                                                                "className": "text-foreground h-4 w-4",
+                                                                                "content": {
+                                                                                    "icon": "linkedin"
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "htmlAttributes": {
+                                                                    "href": "https://linkedin.com",
+                                                                    "type": "inertia"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "qrWATnNLNvp3VNIQ-X6_q",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "space-y-12",
+                                        "content": [
+                                            {
+                                                "id": "d2xbfr_M7zFzWNuIxGoKT",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "PODjIdsAU074ctjniwDaw",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-10 w-10 rounded bg-background p-2 shadow-card-md",
+                                                        "content": [
+                                                            {
+                                                                "id": "Hbu4zBD18xEu_ab3SlmJt",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "h-6 w-6 text-secondary-foreground",
+                                                                "content": {
+                                                                    "icon": "award"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "9n49zu9sSqAX-whUlWzYg",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "pt-4 pb-2 font-semibold",
+                                                        "content": {
+                                                            "innerText": "Industry Recognition",
+                                                            "level": "h3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "iYdUyMZbB_Uo0BanZYtQm",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-sm text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "My lessons are designed to be simple, clear, and step-by-step \u2014 perfect for learners of all levels, especially beginners."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "xYQ84QEyZXGUVeFeg3ZHo",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": [
+                                                    {
+                                                        "id": "X0aI4rzKVCc6j-7BAlEAP",
+                                                        "name": "Div",
+                                                        "type": "div",
+                                                        "styles": [],
+                                                        "className": "h-10 w-10 rounded bg-background p-2 shadow-card-md",
+                                                        "content": [
+                                                            {
+                                                                "id": "zcT5-jtUz5H-XwsArNla8",
+                                                                "name": "EditorIcon",
+                                                                "type": "icon",
+                                                                "styles": {
+                                                                    "width": "24px",
+                                                                    "height": "24px"
+                                                                },
+                                                                "className": "h-6 w-6 text-secondary-foreground",
+                                                                "content": {
+                                                                    "icon": "star"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "1OgMcBtZBiV1oKmA7JdgW",
+                                                        "name": "Heading",
+                                                        "type": "heading",
+                                                        "styles": [],
+                                                        "className": "pt-4 pb-2 font-semibold",
+                                                        "content": {
+                                                            "innerText": "4.9 Rating",
+                                                            "level": "h3"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "SkYUMga9gXHj_tvjcQMic",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": "text-sm text-muted-foreground",
+                                                        "content": {
+                                                            "innerText": "You\u2019re never learning alone. I personally respond to questions and offer guidance to help you stay on track."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "1fnWdjB8eCPKYdvUyURuP",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "pointer-events-none absolute top-1/2 left-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-30 content-['']",
+                                "content": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ZDy0tUMlb8nxctijkH6Nl",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "eiDKvRP8S3AUcezDHD6r1",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "0X6eLszUVOEhDPBub5xzA",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto max-w-3xl",
+                                "content": [
+                                    {
+                                        "id": "xXK4s0wBl_JZVL4RbDD58",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "relative z-10 mx-auto mb-10 max-w-lg text-center",
+                                        "content": [
+                                            {
+                                                "id": "XUZi14HkAV8RkmLnf3i8n",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-1 font-medium text-secondary-foreground",
+                                                "content": {
+                                                    "innerText": "FAQs"
+                                                }
+                                            },
+                                            {
+                                                "id": "_t4dCEvVjNYZSdxs87-H7",
+                                                "name": "Heading",
+                                                "type": "heading",
+                                                "styles": [],
+                                                "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                                "content": {
+                                                    "innerText": "Frequently Asked Questions!",
+                                                    "level": "h2"
+                                                }
+                                            },
+                                            {
+                                                "id": "39H-Wzr8DfOHXuQvvslJm",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-muted-foreground",
+                                                "content": {
+                                                    "innerText": "Do you have any questions? We answered questions you may have."
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "5_IMb_09QK2C009s4XEMh",
+                                        "name": "Accordion",
+                                        "type": "accordion",
+                                        "styles": [],
+                                        "className": "w-full space-y-4",
+                                        "content": [
+                                            {
+                                                "id": "H9f9Lp4sEYb2eWY78Z46x",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "9vJ4x1GDawhgg6ARIjZJQ",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "QLOai0VP5Mrn21G3TOCHD",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Do I need any prior experience to take your courses?"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "1Sa_iR8v1IoxTSgNZUsnI",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "3-7Jt5MtikBu1T4VQg1C-",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Not at all! My courses are designed for learners of all levels. Whether you're a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "9Vt6ezjYlM2A6bUR_Lx1Q",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "o4tDMCYBR6J0m9dPaPy5J",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "oQoYKLCoWKlQV8jI3uVVa",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "How long do I have access to the course materials?"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "jL9O33wxLpuyZwQGUpnbh",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "udW3J7tptV_O8HXitriQX",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "You have lifetime access to all course materials. Once you enroll, you can learn at your own pace and revisit the content whenever you need a refresher."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "uPUOLZMu_HUrwQ-0sOZ5j",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "soB8v0C9PXg5JAZ2cBgLf",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "p0aRwUTN4TgRNUFRj07LC",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Will I get a certificate after completing a course?"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "kxha-xmH7fl8vtFfSyUqn",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "ZNmPXAE7iYooazmieahBP",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Yes! Upon successful completion of any course, you'll receive a certificate of completion that you can share on your professional profiles and with potential employers."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "nJF5X6Q5y0LIDSkEaQdG8",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "qBAYqke6PVmy1x8NqmGdz",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "0jo-ZeFOsgz6n7GOq6bQI",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Can I ask questions or get support during the course?"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "n8jOXiBkCdiKyOlJVpkNA",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "uYsw25O1LqFfXz6ScCDD_",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "Absolutely! Each course includes a discussion forum where you can ask questions, interact with other students, and receive support from instructors and the community."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "j8EPNwyWFHxCjQKM2ZP6m",
+                                                "name": "Accordion Item",
+                                                "type": "accordionItem",
+                                                "styles": {
+                                                    "width": null
+                                                },
+                                                "className": "border-border bg-background rounded-lg border shadow-sm",
+                                                "content": [
+                                                    {
+                                                        "id": "5_w2UUTvyj7uhqDpJO8sr",
+                                                        "name": "Accordion Trigger",
+                                                        "type": "accordionTrigger",
+                                                        "styles": [],
+                                                        "className": "flex flex-1 items-center justify-between p-4 transition-all cursor-pointer text-base font-semibold",
+                                                        "content": [
+                                                            {
+                                                                "id": "MZ67D9ud_tvv_iVpH_Ltq",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "What if I'm not satisfied with the course?"
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "id": "5cCi5ZqbHZ1rObWdj4Ysa",
+                                                        "name": "Accordion Content",
+                                                        "type": "accordionContent",
+                                                        "styles": [],
+                                                        "className": "p-4 pt-0 text-sm text-muted-foreground",
+                                                        "content": [
+                                                            {
+                                                                "id": "qH0v81ksT6DluvRSEBNHK",
+                                                                "name": "Span",
+                                                                "type": "span",
+                                                                "styles": [],
+                                                                "className": null,
+                                                                "content": {
+                                                                    "innerText": "We offer a 30-day money-back guarantee. If you're not completely satisfied with your purchase, you can request a full refund within 30 days of enrollment, no questions asked."
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "VFa-7k9dxkrJMD3wh-4I6",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "EUcrLTVNRSEKDzLTeo7YR",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "d_Mj4rFLTP2aqjkuS4hg1",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto max-w-lg text-center",
+                                "content": [
+                                    {
+                                        "id": "WT8ylVx315bqrxmt6iNYN",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Testimonials"
+                                        }
+                                    },
+                                    {
+                                        "id": "yOMG11WOfoXiHI1pKXVGX",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                        "content": {
+                                            "innerText": "What Our Students Say",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "wmPsXaexuaOqhdsfe1F3T",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "They efficiently serve large number of students on our platform"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "CeHVxp-QQJfCkMWt6eNu7",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative",
+                                "content": [
+                                    {
+                                        "id": "4BQWqFvNDVX68jnZCY1uY",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": "relative z-10",
+                                        "content": {
+                                            "componentRef": "top-testimonials-carousel-1",
+                                            "api": "api/collections/testimonials/top",
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    },
+                                    {
+                                        "id": "4sYU1-HRcmweP2B2bl7KO",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -top-80 -left-80 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                        "content": []
+                                    },
+                                    {
+                                        "id": "oDWCy4_BVyn-M_qTshByQ",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -right-100 -bottom-100 h-[1200px] w-[1200px] rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "b5xhHbRQXlAYGC1K3G5gn",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "bg-[#004B50] py-[120px]",
+                "content": [
+                    {
+                        "id": "TQUJUS19V9ZALf7LJOUm8",
+                        "name": "Section",
+                        "type": "section",
+                        "styles": [],
+                        "className": null,
+                        "content": [
+                            {
+                                "id": "drlB_Q43WkdX3vAkzRWuG",
+                                "name": "Container",
+                                "type": "container",
+                                "styles": [],
+                                "className": "max-w-[1280px] mx-auto w-full px-6 space-y-5 text-center text-white",
+                                "content": [
+                                    {
+                                        "id": "kgAS2e5orMQTFvFi1MoxW",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-2xl leading-tight font-bold md:text-3xl md:leading-9",
+                                        "content": {
+                                            "innerText": "Subscribe Our Newsletter",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "6yWYgwuQs6MOvrjByMKqq",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "mx-auto w-full max-w-[420px] text-center",
+                                        "content": [
+                                            {
+                                                "id": "2cZgXyd4oAC2yvK0B0rud",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "mb-3",
+                                                "content": {
+                                                    "innerText": "Transform your career with expert-led courses. Join thousands of learners today"
+                                                }
+                                            },
+                                            {
+                                                "id": "rbDSP8Yb25M_QLR0KLsC1",
+                                                "name": "Dynamic Wrapper",
+                                                "type": "dynamicWrapper",
+                                                "styles": [],
+                                                "className": null,
+                                                "content": {
+                                                    "componentRef": "email-subscribe-input",
+                                                    "api": null,
+                                                    "apiMethod": "POST",
+                                                    "apiParams": []
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "LRBlHrw4xLOSbCoFC8ulL",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center justify-center gap-2",
+                                        "content": [
+                                            {
+                                                "id": "gEb8Iug8Exj-wmvbgWxkN",
+                                                "name": "Div",
+                                                "type": "div",
+                                                "styles": [],
+                                                "className": "flex -space-x-2",
+                                                "content": [
+                                                    {
+                                                        "id": "4nAxtBzOAnyG4csuKXKVa",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-8 w-8 rounded-full ring-2 ring-white grayscale",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-1.png",
+                                                            "alt": "User"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "CtgwW3-hVRaup1qYD1OMq",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-8 w-8 rounded-full ring-2 ring-white grayscale",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-2.png",
+                                                            "alt": "User"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "gclviTn_A9j6gIJ9fQxxI",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-8 w-8 rounded-full ring-2 ring-white grayscale",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-3.png",
+                                                            "alt": "User"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "f6CkIhigHyk_BA8wLLV9P",
+                                                        "name": "Image",
+                                                        "type": "image",
+                                                        "styles": [],
+                                                        "className": "h-8 w-8 rounded-full ring-2 ring-white grayscale",
+                                                        "content": {
+                                                            "src": "/assets/avatars/avatar-4.png",
+                                                            "alt": "User"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "lpbdgmfWT7RqguVCborgZ",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "font-medium",
+                                                "content": {
+                                                    "innerText": "+12,000 subscribers worldwide"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "p_finSBR2uxw3wsgfMlxq",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "overflow-hidden py-20",
+                "content": [
+                    {
+                        "id": "iNq8iN0M8PQaHINC3sLSU",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6 relative",
+                        "content": [
+                            {
+                                "id": "BYttHPLghUJ-qfYXp4lJy",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 mx-auto text-center",
+                                "content": [
+                                    {
+                                        "id": "iBay9MaAQt4z_1ordT5Lf",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "mb-1 font-medium text-secondary-foreground",
+                                        "content": {
+                                            "innerText": "Latest Insights"
+                                        }
+                                    },
+                                    {
+                                        "id": "AXzltw1gx3bicimUru1Bv",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-4 text-2xl font-bold sm:text-3xl",
+                                        "content": {
+                                            "innerText": "Explore Our Blog",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "zx9p1bTAIBD29M75UuNBE",
+                                        "name": "Paragraph",
+                                        "type": "paragraph",
+                                        "styles": [],
+                                        "className": "text-muted-foreground",
+                                        "content": {
+                                            "innerText": "Stay updated with the latest tips, trends, and insights from industry experts"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Wu8v8kkFNyKkBLasaE9kj",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative",
+                                "content": [
+                                    {
+                                        "id": "YDjpDXyaTGjSBJuwiOut2",
+                                        "name": "Dynamic Wrapper",
+                                        "type": "dynamicWrapper",
+                                        "styles": [],
+                                        "className": "relative z-10",
+                                        "content": {
+                                            "componentRef": "new-blogs-carousel",
+                                            "api": "api/collections/blogs/new",
+                                            "apiMethod": "GET",
+                                            "apiParams": []
+                                        }
+                                    },
+                                    {
+                                        "id": "mPP2P4q-ormQT6QfG7xMc",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute top-1/2 -left-100 h-[1200px] w-[1200px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                        "content": []
+                                    },
+                                    {
+                                        "id": "rN2PZ3EjenRADe_3_Ihvw",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "pointer-events-none absolute -top-80 -right-80 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-25 content-['']",
+                                        "content": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

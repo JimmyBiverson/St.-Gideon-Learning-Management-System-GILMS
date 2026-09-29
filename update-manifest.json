@@ -1,0 +1,13 @@
+{
+    "product": "mentor-lms",
+    "schema": 1,
+    "version": "5.5.0",
+    "type": "full",
+    "min_upgradable_from": "5.0.0",
+    "generated_at": "2026-09-04T20:59:44+00:00",
+    "file_count": 18138,
+    "vendor_included": true,
+    "incremental": false,
+    "base_version": null,
+    "removed": []
+}

@@ -1,0 +1,1 @@
+import{t as e}from"./resource-modal-DTMgpVd_.js";export{e as default};

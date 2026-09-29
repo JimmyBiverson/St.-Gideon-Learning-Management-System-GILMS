@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./forget-password-DxnmrMYJ.js";import{jsx as r,jsxs as i}from"react/jsx-runtime";var a=()=>i(`div`,{className:`space-y-7`,children:[r(t,{}),r(n,{}),r(e,{})]});export{a as t};

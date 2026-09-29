@@ -1,0 +1,30 @@
+import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
+import { useCodeMirror } from '../hooks/useCodeMirror';
+import { formatHtml } from '../lib/format';
+
+interface SourceEditorProps {
+   initialContent: string;
+   onChange?: (content: string) => void;
+}
+
+const SourceEditor = forwardRef<HTMLDivElement, SourceEditorProps>(
+   ({ initialContent, onChange }, ref) => {
+      const [formattedContent, setFormattedContent] = useState<string>('');
+      const editorRef = useCodeMirror({
+         initialContent: formattedContent,
+         onChange,
+      });
+
+      useEffect(() => {
+         formatHtml(initialContent).then(setFormattedContent);
+      }, [initialContent]);
+
+      useImperativeHandle(ref, () => editorRef.current!, [editorRef]);
+
+      return <div ref={editorRef} />;
+   },
+);
+
+SourceEditor.displayName = 'SourceEditor';
+
+export default SourceEditor;

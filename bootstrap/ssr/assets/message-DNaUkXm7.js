@@ -1,0 +1,1 @@
+import{jsx as e,jsxs as t}from"react/jsx-runtime";var n=({success:n,error:r})=>t(`div`,{children:[n&&e(`div`,{className:`mb-4 rounded-md bg-green-100 px-5 py-3 text-center text-sm text-green-500 dark:bg-green-950`,children:n}),r&&e(`div`,{className:`mb-4 rounded-md bg-red-100 px-5 py-3 text-center text-sm text-red-500 dark:bg-red-950`,children:r})]});export{n as t};

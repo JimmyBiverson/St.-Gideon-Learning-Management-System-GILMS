@@ -1,0 +1,1 @@
+import{t as e}from"./testimonials-BEDJudbo.js";export{e as default};

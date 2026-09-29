@@ -1,0 +1,175 @@
+version: '3.8'
+
+services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/dockerfiles/php.dockerfile
+      target: production
+    env_file:
+      - ./.env.production
+    expose:
+      - '9000'
+    volumes:
+      - ./:/var/www/html:delegated
+      - logs:/var/log/php
+      - storage:/var/www/html/storage
+      - bootstrap_cache:/var/www/html/bootstrap/cache
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+    networks:
+      - mentor-lms-network
+
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/dockerfiles/nginx.dockerfile
+      target: production
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./:/var/www/html:ro
+      - logs:/var/log/nginx
+      - ssl_certs:/etc/nginx/ssl
+    depends_on:
+      php:
+        condition: service_started
+    restart: unless-stopped
+    networks:
+      - mentor-lms-network
+
+  mysql:
+    image: mysql:8.0
+    env_file:
+      - ./docker/env/mysql.prod.env
+    command: --default-authentication-plugin=mysql_native_password --innodb-buffer-pool-size=256M --max-connections=200
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - mysql_config:/etc/mysql/conf.d
+    restart: unless-stopped
+    networks:
+      - mentor-lms-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - mentor-lms-network
+
+  # Optional: SSL Certificate Manager (Let's Encrypt)
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ssl_certs:/etc/letsencrypt
+      - certbot_logs:/var/log/letsencrypt
+    profiles:
+      - ssl
+    networks:
+      - mentor-lms-network
+
+  # Optional: Backup Service
+  backup:
+    image: mysql:8.0
+    env_file:
+      - ./docker/env/mysql.prod.env
+    volumes:
+      - mysql_data:/var/lib/mysql:ro
+      - backups:/backups
+      - ./scripts:/scripts:ro
+    command: >
+      sh -c "
+        while true; do
+          echo 'Creating backup...'
+          mysqldump -h mysql -u root -p$$MYSQL_ROOT_PASSWORD --single-transaction --routines --triggers $$MYSQL_DATABASE > /backups/backup_$$(date +%Y%m%d_%H%M%S).sql
+          find /backups -name '*.sql' -mtime +7 -delete
+          echo 'Backup completed. Next backup in 24 hours.'
+          sleep 86400
+        done
+      "
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    profiles:
+      - backup
+    networks:
+      - mentor-lms-network
+
+  # Optional: Monitoring with Prometheus
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - '9090:9090'
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    networks:
+      - mentor-lms-network
+
+  # Optional: Grafana Dashboard
+  grafana:
+    image: grafana/grafana
+    ports:
+      - '3000:3000'
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    networks:
+      - mentor-lms-network
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+  logs:
+    driver: local
+  ssl_certs:
+    driver: local
+  mysql_config:
+    driver: local
+  storage:
+    driver: local
+  bootstrap_cache:
+    driver: local
+  backups:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+networks:
+  mentor-lms-network:
+    driver: bridge

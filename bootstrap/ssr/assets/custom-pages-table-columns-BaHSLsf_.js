@@ -1,0 +1,1 @@
+import{t as e}from"./custom-pages-table-columns-iYLQSG0U.js";export{e as default};

@@ -1,0 +1,249 @@
+[
+    {
+        "id": "O5tE3GYcwBhy4U0JgGUo1",
+        "name": "Body",
+        "type": "__body",
+        "styles": [],
+        "className": null,
+        "content": [
+            {
+                "id": "vQrqM3OuUwwF2vc5oTOeC",
+                "name": "Div",
+                "type": "div",
+                "styles": [],
+                "className": "relative bg-[rgba(255,222,99,0.06)] pt-[212px] pb-[100px]",
+                "content": [
+                    {
+                        "id": "jwnMTR4sHpJuSGISJPlEp",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "rTp8pFK23FLHZlkZN8LJj",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "relative z-10 flex flex-col items-center justify-center space-y-2",
+                                "content": [
+                                    {
+                                        "id": "mSI1_-FiHXroWZUwclKKh",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "text-center text-4xl font-bold md:text-[44px]",
+                                        "content": {
+                                            "innerText": "Cookie Policy",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "BsY6vXSPb6S-FC-ER5FsI",
+                                        "name": "Div",
+                                        "type": "div",
+                                        "styles": [],
+                                        "className": "flex items-center gap-1 text-muted-foreground",
+                                        "content": [
+                                            {
+                                                "id": "Oxlt_fxGthOGzyn_sb9pm",
+                                                "name": "Link",
+                                                "type": "link",
+                                                "styles": [],
+                                                "className": "flex items-center justify-center",
+                                                "content": [
+                                                    {
+                                                        "id": "vMgbcA5zmzddwYZ2RgPf8",
+                                                        "name": "EditorIcon",
+                                                        "type": "icon",
+                                                        "styles": {
+                                                            "width": "24px",
+                                                            "height": "24px"
+                                                        },
+                                                        "className": "text-foreground h-[18px] w-[18px]",
+                                                        "content": {
+                                                            "icon": "home"
+                                                        }
+                                                    }
+                                                ],
+                                                "htmlAttributes": {
+                                                    "href": "/",
+                                                    "type": "inertia"
+                                                }
+                                            },
+                                            {
+                                                "id": "EVlbSqM3xDMAgMI7LyuFK",
+                                                "name": "EditorIcon",
+                                                "type": "icon",
+                                                "styles": {
+                                                    "width": "24px",
+                                                    "height": "24px"
+                                                },
+                                                "className": "text-foreground h-[14px] w-[14px]",
+                                                "content": {
+                                                    "icon": "chevrons-right"
+                                                }
+                                            },
+                                            {
+                                                "id": "ZQ2iJZXLxwYCNxjjUbOFz",
+                                                "name": "Paragraph",
+                                                "type": "paragraph",
+                                                "styles": [],
+                                                "className": "text-sm",
+                                                "content": {
+                                                    "innerText": "cookie-policy"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "zC793TqpM3D20adQqmZM3",
+                        "name": "Div",
+                        "type": "div",
+                        "styles": [],
+                        "className": "pointer-events-none absolute top-1/2 right-0 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(0,167,111,0.45)_0%,transparent_70%)] opacity-40 content-['']",
+                        "content": []
+                    }
+                ]
+            },
+            {
+                "id": "mBOnjEx_cx6VjuMDfwZCW",
+                "name": "Section",
+                "type": "section",
+                "styles": [],
+                "className": "py-20",
+                "content": [
+                    {
+                        "id": "7jlpY96a5vDCxBh2O25Rr",
+                        "name": "Container",
+                        "type": "container",
+                        "styles": [],
+                        "className": "max-w-[1280px] mx-auto w-full px-6",
+                        "content": [
+                            {
+                                "id": "RiX6rcwZmDKTX2YzFEUpS",
+                                "name": "Div",
+                                "type": "div",
+                                "styles": [],
+                                "className": "mx-auto max-w-3xl rounded-2xl bg-gray-50 p-8 md:p-12 dark:bg-gray-900",
+                                "content": [
+                                    {
+                                        "id": "jDNooYjiDF1Q046nCmzoM",
+                                        "name": "Heading",
+                                        "type": "heading",
+                                        "styles": [],
+                                        "className": "mb-8 text-center text-3xl font-bold",
+                                        "content": {
+                                            "innerText": "Cookie policy",
+                                            "level": "h2"
+                                        }
+                                    },
+                                    {
+                                        "id": "P8h20wjXZGwX_KrakNLT9",
+                                        "name": "List",
+                                        "type": "ul",
+                                        "styles": [],
+                                        "className": "space-y-4 pl-2",
+                                        "content": [
+                                            {
+                                                "id": "UWpS3V16EdEqjtqvGoVzO",
+                                                "name": "ListItem",
+                                                "type": "li",
+                                                "styles": [],
+                                                "className": "flex items-start gap-3",
+                                                "content": [
+                                                    {
+                                                        "id": "vPgs1LkJN9WgUPMwbhXFU",
+                                                        "name": "Span",
+                                                        "type": "span",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "1."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "xk-TRnkUefy9MmLvHZlWs",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "Cookies are small text files that can be used by websites to make a user's experience more efficient."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "Xwka-xipY0VPmbYSQf6WC",
+                                                "name": "ListItem",
+                                                "type": "li",
+                                                "styles": [],
+                                                "className": "flex items-start gap-3",
+                                                "content": [
+                                                    {
+                                                        "id": "zPBDcNCUvza0UqxavJmUl",
+                                                        "name": "Span",
+                                                        "type": "span",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "2."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "ExHdrT-5HISlin8XdB-6x",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission."
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "39C7xLwQ3UAx1I-D75Zge",
+                                                "name": "ListItem",
+                                                "type": "li",
+                                                "styles": [],
+                                                "className": "flex items-start gap-3",
+                                                "content": [
+                                                    {
+                                                        "id": "d6k7L4NcKMbq8x9VgGEP2",
+                                                        "name": "Span",
+                                                        "type": "span",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "3."
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "OIJliEuF6hI0q-v9ZKWtO",
+                                                        "name": "Paragraph",
+                                                        "type": "paragraph",
+                                                        "styles": [],
+                                                        "className": null,
+                                                        "content": {
+                                                            "innerText": "This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages."
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

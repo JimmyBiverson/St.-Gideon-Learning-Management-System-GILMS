@@ -1,0 +1,1 @@
+import{t as e}from"./become-instructor-BQIhKYBP.js";export{e as default};

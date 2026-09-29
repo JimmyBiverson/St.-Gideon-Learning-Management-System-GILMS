@@ -1,0 +1,1 @@
+import{t as e}from"./newsletter-send-BPohCk7V.js";export{e as default};

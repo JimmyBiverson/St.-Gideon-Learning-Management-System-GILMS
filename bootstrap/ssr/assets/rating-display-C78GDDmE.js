@@ -1,0 +1,1 @@
+import{t as e}from"./rating-display-BW2ABz39.js";export{e as default};

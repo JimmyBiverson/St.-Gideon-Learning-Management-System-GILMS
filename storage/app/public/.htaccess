@@ -1,0 +1,21 @@
+# Defense-in-depth: this directory holds user-uploaded media (product
+# images/files, resumes, etc.) served publicly via the storage symlink.
+# Never let the web server execute anything placed here as code, even if an
+# upload validation gap lets a dangerous extension through.
+
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+<FilesMatch "\.(php|php2|php3|php4|php5|php7|php8|phtml|phts|pht|phar|cgi|pl|py|rb|sh|bash|ksh|csh|asp|aspx|ashx|asmx|jsp|jspx|exe|dll|so|com|bat|cmd|msi)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
