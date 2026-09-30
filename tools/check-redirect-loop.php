@@ -140,6 +140,15 @@ function walkChain(string $start, int $maxHops, int $timeout): array
             CURLOPT_COOKIEJAR => $jar,
             CURLOPT_COOKIEFILE => $jar,
             CURLOPT_USERAGENT => 'redirect-loop-check/1.0',
+            // Without a browser-like Accept header Laravel answers an
+            // unauthenticated request with a 401 instead of redirecting to the
+            // login page, and a 401 is treated as a terminal state. Every
+            // protected route would then report "0 hops, OK" without the chain
+            // ever being walked, which is exactly the chain that loops.
+            CURLOPT_HTTPHEADER => [
+                'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language: en-US,en;q=0.9',
+            ],
         ]);
 
         $raw = curl_exec($ch);

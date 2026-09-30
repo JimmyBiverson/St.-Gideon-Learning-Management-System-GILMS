@@ -13,6 +13,7 @@ use App\Http\Middleware\TrustProxies;
 use App\Http\Middleware\UserRole;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Auth\Middleware\EnsureEmailIsVerified;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -103,7 +104,33 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        $middleware->redirectGuestsTo(fn() => route('login.index'));
+        /*
+         * Both destinations are set in ONE `redirectTo()` call on purpose.
+         *
+         * `redirectGuestsTo()` and `redirectUsersTo()` both delegate to the
+         * same `redirectTo()` method, and it normalises a null `$guests` into
+         * `fn () => null` before testing it with `if ($guests)`. A Closure is
+         * always truthy, so calling `redirectUsersTo()` on its own re-registers
+         * that null-returning closure over the real guest redirect. The
+         * consequence is that `Authenticate::redirectTo()` returns null for
+         * every unauthenticated request, and the framework answers a blank
+         * `response()->noContent(401)` instead of redirecting to the login
+         * page. Passing both values together avoids the overwrite entirely.
+         */
+        $middleware->redirectTo(
+            guests: fn() => route('login.index'),
+
+            // Where the `guest` middleware sends someone who is already signed in.
+            //
+            // Without this the framework falls back to its own defaultRedirectUri(),
+            // which prefers the `dashboard` route. `dashboard` is an
+            // admin/instructor route, so a signed-in student who opened /login was
+            // sent there, refused by the role check, and bounced back to /login by
+            // that check's `back()` — repeating until the browser gave up with
+            // ERR_TOO_MANY_REDIRECTS. Sending each role to its own home removes both
+            // the loop and a pointless "you do not have permission" message.
+            users: fn() => roleLandingUrl(),
+        );
 
         // Trust proxies - must run early to detect HTTPS correctly.
         //
@@ -141,6 +168,17 @@ return Application::configure(basePath: dirname(__DIR__))
             'customize' => IntroCustomize::class,
             'collaborative' => SystemCollaborative::class,
             'ip.detector' => IpDetectorMiddleware::class,
+
+            // The framework's `verified` middleware redirects unverified users to
+            // a route named `verification.notice`, which this application does
+            // not define. The verification screen that does exist is
+            // `verify-email.index`, so the alias is re-pointed at it.
+            //
+            // Without this, an unverified admin or instructor loading a
+            // `verified` route got a URL-generation failure (500) rather than
+            // the page asking them to verify — the same class of bug as a
+            // redirect pointing at a route that cannot resolve.
+            'verified' => EnsureEmailIsVerified::redirectTo('verify-email.index'),
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

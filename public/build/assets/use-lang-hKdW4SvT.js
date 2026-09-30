@@ -1,1 +1,0 @@
-import{u as e}from"./app-BZFCbB_0.js";function t(){let{props:t}=e();return t.translate}export{t};

@@ -70,10 +70,45 @@ class NotificationAudienceService
                 $emailOverride = $allowed && $withinLimit;
             }
 
-            try {
-                Notification::send($recipients, new LiveClassNotification($payload, $emailOverride));
-            } catch (\Throwable $e) {
-                Log::warning("Live class notification mail delivery failed for {$audience}: ".$e->getMessage());
+            /*
+             * Sent one recipient at a time, with a fresh notification instance
+             * per recipient.
+             *
+             * A single `Notification::send($collection, ...)` aborts the whole
+             * loop on the first recipient whose channel throws, so everyone
+             * after that point silently received nothing. One bad mailbox could
+             * therefore cost the rest of the audience their in-app notification
+             * as well, which is the opposite of the isolation this class
+             * promises. The database channel is still written first for each
+             * recipient, so a mail failure never costs someone their in-app row.
+             *
+             * This is a synchronous send on a rare, staff-triggered action, so
+             * the extra queries are not worth trading correctness for.
+             */
+            $failed = 0;
+
+            foreach ($recipients as $recipient) {
+                try {
+                    Notification::send($recipient, new LiveClassNotification($payload, $emailOverride));
+                } catch (\Throwable $e) {
+                    $failed++;
+
+                    Log::warning(sprintf(
+                        'Live class notification delivery failed for %s to user #%s: %s',
+                        $audience,
+                        $recipient->getKey(),
+                        $e->getMessage()
+                    ));
+                }
+            }
+
+            if ($failed > 0) {
+                Log::warning(sprintf(
+                    'Live class notification: %d of %d %s recipients failed to deliver.',
+                    $failed,
+                    $recipients->count(),
+                    $audience
+                ));
             }
         } catch (\Throwable $e) {
             Log::warning("Live class notification failed for {$audience}: ".$e->getMessage());

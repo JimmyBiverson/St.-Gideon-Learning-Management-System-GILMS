@@ -17,14 +17,25 @@ class IntroCustomize
     public function handle(Request $request, Closure $next): Response
     {
         $user = Auth::user();
-        if (($request->customize && ! $user)) {
-            return redirect()->back();
+
+        if (! $request->customize) {
+            return $next($request);
         }
 
-        if ($request->customize && $user && ! isAdmin()) {
-            return redirect()->back();
+        if ($user && isAdmin()) {
+            return $next($request);
         }
 
-        return $next($request);
+        /*
+         * `?customize` is only meaningful for an admin, so everyone else is
+         * sent to the home page without the flag.
+         *
+         * This used to `redirect()->back()`, which self-looped: a refresh sent
+         * the page's own URL as Referer, so the browser was returned to the
+         * exact URL that had just refused it, until ERR_TOO_MANY_REDIRECTS.
+         * Home is used rather than `back()` because it also drops the
+         * `customize` parameter, so this cannot be re-triggered on arrival.
+         */
+        return redirect()->route('home');
     }
 }

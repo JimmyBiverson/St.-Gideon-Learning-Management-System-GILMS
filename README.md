@@ -147,9 +147,22 @@ The bell refreshes in the background every `NOTIFICATIONS_POLL_INTERVAL` millise
 Inertia's `router.poll()`. A poll is used rather than a websocket so that no extra service,
 process or configuration is required to keep the bell current.
 
+Polling **stops entirely while the browser tab is hidden** and catches up with a single refresh
+when the tab is shown again. A hidden tab is not being looked at, so those requests produced
+nothing anyone could see, and with every signed-in user polling they were the largest avoidable
+source of request traffic as the user base grew. `NOTIFICATIONS_POLL_INTERVAL` is therefore the
+cost of an open, focused tab rather than a constant per user.
+
 To avoid hydrating an ever-growing notification list on every request, only the most recent
 `NOTIFICATIONS_UNREAD_LIMIT` unread rows are sent, while the badge itself shows the true unread
 count.
+
+Both bell queries filter on `(notifiable_type, notifiable_id, read_at)`, which is covered by the
+`notifications_unread_index` index added in
+`database/migrations/2026_09_30_090000_add_unread_index_to_notifications_table.php`. Without it
+MySQL has to read every notification a user has ever received and discard the read ones, on every
+page load and on every poll. On a user with 4,000 notifications that made the feed query ~25x
+slower and the badge count ~28x slower.
 
 ## Local Setup
 
@@ -202,6 +215,31 @@ php artisan migrate --force
 
 A reverse proxy in front of the app should be listed in `TRUSTED_PROXIES` so `X-Forwarded-Proto`
 is honoured, and `APP_URL` must be set to the real public URL so notification links are correct.
+
+### Checking for redirect loops after a deploy
+
+`ERR_TOO_MANY_REDIRECTS` is caused by a request bouncing between two URLs, usually because a
+redirect points at a route that redirects straight back. Run the bundled checker against the live
+URL after every deploy; it walks each redirect chain and fails if a URL is revisited or the chain
+exceeds the hop budget.
+
+```bash
+php tools/check-redirect-loop.php https://your-domain.example
+php tools/check-redirect-loop.php https://your-domain.example --path=/dashboard --path=/login
+```
+
+Exit code `0` means no loop, `1` means a loop was found, and `2` means the target could not be
+reached. The default paths are `/`, `/login`, `/install/step-1` and `/dashboard`.
+
+Two things to know when reading its output:
+
+- It sends a browser-like `Accept: text/html` header. Without it Laravel answers an
+  unauthenticated request with a `401` instead of a redirect, and a `401` is treated as a
+  terminal state, so every protected route would report "0 hops, OK" without the chain ever being
+  walked.
+- It is **anonymous**. It proves the signed-out chains (`/dashboard` → `/login`) but cannot see
+  the signed-in ones, which is where a role mismatch loops. Check those signed in: a student
+  opening `/login` must land on their own page, never on `/dashboard`.
 
 ## Contributing
 

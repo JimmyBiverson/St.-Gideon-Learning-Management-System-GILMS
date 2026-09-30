@@ -25,7 +25,21 @@ class UserRole
             return $next($request);
         }
 
-        // If user doesn't have the required role
-        return redirect()->back()->with('error', 'You do not have permission to access this page.');
+        $message = 'You do not have permission to access this page.';
+
+        // `back()` is only safe when it provably lands somewhere else. Without
+        // this guard a role mismatch self-loops: the browser sends the page it
+        // came from as Referer, `back()` returns it to the page that just
+        // refused it, and the pair repeats until the browser reports
+        // ERR_TOO_MANY_REDIRECTS. This is exactly what an authenticated student
+        // hit, because the `guest` middleware sent them to the admin-only
+        // `dashboard` route from `/login`.
+        if (canReturnToPreviousPage($request)) {
+            return back()->with('error', $message);
+        }
+
+        // No safe previous page, so send them to their own home. That route
+        // accepts their role, so it renders instead of refusing again.
+        return redirect()->to(roleLandingUrl($request->user()))->with('error', $message);
     }
 }

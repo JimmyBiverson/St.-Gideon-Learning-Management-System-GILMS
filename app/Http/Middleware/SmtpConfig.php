@@ -43,7 +43,26 @@ class SmtpConfig
                 empty(config('mail.mailers.smtp.username')) ||
                 empty(config('mail.mailers.smtp.password'))
             ) {
-                return back()->with('error', 'SMTP configuration is incomplete. Email sending feature is not work right now.');
+                $message = 'SMTP configuration is incomplete, so email sending is not working right now.';
+
+                /*
+                 * `back()` is only safe when it provably lands somewhere else.
+                 * These routes are reached by reloading the page, and a reload
+                 * sends the page's own URL as Referer, so a bare `back()`
+                 * returned the browser to the form that had just refused it and
+                 * repeated until ERR_TOO_MANY_REDIRECTS. Without SMTP working,
+                 * that is every login, register and password-reset screen — the
+                 * exact pages needed to fix SMTP.
+                 *
+                 * /login has no `smtpConfig` of its own, but `/register` does, so
+                 * `back()` from it is a genuinely different URL. The guard covers
+                 * both without having to reason about which is which.
+                 */
+                if (canReturnToPreviousPage($request)) {
+                    return back()->with('error', $message);
+                }
+
+                return redirect()->to(roleLandingUrl($request->user()))->with('error', $message);
             }
         }
 

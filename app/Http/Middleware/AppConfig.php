@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Services\SettingsService;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class AppConfig
@@ -65,52 +66,110 @@ class AppConfig
         // Bunny only hosts lesson videos — it has no generic file API for
         // images/documents/previews, so those fall back to local while
         // Bunny is active.
-        match ($storageDriver) {
-            's3' => config(['filesystems.default' => 's3', 'media-library.disk_name' => 's3']),
-            'r2' => config(['filesystems.default' => 'r2', 'media-library.disk_name' => 'r2']),
-            default => config(['filesystems.default' => 'local', 'media-library.disk_name' => 'public']),
+        $driverIsUsable = match ($storageDriver) {
+            's3' => ! (
+                empty($storage['aws_access_key_id'] ?? null)
+                || empty($storage['aws_secret_access_key'] ?? null)
+                || empty($storage['aws_default_region'] ?? null)
+                || empty($storage['aws_bucket'] ?? null)
+            ),
+            'r2' => ! (
+                empty($storage['r2_access_key_id'] ?? null)
+                || empty($storage['r2_secret_access_key'] ?? null)
+                || empty($storage['r2_bucket'] ?? null)
+                || empty($storage['r2_endpoint'] ?? null)
+            ),
+            // r2.url is intentionally excluded from the check: it is optional
+            // and only affects whether images/documents/previews display, not
+            // whether uploads work.
+            'bunny' => ! (
+                empty($storage['bunny_library_id'] ?? null)
+                || empty($storage['bunny_api_key'] ?? null)
+                || empty($storage['bunny_token_auth_key'] ?? null)
+            ),
+            default => true,
         };
 
-        // Check S3 configuration from config
-        if ($storageDriver === 's3') {
-            // Check if required S3 credentials exist in config
-            if (
-                empty(config('filesystems.disks.s3.key')) ||
-                empty(config('filesystems.disks.s3.secret')) ||
-                empty(config('filesystems.disks.s3.region')) ||
-                empty(config('filesystems.disks.s3.bucket'))
-            ) {
-                return back()->with('error', 'S3 storage configuration is incomplete. File will not upload to the S3 right now.');
-            }
-        }
+        $driverLabel = match ($storageDriver) {
+            's3' => 'S3',
+            'r2' => 'Cloudflare R2',
+            'bunny' => 'Bunny Stream',
+            default => 'local',
+        };
 
-        // Check R2 configuration from config
-        if ($storageDriver === 'r2') {
-            // Check if required R2 credentials exist in config. r2.url
-            // (Public URL) is intentionally excluded — it's optional and
-            // only affects whether images/documents/previews display, not
-            // whether uploads work.
-            if (
-                empty(config('filesystems.disks.r2.key')) ||
-                empty(config('filesystems.disks.r2.secret')) ||
-                empty(config('filesystems.disks.r2.bucket')) ||
-                empty(config('filesystems.disks.r2.endpoint'))
-            ) {
-                return back()->with('error', 'Cloudflare R2 storage configuration is incomplete. File will not upload to R2 right now.');
-            }
-        }
+        if ($driverIsUsable) {
+            match ($storageDriver) {
+                's3' => config(['filesystems.default' => 's3', 'media-library.disk_name' => 's3']),
+                'r2' => config(['filesystems.default' => 'r2', 'media-library.disk_name' => 'r2']),
+                default => config(['filesystems.default' => 'local', 'media-library.disk_name' => 'public']),
+            };
+        } else {
+            /*
+             * The selected driver has blank credentials.
+             *
+             * This used to `return back()->with('error', ...)`, which cannot be
+             * made safe by redirecting somewhere else: this middleware runs on
+             * the `web` group, so *every* destination is itself re-checked and
+             * redirected again. On a fresh install left on s3/r2/bunny that
+             * locked out every visitor with ERR_TOO_MANY_REDIRECTS, including
+             * the admin who needed to go and fix the setting.
+             *
+             * A page load therefore never redirects. It falls back to the local
+             * disk, so the site stays usable and the settings screen can be
+             * reached, and the misconfiguration is logged instead of flashed —
+             * a flash would need a redirect to survive.
+             */
+            config(['filesystems.default' => 'local', 'media-library.disk_name' => 'public']);
 
-        // Check Bunny configuration from config
-        if ($storageDriver === 'bunny') {
-            if (
-                empty(config('services.bunny.library_id')) ||
-                empty(config('services.bunny.api_key')) ||
-                empty(config('services.bunny.token_auth_key'))
-            ) {
-                return back()->with('error', 'Bunny Stream configuration is incomplete. Lesson videos will not upload to Bunny right now.');
+            /*
+             * Only a request that is actually uploading a file is refused, so
+             * nothing is silently stored on the local disk and then appear lost
+             * once the driver is corrected.
+             *
+             * The test is deliberately "does this request carry files" and not
+             * "is this an unsafe method". This middleware runs on the `web`
+             * group, so refusing every unsafe method would also block sign-in,
+             * profile updates, and the storage settings form itself — which is
+             * the very screen needed to fix the setting, and would leave the
+             * site unusable rather than safe. A request carrying no file does
+             * not depend on remote storage and is served from the local disk.
+             */
+            if ($request->allFiles() !== []) {
+                return $this->refuseStorageWrite($request, $driverLabel, $storageDriver);
             }
         }
 
         return $next($request);
+    }
+
+    /**
+     * Refuse an upload while the configured storage driver is unusable.
+     *
+     * Only reached for requests that carry files, which arrive as multipart
+     * form posts, so `back()` lands on the form the submission came from — a
+     * page that is not behind this failure. The guard is kept anyway so the
+     * redirect can never point at itself, whatever the Referer turns out to be.
+     *
+     * The warning is logged here rather than on every request: an upload
+     * attempt is rare and actionable, whereas a per-request log line would
+     * flood the log for every visitor while the setting is still wrong.
+     */
+    private function refuseStorageWrite(Request $request, string $driverLabel, string $storageDriver): Response
+    {
+        $message = "{$driverLabel} storage configuration is incomplete. "
+            .'The file was not uploaded. Please fix it in the storage settings.';
+
+        Log::warning(
+            "Storage driver [{$storageDriver}] is selected but its credentials are incomplete. "
+            .'Upload refused; falling back to the local disk for everything else. '
+            .'Route: '.$request->method().' '.$request->path()
+            .' Browser: '.$request->userAgent()
+        );
+
+        if (canReturnToPreviousPage($request)) {
+            return back()->with('error', $message);
+        }
+
+        return redirect()->to(roleLandingUrl($request->user()))->with('error', $message);
     }
 }

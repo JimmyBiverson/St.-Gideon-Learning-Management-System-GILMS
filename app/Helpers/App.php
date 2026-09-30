@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
 function isDBConnected(): bool
@@ -93,6 +95,39 @@ function canReturnToPreviousPage(Request $request): bool
     $refererPath = $parts['path'] ?? '/';
 
     return rtrim($refererPath, '/') !== rtrim('/'.$request->path(), '/');
+}
+
+/**
+ * The landing page that actually belongs to this user.
+ *
+ * The `guest` middleware used to send every authenticated visitor to the
+ * `dashboard` route, which is an admin/instructor route. A student following
+ * that redirect was bounced by the role check straight back to the page they
+ * came from, and the pair repeated until the browser gave up with
+ * ERR_TOO_MANY_REDIRECTS. Sending each role to its own home fixes the loop and
+ * removes a pointless "you do not have permission" error at the same time.
+ *
+ * Every candidate is checked with Route::has() because these route groups live
+ * in optional module route files, and a module can be disabled.
+ */
+function roleLandingUrl(?object $user = null): string
+{
+    $user ??= Auth::user();
+
+    if ($user && isset($user->role)) {
+        if ($user->role === 'student' && Route::has('student.index')) {
+            return route('student.index', ['tab' => 'courses']);
+        }
+
+        if (in_array($user->role, ['admin', 'instructor'], true) && Route::has('dashboard')) {
+            return route('dashboard');
+        }
+    }
+
+    // No user, or an unknown role: the public home page is the one destination
+    // that is never behind auth, guest, role or verification middleware, so it
+    // cannot bounce.
+    return Route::has('home') ? route('home') : '/';
 }
 
 /**
