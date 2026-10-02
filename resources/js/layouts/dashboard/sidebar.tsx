@@ -1,4 +1,5 @@
 import { Link, usePage } from '@inertiajs/react';
+import { useEffect } from 'react';
 import AppLogo from '@/components/app-logo';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import {
@@ -14,8 +15,12 @@ import { cn } from '@/lib/utils';
 
 const DashboardSidebar = () => {
    const { state, isMobile, setOpenMobile } = useSidebar();
-   const { props } = usePage<SharedData>();
+   const { props, url } = usePage<SharedData>();
    const compact = state === 'collapsed';
+
+   useEffect(() => {
+      setOpenMobile(false);
+   }, [setOpenMobile, url]);
 
    return (
       <Sidebar

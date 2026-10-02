@@ -15,7 +15,14 @@ import Tabs from '@/components/tabs';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+   Sheet,
+   SheetContent,
+   SheetDescription,
+   SheetHeader,
+   SheetTitle,
+   SheetTrigger,
+} from '@/components/ui/sheet';
 import { TabsContent } from '@/components/ui/tabs';
 import useScreen from '@/hooks/use-screen';
 import LandingLayout from '@/layouts/landing';
@@ -142,6 +149,12 @@ const Layout = ({ children, tab }: { children: ReactNode; tab?: string }) => {
                            side="left"
                            className="w-[230px] border-border p-0"
                         >
+                           <SheetHeader className="sr-only">
+                              <SheetTitle>Student navigation</SheetTitle>
+                              <SheetDescription>
+                                 Navigate to student dashboard sections.
+                              </SheetDescription>
+                           </SheetHeader>
                            <ScrollArea className="h-full w-full">
                               <TabLists tabs={tabs} onNavigate={closeMenu} />
                            </ScrollArea>
