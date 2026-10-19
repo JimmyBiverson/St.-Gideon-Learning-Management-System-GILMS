@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./createLucideIcon-CfrXfsoV.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`rect`,{width:`20`,height:`12`,x:`2`,y:`6`,rx:`2`,key:`9lu3g6`}]],i=t(`RectangleHorizontal`,r);export{n,i as t};

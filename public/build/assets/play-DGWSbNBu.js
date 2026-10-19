@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./createLucideIcon-CfrXfsoV.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`polygon`,{points:`6 3 20 12 6 21 6 3`,key:`1oa8hb`}]],i=t(`Play`,r);export{n,i as t};

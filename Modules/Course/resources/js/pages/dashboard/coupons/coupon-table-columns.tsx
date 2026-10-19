@@ -70,7 +70,7 @@ const CouponTableColumns = ({
       },
       {
          accessorKey: 'course',
-         header: 'Course',
+         header: 'Subject',
          cell: ({ row }) =>
             row.original.course ? (
                <span className="font-medium">{row.original.course.title}</span>

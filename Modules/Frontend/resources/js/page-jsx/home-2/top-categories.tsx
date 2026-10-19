@@ -19,7 +19,7 @@ const TopCategories = () => {
                   Explore by Category
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
+                  These are the most popular subjects among listen subjects
                   learners worldwide
                </EditorParagraph>
             </EditorDiv>
@@ -27,7 +27,7 @@ const TopCategories = () => {
             <EditorDynamicWrapper
                api="api/collections/course_categories/top"
                apiMethod="GET"
-               componentRef="top-course-categories-2"
+               componentRef="top-subject-categories-2"
                className="relative z-10 my-12"
             />
 

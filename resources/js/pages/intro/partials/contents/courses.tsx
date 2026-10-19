@@ -46,7 +46,7 @@ const Courses = ({
       <div>
          <TableFilter
             data={courses}
-            title="Courses"
+            title="Subjects"
             globalSearch={true}
             searchKey="course"
             tablePageSizes={[10, 15, 20, 25]}

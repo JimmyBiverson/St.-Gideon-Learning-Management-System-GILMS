@@ -24,7 +24,7 @@ const Statistics = () => {
                      1.2k+
                   </EditorHeading>
                   <EditorParagraph className="mt-2 text-muted-foreground">
-                     Courses
+                     Subjects
                   </EditorParagraph>
                </EditorDiv>
                <EditorDiv className="text-center">

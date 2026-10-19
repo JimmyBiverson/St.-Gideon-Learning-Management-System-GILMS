@@ -1,0 +1,1 @@
+import{P as e}from"./app-CSVtnGaQ.js";function t(){let{props:t}=e();return t.translate}export{t};

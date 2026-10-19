@@ -83,11 +83,11 @@ const Update = (props: CourseUpdateProps) => {
    return (
       <section className="space-y-6">
          <Breadcrumbs
-            title={'Manage Course Contents'}
+            title={'Manage Subject Contents'}
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses', href: index.url() },
-               { title: course.title || 'Edit Course' },
+               { title: 'Subjects', href: index.url() },
+               { title: course.title || 'Edit Subject' },
             ]}
             action={<CourseUpdateHeader />}
             className="mb-4"

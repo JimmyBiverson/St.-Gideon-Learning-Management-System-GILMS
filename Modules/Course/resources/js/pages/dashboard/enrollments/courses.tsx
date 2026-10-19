@@ -50,12 +50,12 @@ const Courses = (props: Props) => {
             title="Enrollments"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Course Enrollments' },
+               { title: 'Subject Enrollments' },
             ]}
             action={
                <EnrollmentModal
                   type="course"
-                  title="Add New Course Enrollment"
+                  title="Add New Subject Enrollment"
                   handler={
                      <Button>
                         <Plus />

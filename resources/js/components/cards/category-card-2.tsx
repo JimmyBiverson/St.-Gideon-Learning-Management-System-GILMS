@@ -14,7 +14,7 @@ const CategoryCard2 = ({ category }: { category: CourseCategory }) => {
             <div>
                <p className="text-lg font-medium">{category.title}</p>
                <p className="text-muted-foreground">
-                  {category.courses_count} Courses
+                  {category.courses_count} Subjects
                </p>
             </div>
          </Card>

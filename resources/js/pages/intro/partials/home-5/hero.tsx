@@ -36,7 +36,7 @@ const Hero = () => {
          ) : (
             <div>
                <p className="text-center font-medium">
-                  Top Courses Hero Section. There is no course added.
+                  Top Subjects Hero Section. There is no subject added.
                </p>
             </div>
          )}

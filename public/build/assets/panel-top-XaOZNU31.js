@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./createLucideIcon-CfrXfsoV.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`rect`,{width:`18`,height:`18`,x:`3`,y:`3`,rx:`2`,key:`afitv7`}],[`path`,{d:`M3 9h18`,key:`1pudct`}]],i=t(`PanelTop`,r);export{n,i as t};

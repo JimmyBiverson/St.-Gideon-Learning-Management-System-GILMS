@@ -143,7 +143,7 @@ const Offline = ({ payment, type }: OfflineProps) => {
                                  Offline payments require manual verification.
                                  You will need to approve each payment in the
                                  Payment History section before the student can
-                                 access the course.
+                                 access the subject.
                               </p>
                            </div>
                         </div>

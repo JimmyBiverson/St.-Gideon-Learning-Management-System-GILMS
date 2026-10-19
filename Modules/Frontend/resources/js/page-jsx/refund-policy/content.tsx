@@ -32,7 +32,7 @@ const Content = () => {
                         1. General Refund Policy
                      </EditorHeading>
                      <EditorParagraph className="mb-3">
-                        Our general refund policy applies to all courses and
+                        Our general refund policy applies to all subjects and
                         services offered on Mentor. Refunds will be granted
                         under the following conditions:
                      </EditorParagraph>
@@ -41,10 +41,10 @@ const Content = () => {
                            <EditorSpan className="font-bold">•</EditorSpan>
                            <EditorListItem>
                               <EditorSpan className="mx-2 font-bold">
-                                 Course Not Accessed:
+                                 Subject Not Accessed:
                               </EditorSpan>
                               <EditorSpan>
-                                 If you have purchased a course and have not
+                                 If you have purchased a subject and have not
                                  accessed any of its content, you may request a
                                  full refund within 14 days of the purchase
                                  date.
@@ -59,7 +59,7 @@ const Content = () => {
                               </EditorSpan>
                               <EditorSpan>
                                  If you experience technical issues that prevent
-                                 you from accessing the course content and we
+                                 you from accessing the subject content and we
                                  are unable to resolve the issue, you may
                                  request a refund within 14 days of the purchase
                                  date.
@@ -94,10 +94,10 @@ const Content = () => {
                            <EditorSpan className="font-bold">•</EditorSpan>
                            <EditorListItem>
                               <EditorSpan className="mx-2 font-bold">
-                                 Completed Courses:
+                                 Completed Subjects:
                               </EditorSpan>
                               <EditorSpan>
-                                 If you have completed a course, it is not
+                                 If you have completed a subject, it is not
                                  eligible for a refund.
                               </EditorSpan>
                            </EditorListItem>
@@ -125,7 +125,7 @@ const Content = () => {
                                     support@uilib.com
                                  </EditorSpan>{' '}
                                  with your refund request. Include your order
-                                 number, the course name, and the reason for the
+                                 number, the subject name, and the reason for the
                                  refund request.
                               </EditorSpan>
                            </EditorListItem>

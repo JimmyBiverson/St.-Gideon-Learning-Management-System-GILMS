@@ -7,7 +7,7 @@ const CourseSearchInput = () => {
       <div className="relative">
          <SearchInput
             iconPosition="right"
-            placeholder="Search for courses that fit your goals"
+            placeholder="Search for subjects that fit your goals"
             className="z-10 w-full rounded bg-background md:max-w-[440px] [&>input]:h-10 [&>svg]:text-secondary-foreground"
             onChangeValue={(value) =>
                router.get(

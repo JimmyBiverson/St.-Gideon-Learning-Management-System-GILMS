@@ -159,7 +159,7 @@ const TopCourse = () => {
             ) : (
                <div className="relative z-10 mx-auto w-full max-w-[960px] space-y-4">
                   <p className="text-center text-lg font-medium">
-                     Top Course Sections. There is no course added.
+                     Top Subject Sections. There is no subject added.
                   </p>
                </div>
             )}

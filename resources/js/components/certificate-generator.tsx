@@ -36,7 +36,7 @@ const CertificateGenerator = () => {
       setTimeout(() => {
          setIsGenerating(false);
          toast.success(
-            'Your course completion certificate has been created successfully.',
+            'Your subject completion certificate has been created successfully.',
          );
       }, 2000);
    };
@@ -197,7 +197,7 @@ const CertificateGenerator = () => {
       ctx.font = '22px serif';
       ctx.fillStyle = '#4b5563';
       ctx.fillText(
-         'has successfully completed the course',
+         'has successfully completed the subject',
          dimensions.width / 2,
          320,
       );
@@ -232,10 +232,10 @@ const CertificateGenerator = () => {
       <div className="space-y-8">
          <div className="text-center">
             <h1 className="mb-4 text-4xl font-bold text-gray-800">
-               Course Certificate Generator
+               Subject Certificate Generator
             </h1>
             <p className="text-lg text-muted-foreground">
-               Generate your official course completion certificate
+               Generate your official subject completion certificate
             </p>
          </div>
 
@@ -260,12 +260,12 @@ const CertificateGenerator = () => {
                   </div>
 
                   <div className="space-y-2">
-                     <Label htmlFor="courseName">Course Name *</Label>
+                     <Label htmlFor="courseName">Subject Name *</Label>
                      <Input
                         id="courseName"
                         value={courseName}
                         onChange={(e) => setCourseName(e.target.value)}
-                        placeholder="Enter the course name"
+                        placeholder="Enter the subject name"
                      />
                   </div>
 
@@ -394,10 +394,10 @@ const CertificateGenerator = () => {
                               <div className="absolute bottom-0 left-1/2 h-0.5 w-48 -translate-x-1/2 transform bg-amber-400"></div>
                            </div>
                            <p className="font-serif text-lg">
-                              has successfully completed the course
+                              has successfully completed the subject
                            </p>
                            <p className="font-serif text-xl font-semibold text-indigo-700">
-                              {courseName || 'Course Name'}
+                              {courseName || 'Subject Name'}
                            </p>
                            <div className="mt-6 flex items-center justify-center gap-2">
                               <Calendar className="h-4 w-4 text-muted-foreground" />

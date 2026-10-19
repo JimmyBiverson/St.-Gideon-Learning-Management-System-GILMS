@@ -305,7 +305,7 @@ const Certificate = ({
                         {frontend.has_successfully_completed}
                      </p>
                      <p className="font-serif text-xl font-semibold text-indigo-700">
-                        {courseName || 'Course Name'}
+                        {courseName || 'Subject Name'}
                      </p>
                      <div className="mt-6 flex items-center justify-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />

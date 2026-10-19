@@ -60,7 +60,7 @@ const Content = () => {
                               <EditorSpan>
                                  We collect information about your interactions
                                  with our platform, such as the pages you visit,
-                                 the courses you access, and other actions you
+                                 the subjects you access, and other actions you
                                  take.
                               </EditorSpan>
                            </EditorListItem>
@@ -98,7 +98,7 @@ const Content = () => {
                               </EditorSpan>
                               <EditorSpan>
                                  To create and manage your account, process
-                                 transactions, and provide the courses and
+                                 transactions, and provide the subjects and
                                  services you request.
                               </EditorSpan>
                            </EditorListItem>

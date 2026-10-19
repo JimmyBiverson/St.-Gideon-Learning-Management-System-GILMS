@@ -55,7 +55,7 @@ const Install = ({ flash }: SharedData) => {
             {({ errors }) => (
                <>
                   <div>
-                     <Label>Select Course Creation Mode</Label>
+                     <Label>Select Subject Creation Mode</Label>
                      <RadioGroup
                         required
                         name="course_creation"
@@ -98,9 +98,9 @@ const Install = ({ flash }: SharedData) => {
                               </span>
                               Enable a collaborative platform where qualified
                               users can become instructors and create their own
-                              courses. The platform administrator will receive a
+                              subjects. The platform administrator will receive a
                               percentage of revenue from each instructor's
-                              course sales.
+                              subject sales.
                            </p>
                         </div>
                      ) : (
@@ -109,10 +109,10 @@ const Install = ({ flash }: SharedData) => {
                               <span className="mb-1 block font-medium text-orange-600">
                                  Administrative Mode:
                               </span>
-                              Centralize course management where only
+                              Centralize subject management where only
                               administrators can create and publish educational
                               content. Students can enroll in these official
-                              courses, with all revenue flowing directly to the
+                              subjects, with all revenue flowing directly to the
                               platform administration.
                            </p>
                         </div>

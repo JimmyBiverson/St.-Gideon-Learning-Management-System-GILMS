@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./createLucideIcon-CfrXfsoV.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`path`,{d:`M3 12h18`,key:`1i2n21`}],[`path`,{d:`M3 18h18`,key:`1h113x`}],[`path`,{d:`M3 6h18`,key:`d0wm0j`}]],i=t(`AlignJustify`,r);export{n,i as t};

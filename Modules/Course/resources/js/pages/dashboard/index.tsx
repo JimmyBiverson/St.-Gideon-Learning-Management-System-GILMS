@@ -51,10 +51,10 @@ const Index = (props: Props) => {
    return (
       <>
          <Breadcrumbs
-            title="Courses"
+            title="Subjects"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses' },
+               { title: 'Subjects' },
             ]}
             action={
                <Button asChild className="h-9 px-4">

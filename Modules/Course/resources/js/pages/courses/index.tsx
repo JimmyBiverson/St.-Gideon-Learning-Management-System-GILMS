@@ -24,21 +24,21 @@ const Index = (props: CoursesIndexProps) => {
          : url.split('/').slice(0, 3).join('/');
 
    let pageTitle = category ? category.title : 'All';
-   let pageDescription = `Browse ${totalCourses}+ online courses from expert instructors. Learn new skills with our comprehensive course catalog.`;
+   let pageDescription = `Browse ${totalCourses}+ online subjects from expert instructors. Learn new skills with our comprehensive subject catalog.`;
    let pageKeywords =
-      'online courses, learning platform, education, skills, training, e-learning';
+      'online subjects, learning platform, education, skills, training, e-learning';
    let ogTitle = frontend.all_courses;
 
    if (category && categoryChild) {
-      pageTitle = `${categoryChild.title} Courses in ${category.title}`;
-      ogTitle = `${categoryChild.title} - ${category.title} Courses`;
-      pageDescription = `Learn ${categoryChild.title.toLowerCase()} with ${totalCourses} specialized courses in ${category.title.toLowerCase()}. Expert instructors, practical projects, and industry-relevant curriculum.`;
-      pageKeywords = `${categoryChild.title.toLowerCase()}, ${category.title.toLowerCase()}, courses, training, ${categoryChild.title} certification, ${category.title} skills`;
+      pageTitle = `${categoryChild.title} Subjects in ${category.title}`;
+      ogTitle = `${categoryChild.title} - ${category.title} Subjects`;
+      pageDescription = `Learn ${categoryChild.title.toLowerCase()} with ${totalCourses} specialized subjects in ${category.title.toLowerCase()}. Expert instructors, practical projects, and industry-relevant curriculum.`;
+      pageKeywords = `${categoryChild.title.toLowerCase()}, ${category.title.toLowerCase()}, subjects, training, ${categoryChild.title} certification, ${category.title} skills`;
    } else if (category) {
-      pageTitle = `${category.title} Courses`;
-      ogTitle = `${category.title} Courses`;
-      pageDescription = `Explore ${totalCourses} ${category.title.toLowerCase()} courses taught by industry experts. Master ${category.title.toLowerCase()} skills with hands-on projects and comprehensive curriculum.`;
-      pageKeywords = `${category.title.toLowerCase()}, courses, training, online learning, ${category.title} certification, ${category.title} skills`;
+      pageTitle = `${category.title} Subjects`;
+      ogTitle = `${category.title} Subjects`;
+      pageDescription = `Explore ${totalCourses} ${category.title.toLowerCase()} subjects taught by industry experts. Master ${category.title.toLowerCase()} skills with hands-on projects and comprehensive curriculum.`;
+      pageKeywords = `${category.title.toLowerCase()}, subjects, training, online learning, ${category.title} certification, ${category.title} skills`;
    }
 
    const courseImage = courses?.data?.[0]?.thumbnail;
@@ -65,7 +65,7 @@ const Index = (props: CoursesIndexProps) => {
             <meta property="og:image:height" content="630" />
             <meta
                property="og:image:alt"
-               content={`${pageTitle} - Course Catalog`}
+               content={`${pageTitle} - Subject Catalog`}
             />
 
             {/* Twitter Card Tags */}
@@ -153,14 +153,14 @@ const Index = (props: CoursesIndexProps) => {
                      about: {
                         '@type': 'Thing',
                         name: category.title,
-                        description: `Learn ${category.title.toLowerCase()} with comprehensive online courses`,
+                        description: `Learn ${category.title.toLowerCase()} with comprehensive online subjects`,
                      },
                   }),
                   ...(categoryChild && {
                      specialty: {
                         '@type': 'Thing',
                         name: categoryChild.title,
-                        description: `Specialized ${categoryChild.title.toLowerCase()} courses and training`,
+                        description: `Specialized ${categoryChild.title.toLowerCase()} subjects and training`,
                      },
                   }),
                })}

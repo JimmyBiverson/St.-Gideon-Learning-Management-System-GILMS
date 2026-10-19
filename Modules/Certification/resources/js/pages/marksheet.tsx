@@ -40,7 +40,7 @@ const MarksheetIndex = ({ templates }: MarksheetPageProps) => {
 
          <div className="pb-6">
             <h6 className="mb-3 text-xl font-semibold">
-               Course Marksheet Templates
+               Subject Marksheet Templates
             </h6>
 
             {courseTemplates.length === 0 ? (

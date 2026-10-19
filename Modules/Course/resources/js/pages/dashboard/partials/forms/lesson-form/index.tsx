@@ -279,7 +279,7 @@ const LessonForm = ({ title, handler, lesson, sectionId }: Props) => {
                            <TabsContent value="ai" className="space-y-4 p-0.5">
                               <p className="text-sm text-muted-foreground">
                                  {dashboard.text_lesson_ai_description ??
-                                    'Describe the lesson you want. The AI will generate rich text content in the same format as your course description.'}
+                                    'Describe the lesson you want. The AI will generate rich text content in the same format as your subject description.'}
                               </p>
 
                               <div>

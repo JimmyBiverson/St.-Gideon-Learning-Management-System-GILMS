@@ -96,16 +96,16 @@ const Index = (props: CourseCreateProps) => {
    return (
       <>
          <Breadcrumbs
-            title="Create Course"
+            title="Create Subject"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Create New Course' },
+               { title: 'Create New Subject' },
             ]}
             action={
                usePlugin('AIAssistant') && (
                   <CourseAiGeneratePanel
-                     title="Generate Course with AI"
-                     description="Describe your course, choose how many sections, lessons, FAQs, requirements, and outcomes to create, then generate everything in one flow."
+                     title="Generate Subject with AI"
+                     description="Describe your subject, choose how many sections, lessons, FAQs, requirements, and outcomes to create, then generate everything in one flow."
                      actionUrl="/dashboard/courses/ai/generate"
                      extraData={{
                         instructor_id:
@@ -114,7 +114,7 @@ const Index = (props: CourseCreateProps) => {
                      categoryLabel={input.category}
                      categoryPlaceholder={input.category_placeholder}
                      languageLabel={input.course_language}
-                     languagePlaceholder="Select Course Language"
+                     languagePlaceholder="Select Subject Language"
                      categoryData={transformedCategories}
                      languageData={courseLanguages}
                      handler={

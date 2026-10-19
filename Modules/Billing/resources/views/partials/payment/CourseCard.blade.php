@@ -24,7 +24,7 @@
    @unless ($isFree)
       <div class="border-border bg-muted/50 space-y-3 rounded-lg border border-dashed p-4">
          <div class="flex items-center justify-between text-sm font-medium">
-            <span>{{ ucfirst($item_type) }} Price</span>
+            <span>{{ ucfirst($item_type === 'course' ? 'subject' : $item_type) }} Price</span>
             <span class="text-base">
                @if ($hasDiscount)
                   <span class="text-muted-foreground line-through">
@@ -61,8 +61,8 @@
       </div>
    @else
       <div class="rounded-lg border border-dashed border-emerald-500 bg-emerald-50 p-4 text-emerald-700">
-         <p class="text-sm font-semibold uppercase tracking-wide">Free Course</p>
-         <p class="text-2xl font-bold">Enjoy the course for free!</p>
+         <p class="text-sm font-semibold uppercase tracking-wide">Free Subject</p>
+         <p class="text-2xl font-bold">Enjoy the subject for free!</p>
       </div>
    @endunless
 
@@ -116,7 +116,7 @@
             @if (isset($itemCoupons) && !empty($itemCoupons) && count($itemCoupons) > 0)
                <div class="mt-4 space-y-2">
                   <p class="text-muted-foreground text-xs font-medium uppercase tracking-wide">
-                     Available Coupons for this {{ ucfirst($item_type) }}
+                     Available Coupons for this {{ ucfirst($item_type === 'course' ? 'subject' : $item_type) }}
                   </p>
                   <div class="space-y-2">
                      @foreach ($itemCoupons as $availableCoupon)

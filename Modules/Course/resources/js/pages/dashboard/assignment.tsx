@@ -42,10 +42,10 @@ const AssignmentPage = () => {
    return (
       <>
          <Breadcrumbs
-            title="Course Assignments"
+            title="Subject Assignments"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses', href: coursesIndex.url() },
+               { title: 'Subjects', href: coursesIndex.url() },
                { title: 'Assignments' },
             ]}
             action={

@@ -174,7 +174,7 @@ const CertificateCard = ({ type, template }: CertificateCardProps) => {
                         <CertificatePreview
                            template={previewTemplate}
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName="Sample Subject Name"
                            completionDate="January 1, 2025"
                         />
                      </div>

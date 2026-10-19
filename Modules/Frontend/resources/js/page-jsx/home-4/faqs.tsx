@@ -15,51 +15,51 @@ const FAQs = () => {
    const faqs = [
       {
          id: nanoid(),
-         question: 'Do I need any prior experience to take your courses?',
+         question: 'Do I need any prior experience to take your subjects?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: nanoid(),
-         question: 'How long do I have access to the course materials?',
+         question: 'How long do I have access to the subject materials?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: nanoid(),
-         question: 'Will I get a certificate after completing a course?',
+         question: 'Will I get a certificate after completing a subject?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: nanoid(),
-         question: 'Can I ask questions or get support during the course?',
+         question: 'Can I ask questions or get support during the subject?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: nanoid(),
-         question: "What if I'm not satisfied with the course?",
+         question: "What if I'm not satisfied with the subject?",
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: nanoid(),
          question: 'What is the refund policy?',
          answer:
-            "We offer a 30-day money-back guarantee. If you're not satisfied with your purchase, you can request a refund within 30 days of purchase. Please note that refunds are only available for unused course materials.",
+            "We offer a 30-day money-back guarantee. If you're not satisfied with your purchase, you can request a refund within 30 days of purchase. Please note that refunds are only available for unused subject materials.",
       },
       {
          id: nanoid(),
-         question: 'How do I get access to the course materials?',
+         question: 'How do I get access to the subject materials?',
          answer:
-            "Once you've enrolled, you'll receive immediate access to all course materials. You can access them anytime, anywhere, on any device with an internet connection.",
+            "Once you've enrolled, you'll receive immediate access to all subject materials. You can access them anytime, anywhere, on any device with an internet connection.",
       },
       {
          id: nanoid(),
          question: 'How can I get help if I need it?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       // {
       //    id: nanoid(),
@@ -83,8 +83,8 @@ const FAQs = () => {
                      Frequently Asked Questions!
                   </EditorHeading>
                   <EditorParagraph className="text-muted-foreground">
-                     These are the most popular courses among listen courses
-                     learners worldwide these are the most popular courses among
+                     These are the most popular subjects among listen subjects
+                     learners worldwide these are the most popular subjects among
                      listen
                   </EditorParagraph>
                </EditorDiv>

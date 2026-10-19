@@ -40,7 +40,7 @@ const MarksheetBuilderForm = ({
          secondaryColor: '#475569',
          backgroundColor: '#ffffff',
          borderColor: '#2563eb',
-         headerText: 'Course Marksheet',
+         headerText: 'Subject Marksheet',
          institutionName: 'Institute Name',
          footerText: 'This is an official marksheet',
          fontFamily: 'sans-serif',
@@ -85,7 +85,7 @@ const MarksheetBuilderForm = ({
                                  <SelectValue placeholder="Select template type" />
                               </SelectTrigger>
                               <SelectContent>
-                                 <SelectItem value="course">Course</SelectItem>
+                                 <SelectItem value="course">Subject</SelectItem>
                                  {/* <SelectItem value="exam">Exam</SelectItem> */}
                               </SelectContent>
                            </Select>
@@ -357,7 +357,7 @@ const MarksheetBuilderForm = ({
                                     headerText: e.target.value,
                                  }))
                               }
-                              placeholder="Course Marksheet"
+                              placeholder="Subject Marksheet"
                            />
                         </div>
 
@@ -432,7 +432,7 @@ const MarksheetBuilderForm = ({
                               } as any
                            }
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName="Sample Subject Name"
                            completionDate="January 1, 2025"
                            logoUrl={logoPreview}
                         />

@@ -11,7 +11,7 @@ const Wishlist = () => {
    return (
       <div className="space-y-6">
          <div>
-            <h2 className="mb-2 text-xl font-semibold">Course Wishlist</h2>
+            <h2 className="mb-2 text-xl font-semibold">Subject Wishlist</h2>
 
             {courseWishlists && courseWishlists.length > 0 ? (
                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">

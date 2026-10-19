@@ -7,6 +7,7 @@ use App\Services\MetaPixelService;
 use App\Services\NotificationService;
 use App\Services\SettingsService;
 use App\Services\SiteTranslationService;
+use App\Support\SchoolTerminology;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -135,7 +136,7 @@ class HandleInertiaRequests extends Middleware
                 'langs' => $langs,
                 'locale' => $locale,
                 'direction' => $direction,
-                'translate' => [
+                'translate' => SchoolTerminology::replaceCourseTerms([
                     'auth' => trans('auth'),
                     'button' => trans('button'),
                     'common' => trans('common'),
@@ -144,7 +145,7 @@ class HandleInertiaRequests extends Middleware
                     'input' => trans('input'),
                     'settings' => trans('settings'),
                     'table' => trans('table'),
-                ],
+                ]),
                 'flash' => [
                     'error' => fn () => $request->session()->get('error'),
                     'warning' => fn () => $request->session()->get('warning'),
@@ -180,7 +181,7 @@ class HandleInertiaRequests extends Middleware
                 'langs' => [],
                 'locale' => Cookie::get('locale', 'en'),
                 'direction' => Cookie::get('direction', 'ltr'),
-                'translate' => [
+                'translate' => SchoolTerminology::replaceCourseTerms([
                     'auth' => trans('auth'),
                     'button' => trans('button'),
                     'common' => trans('common'),
@@ -189,7 +190,7 @@ class HandleInertiaRequests extends Middleware
                     'input' => trans('input'),
                     'settings' => trans('settings'),
                     'table' => trans('table'),
-                ],
+                ]),
                 'flash' => [
                     'error' => fn () => $request->session()->get('error'),
                     'warning' => fn () => $request->session()->get('warning'),

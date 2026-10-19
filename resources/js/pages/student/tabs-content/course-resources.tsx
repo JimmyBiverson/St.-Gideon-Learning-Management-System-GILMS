@@ -126,7 +126,7 @@ const CourseResources = () => {
          ) : (
             <div className="py-12 text-center">
                <p className="text-lg text-muted-foreground">
-                  No resources available for this course yet.
+                  No resources available for this subject yet.
                </p>
             </div>
          )}

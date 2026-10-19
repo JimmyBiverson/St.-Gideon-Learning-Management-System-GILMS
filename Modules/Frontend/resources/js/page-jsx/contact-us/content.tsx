@@ -19,7 +19,7 @@ const Content = () => {
                <EditorDiv className="space-y-6">
                   <EditorParagraph className="text-center">
                      We're here to help! Whether you have questions about our
-                     courses, need technical support, or want to provide
+                     subjects, need technical support, or want to provide
                      feedback, we'd love to hear from you. Here are the best
                      ways to get in touch with our team.
                   </EditorParagraph>
@@ -29,7 +29,7 @@ const Content = () => {
                         General Inquiries
                      </EditorHeading>
                      <EditorParagraph className="mb-3">
-                        For general questions about Mentor, our courses, or our
+                        For general questions about Mentor, our subjects, or our
                         platform, please email us at:
                      </EditorParagraph>
                      <EditorDiv className="flex items-center gap-2 text-sm">

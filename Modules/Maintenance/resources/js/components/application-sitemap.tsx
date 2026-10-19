@@ -18,7 +18,7 @@ export default function ApplicationSitemap() {
                XML Sitemap
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-               Generate search-engine sitemap for public courses, exams, blogs,
+               Generate search-engine sitemap for public subjects, exams, blogs,
                and pages
             </p>
          </CardHeader>
@@ -39,7 +39,7 @@ export default function ApplicationSitemap() {
                   <div className="flex items-start gap-2">
                      <span className="font-semibold">1.</span>
                      <span>
-                        Includes approved courses, published exams and blogs,
+                        Includes approved subjects, published exams and blogs,
                         active CMS pages, instructors, and categories
                      </span>
                   </div>

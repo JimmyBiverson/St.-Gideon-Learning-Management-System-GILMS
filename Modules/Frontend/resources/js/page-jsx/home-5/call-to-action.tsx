@@ -19,7 +19,7 @@ const CallToAction = () => {
 
                <EditorDiv className="mx-auto w-full max-w-[420px] text-center">
                   <EditorParagraph className="mb-3">
-                     Transform your career with expert-led courses. Join
+                     Transform your career with expert-led subjects. Join
                      thousands of learners today
                   </EditorParagraph>
 

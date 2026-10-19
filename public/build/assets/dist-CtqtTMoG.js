@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./react-DlmbjZJV.js";var n=e(t(),1),r=globalThis?.document?n.useLayoutEffect:()=>{};export{r as t};

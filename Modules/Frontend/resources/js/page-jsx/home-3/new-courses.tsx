@@ -13,10 +13,10 @@ const NewCourses = () => {
          <EditorContainer>
             <EditorDiv className="md:max-w-2xl">
                <EditorHeading className="mb-4 text-3xl font-bold sm:text-4xl">
-                  Latest Courses
+                  Latest Subjects
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  Discover our newest courses and start learning something new
+                  Discover our newest subjects and start learning something new
                   today
                </EditorParagraph>
             </EditorDiv>
@@ -24,7 +24,7 @@ const NewCourses = () => {
             <EditorDynamicWrapper
                api="api/collections/courses/new"
                apiMethod="GET"
-               componentRef="new-courses-carousel-1"
+               componentRef="new-subjects-carousel-1"
             />
          </EditorContainer>
       </EditorSection>

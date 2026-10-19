@@ -18,16 +18,16 @@ const Hero = () => {
                      YOUR JOURNEY BEGINS HERE
                   </EditorParagraph>
                   <EditorHeading className="text-3xl leading-tight font-bold md:text-4xl lg:text-[42px] lg:leading-14">
-                     Unlock 5,500+ Expert-Led Courses Powered by 400+ Trusted
+                     Unlock 5,500+ Expert-Led Subjects Powered by 400+ Trusted
                      Instructors
                   </EditorHeading>
                   <EditorParagraph className="mt-5 text-lg text-muted-foreground">
-                     Start learning today with top-rated courses and
+                     Start learning today with top-rated subjects and
                      instructors.
                   </EditorParagraph>
                </EditorDiv>
 
-               <EditorDynamicWrapper componentRef="course-search-input" />
+               <EditorDynamicWrapper componentRef="subject-search-input" />
             </EditorDiv>
 
             {/* Right Image */}

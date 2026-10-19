@@ -40,7 +40,7 @@ const Show = ({
    // Generate meta information for the instructor
    const pageTitle = `${user.name} - ${frontend.expert_instructor} | ${system.fields?.name}`;
    const pageDescription = `${frontend.learn_from} ${user.name}, ${frontend.expert_instructor_with} ${courses.length} ${frontend.courses_and} ${enrollments_count} ${frontend.students}. ${frontend.average_rating}: ${average_rating ? Number(average_rating).toFixed(1) : frontend.new} ${frontend.stars}.`;
-   const pageKeywords = `${user.name}, instructor, online courses, ${system.fields?.keywords || frontend.instructor_fallback_keywords}, teacher, expert`;
+   const pageKeywords = `${user.name}, instructor, online subjects, ${system.fields?.keywords || frontend.instructor_fallback_keywords}, teacher, expert`;
    const instructorImage = user.photo || '';
    const siteName = system.fields?.name;
    const siteUrl = url;

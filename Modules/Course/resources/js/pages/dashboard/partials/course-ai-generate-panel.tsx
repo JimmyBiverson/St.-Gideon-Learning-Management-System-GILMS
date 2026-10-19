@@ -233,7 +233,7 @@ const CourseAiGeneratePanel = ({
                   >
                      <div className="col-span-full grid grid-cols-1 gap-3 sm:grid-cols-2">
                         <div className="space-y-1.5">
-                           <Label htmlFor="ai-course-category">
+                           <Label htmlFor="ai-subject-category">
                               {categoryLabel}{' '}
                               <span className="text-destructive">*</span>
                            </Label>
@@ -252,7 +252,7 @@ const CourseAiGeneratePanel = ({
                            />
                         </div>
                         <div className="space-y-1.5">
-                           <Label htmlFor="ai-course-language">
+                           <Label htmlFor="ai-subject-language">
                               {languageLabel}{' '}
                               <span className="text-destructive">*</span>
                            </Label>
@@ -333,7 +333,7 @@ const CourseAiGeneratePanel = ({
                         <Textarea
                            id="ai-prompt"
                            rows={5}
-                           placeholder="Describe the course topic, audience, goals, and tone..."
+                           placeholder="Describe the subject topic, audience, goals, and tone..."
                            value={prompt}
                            onChange={(e) => setPrompt(e.target.value)}
                            disabled={processing}
@@ -413,7 +413,7 @@ const CourseAiGeneratePanel = ({
                               <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-current" />
                            </div>
                            <span>
-                              AI is building your course (this may take a
+                              AI is building your subject (this may take a
                               minute)...
                            </span>
                         </div>

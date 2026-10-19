@@ -115,11 +115,11 @@ const Content = () => {
                         6. Payment and Refunds
                      </EditorHeading>
                      <EditorParagraph>
-                        Certain courses and services on Mentor may be offered
+                        Certain subjects and services on Mentor may be offered
                         for a fee. All payments are non-refundable unless
                         otherwise stated in our Refund Policy. Before making any
                         payment, please review the terms applicable to the
-                        specific course or service.
+                        specific subject or service.
                      </EditorParagraph>
                   </EditorDiv>
 

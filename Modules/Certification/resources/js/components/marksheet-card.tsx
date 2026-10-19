@@ -174,7 +174,7 @@ const MarkSheetCard = ({ type, template }: MarkSheetCardProps) => {
                         <MarksheetPreview
                            template={previewMarksheet}
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName="Sample Subject Name"
                            completionDate="January 1, 2025"
                         />
                      </div>

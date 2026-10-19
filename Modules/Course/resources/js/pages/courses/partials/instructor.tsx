@@ -66,7 +66,7 @@ const Instructor = ({ course }: { course: Course }) => {
             </div>
             <div className="flex items-center gap-2">
                <Book className="h-5 w-5 text-gray-500" />
-               <span>{courses.length} Courses</span>
+               <span>{courses.length} Subjects</span>
             </div>
             <div className="flex items-center gap-2">
                <Star className="h-5 w-5 text-gray-500" />

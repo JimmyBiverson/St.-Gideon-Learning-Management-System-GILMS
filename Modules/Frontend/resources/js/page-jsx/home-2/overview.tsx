@@ -19,7 +19,7 @@ const Overview = () => {
                   Take Your Skills to the Next Level
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
+                  These are the most popular subjects among listen subjects
                   learners worldwide.
                </EditorParagraph>
             </EditorDiv>
@@ -40,7 +40,7 @@ const Overview = () => {
                         212+
                      </EditorHeading>
                      <EditorParagraph className="mt-2">
-                        Hours Course Time
+                        Hours Subject Time
                      </EditorParagraph>
                   </EditorDiv>
                </EditorDiv>
@@ -60,7 +60,7 @@ const Overview = () => {
                         15+
                      </EditorHeading>
                      <EditorParagraph className="mt-2">
-                        Creative Courses
+                        Creative Subjects
                      </EditorParagraph>
                   </EditorDiv>
                </EditorDiv>

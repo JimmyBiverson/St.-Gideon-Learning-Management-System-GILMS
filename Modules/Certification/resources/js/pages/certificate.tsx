@@ -39,7 +39,7 @@ const CertificateIndex = ({ templates }: CertificatePageProps) => {
          />
 
          <h6 className="mb-3 text-xl font-semibold">
-            Course Certificate Templates
+            Subject Certificate Templates
          </h6>
          {courseTemplates.length === 0 ? (
             <Card className="p-12">

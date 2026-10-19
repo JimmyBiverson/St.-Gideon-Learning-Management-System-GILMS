@@ -55,7 +55,7 @@ const Instructor = () => {
          <div className="mt-6 flex gap-8">
             <div className="flex items-center gap-2">
                <Book className="h-5 w-5 text-gray-500" />
-               <span>{courses_count} Courses</span>
+               <span>{courses_count} Subjects</span>
             </div>
 
             <div className="flex items-center gap-2">

@@ -19,7 +19,7 @@ const Blogs = () => {
                   Our Latest Post
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
+                  These are the most popular subjects among listen subjects
                   learners worldwide
                </EditorParagraph>
             </EditorDiv>

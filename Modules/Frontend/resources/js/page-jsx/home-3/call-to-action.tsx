@@ -12,7 +12,7 @@ const CallToAction = () => {
       <EditorDiv className="bg-[#004B50] py-20">
          <EditorSection className="space-y-5 text-center text-white">
             <EditorHeading className="text-2xl leading-tight font-bold md:text-3xl md:leading-9">
-               Subscribe for course updates & discounts
+               Subscribe for subject updates & discounts
             </EditorHeading>
 
             <EditorDiv className="mx-auto w-full max-w-[420px] text-center">

@@ -169,7 +169,7 @@ const CouponForm = ({ title, handler, coupon, courses }: Props) => {
                            </div>
 
                            <div className="col-span-2">
-                              <Label htmlFor="course_id">Select Course</Label>
+                              <Label htmlFor="course_id">Select Subject</Label>
                               <Select
                                  name="course_id"
                                  defaultValue={
@@ -178,11 +178,11 @@ const CouponForm = ({ title, handler, coupon, courses }: Props) => {
                                  }
                               >
                                  <SelectTrigger>
-                                    <SelectValue placeholder="All Courses (global coupon)" />
+                                    <SelectValue placeholder="All Subjects (global coupon)" />
                                  </SelectTrigger>
                                  <SelectContent>
                                     <SelectItem value={GLOBAL_COURSE_VALUE}>
-                                       All Courses (global coupon)
+                                       All Subjects (global coupon)
                                     </SelectItem>
                                     {courses.map((c) => (
                                        <SelectItem

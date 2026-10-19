@@ -122,7 +122,7 @@ const EnrollmentModal = ({ type, title, handler }: Props) => {
                            <Label>
                               {type === 'exam'
                                  ? 'Select Exam'
-                                 : 'Select Course'}
+                                 : 'Select Subject'}
                            </Label>
                            <Combobox
                               data={
@@ -136,7 +136,7 @@ const EnrollmentModal = ({ type, title, handler }: Props) => {
                               placeholder={
                                  type === 'exam'
                                     ? 'Select Exam'
-                                    : 'Select Course'
+                                    : 'Select Subject'
                               }
                               onSelect={(selected) =>
                                  setData(

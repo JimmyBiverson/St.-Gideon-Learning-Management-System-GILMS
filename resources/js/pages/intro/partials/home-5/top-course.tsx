@@ -42,14 +42,14 @@ const TopCourse = () => {
                      <h2 className="mb-2 font-bold sm:text-3xl">
                         {topCourse?.formatted_duration}
                      </h2>
-                     <p className="text-muted-foreground">Course Duration</p>
+                     <p className="text-muted-foreground">Subject Duration</p>
                   </Card>
                   <Card className="px-6 py-7">
                      <h2 className="mb-2 font-bold sm:text-3xl">
                         {topCourse?.total_lessons}
                      </h2>
                      <p className="text-muted-foreground">
-                        Course Lesson{topCourse?.total_lessons > 1 ? 's' : ''}
+                        Subject Lesson{topCourse?.total_lessons > 1 ? 's' : ''}
                      </p>
                   </Card>
                   <Card className="px-6 py-7">

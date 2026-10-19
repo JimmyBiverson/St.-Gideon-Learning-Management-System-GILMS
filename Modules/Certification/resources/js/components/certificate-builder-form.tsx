@@ -42,7 +42,7 @@ const CertificateBuilderForm = ({
          borderColor: '#f59e0b',
          titleText: 'Certificate of Completion',
          descriptionText: 'This certificate is proudly presented to',
-         completionText: 'for successfully completing the course',
+         completionText: 'for successfully completing the subject',
          footerText: 'Authorized Certificate',
          fontFamily: 'serif',
       },
@@ -88,7 +88,7 @@ const CertificateBuilderForm = ({
                                  <SelectValue placeholder="Select template type" />
                               </SelectTrigger>
                               <SelectContent>
-                                 <SelectItem value="course">Course</SelectItem>
+                                 <SelectItem value="course">Subject</SelectItem>
                                  <SelectItem value="exam">Exam</SelectItem>
                               </SelectContent>
                            </Select>
@@ -121,7 +121,7 @@ const CertificateBuilderForm = ({
                      <CardHeader>
                         <CardTitle>Logo & Branding</CardTitle>
                         <CardDescription>
-                           Upload your institution or course logo
+                           Upload your institution or subject logo
                         </CardDescription>
                      </CardHeader>
                      <CardContent className="space-y-4">
@@ -400,7 +400,7 @@ const CertificateBuilderForm = ({
                                     completionText: e.target.value,
                                  }))
                               }
-                              placeholder="for successfully completing the course"
+                              placeholder="for successfully completing the subject"
                            />
                         </div>
 
@@ -456,7 +456,7 @@ const CertificateBuilderForm = ({
                               } as any
                            }
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName="Sample Subject Name"
                            completionDate="January 1, 2025"
                            logoUrl={logoPreview}
                         />

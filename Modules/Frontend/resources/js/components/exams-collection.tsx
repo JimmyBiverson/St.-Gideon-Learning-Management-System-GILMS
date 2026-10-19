@@ -69,7 +69,7 @@ const ExamsCollection = ({ data }: ExamsCollectionProps) => {
                         <TableRow>
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
-                           <TableHead>Course</TableHead>
+                           <TableHead>Subject</TableHead>
                            <TableHead>Questions</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
@@ -97,7 +97,7 @@ const ExamsCollection = ({ data }: ExamsCollectionProps) => {
                         <TableRow>
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
-                           <TableHead>Course</TableHead>
+                           <TableHead>Subject</TableHead>
                            <TableHead>Questions</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
@@ -125,7 +125,7 @@ const ExamsCollection = ({ data }: ExamsCollectionProps) => {
                         <TableRow>
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
-                           <TableHead>Course</TableHead>
+                           <TableHead>Subject</TableHead>
                            <TableHead>Questions</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>

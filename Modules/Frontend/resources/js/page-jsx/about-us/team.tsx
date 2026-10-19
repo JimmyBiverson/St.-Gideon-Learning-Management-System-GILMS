@@ -21,7 +21,7 @@ const Team = () => {
       },
       {
          name: 'Mike Johnson',
-         role: 'Course Developer',
+         role: 'Subject Developer',
          image: '/assets/images/users/user-3.jpg',
       },
       {

@@ -43,7 +43,7 @@ const Index = (props: Props) => {
             title="Categories"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Course Categories' },
+               { title: 'Subject Categories' },
             ]}
             action={
                <div className="flex items-center gap-3">
@@ -164,7 +164,7 @@ const Index = (props: Props) => {
                                     route: destroyCategory.url({
                                        category: Number(category.id),
                                     }),
-                                    message: `The category "${category.title}" and its sub categories will be deleted and their courses will be moved to the default category.`,
+                                    message: `The category "${category.title}" and its sub categories will be deleted and their subjects will be moved to the default category.`,
                                  },
                               ]}
                               component={
@@ -280,7 +280,7 @@ const Index = (props: Props) => {
                                                       ),
                                                    },
                                                 ),
-                                                message: `The sub category "${child.title}" will be deleted and their courses will be moved to it's parent category.`,
+                                                message: `The sub category "${child.title}" will be deleted and their subjects will be moved to it's parent category.`,
                                              },
                                           ]}
                                           component={

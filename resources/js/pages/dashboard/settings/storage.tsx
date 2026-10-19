@@ -88,7 +88,7 @@ const Storage = ({ storage }: Props) => {
                               <p className="mt-2 text-xs text-muted-foreground">
                                  Bunny only hosts lesson videos — it has no file
                                  storage of its own for images, documents, or
-                                 course previews, so those keep using the local
+                                 subject previews, so those keep using the local
                                  disk while Bunny is selected.
                               </p>
                            )}

@@ -56,7 +56,7 @@ const CourseCategoriesCollection = ({
          </TableCell>
          <TableCell className="font-medium">{category_item.title}</TableCell>
          <TableCell>{category_item.slug || 'N/A'}</TableCell>
-         <TableCell>{category_item.courses_count || 0} courses</TableCell>
+         <TableCell>{category_item.courses_count || 0} subjects</TableCell>
          <TableCell className="flex items-center justify-end">
             <DeleteCollection
                type="course_categories"
@@ -72,7 +72,7 @@ const CourseCategoriesCollection = ({
          <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-3">
             <div>
                <CardTitle className="text-xl font-bold">
-                  Course Categories
+                  Subject Categories
                </CardTitle>
                <ApiCopy value={`api/collections/course_categories/${value}`} />
             </div>
@@ -87,7 +87,7 @@ const CourseCategoriesCollection = ({
                   <ScrollArea className="max-h-[90vh] p-2">
                      <DataTable
                         type="course_categories"
-                        title="Course Categories"
+                        title="Subject Categories"
                         data={categories}
                         selectedIds={
                            value === 'best'
@@ -122,16 +122,16 @@ const CourseCategoriesCollection = ({
             >
                <TabsList className="grid w-full grid-cols-4">
                   <TabsTrigger value="best" className="cursor-pointer">
-                     Best Course Category
+                     Best Subject Category
                   </TabsTrigger>
                   <TabsTrigger value="top" className="cursor-pointer">
-                     Top Course Categories
+                     Top Subject Categories
                   </TabsTrigger>
                   <TabsTrigger value="new" className="cursor-pointer">
-                     New Course Categories
+                     New Subject Categories
                   </TabsTrigger>
                   <TabsTrigger value="featured" className="cursor-pointer">
-                     Featured Course Categories
+                     Featured Subject Categories
                   </TabsTrigger>
                </TabsList>
 
@@ -142,7 +142,7 @@ const CourseCategoriesCollection = ({
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
                            <TableHead>Slug</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -155,7 +155,7 @@ const CourseCategoriesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No best course category selected
+                                 No best subject category selected
                               </TableCell>
                            </TableRow>
                         )}
@@ -170,7 +170,7 @@ const CourseCategoriesCollection = ({
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
                            <TableHead>Slug</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -185,7 +185,7 @@ const CourseCategoriesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No top course categories selected
+                                 No top subject categories selected
                               </TableCell>
                            </TableRow>
                         )}
@@ -200,7 +200,7 @@ const CourseCategoriesCollection = ({
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
                            <TableHead>Slug</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -215,7 +215,7 @@ const CourseCategoriesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No new course categories selected
+                                 No new subject categories selected
                               </TableCell>
                            </TableRow>
                         )}
@@ -230,7 +230,7 @@ const CourseCategoriesCollection = ({
                            <TableHead>Icon</TableHead>
                            <TableHead>Title</TableHead>
                            <TableHead>Slug</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -245,7 +245,7 @@ const CourseCategoriesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No featured course categories selected
+                                 No featured subject categories selected
                               </TableCell>
                            </TableRow>
                         )}

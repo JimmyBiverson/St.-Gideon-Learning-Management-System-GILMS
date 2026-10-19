@@ -17,7 +17,7 @@ const TopInstructors = () => {
       },
       {
          name: 'Michael Chen',
-         role: 'Course Designer',
+         role: 'Subject Designer',
          image: '/assets/images/users/user-2.jpg',
       },
       {

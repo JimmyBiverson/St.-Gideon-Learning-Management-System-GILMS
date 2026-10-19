@@ -166,7 +166,7 @@ const ContentList = ({
                                        courseCompletion.percentage !== '100.00'
                                     }
                                  >
-                                    Course Certificate
+                                    Subject Certificate
                                  </Button>
                               </Link>
                            </div>
@@ -179,7 +179,7 @@ const ContentList = ({
                                     size="lg"
                                     onClick={finishCourseHandler}
                                  >
-                                    Finish Course
+                                    Finish Subject
                                  </Button>
                               ) : (
                                  <Button
@@ -188,7 +188,7 @@ const ContentList = ({
                                     size="lg"
                                     disabled
                                  >
-                                    Finish Course
+                                    Finish Subject
                                  </Button>
                               )}
                            </div>

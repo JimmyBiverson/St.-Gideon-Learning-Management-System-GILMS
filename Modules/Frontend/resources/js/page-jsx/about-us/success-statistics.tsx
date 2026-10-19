@@ -13,7 +13,7 @@ const SuccessStatistics = () => {
    const statistics = [
       {
          count: '100+',
-         title: 'Courses',
+         title: 'Subjects',
          image: '/assets/images/students-1.jpg',
       },
       {
@@ -48,7 +48,7 @@ const SuccessStatistics = () => {
 
                      <EditorLink href="/courses/all" type="inertia">
                         <EditorButton className="h-10 cursor-pointer bg-linear-to-r from-[#00A67F] to-[#0077B6]">
-                           Browse Courses
+                           Browse Subjects
                         </EditorButton>
                      </EditorLink>
 

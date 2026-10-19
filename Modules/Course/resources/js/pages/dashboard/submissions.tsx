@@ -43,7 +43,7 @@ const SubmissionsPage = () => {
             title="Assignment Submissions"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses', href: coursesIndex.url() },
+               { title: 'Subjects', href: coursesIndex.url() },
                { title: 'Assignments', href: index.url(course.id) },
                { title: 'Submissions' },
             ]}

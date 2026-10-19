@@ -54,7 +54,7 @@ const Index = (props: Props) => {
                   </div>
 
                   <div>
-                     <Label>{input.select || 'Select Course'}</Label>
+                     <Label>{input.select || 'Select Subject'}</Label>
                      <Combobox
                         data={transformedCourses}
                         defaultValue={data.course_id}

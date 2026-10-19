@@ -4,6 +4,10 @@ A web-based Learning Management System designed to make online learning easier f
 
 The system provides separate dashboards and features for students, instructors, and administrators, allowing institutions to manage courses, learning content, users, enrollments, and learning activities from one platform.
 
+## Subject terminology
+
+The interface uses **Subject** and **Subjects** for primary-school learning areas. Existing route URLs and internal identifiers remain unchanged, preserving navigation and application behavior.
+
 ## Features
 
 ### Student

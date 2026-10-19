@@ -16,31 +16,31 @@ const FAQs = () => {
    const faqs = [
       {
          id: 'item-1',
-         question: 'Do I need any prior experience to take your courses?',
+         question: 'Do I need any prior experience to take your subjects?',
          answer:
-            "Not at all! My courses are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
+            "Not at all! My subjects are designed for learners of all levels. Whether your a complete beginner or looking to sharpen existing skills, you'll find step-by-step guidance to help you progress with confidence.",
       },
       {
          id: 'item-2',
-         question: 'How long do I have access to the course materials?',
+         question: 'How long do I have access to the subject materials?',
          answer:
-            'You have lifetime access to all course materials. Once you enroll, you can learn at your own pace and revisit the content whenever you need a refresher.',
+            'You have lifetime access to all subject materials. Once you enroll, you can learn at your own pace and revisit the content whenever you need a refresher.',
       },
       {
          id: 'item-3',
-         question: 'Will I get a certificate after completing a course?',
+         question: 'Will I get a certificate after completing a subject?',
          answer:
-            "Yes! Upon successful completion of any course, you'll receive a certificate of completion that you can share on your professional profiles and with potential employers.",
+            "Yes! Upon successful completion of any subject, you'll receive a certificate of completion that you can share on your professional profiles and with potential employers.",
       },
       {
          id: 'item-4',
-         question: 'Can I ask questions or get support during the course?',
+         question: 'Can I ask questions or get support during the subject?',
          answer:
-            'Absolutely! Each course includes a discussion forum where you can ask questions, interact with other students, and receive support from instructors and the community.',
+            'Absolutely! Each subject includes a discussion forum where you can ask questions, interact with other students, and receive support from instructors and the community.',
       },
       {
          id: 'item-5',
-         question: "What if I'm not satisfied with the course?",
+         question: "What if I'm not satisfied with the subject?",
          answer:
             "We offer a 30-day money-back guarantee. If you're not completely satisfied with your purchase, you can request a full refund within 30 days of enrollment, no questions asked.",
       },

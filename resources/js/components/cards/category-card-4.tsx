@@ -27,7 +27,7 @@ const CategoryCard4 = ({ category, className, ...props }: Props) => {
 
             <div className="flex items-center justify-between gap-2 text-muted-foreground group-hover:text-foreground">
                <p className="text-sm font-medium">
-                  {category.courses_count} Courses
+                  {category.courses_count} Subjects
                </p>
                <ExternalLink className="h-4 w-4" />
             </div>

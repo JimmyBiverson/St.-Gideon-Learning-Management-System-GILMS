@@ -35,7 +35,7 @@ const Hero = () => {
                            className="cursor-pointer"
                         >
                            <EditorButton className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-white shadow-lg">
-                              Browse Courses
+                              Browse Subjects
                            </EditorButton>
                         </EditorLink>
 

@@ -13,15 +13,15 @@ const NewCourses = () => {
          <EditorContainer>
             <EditorDiv className="relative z-10 mx-auto mb-10 max-w-lg text-center">
                <EditorParagraph className="mb-1 font-medium text-secondary-foreground">
-                  Courses
+                  Subjects
                </EditorParagraph>
                <EditorHeading className="mb-4 text-2xl font-bold sm:text-3xl">
-                  Latest Courses
+                  Latest Subjects
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
-                  learners worldwide these are the most popular courses among
-                  courses
+                  These are the most popular subjects among listen subjects
+                  learners worldwide these are the most popular subjects among
+                  subjects
                </EditorParagraph>
             </EditorDiv>
 
@@ -29,7 +29,7 @@ const NewCourses = () => {
                <EditorDynamicWrapper
                   api="api/collections/courses/new"
                   apiMethod="GET"
-                  componentRef="new-courses-1"
+                  componentRef="new-subjects-1"
                />
 
                <EditorDiv className="pointer-events-none absolute -bottom-100 -left-100 h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle,rgba(97,95,255,0.45)_0%,transparent_70%)] opacity-30 content-['']"></EditorDiv>

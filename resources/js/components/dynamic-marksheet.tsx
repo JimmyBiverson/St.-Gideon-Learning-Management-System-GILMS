@@ -205,7 +205,7 @@ const DynamicMarksheet = ({
       // Column 2 - Course
       ctx.font = `16px ${template_data.fontFamily}`;
       ctx.fillStyle = template_data.secondaryColor;
-      ctx.fillText('Course', col2X, currentY);
+      ctx.fillText('Subject', col2X, currentY);
 
       ctx.font = `bold 20px ${template_data.fontFamily}`;
       ctx.fillStyle = template_data.primaryColor;
@@ -438,7 +438,7 @@ const DynamicMarksheet = ({
                            color: template_data.secondaryColor,
                         }}
                      >
-                        Course
+                        Subject
                      </p>
                      <p
                         className="text-lg font-semibold"

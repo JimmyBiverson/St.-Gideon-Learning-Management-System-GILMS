@@ -407,7 +407,7 @@ const Website = () => {
                         </div>
 
                         <div>
-                           <Label>{`Course Selling Currency (${data.selling_currency})`}</Label>
+                           <Label>{`Subject Selling Currency (${data.selling_currency})`}</Label>
                            <Combobox
                               data={currencies}
                               defaultValue={data.selling_currency}
@@ -420,11 +420,11 @@ const Website = () => {
                         </div>
 
                         <div>
-                           <Label>{'Course Selling Tax (%)'}</Label>
+                           <Label>{'Subject Selling Tax (%)'}</Label>
                            <Input
                               name="selling_tax"
                               defaultValue={fields.selling_tax || ''}
-                              placeholder="Enter Course Selling Tax Percentage"
+                              placeholder="Enter Subject Selling Tax Percentage"
                            />
                            <InputError message={errors.selling_tax} />
                         </div>

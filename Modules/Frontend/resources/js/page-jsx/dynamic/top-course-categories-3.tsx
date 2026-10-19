@@ -10,7 +10,7 @@ const TopCourseCategories3 = ({
    if (!data || !data.collection || data.collection.length === 0) {
       return (
          <p className="flex items-center justify-center p-8 text-center text-muted-foreground">
-            No course categories found.
+            No subject categories found.
          </p>
       );
    }
@@ -45,7 +45,7 @@ const TopCourseCategories3 = ({
                   </div>
                ) : (
                   <p className="text-center text-muted-foreground">
-                     No courses found
+                     No subjects found
                   </p>
                )}
             </TabsContent>

@@ -30,7 +30,7 @@ const Statistics = () => {
                      32k
                   </EditorHeading>
                   <EditorParagraph className="text-lg">
-                     Enrolled Courses
+                     Enrolled Subjects
                   </EditorParagraph>
                </EditorDiv>
                <EditorDiv>
@@ -38,7 +38,7 @@ const Statistics = () => {
                      429k+
                   </EditorHeading>
                   <EditorParagraph className="text-lg">
-                     Course Completed
+                     Subject Completed
                   </EditorParagraph>
                </EditorDiv>
             </EditorDiv>

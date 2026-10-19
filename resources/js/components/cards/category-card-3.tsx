@@ -8,7 +8,7 @@ const CategoryCard2 = ({ category }: { category: CourseCategory }) => {
          <Card className="h-[110px] gap-4 rounded-2xl border-muted px-12 py-6 !shadow-none hover:!shadow-card">
             <p className="text-lg font-medium">{category.title}</p>
             <p className="text-muted-foreground">
-               {category.courses_count} Courses
+               {category.courses_count} Subjects
             </p>
          </Card>
       </Link>

@@ -47,7 +47,7 @@ const CategoriesTableColumn = (): ColumnDef<CategoryData>[] => {
                      column.toggleSorting(column.getIsSorted() === 'asc')
                   }
                >
-                  Courses
+                  Subjects
                   <ArrowUpDown className="ml-2 h-4 w-4" />
                </Button>
             </div>

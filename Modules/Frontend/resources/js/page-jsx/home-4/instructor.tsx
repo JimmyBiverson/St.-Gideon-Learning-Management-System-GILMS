@@ -15,7 +15,7 @@ const Instructor = () => {
          icon: 'graduation-cap',
          title: '10+ Years Experience',
          description:
-            'Every course includes real-world projects to help you build a strong, job-ready portfolio',
+            'Every subject includes real-world projects to help you build a strong, job-ready portfolio',
       },
       {
          icon: 'users',
@@ -48,8 +48,8 @@ const Instructor = () => {
                   Reasons to Learn with Me
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
-                  learners worldwide these are the most popular courses among
+                  These are the most popular subjects among listen subjects
+                  learners worldwide these are the most popular subjects among
                   listen
                </EditorParagraph>
             </EditorDiv>

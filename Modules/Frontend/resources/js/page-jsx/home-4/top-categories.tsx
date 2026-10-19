@@ -17,7 +17,7 @@ const TopCategories = () => {
                      Top Categories
                   </EditorHeading>
                   <EditorParagraph className="text-muted-foreground">
-                     Explore our most popular course categories
+                     Explore our most popular subject categories
                   </EditorParagraph>
                </EditorDiv>
 
@@ -25,7 +25,7 @@ const TopCategories = () => {
                   className="w-full"
                   api="api/collections/course_categories/new"
                   apiMethod="GET"
-                  componentRef="top-course-categories-5"
+                  componentRef="top-subject-categories-5"
                />
             </EditorDiv>
          </EditorContainer>

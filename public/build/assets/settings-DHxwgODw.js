@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-LKYXHABd.js";import{k as t}from"./app-CSVtnGaQ.js";import{n,r,t as i}from"./forget-password-DZBYVcQE.js";var a=t(),o=e(),s=()=>{let e=(0,a.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,o.jsxs)(`div`,{className:`space-y-7`,children:[(0,o.jsx)(r,{}),(0,o.jsx)(i,{}),(0,o.jsx)(n,{})]}),e[0]=t):t=e[0],t};export{s as default};

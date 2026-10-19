@@ -23,7 +23,7 @@ const CallToAction = () => {
                      </EditorHeading>
                      <EditorParagraph className="text-white">
                         Stay ahead in digital design with curated insights,
-                        learning tips, and course updates every week.
+                        learning tips, and subject updates every week.
                      </EditorParagraph>
                   </EditorDiv>
 

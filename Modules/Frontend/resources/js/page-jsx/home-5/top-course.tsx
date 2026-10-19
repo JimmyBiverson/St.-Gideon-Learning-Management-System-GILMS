@@ -17,7 +17,7 @@ const TopCourse = () => {
                <EditorDiv className="relative">
                   <EditorDiv className="relative z-10 mb-10">
                      <EditorParagraph className="mb-1 font-medium text-secondary-foreground">
-                        FEATURED COURSE
+                        FEATURED SUBJECT
                      </EditorParagraph>
                      <EditorHeading className="mb-4 text-2xl font-bold sm:text-3xl">
                         HTML5 & CSS3: Complete Guide for Modern Web Development
@@ -25,7 +25,7 @@ const TopCourse = () => {
                   </EditorDiv>
 
                   <EditorImage
-                     alt="Featured Course"
+                     alt="Featured Subject"
                      src="/assets/images/courses/html-css-development.jpg"
                      className="relative z-10 w-full rounded-xl object-cover object-center"
                   />
@@ -40,7 +40,7 @@ const TopCourse = () => {
                            12h 30m
                         </EditorHeading>
                         <EditorParagraph className="text-muted-foreground">
-                           Course Duration
+                           Subject Duration
                         </EditorParagraph>
                      </EditorDiv>
                      <EditorDiv className="rounded-lg border bg-background px-6 py-7 shadow-sm">
@@ -48,7 +48,7 @@ const TopCourse = () => {
                            24
                         </EditorHeading>
                         <EditorParagraph className="text-muted-foreground">
-                           Course Lessons
+                           Subject Lessons
                         </EditorParagraph>
                      </EditorDiv>
                      <EditorDiv className="rounded-lg border bg-background px-6 py-7 shadow-sm">
@@ -75,7 +75,7 @@ const TopCourse = () => {
                      className="relative z-10 mt-10 cursor-pointer md:mt-14"
                   >
                      <EditorButton className="bg-linear-to-r from-[#00A67F] to-[#0077B6] px-6 py-3">
-                        Browse Courses
+                        Browse Subjects
                      </EditorButton>
                   </EditorLink>
 

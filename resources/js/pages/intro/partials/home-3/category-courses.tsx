@@ -56,7 +56,7 @@ const CategoryCourses = () => {
                         </div>
                      ) : (
                         <p className="text-center text-muted-foreground">
-                           No courses found
+                           No subjects found
                         </p>
                      )}
                   </TabsContent>

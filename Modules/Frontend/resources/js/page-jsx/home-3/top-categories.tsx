@@ -16,7 +16,7 @@ const TopCategories = () => {
                   New Categories
                </EditorHeading>
                <EditorParagraph className="text-muted-foreground">
-                  These are the most popular courses among listen courses
+                  These are the most popular subjects among listen subjects
                   learners worldwide
                </EditorParagraph>
             </EditorDiv>
@@ -24,7 +24,7 @@ const TopCategories = () => {
             <EditorDynamicWrapper
                api="api/collections/course_categories/new"
                apiMethod="GET"
-               componentRef="top-course-categories-4"
+               componentRef="top-subject-categories-4"
             />
          </EditorContainer>
       </EditorSection>

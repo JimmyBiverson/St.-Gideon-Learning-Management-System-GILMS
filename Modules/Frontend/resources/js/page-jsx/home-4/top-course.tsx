@@ -11,7 +11,7 @@ const TopCourse = () => {
             <EditorDynamicWrapper
                api="api/collections/courses/best"
                apiMethod="GET"
-               componentRef="best-course"
+               componentRef="best-subject"
             />
          </EditorSection>
       </EditorDiv>

@@ -21,7 +21,7 @@ const Overview = () => {
                   </EditorHeading>
                   <EditorParagraph className="text-muted-foreground">
                      We provide the best learning experience with expert
-                     instructors, comprehensive courses, and a supportive
+                     instructors, comprehensive subjects, and a supportive
                      community.
                   </EditorParagraph>
                </EditorDiv>
@@ -73,7 +73,7 @@ const Overview = () => {
                                  1.2k+
                               </EditorHeading>
                               <EditorParagraph className="mt-2">
-                                 Quality Courses
+                                 Quality Subjects
                               </EditorParagraph>
                            </EditorDiv>
                         </EditorDiv>

@@ -108,7 +108,7 @@ const MarksheetPreview = ({
                   className="text-sm"
                   style={{ color: template_data.secondaryColor }}
                >
-                  Course
+                  Subject
                </p>
                <p
                   className="text-lg font-semibold"

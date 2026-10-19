@@ -29,7 +29,7 @@ const CourseCertificate = () => {
             <Lock className="h-4 w-4" />
             <AlertTitle>Certificate & Marksheet Locked</AlertTitle>
             <AlertDescription>
-               Complete all course modules to unlock your certificate and
+               Complete all subject modules to unlock your certificate and
                marksheet. Your current progress: {completion?.completion || 0}%
             </AlertDescription>
          </Alert>
@@ -52,7 +52,7 @@ const CourseCertificate = () => {
                   </h3>
                   <p className="text-muted-foreground">
                      The instructor hasn't set up certificates or marksheets for
-                     this course yet.
+                     this subject yet.
                   </p>
                </CardContent>
             </Card>
@@ -90,7 +90,7 @@ const CourseCertificate = () => {
                         </h3>
                         <p className="text-muted-foreground">
                            The instructor hasn't set up certificates for this
-                           course yet.
+                           subject yet.
                         </p>
                      </CardContent>
                   </Card>
@@ -114,7 +114,7 @@ const CourseCertificate = () => {
                         </h3>
                         <p className="text-muted-foreground">
                            {!marksheetTemplate
-                              ? "The instructor hasn't set up marksheets for this course yet."
+                              ? "The instructor hasn't set up marksheets for this subject yet."
                               : 'No marks data available. Complete assignments and quizzes to view your marksheet.'}
                         </p>
                      </CardContent>

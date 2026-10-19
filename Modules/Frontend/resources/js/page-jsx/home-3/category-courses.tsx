@@ -26,7 +26,7 @@ const CategoryCourses = () => {
             <EditorDynamicWrapper
                api="api/collections/course_categories/featured"
                apiMethod="GET"
-               componentRef="top-course-categories-3"
+               componentRef="top-subject-categories-3"
             />
 
             <EditorDiv className="mt-10 flex items-center justify-center">
@@ -36,7 +36,7 @@ const CategoryCourses = () => {
                   className="cursor-pointer"
                >
                   <EditorButton buttonType="button" className="h-[42px] px-5">
-                     View All Courses
+                     View All Subjects
                   </EditorButton>
                </EditorLink>
             </EditorDiv>

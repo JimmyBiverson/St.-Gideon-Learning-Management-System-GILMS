@@ -164,7 +164,7 @@ const CourseUpdateHeader = () => {
                         Update Approval Status
                      </DialogTitle>
                      <p className="text-sm text-muted-foreground">
-                        Change the status of this course and provide optional
+                        Change the status of this subject and provide optional
                         feedback.
                      </p>
                   </DialogHeader>
@@ -327,7 +327,7 @@ const CourseUpdateHeader = () => {
                            </h4>
                            <p className="text-xs text-destructive/90">
                               Please resolve the requirements below before
-                              submitting the course.
+                              submitting the subject.
                            </p>
                         </div>
                      </div>

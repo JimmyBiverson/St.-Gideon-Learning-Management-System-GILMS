@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-XKyaHtl9.js";import{t}from"./createLucideIcon-CfrXfsoV.js";var n=e({__iconNode:()=>r,default:()=>i}),r=[[`polyline`,{points:`16 18 22 12 16 6`,key:`z7tu5w`}],[`polyline`,{points:`8 6 2 12 8 18`,key:`1eg1df`}]],i=t(`Code`,r);export{n,i as t};

@@ -104,7 +104,7 @@ const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
             },
             {
                Icon: School,
-               name: button.courses || 'Courses',
+               name: button.courses || 'Subjects',
                path: '',
                slug: 'courses',
                active: true,
@@ -122,7 +122,7 @@ const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
                      access: ['admin', 'collaborative', 'administrative'],
                   },
                   {
-                     name: button.manage_courses || 'Manage Courses',
+                     name: button.manage_courses || 'Manage Subjects',
                      slug: routeLastSegment(courses.index.url()),
                      path: courses.index.url(),
                      access: [
@@ -133,7 +133,7 @@ const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
                      ],
                   },
                   {
-                     name: button.create_course || 'Create Course',
+                     name: button.create_course || 'Create Subject',
                      slug: routeLastSegment(courses.create.url()),
                      path: courses.create.url(),
                      access: [
@@ -144,13 +144,13 @@ const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
                      ],
                   },
                   {
-                     name: button.course_coupons || 'Course Coupons',
+                     name: button.course_coupons || 'Subject Coupons',
                      slug: routeLastSegment(courseCoupons.index.url()),
                      path: courseCoupons.index.url(),
                      access: ['admin', 'collaborative', 'administrative'],
                   },
                   {
-                     name: button.course_enrollments || 'Course Enrollments',
+                     name: button.course_enrollments || 'Subject Enrollments',
                      slug: routeLastSegment(courseEnrollments.index.url()),
                      path: courseEnrollments.index.url(),
                      access: [

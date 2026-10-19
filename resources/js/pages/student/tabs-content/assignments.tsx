@@ -67,7 +67,7 @@ const Assignments = () => {
          ) : (
             <div className="py-12 text-center">
                <p className="text-lg text-muted-foreground">
-                  No assignments available for this course yet.
+                  No assignments available for this subject yet.
                </p>
             </div>
          )}

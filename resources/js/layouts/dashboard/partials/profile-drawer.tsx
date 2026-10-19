@@ -30,7 +30,7 @@ export function ProfileDrawer() {
 
    const studentMenuItems = [
       {
-         name: button.my_courses ?? 'My Courses',
+         name: button.my_courses ?? 'My Subjects',
          slug: 'courses',
          Icon: GraduationCap,
       },

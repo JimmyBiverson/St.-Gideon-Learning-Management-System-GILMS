@@ -189,7 +189,7 @@ const VerifyPaymentModal = ({ payment, isOpen, onClose }: Props) => {
                         <Info className="h-4 w-4" />
                         <AlertDescription>
                            Verifying this payment will automatically enroll the
-                           user in the purchased course/exam.
+                           user in the purchased subject/exam.
                         </AlertDescription>
                      </Alert>
 

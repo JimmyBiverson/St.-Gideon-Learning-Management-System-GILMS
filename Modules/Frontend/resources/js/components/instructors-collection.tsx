@@ -50,7 +50,7 @@ const InstructorsCollection = ({
             {instructor.user?.name || 'N/A'}
          </TableCell>
          <TableCell>{instructor.user?.email || 'N/A'}</TableCell>
-         <TableCell>{instructor.courses_count || 0} courses</TableCell>
+         <TableCell>{instructor.courses_count || 0} subjects</TableCell>
          <TableCell className="flex items-center justify-end">
             <DeleteCollection
                type="instructors"
@@ -131,7 +131,7 @@ const InstructorsCollection = ({
                            <TableHead>Photo</TableHead>
                            <TableHead>Name</TableHead>
                            <TableHead>Email</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -159,7 +159,7 @@ const InstructorsCollection = ({
                            <TableHead>Photo</TableHead>
                            <TableHead>Name</TableHead>
                            <TableHead>Email</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>
@@ -189,7 +189,7 @@ const InstructorsCollection = ({
                            <TableHead>Photo</TableHead>
                            <TableHead>Name</TableHead>
                            <TableHead>Email</TableHead>
-                           <TableHead>Courses</TableHead>
+                           <TableHead>Subjects</TableHead>
                            <TableHead className="text-right">Action</TableHead>
                         </TableRow>
                      </TableHeader>

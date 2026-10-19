@@ -295,7 +295,7 @@ const IntroNavbar = () => {
                                  })}
                                  className="text-sm font-normal"
                               >
-                                 My Courses
+                                 My Subjects
                               </Link>
                               <Link
                                  href={student.index({
@@ -361,7 +361,7 @@ const IntroNavbar = () => {
 const studentMenuItems = [
    {
       id: nanoid(),
-      name: 'My Courses',
+      name: 'My Subjects',
       slug: 'courses',
       Icon: GraduationCap,
    },

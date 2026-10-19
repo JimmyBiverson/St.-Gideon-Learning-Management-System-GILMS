@@ -20,10 +20,10 @@ const Hero = () => {
                      YOUR JOURNEY BEGINS HERE
                   </EditorParagraph>
                   <EditorHeading className="text-3xl leading-tight font-bold md:text-4xl lg:text-[42px] lg:leading-14">
-                     Grow Your Knowledge with Leading Online Courses
+                     Grow Your Knowledge with Leading Online Subjects
                   </EditorHeading>
                   <EditorParagraph className="mt-4 text-lg text-muted-foreground">
-                     Start learning today with top-rated courses and instructors
+                     Start learning today with top-rated subjects and instructors
                      Take your team's learning and development to new heights
                      Take your team's learning
                   </EditorParagraph>
@@ -35,7 +35,7 @@ const Hero = () => {
                   className="relative z-10 mb-10 md:mb-14"
                >
                   <EditorButton className="cursor-pointer">
-                     Browse Courses
+                     Browse Subjects
                   </EditorButton>
                </EditorLink>
 

@@ -61,21 +61,21 @@ const CoursesCollection = ({
       <Card className="relative space-y-6 py-6">
          <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-3">
             <div>
-               <CardTitle className="text-xl font-bold">Courses</CardTitle>
+               <CardTitle className="text-xl font-bold">Subjects</CardTitle>
                <ApiCopy value={`api/collections/courses/${value}`} />
             </div>
 
             <Dialog>
                <DialogTrigger>
                   <Button variant="outline" className="capitalize">
-                     Select {value} Course
+                     Select {value} Subject
                   </Button>
                </DialogTrigger>
                <DialogContent className="p-0">
                   <ScrollArea className="max-h-[90vh]">
                      <DataTable
                         type="courses"
-                        title="Courses"
+                        title="Subjects"
                         data={courses}
                         selectedIds={
                            value === 'best'
@@ -106,13 +106,13 @@ const CoursesCollection = ({
             >
                <TabsList className="grid w-full grid-cols-3">
                   <TabsTrigger value="best" className="cursor-pointer">
-                     Best Course
+                     Best Subject
                   </TabsTrigger>
                   <TabsTrigger value="top" className="cursor-pointer">
-                     Top Courses
+                     Top Subjects
                   </TabsTrigger>
                   <TabsTrigger value="new" className="cursor-pointer">
-                     New Courses
+                     New Subjects
                   </TabsTrigger>
                </TabsList>
 
@@ -135,7 +135,7 @@ const CoursesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No best course selected
+                                 No best subject selected
                               </TableCell>
                            </TableRow>
                         )}
@@ -164,7 +164,7 @@ const CoursesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No top courses selected
+                                 No top subjects selected
                               </TableCell>
                            </TableRow>
                         )}
@@ -193,7 +193,7 @@ const CoursesCollection = ({
                                  colSpan={5}
                                  className="text-center text-muted-foreground"
                               >
-                                 No new courses selected
+                                 No new subjects selected
                               </TableCell>
                            </TableRow>
                         )}

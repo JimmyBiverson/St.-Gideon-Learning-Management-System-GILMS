@@ -43,7 +43,7 @@ const CouponsIndex = ({ coupons, courses }: Props) => {
             title="Coupons"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Course Coupons' },
+               { title: 'Subject Coupons' },
             ]}
             action={
                <CouponForm
