@@ -183,6 +183,10 @@ npm install
 cp .env.example .env
 php artisan key:generate
 
+# Set APP_URL to the URL used to open the app locally, such as http://127.0.0.1:8000
+# Expose uploaded profile photos, site images, and lesson files
+php artisan storage:link
+
 # create the database, then configure DB_* in .env
 php artisan migrate
 php artisan db:seed
@@ -218,7 +222,8 @@ php artisan migrate --force
 ```
 
 A reverse proxy in front of the app should be listed in `TRUSTED_PROXIES` so `X-Forwarded-Proto`
-is honoured, and `APP_URL` must be set to the real public URL so notification links are correct.
+is honoured, and `APP_URL` must be set to the real public URL so notification and uploaded-media
+links are correct.
 
 ### Checking for redirect loops after a deploy
 
