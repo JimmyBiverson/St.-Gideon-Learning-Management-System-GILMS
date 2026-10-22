@@ -23,6 +23,29 @@
         </style>
      
         @if (app('system'))
+           @php
+              $resolveStorageUrl = static function (mixed $url): mixed {
+                 if (! is_string($url)) {
+                    return $url;
+                 }
+
+                 $path = parse_url($url, PHP_URL_PATH);
+
+                 if (is_string($path) && str_starts_with(ltrim($path, '/'), 'storage/')) {
+                     $storageUrl = '/' . ltrim($path, '/');
+                     $filePath = public_path(ltrim($storageUrl, '/'));
+                     $lastModified = is_file($filePath) ? filemtime($filePath) : false;
+
+                     return $lastModified === false
+                         ? $storageUrl
+                         : $storageUrl . '?v=' . $lastModified;
+                 }
+
+                 return $url;
+              };
+              $faviconUrl = $resolveStorageUrl(app('system')->fields['favicon'] ?? null);
+              $logoLightUrl = $resolveStorageUrl(app('system')->fields['logo_light'] ?? null);
+           @endphp
            <title inertia>
               {{ $metaTitle ?? app('system')->fields['name'] }}
            </title>
@@ -39,16 +62,16 @@
               content="{{ app('system')->fields['author'] }}"
            >
      
-           @if (!empty(app('system')->fields['favicon']))
+           @if (!empty($faviconUrl))
               <link
                  rel="icon"
-                 href="{{ app('system')->fields['favicon'] }}"
+                 href="{{ $faviconUrl }}"
                  type="image/png"
               >
-           @elseif (!empty(app('system')->fields['logo_light']))
+           @elseif (!empty($logoLightUrl))
               <link
                  rel="icon"
-                 href="{{ app('system')->fields['logo_light'] }}"
+                 href="{{ $logoLightUrl }}"
                  type="image/png"
               >
            @endif
