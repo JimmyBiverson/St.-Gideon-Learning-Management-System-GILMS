@@ -162,21 +162,25 @@ function claimInstallerRedirect(Request $request): bool
     return true;
 }
 
-function setSmtpConfig(array $config)
+function setSmtpConfig(array $config): void
 {
     config([
         'mail.default' => $config['mail_mailer'] ?? 'smtp',
         'mail.mailers.smtp.host' => $config['mail_host'] ?? '',
         'mail.mailers.smtp.port' => $config['mail_port'] ?? '',
         'mail.mailers.smtp.encryption' => $config['mail_encryption'] ?? '',
+        'mail.mailers.smtp.scheme' => ($config['mail_encryption'] ?? null) === 'ssl' ? 'smtps' : 'smtp',
+        'mail.mailers.smtp.timeout' => 15,
         'mail.mailers.smtp.username' => $config['mail_username'] ?? null,
         'mail.mailers.smtp.password' => $config['mail_password'] ?? null,
         'mail.from.address' => $config['mail_from_address'],
         'mail.from.name' => $config['mail_from_name'] ?? 'System',
     ]);
+
+    app('mail.manager')->forgetMailers();
 }
 
-function testSmtpConnection(array $config)
+function testSmtpConnection(array $config): bool
 {
     // Basic validation
     if (empty($config['mail_from_address']) || ! filter_var($config['mail_from_address'], FILTER_VALIDATE_EMAIL)) {
@@ -186,20 +190,20 @@ function testSmtpConnection(array $config)
     // Set mail config temporarily
     $previousConfig = config('mail');
 
-    // Configure mail with test settings
-    setSmtpConfig($config);
+    try {
+        setSmtpConfig($config);
 
-    // Send a test email to the admin email
-    $subject = 'SMTP Test Email';
-    $body = 'This is a test email to verify your SMTP settings. If you received this email, your SMTP configuration is working correctly.';
-    $recipient = $config['mail_from_address'];
+        $subject = 'SMTP Test Email';
+        $body = 'This is a test email to verify your SMTP settings. Receiving it confirms delivery to this mailbox; delivery to other providers may differ.';
+        $recipient = $config['mail_from_address'];
 
-    Mail::raw($body, function ($message) use ($recipient, $subject) {
-        $message->to($recipient)->subject($subject);
-    });
-
-    // Reset config
-    config(['mail' => $previousConfig]);
+        Mail::raw($body, function ($message) use ($recipient, $subject) {
+            $message->to($recipient)->subject($subject);
+        });
+    } finally {
+        config(['mail' => $previousConfig]);
+        app('mail.manager')->forgetMailers();
+    }
 
     return true;
 }

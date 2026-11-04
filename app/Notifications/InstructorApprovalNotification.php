@@ -2,18 +2,40 @@
 
 namespace App\Notifications;
 
+use App\Models\Setting;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class InstructorApprovalNotification extends Notification
+class InstructorApprovalNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
     /**
      * Create a new notification instance.
      */
-    public function __construct(private array $data) {}
+    public int $tries = 3;
+
+    public int $timeout = 30;
+
+    /** @param array{status: string, feedback?: string|null} $data */
+    public function __construct(private array $data)
+    {
+        $this->afterCommit();
+    }
+
+    /** @return array<string, string> */
+    public function viaConnections(): array
+    {
+        return ['database' => 'sync', 'mail' => config('queue.default')];
+    }
+
+    /** @return array<int, int> */
+    public function backoff(): array
+    {
+        return [60, 300, 900];
+    }
 
     /**
      * Get the notification's delivery channels.
@@ -22,11 +44,7 @@ class InstructorApprovalNotification extends Notification
      */
     public function via(object $notifiable): array
     {
-        if ($notifiable->role !== 'admin') {
-            return ['mail', 'database'];
-        }
-
-        return ['database'];
+        return ['database', 'mail'];
     }
 
     /**
@@ -34,12 +52,28 @@ class InstructorApprovalNotification extends Notification
      */
     public function toMail(object $notifiable): MailMessage
     {
+        if (! app()->runningUnitTests()) {
+            $smtp = Setting::where('type', 'smtp')->first();
+
+            if ($smtp) {
+                setSmtpConfig($smtp->fields);
+            }
+        }
+
+        if ($notifiable->role === 'admin') {
+            return (new MailMessage)
+                ->subject('Instructor application awaiting review')
+                ->greeting('Hello '.$notifiable->name.',')
+                ->line('An instructor application is awaiting your review.')
+                ->action('Review applications', route('instructors.applications'));
+        }
+
         return (new MailMessage)
             ->subject('Instructor Application Status Update')
             ->view('mail.instructor-approval', [
                 'user' => $notifiable,
                 'status' => $this->data['status'],
-                'feedback' => $this->data['feedback'],
+                'feedback' => $this->data['feedback'] ?? '',
             ]);
     }
 
@@ -57,7 +91,7 @@ class InstructorApprovalNotification extends Notification
             : route('instructors.applications');
 
         $feedback = $notifiable->role === 'student' || $notifiable->role === 'instructor'
-            ? $this->data['feedback']
+            ? ($this->data['feedback'] ?? '')
             : 'Instructor application is submitted for admin approval';
 
         return [
