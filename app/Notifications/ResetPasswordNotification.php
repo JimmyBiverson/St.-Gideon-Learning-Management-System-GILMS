@@ -3,21 +3,24 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class ResetPasswordNotification extends Notification
+class ResetPasswordNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
-    public $token;
+    public int $tries = 3;
+
+    public int $timeout = 30;
 
     /**
      * Create a new notification instance.
      */
-    public function __construct($token)
+    public function __construct(public string $token)
     {
-        $this->token = $token;
+        $this->afterCommit();
     }
 
     /**

@@ -180,7 +180,7 @@ function setSmtpConfig(array $config): void
     app('mail.manager')->forgetMailers();
 }
 
-function testSmtpConnection(array $config): bool
+function testSmtpConnection(array $config, ?string $recipient = null): bool
 {
     // Basic validation
     if (empty($config['mail_from_address']) || ! filter_var($config['mail_from_address'], FILTER_VALIDATE_EMAIL)) {
@@ -195,7 +195,7 @@ function testSmtpConnection(array $config): bool
 
         $subject = 'SMTP Test Email';
         $body = 'This is a test email to verify your SMTP settings. Receiving it confirms delivery to this mailbox; delivery to other providers may differ.';
-        $recipient = $config['mail_from_address'];
+        $recipient ??= $config['mail_from_address'];
 
         Mail::raw($body, function ($message) use ($recipient, $subject) {
             $message->to($recipient)->subject($subject);

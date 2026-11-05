@@ -2,7 +2,6 @@
 
 namespace App\Notifications;
 
-use App\Models\Setting;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -19,7 +18,7 @@ class InstructorApprovalNotification extends Notification implements ShouldQueue
 
     public int $timeout = 30;
 
-    /** @param array{status: string, feedback?: string|null} $data */
+    /** @param array{status: string, feedback?: string|null, instructor_id?: int, reviewer_id?: int|null, previous_status?: string|null} $data */
     public function __construct(private array $data)
     {
         $this->afterCommit();
@@ -52,14 +51,6 @@ class InstructorApprovalNotification extends Notification implements ShouldQueue
      */
     public function toMail(object $notifiable): MailMessage
     {
-        if (! app()->runningUnitTests()) {
-            $smtp = Setting::where('type', 'smtp')->first();
-
-            if ($smtp) {
-                setSmtpConfig($smtp->fields);
-            }
-        }
-
         if ($notifiable->role === 'admin') {
             return (new MailMessage)
                 ->subject('Instructor application awaiting review')
@@ -98,6 +89,10 @@ class InstructorApprovalNotification extends Notification implements ShouldQueue
             'title' => 'Instructor Application is '.$this->data['status'],
             'body' => $feedback,
             'url' => $url,
+            'instructor_id' => $this->data['instructor_id'] ?? null,
+            'reviewer_id' => $this->data['reviewer_id'] ?? null,
+            'previous_status' => $this->data['previous_status'] ?? null,
+            'status' => $this->data['status'],
         ];
     }
 }

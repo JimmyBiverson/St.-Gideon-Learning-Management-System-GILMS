@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreInstructorRequest extends FormRequest
@@ -11,18 +12,19 @@ class StoreInstructorRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true; // Allow authenticated users to create instructor profiles
+        return $this->user() && ($this->user()->role === 'admin'
+            || (string) $this->user()->id === (string) $this->input('user_id'));
     }
 
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     * @return array<string, ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {
         return [
-            'user_id' => 'required|exists:users,id',
+            'user_id' => 'required|exists:users,id|unique:instructors,user_id',
             'skills' => 'required',
             'designation' => 'required|string|max:255',
             'biography' => 'required|string|min:50|max:5000',

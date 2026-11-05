@@ -93,11 +93,14 @@ class SettingsService extends MediaService
 
     public function smtpUpdate(array $data, string $id)
     {
-        return DB::transaction(function () use ($data, $id) {
-            testSmtpConnection($data);
+        $setting = Setting::where('type', 'smtp')->findOrFail($id);
+        if (empty($data['mail_password'])) {
+            $data['mail_password'] = $setting->fields['mail_password'] ?? null;
+        }
 
-            return Setting::findOrFail($id)->update(['fields' => $data]);
-        }, 5);
+        testSmtpConnection($data);
+
+        return $setting->update(['fields' => $data]);
     }
 
     public function storageUpdate(array $data, string $id)

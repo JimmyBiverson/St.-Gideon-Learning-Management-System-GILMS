@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,7 +44,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
     const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -54,7 +54,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
         indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -63,7 +63,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::index
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
         indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -79,7 +79,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     index.form = indexForm
 /**
 * @see \App\Http\Controllers\SettingController::update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 export const update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -94,7 +94,7 @@ update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -122,7 +122,7 @@ update.url = (args: { id: string | number } | [id: string | number ] | string | 
 
 /**
 * @see \App\Http\Controllers\SettingController::update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -132,7 +132,7 @@ update.post = (args: { id: string | number } | [id: string | number ] | string |
 
     /**
 * @see \App\Http\Controllers\SettingController::update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
     const updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -142,7 +142,7 @@ update.post = (args: { id: string | number } | [id: string | number ] | string |
 
             /**
 * @see \App\Http\Controllers\SettingController::update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
         updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -151,9 +151,84 @@ update.post = (args: { id: string | number } | [id: string | number ] | string |
         })
     
     update.form = updateForm
+/**
+* @see \App\Http\Controllers\SettingController::test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+export const test = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: test.url(args, options),
+    method: 'post',
+})
+
+test.definition = {
+    methods: ["post"],
+    url: '/dashboard/settings/smtp/{id}/test',
+} satisfies RouteDefinition<["post"]>
+
+/**
+* @see \App\Http\Controllers\SettingController::test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+test.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
+    if (typeof args === 'string' || typeof args === 'number') {
+        args = { id: args }
+    }
+
+    
+    if (Array.isArray(args)) {
+        args = {
+                    id: args[0],
+                }
+    }
+
+    args = applyUrlDefaults(args)
+
+    const parsedArgs = {
+                        id: args.id,
+                }
+
+    return test.definition.url
+            .replace('{id}', parsedArgs.id.toString())
+            .replace(/\/+$/, '') + queryParams(options)
+}
+
+/**
+* @see \App\Http\Controllers\SettingController::test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+test.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: test.url(args, options),
+    method: 'post',
+})
+
+    /**
+* @see \App\Http\Controllers\SettingController::test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+    const testForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        action: test.url(args, options),
+        method: 'post',
+    })
+
+            /**
+* @see \App\Http\Controllers\SettingController::test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+        testForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+            action: test.url(args, options),
+            method: 'post',
+        })
+    
+    test.form = testForm
 const smtp = {
     index: Object.assign(index, index),
 update: Object.assign(update, update),
+test: Object.assign(test, test),
 }
 
 export default smtp

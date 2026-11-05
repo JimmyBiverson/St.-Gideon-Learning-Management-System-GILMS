@@ -67,6 +67,7 @@ Route::prefix('dashboard')->group(function () {
 
         Route::get('smtp', 'smtp')->name('smtp.index');
         Route::post('smtp/{id}', 'smtp_update')->name('smtp.update');
+        Route::post('smtp/{id}/test', 'smtp_test')->name('smtp.test')->middleware('throttle:6,1');
 
         Route::get('maintenance', 'maintenance')->name('maintenance.index');
 

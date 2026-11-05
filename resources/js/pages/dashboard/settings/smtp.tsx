@@ -14,7 +14,7 @@ import {
    SelectValue,
 } from '@/components/ui/select';
 import DashboardLayout from '@/layouts/dashboard/layout';
-import { update as smtpUpdate } from '@/routes/smtp';
+import { test as sendTest, update as smtpUpdate } from '@/routes/smtp';
 
 type SmtpFormData = SmtpFields & Record<string, string>;
 
@@ -118,11 +118,12 @@ const SMTP = ({ smtp }: Props) => {
                            </div>
 
                            <div>
-                              <Label>{input.mail_password} *</Label>
+                              <Label>{input.mail_password}</Label>
                               <Input
                                  name="mail_password"
-                                 defaultValue={smtp.fields.mail_password || ''}
-                                 placeholder={input.mail_password_placeholder}
+                                 defaultValue=""
+                                 placeholder="Leave blank to keep the saved password"
+                                 autoComplete="new-password"
                                  type="password"
                               />
                               <InputError message={errors.mail_password} />
@@ -158,6 +159,37 @@ const SMTP = ({ smtp }: Props) => {
                            className="float-end"
                         >
                            {button.save_changes}
+                        </LoadingButton>
+                     </>
+                  )}
+               </Form>
+            </Card>
+            <Card className="mt-6 space-y-4 p-4 sm:p-6">
+               <div>
+                  <h2 className="text-lg font-semibold">Send Test Email</h2>
+                  <p className="text-sm text-muted-foreground">
+                     Use your saved configuration to test delivery. Inbox
+                     placement depends on your provider and sender domain.
+                  </p>
+               </div>
+               <Form
+                  {...sendTest.form(Number(smtp.id))}
+                  options={{ preserveScroll: true }}
+                  className="space-y-4"
+               >
+                  {({ processing, errors }) => (
+                     <>
+                        <Label htmlFor="test-recipient">Recipient email</Label>
+                        <Input
+                           id="test-recipient"
+                           name="email"
+                           type="email"
+                           defaultValue={props.auth.user.email}
+                           required
+                        />
+                        <InputError message={errors.email} />
+                        <LoadingButton loading={processing}>
+                           Send test email
                         </LoadingButton>
                      </>
                   )}

@@ -17,7 +17,6 @@ interface RegisterProps {
    recaptcha: {
       status: boolean;
       siteKey: string;
-      secretKey: string;
    };
 }
 

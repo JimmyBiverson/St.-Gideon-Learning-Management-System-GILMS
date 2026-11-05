@@ -21,7 +21,6 @@ interface LoginProps {
    recaptcha: {
       status: boolean;
       siteKey: string;
-      secretKey: string;
    };
 }
 

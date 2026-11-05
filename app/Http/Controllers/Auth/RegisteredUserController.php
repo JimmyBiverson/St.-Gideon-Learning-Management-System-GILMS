@@ -10,6 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
@@ -45,7 +46,7 @@ class RegisteredUserController extends Controller
             'email' => 'required|string|lowercase|email|max:255|unique:'.User::class,
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'recaptcha_status' => 'required|boolean',
-            'recaptcha' => 'nullable|captcha|required_if:recaptcha_status,true',
+            'recaptcha' => [Rule::requiredIf($this->authService->recaptchaStatus()['status']), 'nullable', 'captcha'],
         ]);
 
         $user = User::create([

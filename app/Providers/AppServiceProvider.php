@@ -6,7 +6,9 @@ use App\Models\Setting;
 use App\Models\User;
 use Carbon\CarbonImmutable;
 use Illuminate\Auth\Notifications\ResetPassword;
+use Illuminate\Notifications\Events\NotificationSending;
 use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
@@ -36,6 +38,19 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->configureDefaults();
+
+        Event::listen(NotificationSending::class, function (NotificationSending $event): void {
+            if ($event->channel !== 'mail') {
+                return;
+            }
+
+            if (Schema::hasTable('settings')) {
+                $smtp = Setting::where('type', 'smtp')->first();
+                if ($smtp) {
+                    setSmtpConfig($smtp->fields);
+                }
+            }
+        });
     }
 
     /**
@@ -63,12 +78,12 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
 
         // Fix for shared hosting missing CURL_SSLVERSION_TLSv1_2 constant
-        if (!defined('CURL_SSLVERSION_TLSv1_2')) {
+        if (! defined('CURL_SSLVERSION_TLSv1_2')) {
             define('CURL_SSLVERSION_TLSv1_2', 6); // 6 = TLSv1.2
         }
 
         ResetPassword::createUrlUsing(function (User $user, string $token) {
-            return env('FRONTEND_URL') . '/reset-password?token=' . $token . '&email=' . $user->email;
+            return env('FRONTEND_URL').'/reset-password?token='.$token.'&email='.$user->email;
         });
 
         // Force HTTPS scheme for URLs when accessed via HTTPS, so assets load

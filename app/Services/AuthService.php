@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class AuthService
 {
@@ -28,7 +29,6 @@ class AuthService
         return [
             'status' => $recaptchaStatus,
             'siteKey' => $siteKey,
-            'secretKey' => $secretKey,
         ];
     }
 
@@ -62,7 +62,7 @@ class AuthService
                 'role' => UserType::STUDENT->value,
                 'email_verified_at' => now(),
                 'google_id' => $user->id,
-                'password' => Hash::make('googleauth'),
+                'password' => Hash::make(Str::random(64)),
             ];
 
             // Add OAuth tokens if available

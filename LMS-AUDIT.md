@@ -47,3 +47,11 @@ Implementation and testing are in progress. SMTP delivery, DNS authentication, p
 - Complete academic terminology coverage in hardcoded UI copy, notifications, email and printable templates.
 - Continue dashboard/authentication visual polish and browser accessibility/responsiveness checks.
 - Verify external email delivery and sender DNS only with the required environment access.
+
+## Security and delivery follow-up (2026-11-05)
+
+- Applicant ownership is now checked on create/update requests. Application creation locks the user row and rejects duplicates before file handling. Decision updates lock the application and suppress repeated decisions; notification data records reviewer, application, old status and new status. Editing an approved profile no longer reopens its application.
+- SMTP passwords are omitted from frontend page props and retained when the password field is blank. SMTP exceptions return safe diagnostics. Administrators can send a rate-limited test message without changing settings.
+- Mail notifications load database SMTP settings through a notification event listener, including in queue workers. Verification and reset notifications queue after commit. SMTP configuration no longer blocks unrelated page navigation.
+- CAPTCHA secrets and OAuth tokens are excluded from frontend serialization. CAPTCHA enforcement uses server settings, not a client flag. New OAuth accounts receive random passwords; legacy Google accounts with the former shared password cannot use password login until reset, while Google sign-in remains available.
+- Expanded automated suite: **77 passed, 263 assertions**. External SMTP/DNS and device-browser checks remain unverified.

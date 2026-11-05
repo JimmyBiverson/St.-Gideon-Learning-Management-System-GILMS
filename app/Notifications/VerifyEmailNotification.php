@@ -3,20 +3,25 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\URL;
 
-class VerifyEmailNotification extends Notification
+class VerifyEmailNotification extends Notification implements ShouldQueue
 {
     use Queueable;
+
+    public int $tries = 3;
+
+    public int $timeout = 30;
 
     /**
      * Create a new notification instance.
      */
     public function __construct()
     {
-        //
+        $this->afterCommit();
     }
 
     /**
@@ -33,9 +38,8 @@ class VerifyEmailNotification extends Notification
      * Get the verification URL for the given notifiable.
      *
      * @param  mixed  $notifiable
-     * @return string
      */
-    protected function verificationUrl($notifiable)
+    protected function verificationUrl(object $notifiable): string
     {
         return URL::temporarySignedRoute(
             'verify-email.verify',

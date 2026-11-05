@@ -66,11 +66,11 @@ class InstructorController extends Controller
         $siteName = $system->fields['name'] ?? 'Mentor Learning Management System';
         $siteUrl = request()->url();
 
-        $pageTitle = $instructor->user->name . ' - Expert Instructor | ' . $siteName;
-        $pageDescription = 'Learn from ' . $instructor->user->name . ', an expert instructor with ' . count($instructor->courses) . ' courses and ' . $instructor->enrollments_count . ' students. Average rating: ' . ($instructor->average_rating ? number_format($instructor->average_rating, 1) : 'New') . ' stars.';
-        $pageKeywords = $instructor->user->name . ', instructor, online courses, ' . ($system->fields['keywords'] ?? 'learning, education') . ', teacher, expert';
+        $pageTitle = $instructor->user->name.' - Expert Instructor | '.$siteName;
+        $pageDescription = 'Learn from '.$instructor->user->name.', an expert instructor with '.count($instructor->courses).' courses and '.$instructor->enrollments_count.' students. Average rating: '.($instructor->average_rating ? number_format($instructor->average_rating, 1) : 'New').' stars.';
+        $pageKeywords = $instructor->user->name.', instructor, online courses, '.($system->fields['keywords'] ?? 'learning, education').', teacher, expert';
         $instructorImage = $instructor->user->photo ?? '';
-        $ogTitle = $instructor->user->name . ' - Expert Instructor';
+        $ogTitle = $instructor->user->name.' - Expert Instructor';
 
         return Inertia::render('instructors/show', compact('instructor'))->withViewData([
             'metaTitle' => $pageTitle,
@@ -132,8 +132,7 @@ class InstructorController extends Controller
 
     public function status(UpdateInstructorStatusRequest $request, string $id)
     {
-        $instructor = $this->instructorService->updateInstructor($request->validated(), $id);
-        $this->instructorService->updateUserRole($request->validated(), $instructor);
+        $this->instructorService->decideApplication($request->validated(), $id);
 
         return back()->with('success', 'Instructor status updated successfully');
     }

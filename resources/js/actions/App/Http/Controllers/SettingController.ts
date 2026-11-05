@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
 export const auth0 = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ auth0.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
 auth0.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ auth0.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
 auth0.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ auth0.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
 auth0.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,7 +44,7 @@ auth0.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
     const auth0Form = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -54,7 +54,7 @@ auth0.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
         auth0Form.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -63,7 +63,7 @@ auth0.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::auth0
- * @see app/Http/Controllers/SettingController.php:264
+ * @see app/Http/Controllers/SettingController.php:288
  * @route '/dashboard/settings/auth0'
  */
         auth0Form.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -79,7 +79,7 @@ auth0.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     auth0.form = auth0Form
 /**
 * @see \App\Http\Controllers\SettingController::auth0_update
- * @see app/Http/Controllers/SettingController.php:274
+ * @see app/Http/Controllers/SettingController.php:298
  * @route '/dashboard/settings/auth0/{id}'
  */
 export const auth0_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -94,7 +94,7 @@ auth0_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::auth0_update
- * @see app/Http/Controllers/SettingController.php:274
+ * @see app/Http/Controllers/SettingController.php:298
  * @route '/dashboard/settings/auth0/{id}'
  */
 auth0_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -122,7 +122,7 @@ auth0_update.url = (args: { id: string | number } | [id: string | number ] | str
 
 /**
 * @see \App\Http\Controllers\SettingController::auth0_update
- * @see app/Http/Controllers/SettingController.php:274
+ * @see app/Http/Controllers/SettingController.php:298
  * @route '/dashboard/settings/auth0/{id}'
  */
 auth0_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -132,7 +132,7 @@ auth0_update.post = (args: { id: string | number } | [id: string | number ] | st
 
     /**
 * @see \App\Http\Controllers\SettingController::auth0_update
- * @see app/Http/Controllers/SettingController.php:274
+ * @see app/Http/Controllers/SettingController.php:298
  * @route '/dashboard/settings/auth0/{id}'
  */
     const auth0_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -142,7 +142,7 @@ auth0_update.post = (args: { id: string | number } | [id: string | number ] | st
 
             /**
 * @see \App\Http\Controllers\SettingController::auth0_update
- * @see app/Http/Controllers/SettingController.php:274
+ * @see app/Http/Controllers/SettingController.php:298
  * @route '/dashboard/settings/auth0/{id}'
  */
         auth0_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -153,7 +153,7 @@ auth0_update.post = (args: { id: string | number } | [id: string | number ] | st
     auth0_update.form = auth0_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
 export const system = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -168,7 +168,7 @@ system.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
 system.url = (options?: RouteQueryOptions) => {
@@ -177,7 +177,7 @@ system.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
 system.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -186,7 +186,7 @@ system.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
 system.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -196,7 +196,7 @@ system.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
     const systemForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -206,7 +206,7 @@ system.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
         systemForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -215,7 +215,7 @@ system.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::system
- * @see app/Http/Controllers/SettingController.php:67
+ * @see app/Http/Controllers/SettingController.php:70
  * @route '/dashboard/settings/system'
  */
         systemForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -231,7 +231,7 @@ system.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     system.form = systemForm
 /**
 * @see \App\Http\Controllers\SettingController::system_update
- * @see app/Http/Controllers/SettingController.php:95
+ * @see app/Http/Controllers/SettingController.php:98
  * @route '/dashboard/settings/system/{id}'
  */
 export const system_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -246,7 +246,7 @@ system_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::system_update
- * @see app/Http/Controllers/SettingController.php:95
+ * @see app/Http/Controllers/SettingController.php:98
  * @route '/dashboard/settings/system/{id}'
  */
 system_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -274,7 +274,7 @@ system_update.url = (args: { id: string | number } | [id: string | number ] | st
 
 /**
 * @see \App\Http\Controllers\SettingController::system_update
- * @see app/Http/Controllers/SettingController.php:95
+ * @see app/Http/Controllers/SettingController.php:98
  * @route '/dashboard/settings/system/{id}'
  */
 system_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -284,7 +284,7 @@ system_update.post = (args: { id: string | number } | [id: string | number ] | s
 
     /**
 * @see \App\Http\Controllers\SettingController::system_update
- * @see app/Http/Controllers/SettingController.php:95
+ * @see app/Http/Controllers/SettingController.php:98
  * @route '/dashboard/settings/system/{id}'
  */
     const system_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -294,7 +294,7 @@ system_update.post = (args: { id: string | number } | [id: string | number ] | s
 
             /**
 * @see \App\Http\Controllers\SettingController::system_update
- * @see app/Http/Controllers/SettingController.php:95
+ * @see app/Http/Controllers/SettingController.php:98
  * @route '/dashboard/settings/system/{id}'
  */
         system_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -305,7 +305,7 @@ system_update.post = (args: { id: string | number } | [id: string | number ] | s
     system_update.form = system_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 export const system_translations = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -320,7 +320,7 @@ system_translations.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 system_translations.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -348,7 +348,7 @@ system_translations.url = (args: { locale: string | number } | [locale: string |
 
 /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 system_translations.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -357,7 +357,7 @@ system_translations.get = (args: { locale: string | number } | [locale: string |
 })
 /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 system_translations.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -367,7 +367,7 @@ system_translations.head = (args: { locale: string | number } | [locale: string 
 
     /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
     const system_translationsForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -377,7 +377,7 @@ system_translations.head = (args: { locale: string | number } | [locale: string 
 
             /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
         system_translationsForm.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -386,7 +386,7 @@ system_translations.head = (args: { locale: string | number } | [locale: string 
         })
             /**
 * @see \App\Http\Controllers\SettingController::system_translations
- * @see app/Http/Controllers/SettingController.php:105
+ * @see app/Http/Controllers/SettingController.php:108
  * @route '/dashboard/settings/system/translations/{locale}'
  */
         system_translationsForm.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -402,7 +402,7 @@ system_translations.head = (args: { locale: string | number } | [locale: string 
     system_translations.form = system_translationsForm
 /**
 * @see \App\Http\Controllers\SettingController::system_translations_update
- * @see app/Http/Controllers/SettingController.php:119
+ * @see app/Http/Controllers/SettingController.php:122
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 export const system_translations_update = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -417,7 +417,7 @@ system_translations_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::system_translations_update
- * @see app/Http/Controllers/SettingController.php:119
+ * @see app/Http/Controllers/SettingController.php:122
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 system_translations_update.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -445,7 +445,7 @@ system_translations_update.url = (args: { locale: string | number } | [locale: s
 
 /**
 * @see \App\Http\Controllers\SettingController::system_translations_update
- * @see app/Http/Controllers/SettingController.php:119
+ * @see app/Http/Controllers/SettingController.php:122
  * @route '/dashboard/settings/system/translations/{locale}'
  */
 system_translations_update.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -455,7 +455,7 @@ system_translations_update.put = (args: { locale: string | number } | [locale: s
 
     /**
 * @see \App\Http\Controllers\SettingController::system_translations_update
- * @see app/Http/Controllers/SettingController.php:119
+ * @see app/Http/Controllers/SettingController.php:122
  * @route '/dashboard/settings/system/translations/{locale}'
  */
     const system_translations_updateForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -470,7 +470,7 @@ system_translations_update.put = (args: { locale: string | number } | [locale: s
 
             /**
 * @see \App\Http\Controllers\SettingController::system_translations_update
- * @see app/Http/Controllers/SettingController.php:119
+ * @see app/Http/Controllers/SettingController.php:122
  * @route '/dashboard/settings/system/translations/{locale}'
  */
         system_translations_updateForm.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -486,7 +486,7 @@ system_translations_update.put = (args: { locale: string | number } | [locale: s
     system_translations_update.form = system_translations_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
 export const pages = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -501,7 +501,7 @@ pages.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
 pages.url = (options?: RouteQueryOptions) => {
@@ -510,7 +510,7 @@ pages.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
 pages.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -519,7 +519,7 @@ pages.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
 pages.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -529,7 +529,7 @@ pages.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
     const pagesForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -539,7 +539,7 @@ pages.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
         pagesForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -548,7 +548,7 @@ pages.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::pages
- * @see app/Http/Controllers/SettingController.php:142
+ * @see app/Http/Controllers/SettingController.php:145
  * @route '/dashboard/settings/pages'
  */
         pagesForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -564,7 +564,7 @@ pages.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     pages.form = pagesForm
 /**
 * @see \App\Http\Controllers\SettingController::home_pages_update
- * @see app/Http/Controllers/SettingController.php:153
+ * @see app/Http/Controllers/SettingController.php:156
  * @route '/dashboard/settings/home-page/{id}'
  */
 export const home_pages_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -579,7 +579,7 @@ home_pages_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::home_pages_update
- * @see app/Http/Controllers/SettingController.php:153
+ * @see app/Http/Controllers/SettingController.php:156
  * @route '/dashboard/settings/home-page/{id}'
  */
 home_pages_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -607,7 +607,7 @@ home_pages_update.url = (args: { id: string | number } | [id: string | number ] 
 
 /**
 * @see \App\Http\Controllers\SettingController::home_pages_update
- * @see app/Http/Controllers/SettingController.php:153
+ * @see app/Http/Controllers/SettingController.php:156
  * @route '/dashboard/settings/home-page/{id}'
  */
 home_pages_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -617,7 +617,7 @@ home_pages_update.post = (args: { id: string | number } | [id: string | number ]
 
     /**
 * @see \App\Http\Controllers\SettingController::home_pages_update
- * @see app/Http/Controllers/SettingController.php:153
+ * @see app/Http/Controllers/SettingController.php:156
  * @route '/dashboard/settings/home-page/{id}'
  */
     const home_pages_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -627,7 +627,7 @@ home_pages_update.post = (args: { id: string | number } | [id: string | number ]
 
             /**
 * @see \App\Http\Controllers\SettingController::home_pages_update
- * @see app/Http/Controllers/SettingController.php:153
+ * @see app/Http/Controllers/SettingController.php:156
  * @route '/dashboard/settings/home-page/{id}'
  */
         home_pages_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -638,7 +638,7 @@ home_pages_update.post = (args: { id: string | number } | [id: string | number ]
     home_pages_update.form = home_pages_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::system_type_update
- * @see app/Http/Controllers/SettingController.php:166
+ * @see app/Http/Controllers/SettingController.php:169
  * @route '/dashboard/settings/system-type'
  */
 export const system_type_update = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -653,7 +653,7 @@ system_type_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::system_type_update
- * @see app/Http/Controllers/SettingController.php:166
+ * @see app/Http/Controllers/SettingController.php:169
  * @route '/dashboard/settings/system-type'
  */
 system_type_update.url = (options?: RouteQueryOptions) => {
@@ -662,7 +662,7 @@ system_type_update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::system_type_update
- * @see app/Http/Controllers/SettingController.php:166
+ * @see app/Http/Controllers/SettingController.php:169
  * @route '/dashboard/settings/system-type'
  */
 system_type_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -672,7 +672,7 @@ system_type_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
 
     /**
 * @see \App\Http\Controllers\SettingController::system_type_update
- * @see app/Http/Controllers/SettingController.php:166
+ * @see app/Http/Controllers/SettingController.php:169
  * @route '/dashboard/settings/system-type'
  */
     const system_type_updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -682,7 +682,7 @@ system_type_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
 
             /**
 * @see \App\Http\Controllers\SettingController::system_type_update
- * @see app/Http/Controllers/SettingController.php:166
+ * @see app/Http/Controllers/SettingController.php:169
  * @route '/dashboard/settings/system-type'
  */
         system_type_updateForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -693,7 +693,7 @@ system_type_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
     system_type_update.form = system_type_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
 export const custom_pages_edit = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -708,7 +708,7 @@ custom_pages_edit.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_edit.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -736,7 +736,7 @@ custom_pages_edit.url = (args: { id: string | number } | [id: string | number ] 
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_edit.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -745,7 +745,7 @@ custom_pages_edit.get = (args: { id: string | number } | [id: string | number ] 
 })
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_edit.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -755,7 +755,7 @@ custom_pages_edit.head = (args: { id: string | number } | [id: string | number ]
 
     /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
     const custom_pages_editForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -765,7 +765,7 @@ custom_pages_edit.head = (args: { id: string | number } | [id: string | number ]
 
             /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
         custom_pages_editForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -774,7 +774,7 @@ custom_pages_edit.head = (args: { id: string | number } | [id: string | number ]
         })
             /**
 * @see \App\Http\Controllers\SettingController::custom_pages_edit
- * @see app/Http/Controllers/SettingController.php:177
+ * @see app/Http/Controllers/SettingController.php:180
  * @route '/dashboard/settings/custom-page/{id}'
  */
         custom_pages_editForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -790,7 +790,7 @@ custom_pages_edit.head = (args: { id: string | number } | [id: string | number ]
     custom_pages_edit.form = custom_pages_editForm
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_store
- * @see app/Http/Controllers/SettingController.php:184
+ * @see app/Http/Controllers/SettingController.php:187
  * @route '/dashboard/settings/custom-page'
  */
 export const custom_pages_store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -805,7 +805,7 @@ custom_pages_store.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_store
- * @see app/Http/Controllers/SettingController.php:184
+ * @see app/Http/Controllers/SettingController.php:187
  * @route '/dashboard/settings/custom-page'
  */
 custom_pages_store.url = (options?: RouteQueryOptions) => {
@@ -814,7 +814,7 @@ custom_pages_store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_store
- * @see app/Http/Controllers/SettingController.php:184
+ * @see app/Http/Controllers/SettingController.php:187
  * @route '/dashboard/settings/custom-page'
  */
 custom_pages_store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -824,7 +824,7 @@ custom_pages_store.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
 
     /**
 * @see \App\Http\Controllers\SettingController::custom_pages_store
- * @see app/Http/Controllers/SettingController.php:184
+ * @see app/Http/Controllers/SettingController.php:187
  * @route '/dashboard/settings/custom-page'
  */
     const custom_pages_storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -834,7 +834,7 @@ custom_pages_store.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
 
             /**
 * @see \App\Http\Controllers\SettingController::custom_pages_store
- * @see app/Http/Controllers/SettingController.php:184
+ * @see app/Http/Controllers/SettingController.php:187
  * @route '/dashboard/settings/custom-page'
  */
         custom_pages_storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -845,7 +845,7 @@ custom_pages_store.post = (options?: RouteQueryOptions): RouteDefinition<'post'>
     custom_pages_store.form = custom_pages_storeForm
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_update
- * @see app/Http/Controllers/SettingController.php:191
+ * @see app/Http/Controllers/SettingController.php:194
  * @route '/dashboard/settings/custom-page/{id}'
  */
 export const custom_pages_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -860,7 +860,7 @@ custom_pages_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_update
- * @see app/Http/Controllers/SettingController.php:191
+ * @see app/Http/Controllers/SettingController.php:194
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -888,7 +888,7 @@ custom_pages_update.url = (args: { id: string | number } | [id: string | number 
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_update
- * @see app/Http/Controllers/SettingController.php:191
+ * @see app/Http/Controllers/SettingController.php:194
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_update.put = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -898,7 +898,7 @@ custom_pages_update.put = (args: { id: string | number } | [id: string | number 
 
     /**
 * @see \App\Http\Controllers\SettingController::custom_pages_update
- * @see app/Http/Controllers/SettingController.php:191
+ * @see app/Http/Controllers/SettingController.php:194
  * @route '/dashboard/settings/custom-page/{id}'
  */
     const custom_pages_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -913,7 +913,7 @@ custom_pages_update.put = (args: { id: string | number } | [id: string | number 
 
             /**
 * @see \App\Http\Controllers\SettingController::custom_pages_update
- * @see app/Http/Controllers/SettingController.php:191
+ * @see app/Http/Controllers/SettingController.php:194
  * @route '/dashboard/settings/custom-page/{id}'
  */
         custom_pages_updateForm.put = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -929,7 +929,7 @@ custom_pages_update.put = (args: { id: string | number } | [id: string | number 
     custom_pages_update.form = custom_pages_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_destroy
- * @see app/Http/Controllers/SettingController.php:198
+ * @see app/Http/Controllers/SettingController.php:201
  * @route '/dashboard/settings/custom-page/{id}'
  */
 export const custom_pages_destroy = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -944,7 +944,7 @@ custom_pages_destroy.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_destroy
- * @see app/Http/Controllers/SettingController.php:198
+ * @see app/Http/Controllers/SettingController.php:201
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_destroy.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -972,7 +972,7 @@ custom_pages_destroy.url = (args: { id: string | number } | [id: string | number
 
 /**
 * @see \App\Http\Controllers\SettingController::custom_pages_destroy
- * @see app/Http/Controllers/SettingController.php:198
+ * @see app/Http/Controllers/SettingController.php:201
  * @route '/dashboard/settings/custom-page/{id}'
  */
 custom_pages_destroy.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -982,7 +982,7 @@ custom_pages_destroy.delete = (args: { id: string | number } | [id: string | num
 
     /**
 * @see \App\Http\Controllers\SettingController::custom_pages_destroy
- * @see app/Http/Controllers/SettingController.php:198
+ * @see app/Http/Controllers/SettingController.php:201
  * @route '/dashboard/settings/custom-page/{id}'
  */
     const custom_pages_destroyForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -997,7 +997,7 @@ custom_pages_destroy.delete = (args: { id: string | number } | [id: string | num
 
             /**
 * @see \App\Http\Controllers\SettingController::custom_pages_destroy
- * @see app/Http/Controllers/SettingController.php:198
+ * @see app/Http/Controllers/SettingController.php:201
  * @route '/dashboard/settings/custom-page/{id}'
  */
         custom_pages_destroyForm.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1013,7 +1013,7 @@ custom_pages_destroy.delete = (args: { id: string | number } | [id: string | num
     custom_pages_destroy.form = custom_pages_destroyForm
 /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
 export const storage = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1028,7 +1028,7 @@ storage.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
 storage.url = (options?: RouteQueryOptions) => {
@@ -1037,7 +1037,7 @@ storage.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
 storage.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1046,7 +1046,7 @@ storage.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
 storage.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1056,7 +1056,7 @@ storage.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
     const storageForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1066,7 +1066,7 @@ storage.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
         storageForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1075,7 +1075,7 @@ storage.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::storage
- * @see app/Http/Controllers/SettingController.php:218
+ * @see app/Http/Controllers/SettingController.php:221
  * @route '/dashboard/settings/storage'
  */
         storageForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1091,7 +1091,7 @@ storage.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     storage.form = storageForm
 /**
 * @see \App\Http\Controllers\SettingController::storage_update
- * @see app/Http/Controllers/SettingController.php:229
+ * @see app/Http/Controllers/SettingController.php:232
  * @route '/dashboard/settings/storage/{id}'
  */
 export const storage_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1106,7 +1106,7 @@ storage_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::storage_update
- * @see app/Http/Controllers/SettingController.php:229
+ * @see app/Http/Controllers/SettingController.php:232
  * @route '/dashboard/settings/storage/{id}'
  */
 storage_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1134,7 +1134,7 @@ storage_update.url = (args: { id: string | number } | [id: string | number ] | s
 
 /**
 * @see \App\Http\Controllers\SettingController::storage_update
- * @see app/Http/Controllers/SettingController.php:229
+ * @see app/Http/Controllers/SettingController.php:232
  * @route '/dashboard/settings/storage/{id}'
  */
 storage_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1144,7 +1144,7 @@ storage_update.post = (args: { id: string | number } | [id: string | number ] | 
 
     /**
 * @see \App\Http\Controllers\SettingController::storage_update
- * @see app/Http/Controllers/SettingController.php:229
+ * @see app/Http/Controllers/SettingController.php:232
  * @route '/dashboard/settings/storage/{id}'
  */
     const storage_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1154,7 +1154,7 @@ storage_update.post = (args: { id: string | number } | [id: string | number ] | 
 
             /**
 * @see \App\Http\Controllers\SettingController::storage_update
- * @see app/Http/Controllers/SettingController.php:229
+ * @see app/Http/Controllers/SettingController.php:232
  * @route '/dashboard/settings/storage/{id}'
  */
         storage_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1165,7 +1165,7 @@ storage_update.post = (args: { id: string | number } | [id: string | number ] | 
     storage_update.form = storage_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 export const smtp = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1180,7 +1180,7 @@ smtp.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 smtp.url = (options?: RouteQueryOptions) => {
@@ -1189,7 +1189,7 @@ smtp.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 smtp.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1198,7 +1198,7 @@ smtp.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
 smtp.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1208,7 +1208,7 @@ smtp.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
     const smtpForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1218,7 +1218,7 @@ smtp.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
         smtpForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1227,7 +1227,7 @@ smtp.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::smtp
- * @see app/Http/Controllers/SettingController.php:240
+ * @see app/Http/Controllers/SettingController.php:243
  * @route '/dashboard/settings/smtp'
  */
         smtpForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1243,7 +1243,7 @@ smtp.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     smtp.form = smtpForm
 /**
 * @see \App\Http\Controllers\SettingController::smtp_update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 export const smtp_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1258,7 +1258,7 @@ smtp_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::smtp_update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 smtp_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1286,7 +1286,7 @@ smtp_update.url = (args: { id: string | number } | [id: string | number ] | stri
 
 /**
 * @see \App\Http\Controllers\SettingController::smtp_update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
 smtp_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1296,7 +1296,7 @@ smtp_update.post = (args: { id: string | number } | [id: string | number ] | str
 
     /**
 * @see \App\Http\Controllers\SettingController::smtp_update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
     const smtp_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1306,7 +1306,7 @@ smtp_update.post = (args: { id: string | number } | [id: string | number ] | str
 
             /**
 * @see \App\Http\Controllers\SettingController::smtp_update
- * @see app/Http/Controllers/SettingController.php:250
+ * @see app/Http/Controllers/SettingController.php:256
  * @route '/dashboard/settings/smtp/{id}'
  */
         smtp_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1316,8 +1316,82 @@ smtp_update.post = (args: { id: string | number } | [id: string | number ] | str
     
     smtp_update.form = smtp_updateForm
 /**
+* @see \App\Http\Controllers\SettingController::smtp_test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+export const smtp_test = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: smtp_test.url(args, options),
+    method: 'post',
+})
+
+smtp_test.definition = {
+    methods: ["post"],
+    url: '/dashboard/settings/smtp/{id}/test',
+} satisfies RouteDefinition<["post"]>
+
+/**
+* @see \App\Http\Controllers\SettingController::smtp_test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+smtp_test.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
+    if (typeof args === 'string' || typeof args === 'number') {
+        args = { id: args }
+    }
+
+    
+    if (Array.isArray(args)) {
+        args = {
+                    id: args[0],
+                }
+    }
+
+    args = applyUrlDefaults(args)
+
+    const parsedArgs = {
+                        id: args.id,
+                }
+
+    return smtp_test.definition.url
+            .replace('{id}', parsedArgs.id.toString())
+            .replace(/\/+$/, '') + queryParams(options)
+}
+
+/**
+* @see \App\Http\Controllers\SettingController::smtp_test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+smtp_test.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+    url: smtp_test.url(args, options),
+    method: 'post',
+})
+
+    /**
+* @see \App\Http\Controllers\SettingController::smtp_test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+    const smtp_testForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        action: smtp_test.url(args, options),
+        method: 'post',
+    })
+
+            /**
+* @see \App\Http\Controllers\SettingController::smtp_test
+ * @see app/Http/Controllers/SettingController.php:269
+ * @route '/dashboard/settings/smtp/{id}/test'
+ */
+        smtp_testForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+            action: smtp_test.url(args, options),
+            method: 'post',
+        })
+    
+    smtp_test.form = smtp_testForm
+/**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
 export const maintenance = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1332,7 +1406,7 @@ maintenance.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
 maintenance.url = (options?: RouteQueryOptions) => {
@@ -1341,7 +1415,7 @@ maintenance.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
 maintenance.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1350,7 +1424,7 @@ maintenance.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
 maintenance.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1360,7 +1434,7 @@ maintenance.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
     const maintenanceForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1370,7 +1444,7 @@ maintenance.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
         maintenanceForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1379,7 +1453,7 @@ maintenance.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::maintenance
- * @see app/Http/Controllers/SettingController.php:284
+ * @see app/Http/Controllers/SettingController.php:308
  * @route '/dashboard/settings/maintenance'
  */
         maintenanceForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1395,7 +1469,7 @@ maintenance.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     maintenance.form = maintenanceForm
 /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
 export const live_class = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1410,7 +1484,7 @@ live_class.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
 live_class.url = (options?: RouteQueryOptions) => {
@@ -1419,7 +1493,7 @@ live_class.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
 live_class.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1428,7 +1502,7 @@ live_class.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
 live_class.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1438,7 +1512,7 @@ live_class.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
     const live_classForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1448,7 +1522,7 @@ live_class.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
         live_classForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1457,7 +1531,7 @@ live_class.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::live_class
- * @see app/Http/Controllers/SettingController.php:294
+ * @see app/Http/Controllers/SettingController.php:318
  * @route '/dashboard/settings/live-class'
  */
         live_classForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1473,7 +1547,7 @@ live_class.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     live_class.form = live_classForm
 /**
 * @see \App\Http\Controllers\SettingController::live_class_update
- * @see app/Http/Controllers/SettingController.php:304
+ * @see app/Http/Controllers/SettingController.php:328
  * @route '/dashboard/settings/live-class/{id}'
  */
 export const live_class_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1488,7 +1562,7 @@ live_class_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::live_class_update
- * @see app/Http/Controllers/SettingController.php:304
+ * @see app/Http/Controllers/SettingController.php:328
  * @route '/dashboard/settings/live-class/{id}'
  */
 live_class_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1516,7 +1590,7 @@ live_class_update.url = (args: { id: string | number } | [id: string | number ] 
 
 /**
 * @see \App\Http\Controllers\SettingController::live_class_update
- * @see app/Http/Controllers/SettingController.php:304
+ * @see app/Http/Controllers/SettingController.php:328
  * @route '/dashboard/settings/live-class/{id}'
  */
 live_class_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1526,7 +1600,7 @@ live_class_update.post = (args: { id: string | number } | [id: string | number ]
 
     /**
 * @see \App\Http\Controllers\SettingController::live_class_update
- * @see app/Http/Controllers/SettingController.php:304
+ * @see app/Http/Controllers/SettingController.php:328
  * @route '/dashboard/settings/live-class/{id}'
  */
     const live_class_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1536,7 +1610,7 @@ live_class_update.post = (args: { id: string | number } | [id: string | number ]
 
             /**
 * @see \App\Http\Controllers\SettingController::live_class_update
- * @see app/Http/Controllers/SettingController.php:304
+ * @see app/Http/Controllers/SettingController.php:328
  * @route '/dashboard/settings/live-class/{id}'
  */
         live_class_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1547,7 +1621,7 @@ live_class_update.post = (args: { id: string | number } | [id: string | number ]
     live_class_update.form = live_class_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
 export const meta_pixel = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1562,7 +1636,7 @@ meta_pixel.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
 meta_pixel.url = (options?: RouteQueryOptions) => {
@@ -1571,7 +1645,7 @@ meta_pixel.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
 meta_pixel.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1580,7 +1654,7 @@ meta_pixel.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
 meta_pixel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1590,7 +1664,7 @@ meta_pixel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
     const meta_pixelForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1600,7 +1674,7 @@ meta_pixel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
         meta_pixelForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1609,7 +1683,7 @@ meta_pixel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::meta_pixel
- * @see app/Http/Controllers/SettingController.php:318
+ * @see app/Http/Controllers/SettingController.php:342
  * @route '/dashboard/settings/meta-pixel'
  */
         meta_pixelForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1625,7 +1699,7 @@ meta_pixel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     meta_pixel.form = meta_pixelForm
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel_update
- * @see app/Http/Controllers/SettingController.php:328
+ * @see app/Http/Controllers/SettingController.php:352
  * @route '/dashboard/settings/meta-pixel/{id}'
  */
 export const meta_pixel_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1640,7 +1714,7 @@ meta_pixel_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel_update
- * @see app/Http/Controllers/SettingController.php:328
+ * @see app/Http/Controllers/SettingController.php:352
  * @route '/dashboard/settings/meta-pixel/{id}'
  */
 meta_pixel_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1668,7 +1742,7 @@ meta_pixel_update.url = (args: { id: string | number } | [id: string | number ] 
 
 /**
 * @see \App\Http\Controllers\SettingController::meta_pixel_update
- * @see app/Http/Controllers/SettingController.php:328
+ * @see app/Http/Controllers/SettingController.php:352
  * @route '/dashboard/settings/meta-pixel/{id}'
  */
 meta_pixel_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1678,7 +1752,7 @@ meta_pixel_update.post = (args: { id: string | number } | [id: string | number ]
 
     /**
 * @see \App\Http\Controllers\SettingController::meta_pixel_update
- * @see app/Http/Controllers/SettingController.php:328
+ * @see app/Http/Controllers/SettingController.php:352
  * @route '/dashboard/settings/meta-pixel/{id}'
  */
     const meta_pixel_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1688,7 +1762,7 @@ meta_pixel_update.post = (args: { id: string | number } | [id: string | number ]
 
             /**
 * @see \App\Http\Controllers\SettingController::meta_pixel_update
- * @see app/Http/Controllers/SettingController.php:328
+ * @see app/Http/Controllers/SettingController.php:352
  * @route '/dashboard/settings/meta-pixel/{id}'
  */
         meta_pixel_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1699,7 +1773,7 @@ meta_pixel_update.post = (args: { id: string | number } | [id: string | number ]
     meta_pixel_update.form = meta_pixel_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
 export const google_analytics = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1714,7 +1788,7 @@ google_analytics.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
 google_analytics.url = (options?: RouteQueryOptions) => {
@@ -1723,7 +1797,7 @@ google_analytics.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
 google_analytics.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -1732,7 +1806,7 @@ google_analytics.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => 
 })
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
 google_analytics.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -1742,7 +1816,7 @@ google_analytics.head = (options?: RouteQueryOptions): RouteDefinition<'head'> =
 
     /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
     const google_analyticsForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1752,7 +1826,7 @@ google_analytics.head = (options?: RouteQueryOptions): RouteDefinition<'head'> =
 
             /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
         google_analyticsForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1761,7 +1835,7 @@ google_analytics.head = (options?: RouteQueryOptions): RouteDefinition<'head'> =
         })
             /**
 * @see \App\Http\Controllers\SettingController::google_analytics
- * @see app/Http/Controllers/SettingController.php:338
+ * @see app/Http/Controllers/SettingController.php:362
  * @route '/dashboard/settings/google-analytics'
  */
         google_analyticsForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -1777,7 +1851,7 @@ google_analytics.head = (options?: RouteQueryOptions): RouteDefinition<'head'> =
     google_analytics.form = google_analyticsForm
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics_update
- * @see app/Http/Controllers/SettingController.php:348
+ * @see app/Http/Controllers/SettingController.php:372
  * @route '/dashboard/settings/google-analytics/{id}'
  */
 export const google_analytics_update = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1792,7 +1866,7 @@ google_analytics_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics_update
- * @see app/Http/Controllers/SettingController.php:348
+ * @see app/Http/Controllers/SettingController.php:372
  * @route '/dashboard/settings/google-analytics/{id}'
  */
 google_analytics_update.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -1820,7 +1894,7 @@ google_analytics_update.url = (args: { id: string | number } | [id: string | num
 
 /**
 * @see \App\Http\Controllers\SettingController::google_analytics_update
- * @see app/Http/Controllers/SettingController.php:348
+ * @see app/Http/Controllers/SettingController.php:372
  * @route '/dashboard/settings/google-analytics/{id}'
  */
 google_analytics_update.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -1830,7 +1904,7 @@ google_analytics_update.post = (args: { id: string | number } | [id: string | nu
 
     /**
 * @see \App\Http\Controllers\SettingController::google_analytics_update
- * @see app/Http/Controllers/SettingController.php:348
+ * @see app/Http/Controllers/SettingController.php:372
  * @route '/dashboard/settings/google-analytics/{id}'
  */
     const google_analytics_updateForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1840,7 +1914,7 @@ google_analytics_update.post = (args: { id: string | number } | [id: string | nu
 
             /**
 * @see \App\Http\Controllers\SettingController::google_analytics_update
- * @see app/Http/Controllers/SettingController.php:348
+ * @see app/Http/Controllers/SettingController.php:372
  * @route '/dashboard/settings/google-analytics/{id}'
  */
         google_analytics_updateForm.post = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -1851,10 +1925,10 @@ google_analytics_update.post = (args: { id: string | number } | [id: string | nu
     google_analytics_update.form = google_analytics_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_store
- * @see app/Http/Controllers/SettingController.php:358
+ * @see app/Http/Controllers/SettingController.php:382
  * @route '/dashboard/settings/navbar/{navbar}/items'
  */
-export const navbar_items_store = (args: { navbar: number | { id: number } } | [navbar: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+export const navbar_items_store = (args: { navbar: string | number | { id: string | number } } | [navbar: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: navbar_items_store.url(args, options),
     method: 'post',
 })
@@ -1866,10 +1940,10 @@ navbar_items_store.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_store
- * @see app/Http/Controllers/SettingController.php:358
+ * @see app/Http/Controllers/SettingController.php:382
  * @route '/dashboard/settings/navbar/{navbar}/items'
  */
-navbar_items_store.url = (args: { navbar: number | { id: number } } | [navbar: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+navbar_items_store.url = (args: { navbar: string | number | { id: string | number } } | [navbar: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { navbar: args }
     }
@@ -1899,30 +1973,30 @@ navbar_items_store.url = (args: { navbar: number | { id: number } } | [navbar: n
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_store
- * @see app/Http/Controllers/SettingController.php:358
+ * @see app/Http/Controllers/SettingController.php:382
  * @route '/dashboard/settings/navbar/{navbar}/items'
  */
-navbar_items_store.post = (args: { navbar: number | { id: number } } | [navbar: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+navbar_items_store.post = (args: { navbar: string | number | { id: string | number } } | [navbar: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: navbar_items_store.url(args, options),
     method: 'post',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_items_store
- * @see app/Http/Controllers/SettingController.php:358
+ * @see app/Http/Controllers/SettingController.php:382
  * @route '/dashboard/settings/navbar/{navbar}/items'
  */
-    const navbar_items_storeForm = (args: { navbar: number | { id: number } } | [navbar: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const navbar_items_storeForm = (args: { navbar: string | number | { id: string | number } } | [navbar: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: navbar_items_store.url(args, options),
         method: 'post',
     })
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_items_store
- * @see app/Http/Controllers/SettingController.php:358
+ * @see app/Http/Controllers/SettingController.php:382
  * @route '/dashboard/settings/navbar/{navbar}/items'
  */
-        navbar_items_storeForm.post = (args: { navbar: number | { id: number } } | [navbar: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        navbar_items_storeForm.post = (args: { navbar: string | number | { id: string | number } } | [navbar: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: navbar_items_store.url(args, options),
             method: 'post',
         })
@@ -1930,10 +2004,10 @@ navbar_items_store.post = (args: { navbar: number | { id: number } } | [navbar: 
     navbar_items_store.form = navbar_items_storeForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_update
- * @see app/Http/Controllers/SettingController.php:372
+ * @see app/Http/Controllers/SettingController.php:396
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-export const navbar_items_update = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+export const navbar_items_update = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: navbar_items_update.url(args, options),
     method: 'put',
 })
@@ -1945,10 +2019,10 @@ navbar_items_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_update
- * @see app/Http/Controllers/SettingController.php:372
+ * @see app/Http/Controllers/SettingController.php:396
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-navbar_items_update.url = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+navbar_items_update.url = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { item: args }
     }
@@ -1978,20 +2052,20 @@ navbar_items_update.url = (args: { item: number | { id: number } } | [item: numb
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_update
- * @see app/Http/Controllers/SettingController.php:372
+ * @see app/Http/Controllers/SettingController.php:396
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-navbar_items_update.put = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+navbar_items_update.put = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: navbar_items_update.url(args, options),
     method: 'put',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_items_update
- * @see app/Http/Controllers/SettingController.php:372
+ * @see app/Http/Controllers/SettingController.php:396
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-    const navbar_items_updateForm = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const navbar_items_updateForm = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: navbar_items_update.url(args, {
                     [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                         _method: 'PUT',
@@ -2003,10 +2077,10 @@ navbar_items_update.put = (args: { item: number | { id: number } } | [item: numb
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_items_update
- * @see app/Http/Controllers/SettingController.php:372
+ * @see app/Http/Controllers/SettingController.php:396
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-        navbar_items_updateForm.put = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        navbar_items_updateForm.put = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: navbar_items_update.url(args, {
                         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                             _method: 'PUT',
@@ -2019,10 +2093,10 @@ navbar_items_update.put = (args: { item: number | { id: number } } | [item: numb
     navbar_items_update.form = navbar_items_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_destroy
- * @see app/Http/Controllers/SettingController.php:386
+ * @see app/Http/Controllers/SettingController.php:410
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-export const navbar_items_destroy = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
+export const navbar_items_destroy = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
     url: navbar_items_destroy.url(args, options),
     method: 'delete',
 })
@@ -2034,10 +2108,10 @@ navbar_items_destroy.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_destroy
- * @see app/Http/Controllers/SettingController.php:386
+ * @see app/Http/Controllers/SettingController.php:410
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-navbar_items_destroy.url = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+navbar_items_destroy.url = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { item: args }
     }
@@ -2067,20 +2141,20 @@ navbar_items_destroy.url = (args: { item: number | { id: number } } | [item: num
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_destroy
- * @see app/Http/Controllers/SettingController.php:386
+ * @see app/Http/Controllers/SettingController.php:410
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-navbar_items_destroy.delete = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
+navbar_items_destroy.delete = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
     url: navbar_items_destroy.url(args, options),
     method: 'delete',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_items_destroy
- * @see app/Http/Controllers/SettingController.php:386
+ * @see app/Http/Controllers/SettingController.php:410
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-    const navbar_items_destroyForm = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const navbar_items_destroyForm = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: navbar_items_destroy.url(args, {
                     [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                         _method: 'DELETE',
@@ -2092,10 +2166,10 @@ navbar_items_destroy.delete = (args: { item: number | { id: number } } | [item: 
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_items_destroy
- * @see app/Http/Controllers/SettingController.php:386
+ * @see app/Http/Controllers/SettingController.php:410
  * @route '/dashboard/settings/navbar-items/{item}'
  */
-        navbar_items_destroyForm.delete = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        navbar_items_destroyForm.delete = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: navbar_items_destroy.url(args, {
                         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                             _method: 'DELETE',
@@ -2108,7 +2182,7 @@ navbar_items_destroy.delete = (args: { item: number | { id: number } } | [item: 
     navbar_items_destroy.form = navbar_items_destroyForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_reorder
- * @see app/Http/Controllers/SettingController.php:400
+ * @see app/Http/Controllers/SettingController.php:424
  * @route '/dashboard/settings/navbar-items/reorder'
  */
 export const navbar_items_reorder = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2123,7 +2197,7 @@ navbar_items_reorder.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_reorder
- * @see app/Http/Controllers/SettingController.php:400
+ * @see app/Http/Controllers/SettingController.php:424
  * @route '/dashboard/settings/navbar-items/reorder'
  */
 navbar_items_reorder.url = (options?: RouteQueryOptions) => {
@@ -2132,7 +2206,7 @@ navbar_items_reorder.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_items_reorder
- * @see app/Http/Controllers/SettingController.php:400
+ * @see app/Http/Controllers/SettingController.php:424
  * @route '/dashboard/settings/navbar-items/reorder'
  */
 navbar_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2142,7 +2216,7 @@ navbar_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_items_reorder
- * @see app/Http/Controllers/SettingController.php:400
+ * @see app/Http/Controllers/SettingController.php:424
  * @route '/dashboard/settings/navbar-items/reorder'
  */
     const navbar_items_reorderForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2152,7 +2226,7 @@ navbar_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_items_reorder
- * @see app/Http/Controllers/SettingController.php:400
+ * @see app/Http/Controllers/SettingController.php:424
  * @route '/dashboard/settings/navbar-items/reorder'
  */
         navbar_items_reorderForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2163,10 +2237,10 @@ navbar_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
     navbar_items_reorder.form = navbar_items_reorderForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_store
- * @see app/Http/Controllers/SettingController.php:414
+ * @see app/Http/Controllers/SettingController.php:438
  * @route '/dashboard/settings/footer/{footer}/items'
  */
-export const footer_items_store = (args: { footer: number | { id: number } } | [footer: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+export const footer_items_store = (args: { footer: string | number | { id: string | number } } | [footer: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: footer_items_store.url(args, options),
     method: 'post',
 })
@@ -2178,10 +2252,10 @@ footer_items_store.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_store
- * @see app/Http/Controllers/SettingController.php:414
+ * @see app/Http/Controllers/SettingController.php:438
  * @route '/dashboard/settings/footer/{footer}/items'
  */
-footer_items_store.url = (args: { footer: number | { id: number } } | [footer: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+footer_items_store.url = (args: { footer: string | number | { id: string | number } } | [footer: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { footer: args }
     }
@@ -2211,30 +2285,30 @@ footer_items_store.url = (args: { footer: number | { id: number } } | [footer: n
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_store
- * @see app/Http/Controllers/SettingController.php:414
+ * @see app/Http/Controllers/SettingController.php:438
  * @route '/dashboard/settings/footer/{footer}/items'
  */
-footer_items_store.post = (args: { footer: number | { id: number } } | [footer: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
+footer_items_store.post = (args: { footer: string | number | { id: string | number } } | [footer: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: footer_items_store.url(args, options),
     method: 'post',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_items_store
- * @see app/Http/Controllers/SettingController.php:414
+ * @see app/Http/Controllers/SettingController.php:438
  * @route '/dashboard/settings/footer/{footer}/items'
  */
-    const footer_items_storeForm = (args: { footer: number | { id: number } } | [footer: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const footer_items_storeForm = (args: { footer: string | number | { id: string | number } } | [footer: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: footer_items_store.url(args, options),
         method: 'post',
     })
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_items_store
- * @see app/Http/Controllers/SettingController.php:414
+ * @see app/Http/Controllers/SettingController.php:438
  * @route '/dashboard/settings/footer/{footer}/items'
  */
-        footer_items_storeForm.post = (args: { footer: number | { id: number } } | [footer: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        footer_items_storeForm.post = (args: { footer: string | number | { id: string | number } } | [footer: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: footer_items_store.url(args, options),
             method: 'post',
         })
@@ -2242,10 +2316,10 @@ footer_items_store.post = (args: { footer: number | { id: number } } | [footer: 
     footer_items_store.form = footer_items_storeForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_update
- * @see app/Http/Controllers/SettingController.php:428
+ * @see app/Http/Controllers/SettingController.php:452
  * @route '/dashboard/settings/footer-items/{item}'
  */
-export const footer_items_update = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+export const footer_items_update = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: footer_items_update.url(args, options),
     method: 'put',
 })
@@ -2257,10 +2331,10 @@ footer_items_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_update
- * @see app/Http/Controllers/SettingController.php:428
+ * @see app/Http/Controllers/SettingController.php:452
  * @route '/dashboard/settings/footer-items/{item}'
  */
-footer_items_update.url = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+footer_items_update.url = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { item: args }
     }
@@ -2290,20 +2364,20 @@ footer_items_update.url = (args: { item: number | { id: number } } | [item: numb
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_update
- * @see app/Http/Controllers/SettingController.php:428
+ * @see app/Http/Controllers/SettingController.php:452
  * @route '/dashboard/settings/footer-items/{item}'
  */
-footer_items_update.put = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+footer_items_update.put = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: footer_items_update.url(args, options),
     method: 'put',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_items_update
- * @see app/Http/Controllers/SettingController.php:428
+ * @see app/Http/Controllers/SettingController.php:452
  * @route '/dashboard/settings/footer-items/{item}'
  */
-    const footer_items_updateForm = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const footer_items_updateForm = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: footer_items_update.url(args, {
                     [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                         _method: 'PUT',
@@ -2315,10 +2389,10 @@ footer_items_update.put = (args: { item: number | { id: number } } | [item: numb
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_items_update
- * @see app/Http/Controllers/SettingController.php:428
+ * @see app/Http/Controllers/SettingController.php:452
  * @route '/dashboard/settings/footer-items/{item}'
  */
-        footer_items_updateForm.put = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        footer_items_updateForm.put = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: footer_items_update.url(args, {
                         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                             _method: 'PUT',
@@ -2331,10 +2405,10 @@ footer_items_update.put = (args: { item: number | { id: number } } | [item: numb
     footer_items_update.form = footer_items_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_destroy
- * @see app/Http/Controllers/SettingController.php:442
+ * @see app/Http/Controllers/SettingController.php:466
  * @route '/dashboard/settings/footer-items/{item}'
  */
-export const footer_items_destroy = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
+export const footer_items_destroy = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
     url: footer_items_destroy.url(args, options),
     method: 'delete',
 })
@@ -2346,10 +2420,10 @@ footer_items_destroy.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_destroy
- * @see app/Http/Controllers/SettingController.php:442
+ * @see app/Http/Controllers/SettingController.php:466
  * @route '/dashboard/settings/footer-items/{item}'
  */
-footer_items_destroy.url = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
+footer_items_destroy.url = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { item: args }
     }
@@ -2379,20 +2453,20 @@ footer_items_destroy.url = (args: { item: number | { id: number } } | [item: num
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_destroy
- * @see app/Http/Controllers/SettingController.php:442
+ * @see app/Http/Controllers/SettingController.php:466
  * @route '/dashboard/settings/footer-items/{item}'
  */
-footer_items_destroy.delete = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
+footer_items_destroy.delete = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
     url: footer_items_destroy.url(args, options),
     method: 'delete',
 })
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_items_destroy
- * @see app/Http/Controllers/SettingController.php:442
+ * @see app/Http/Controllers/SettingController.php:466
  * @route '/dashboard/settings/footer-items/{item}'
  */
-    const footer_items_destroyForm = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+    const footer_items_destroyForm = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: footer_items_destroy.url(args, {
                     [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                         _method: 'DELETE',
@@ -2404,10 +2478,10 @@ footer_items_destroy.delete = (args: { item: number | { id: number } } | [item: 
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_items_destroy
- * @see app/Http/Controllers/SettingController.php:442
+ * @see app/Http/Controllers/SettingController.php:466
  * @route '/dashboard/settings/footer-items/{item}'
  */
-        footer_items_destroyForm.delete = (args: { item: number | { id: number } } | [item: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+        footer_items_destroyForm.delete = (args: { item: string | number | { id: string | number } } | [item: string | number | { id: string | number } ] | string | number | { id: string | number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: footer_items_destroy.url(args, {
                         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
                             _method: 'DELETE',
@@ -2420,7 +2494,7 @@ footer_items_destroy.delete = (args: { item: number | { id: number } } | [item: 
     footer_items_destroy.form = footer_items_destroyForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_reorder
- * @see app/Http/Controllers/SettingController.php:456
+ * @see app/Http/Controllers/SettingController.php:480
  * @route '/dashboard/settings/footer-items/reorder'
  */
 export const footer_items_reorder = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2435,7 +2509,7 @@ footer_items_reorder.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_reorder
- * @see app/Http/Controllers/SettingController.php:456
+ * @see app/Http/Controllers/SettingController.php:480
  * @route '/dashboard/settings/footer-items/reorder'
  */
 footer_items_reorder.url = (options?: RouteQueryOptions) => {
@@ -2444,7 +2518,7 @@ footer_items_reorder.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_items_reorder
- * @see app/Http/Controllers/SettingController.php:456
+ * @see app/Http/Controllers/SettingController.php:480
  * @route '/dashboard/settings/footer-items/reorder'
  */
 footer_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2454,7 +2528,7 @@ footer_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_items_reorder
- * @see app/Http/Controllers/SettingController.php:456
+ * @see app/Http/Controllers/SettingController.php:480
  * @route '/dashboard/settings/footer-items/reorder'
  */
     const footer_items_reorderForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2464,7 +2538,7 @@ footer_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_items_reorder
- * @see app/Http/Controllers/SettingController.php:456
+ * @see app/Http/Controllers/SettingController.php:480
  * @route '/dashboard/settings/footer-items/reorder'
  */
         footer_items_reorderForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2475,7 +2549,7 @@ footer_items_reorder.post = (options?: RouteQueryOptions): RouteDefinition<'post
     footer_items_reorder.form = footer_items_reorderForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 export const navbar_translations = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2490,7 +2564,7 @@ navbar_translations.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 navbar_translations.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -2518,7 +2592,7 @@ navbar_translations.url = (args: { locale: string | number } | [locale: string |
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 navbar_translations.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2527,7 +2601,7 @@ navbar_translations.get = (args: { locale: string | number } | [locale: string |
 })
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 navbar_translations.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -2537,7 +2611,7 @@ navbar_translations.head = (args: { locale: string | number } | [locale: string 
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
     const navbar_translationsForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2547,7 +2621,7 @@ navbar_translations.head = (args: { locale: string | number } | [locale: string 
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
         navbar_translationsForm.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2556,7 +2630,7 @@ navbar_translations.head = (args: { locale: string | number } | [locale: string 
         })
             /**
 * @see \App\Http\Controllers\SettingController::navbar_translations
- * @see app/Http/Controllers/SettingController.php:470
+ * @see app/Http/Controllers/SettingController.php:494
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
         navbar_translationsForm.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2572,7 +2646,7 @@ navbar_translations.head = (args: { locale: string | number } | [locale: string 
     navbar_translations.form = navbar_translationsForm
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations_update
- * @see app/Http/Controllers/SettingController.php:480
+ * @see app/Http/Controllers/SettingController.php:504
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 export const navbar_translations_update = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -2587,7 +2661,7 @@ navbar_translations_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations_update
- * @see app/Http/Controllers/SettingController.php:480
+ * @see app/Http/Controllers/SettingController.php:504
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 navbar_translations_update.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -2615,7 +2689,7 @@ navbar_translations_update.url = (args: { locale: string | number } | [locale: s
 
 /**
 * @see \App\Http\Controllers\SettingController::navbar_translations_update
- * @see app/Http/Controllers/SettingController.php:480
+ * @see app/Http/Controllers/SettingController.php:504
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
 navbar_translations_update.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -2625,7 +2699,7 @@ navbar_translations_update.put = (args: { locale: string | number } | [locale: s
 
     /**
 * @see \App\Http\Controllers\SettingController::navbar_translations_update
- * @see app/Http/Controllers/SettingController.php:480
+ * @see app/Http/Controllers/SettingController.php:504
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
     const navbar_translations_updateForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2640,7 +2714,7 @@ navbar_translations_update.put = (args: { locale: string | number } | [locale: s
 
             /**
 * @see \App\Http\Controllers\SettingController::navbar_translations_update
- * @see app/Http/Controllers/SettingController.php:480
+ * @see app/Http/Controllers/SettingController.php:504
  * @route '/dashboard/settings/navbar/translations/{locale}'
  */
         navbar_translations_updateForm.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2656,7 +2730,7 @@ navbar_translations_update.put = (args: { locale: string | number } | [locale: s
     navbar_translations_update.form = navbar_translations_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 export const footer_translations = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2671,7 +2745,7 @@ footer_translations.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 footer_translations.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -2699,7 +2773,7 @@ footer_translations.url = (args: { locale: string | number } | [locale: string |
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 footer_translations.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2708,7 +2782,7 @@ footer_translations.get = (args: { locale: string | number } | [locale: string |
 })
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 footer_translations.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -2718,7 +2792,7 @@ footer_translations.head = (args: { locale: string | number } | [locale: string 
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
     const footer_translationsForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2728,7 +2802,7 @@ footer_translations.head = (args: { locale: string | number } | [locale: string 
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
         footer_translationsForm.get = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2737,7 +2811,7 @@ footer_translations.head = (args: { locale: string | number } | [locale: string 
         })
             /**
 * @see \App\Http\Controllers\SettingController::footer_translations
- * @see app/Http/Controllers/SettingController.php:492
+ * @see app/Http/Controllers/SettingController.php:516
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
         footer_translationsForm.head = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2753,7 +2827,7 @@ footer_translations.head = (args: { locale: string | number } | [locale: string 
     footer_translations.form = footer_translationsForm
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations_update
- * @see app/Http/Controllers/SettingController.php:502
+ * @see app/Http/Controllers/SettingController.php:526
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 export const footer_translations_update = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -2768,7 +2842,7 @@ footer_translations_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations_update
- * @see app/Http/Controllers/SettingController.php:502
+ * @see app/Http/Controllers/SettingController.php:526
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 footer_translations_update.url = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -2796,7 +2870,7 @@ footer_translations_update.url = (args: { locale: string | number } | [locale: s
 
 /**
 * @see \App\Http\Controllers\SettingController::footer_translations_update
- * @see app/Http/Controllers/SettingController.php:502
+ * @see app/Http/Controllers/SettingController.php:526
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
 footer_translations_update.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -2806,7 +2880,7 @@ footer_translations_update.put = (args: { locale: string | number } | [locale: s
 
     /**
 * @see \App\Http\Controllers\SettingController::footer_translations_update
- * @see app/Http/Controllers/SettingController.php:502
+ * @see app/Http/Controllers/SettingController.php:526
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
     const footer_translations_updateForm = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2821,7 +2895,7 @@ footer_translations_update.put = (args: { locale: string | number } | [locale: s
 
             /**
 * @see \App\Http\Controllers\SettingController::footer_translations_update
- * @see app/Http/Controllers/SettingController.php:502
+ * @see app/Http/Controllers/SettingController.php:526
  * @route '/dashboard/settings/footer/translations/{locale}'
  */
         footer_translations_updateForm.put = (args: { locale: string | number } | [locale: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2837,7 +2911,7 @@ footer_translations_update.put = (args: { locale: string | number } | [locale: s
     footer_translations_update.form = footer_translations_updateForm
 /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
 export const account = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2852,7 +2926,7 @@ account.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
 account.url = (options?: RouteQueryOptions) => {
@@ -2861,7 +2935,7 @@ account.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
 account.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -2870,7 +2944,7 @@ account.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
 account.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -2880,7 +2954,7 @@ account.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
     const accountForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2890,7 +2964,7 @@ account.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
         accountForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2899,7 +2973,7 @@ account.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\SettingController::account
- * @see app/Http/Controllers/SettingController.php:42
+ * @see app/Http/Controllers/SettingController.php:45
  * @route '/dashboard/settings/account'
  */
         accountForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -2915,7 +2989,7 @@ account.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     account.form = accountForm
 /**
 * @see \App\Http\Controllers\SettingController::profile_update
- * @see app/Http/Controllers/SettingController.php:55
+ * @see app/Http/Controllers/SettingController.php:58
  * @route '/dashboard/settings/account/profile'
  */
 export const profile_update = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2930,7 +3004,7 @@ profile_update.definition = {
 
 /**
 * @see \App\Http\Controllers\SettingController::profile_update
- * @see app/Http/Controllers/SettingController.php:55
+ * @see app/Http/Controllers/SettingController.php:58
  * @route '/dashboard/settings/account/profile'
  */
 profile_update.url = (options?: RouteQueryOptions) => {
@@ -2939,7 +3013,7 @@ profile_update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\SettingController::profile_update
- * @see app/Http/Controllers/SettingController.php:55
+ * @see app/Http/Controllers/SettingController.php:58
  * @route '/dashboard/settings/account/profile'
  */
 profile_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -2949,7 +3023,7 @@ profile_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => 
 
     /**
 * @see \App\Http\Controllers\SettingController::profile_update
- * @see app/Http/Controllers/SettingController.php:55
+ * @see app/Http/Controllers/SettingController.php:58
  * @route '/dashboard/settings/account/profile'
  */
     const profile_updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2959,7 +3033,7 @@ profile_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => 
 
             /**
 * @see \App\Http\Controllers\SettingController::profile_update
- * @see app/Http/Controllers/SettingController.php:55
+ * @see app/Http/Controllers/SettingController.php:58
  * @route '/dashboard/settings/account/profile'
  */
         profile_updateForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -2968,6 +3042,6 @@ profile_update.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => 
         })
     
     profile_update.form = profile_updateForm
-const SettingController = { auth0, auth0_update, system, system_update, system_translations, system_translations_update, pages, home_pages_update, system_type_update, custom_pages_edit, custom_pages_store, custom_pages_update, custom_pages_destroy, storage, storage_update, smtp, smtp_update, maintenance, live_class, live_class_update, meta_pixel, meta_pixel_update, google_analytics, google_analytics_update, navbar_items_store, navbar_items_update, navbar_items_destroy, navbar_items_reorder, footer_items_store, footer_items_update, footer_items_destroy, footer_items_reorder, navbar_translations, navbar_translations_update, footer_translations, footer_translations_update, account, profile_update }
+const SettingController = { auth0, auth0_update, system, system_update, system_translations, system_translations_update, pages, home_pages_update, system_type_update, custom_pages_edit, custom_pages_store, custom_pages_update, custom_pages_destroy, storage, storage_update, smtp, smtp_update, smtp_test, maintenance, live_class, live_class_update, meta_pixel, meta_pixel_update, google_analytics, google_analytics_update, navbar_items_store, navbar_items_update, navbar_items_destroy, navbar_items_reorder, footer_items_store, footer_items_update, footer_items_destroy, footer_items_reorder, navbar_translations, navbar_translations_update, footer_translations, footer_translations_update, account, profile_update }
 
 export default SettingController

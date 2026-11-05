@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 
 class InstructorService extends MediaService
 {
@@ -149,27 +150,36 @@ class InstructorService extends MediaService
 
     public function createInstructor(array $data): Instructor
     {
-        $user = User::findOrFail($data['user_id']);
+        return DB::transaction(function () use ($data): Instructor {
+            $user = User::lockForUpdate()->findOrFail($data['user_id']);
 
-        $instructor = Instructor::create([
-            ...$data,
-            'skills' => json_encode($data['skills']),
-            'resume' => $this->addNewDeletePrev($user, $data['resume'], 'resume'),
-        ]);
+            if (Instructor::where('user_id', $user->id)->exists()) {
+                throw ValidationException::withMessages([
+                    'user_id' => 'An instructor application already exists for this account.',
+                ]);
+            }
 
-        $user->update(['instructor_id' => $instructor->id]);
+            $instructor = Instructor::create([
+                ...$data,
+                'skills' => json_encode($data['skills']),
+                'resume' => $this->addNewDeletePrev($user, $data['resume'], 'resume'),
+            ]);
 
-        if (Auth::user()->role !== 'admin') {
-            $admin = User::where('role', 'admin')->first();
-            $admin->notify(new InstructorApprovalNotification([
-                'status' => 'pending',
-            ]));
-        } else {
-            $instructor->update(['status' => 'approved']);
-            $user->update(['role' => 'instructor']);
-        }
+            $user->update(['instructor_id' => $instructor->id]);
 
-        return $instructor;
+            if (Auth::user()->role !== 'admin') {
+                $admin = User::where('role', 'admin')->first();
+                $admin?->notify(new InstructorApprovalNotification([
+                    'status' => 'pending',
+                    'instructor_id' => $instructor->id,
+                ]));
+            } else {
+                $instructor->update(['status' => 'approved']);
+                $user->update(['role' => 'instructor']);
+            }
+
+            return $instructor;
+        });
     }
 
     public function updateInstructor(array $data, string $id): Instructor
@@ -189,12 +199,13 @@ class InstructorService extends MediaService
             return $value !== null;
         });
 
-        if ($user->role !== 'admin') {
+        if ($user->role !== 'admin' && $instructor->status === 'rejected') {
             $instructor->update([...$filteredData, 'status' => 'pending']);
 
             $admin = User::where('role', 'admin')->first();
-            $admin->notify(new InstructorApprovalNotification([
+            $admin?->notify(new InstructorApprovalNotification([
                 'status' => $instructor->status,
+                'instructor_id' => $instructor->id,
             ]));
         }
 
@@ -213,8 +224,31 @@ class InstructorService extends MediaService
 
         $user->notify(new InstructorApprovalNotification([
             'status' => $instructor->status,
-            'feedback' => $data['feedback'],
+            'feedback' => $data['feedback'] ?? '',
+            'instructor_id' => $instructor->id,
+            'reviewer_id' => Auth::id(),
+            'previous_status' => $data['previous_status'] ?? null,
         ]));
+    }
+
+    /** @param array{status: string, feedback?: string|null} $data */
+    public function decideApplication(array $data, string $id): Instructor
+    {
+        abort_unless(Auth::user()?->role === 'admin', 403);
+
+        return DB::transaction(function () use ($data, $id): Instructor {
+            $instructor = Instructor::lockForUpdate()->findOrFail($id);
+
+            if ($instructor->status === $data['status']) {
+                return $instructor;
+            }
+
+            $previousStatus = $instructor->status;
+            $instructor->update(['status' => $data['status']]);
+            $this->updateUserRole([...$data, 'previous_status' => $previousStatus], $instructor);
+
+            return $instructor;
+        });
     }
 
     public function deleteInstructor(Instructor $instructor): void

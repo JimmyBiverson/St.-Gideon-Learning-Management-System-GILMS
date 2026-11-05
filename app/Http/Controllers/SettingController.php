@@ -17,14 +17,17 @@ use App\Models\Footer;
 use App\Models\FooterItem;
 use App\Models\Navbar;
 use App\Models\NavbarItem;
+use App\Models\Setting;
 use App\Services\InstructorService;
 use App\Services\SettingsService;
 use App\Services\SiteTranslationService;
 use App\Services\StudentService;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Inertia\Inertia;
 
 class SettingController extends Controller
@@ -240,6 +243,9 @@ class SettingController extends Controller
     public function smtp(Request $request)
     {
         $smtp = $this->settingsService->getSetting(['type' => 'smtp']);
+        if ($smtp) {
+            $smtp->fields = Arr::except($smtp->fields, ['mail_password']);
+        }
 
         return Inertia::render('dashboard/settings/smtp', compact('smtp'));
     }
@@ -254,7 +260,25 @@ class SettingController extends Controller
 
             return back()->with('success', 'SMTP settings updated successfully. A test email was sent to verify your configuration.');
         } catch (\Exception $e) {
-            return back()->with('error', $e->getMessage());
+            Log::warning('SMTP settings test failed', ['exception_type' => $e::class]);
+
+            return back()->with('error', 'SMTP test failed. Check the host, port, encryption and credentials. No settings were saved.');
+        }
+    }
+
+    public function smtp_test(Request $request, string $id): RedirectResponse
+    {
+        $data = $request->validate(['email' => ['required', 'email', 'max:255']]);
+        $smtp = Setting::where('type', 'smtp')->findOrFail($id);
+
+        try {
+            testSmtpConnection($smtp->fields, $data['email']);
+
+            return back()->with('success', 'Test message accepted by the configured mail transport. Check the recipient inbox and spam folder.');
+        } catch (\Exception $exception) {
+            Log::warning('SMTP test message failed', ['exception_type' => $exception::class]);
+
+            return back()->with('error', 'The test message could not be sent. Check your SMTP settings and mail provider status.');
         }
     }
 
