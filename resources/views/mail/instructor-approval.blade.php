@@ -1082,7 +1082,7 @@
 
 
       <p style="margin-bottom: 1.5em;">
-         Your instructor application has been approved! You can now create and manage courses on our platform.
+         {{ app(\App\Services\AcademicTerminology::class)->text('Your instructor application has been approved! You can now create and manage courses on our platform.') }}
       </p>
 
 
@@ -1131,7 +1131,7 @@
 
    @if ($status === 'approved')
       <p style="margin: 1.5em 0;">
-         Start creating your first course and share your knowledge with students around the world!
+         {{ app(\App\Services\AcademicTerminology::class)->text('Start creating your first course and share your knowledge with students around the world!') }}
       </p>
    @endif
 

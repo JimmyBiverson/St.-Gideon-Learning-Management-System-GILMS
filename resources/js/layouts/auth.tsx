@@ -26,9 +26,9 @@ const AuthLayout = ({
          <MetaPixel />
          <GoogleAnalytics />
 
-         <div className="mx-auto flex min-h-svh max-w-[1480px]">
+         <div className="mx-auto flex min-h-svh max-w-[1480px] bg-muted/20 p-3 sm:p-6">
             {/* Middle: Headline + Subtitle */}
-            <div className="hidden flex-1 flex-col items-center justify-center space-y-10 border-r border-border p-10 md:flex md:max-w-xl">
+            <div className="hidden flex-1 flex-col items-center justify-center space-y-10 rounded-3xl border border-primary/10 bg-linear-to-br from-primary/15 via-primary/5 to-background p-10 md:flex md:max-w-xl">
                <div className="space-y-3">
                   {headline && (
                      <h2 className="text-3xl leading-tight font-bold tracking-tight text-foreground">
@@ -46,21 +46,21 @@ const AuthLayout = ({
                <div className="flex items-center justify-center">
                   <img
                      src={
-                        props.system.fields?.auth_banner ??
+                        props.system?.fields?.auth_banner ||
                         '/assets/auth/lms-illustration.png'
                      }
                      alt="LMS Learning"
-                     className="mx-auto w-full max-w-[460px]"
+                     className="mx-auto w-full max-w-[460px] rounded-2xl"
                      draggable={false}
                   />
                </div>
             </div>
 
             {/* ── Right panel (always visible) ─────────────────────────── */}
-            <div className="flex flex-1 flex-col items-center justify-center bg-background px-6 py-10 md:px-10">
+            <div className="flex flex-1 flex-col items-center justify-center px-3 py-8 sm:px-6 md:px-10">
                {/* Mobile-only logo */}
 
-               <div className="w-full max-w-[420px] space-y-12">
+               <div className="w-full max-w-[460px] space-y-8 rounded-3xl border border-border bg-background p-6 shadow-sm sm:p-8">
                   <div className="flex w-full items-center justify-center md:justify-start">
                      <Link href="/">
                         <AppLogo className="h-8 w-auto" />

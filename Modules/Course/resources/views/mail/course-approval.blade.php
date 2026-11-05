@@ -1072,7 +1072,7 @@
 
 <body>
    <h1 style="font-size: 1.5em; font-weight: 600; margin-bottom: 1em;">
-      Course Approval Status Update
+      {{ app(\App\Services\AcademicTerminology::class)->text('Course Approval Status Update') }}
    </h1>
 
    @if ($status === 'approved')
@@ -1081,7 +1081,7 @@
       </h2>
 
       <p style="margin-bottom: 1.5em;">
-         Your course "{{ $course->title }}" has been approved and is now live on our
+         Your {{ app(\App\Services\AcademicTerminology::class)->label(false, true) }} "{{ $course->title }}" has been approved and is now live on our
          platform.
       </p>
 
@@ -1100,15 +1100,15 @@
          href="{{ route('course.details', ['slug' => $course->slug, 'id' => $course->id]) }}"
          style="display: inline-block; padding: 0.75em 1.5em; background-color: #0969da; color: #fff; border-radius: 0.5em; text-decoration: none; font-weight: 600;"
       >
-         View Course
+         {{ app(\App\Services\AcademicTerminology::class)->text('View Course') }}
       </a>
    @else
       <h2 style="font-size: 1.25em; font-weight: 600; margin: 1.5em 0 1em;">
-         Course Approval Request Update: {{ ucfirst($status) }}
+         {{ app(\App\Services\AcademicTerminology::class)->text('Course Approval Request Update') }}: {{ ucfirst($status) }}
       </h2>
 
       <p style="margin-bottom: 1em;">
-         Your course "{{ $course->title }}" status has been updated to:
+         Your {{ app(\App\Services\AcademicTerminology::class)->label(false, true) }} "{{ $course->title }}" status has been updated to:
          <strong>{{ ucfirst($status) }}</strong>.
       </p>
 
@@ -1123,13 +1123,13 @@
          href="{{ route('courses.edit', $course->id) }}"
          style="display: inline-block; padding: 0.75em 1.5em; background-color: #ef4444; color: #fff; border-radius: 0.5em; text-decoration: none; font-weight: 600;"
       >
-         Update Course
+         {{ app(\App\Services\AcademicTerminology::class)->text('Update Course') }}
       </a>
    @endif
 
    @if ($status === 'approved')
       <p style="margin: 1.5em 0;">
-         Students can now enroll in your course. Promote it to reach more learners!
+         {{ app(\App\Services\AcademicTerminology::class)->text('Students can now enroll in your course. Promote it to reach more learners!') }}
       </p>
    @endif
 

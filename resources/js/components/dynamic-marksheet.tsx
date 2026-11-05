@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 
 interface DynamicMarksheetProps {
    template: MarksheetTemplate;
@@ -27,11 +28,18 @@ const DynamicMarksheet = ({
    completionDate,
    studentMarks,
 }: DynamicMarksheetProps) => {
+   const academic = useAcademicTerminology();
    const [downloadFormat, setDownloadFormat] = useState('png');
    const marksheetRef = useRef<HTMLDivElement>(null);
    const dimensions = { width: 700, height: 900 };
 
-   const { template_data } = template;
+   const template_data =
+      template.type === 'course'
+         ? {
+              ...template.template_data,
+              headerText: academic.text(template.template_data.headerText),
+           }
+         : template.template_data;
 
    const handleDownloadMarksheet = async () => {
       if (!marksheetRef.current) {

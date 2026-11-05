@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Instructor;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -21,8 +22,8 @@ class DashboardService extends MediaService
         // Fetch only IDs — no need for full model hydration
         $courses_ids = Course::withoutGlobalScopes()
             ->select('id')
-            ->when($isInstructor && $user->instructor_id, function ($query) use ($user) {
-                return $query->where('instructor_id', $user->instructor_id);
+            ->when($isInstructor, function ($query) use ($user) {
+                return $query->where('instructor_id', $user->instructor_id ?? 0);
             })
             ->pluck('id')
             ->toArray();
@@ -34,6 +35,7 @@ class DashboardService extends MediaService
             'enrollments' => CourseEnrollment::whereIn('course_id', $courses_ids)->count(),
             'students' => CourseEnrollment::whereIn('course_id', $courses_ids)->distinct('user_id')->count('user_id'),
             'instructors' => $isAdmin ? User::instructors()->count() : 0,
+            'pendingApplications' => $isAdmin ? Instructor::where('status', 'pending')->count() : 0,
         ];
 
         // Whitelist the revenue column to prevent SQL injection from $user->role
@@ -46,13 +48,20 @@ class DashboardService extends MediaService
         // Revenue for current year (monthly breakdown)
         // groupByRaw is used instead of groupBy('month') to avoid ONLY_FULL_GROUP_BY
         // strict mode failures on shared hosting MySQL servers.
+        $monthExpression = match (DB::connection()->getDriverName()) {
+            'sqlite' => "CAST(strftime('%m', created_at) AS INTEGER)",
+            'pgsql' => 'EXTRACT(MONTH FROM created_at)',
+            'sqlsrv' => 'DATEPART(month, created_at)',
+            default => 'MONTH(created_at)',
+        };
+
         $yearlyRevenue = PaymentHistory::query()
-            ->selectRaw("MONTH(created_at) as month, SUM({$revenueColumn}) as revenue")
+            ->selectRaw("{$monthExpression} as month, SUM({$revenueColumn}) as revenue")
             ->whereYear('created_at', $currentYear)
             ->where('purchase_type', Course::class)
             ->whereIn('purchase_id', $courses_ids)
-            ->groupByRaw('MONTH(created_at)')
-            ->orderByRaw('MONTH(created_at)')
+            ->groupByRaw($monthExpression)
+            ->orderByRaw($monthExpression)
             ->get()
             ->keyBy('month')
             ->map(fn ($item) => $item->revenue)

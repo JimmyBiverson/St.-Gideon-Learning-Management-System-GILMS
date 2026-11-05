@@ -42,8 +42,7 @@ Implementation and testing are in progress. SMTP delivery, DNS authentication, p
 
 ## Remaining work
 
-- Complete teacher application ownership, duplicate-decision and audit-history checks.
-- Prevent SMTP credentials from being returned to frontend responses; review all email flows and worker configuration.
+- Verify production worker configuration and external mail delivery; ownership, duplicate-decision checks and SMTP prop redaction are covered by regression tests.
 - Complete academic terminology coverage in hardcoded UI copy, notifications, email and printable templates.
 - Continue dashboard/authentication visual polish and browser accessibility/responsiveness checks.
 - Verify external email delivery and sender DNS only with the required environment access.
@@ -55,3 +54,11 @@ Implementation and testing are in progress. SMTP delivery, DNS authentication, p
 - Mail notifications load database SMTP settings through a notification event listener, including in queue workers. Verification and reset notifications queue after commit. SMTP configuration no longer blocks unrelated page navigation.
 - CAPTCHA secrets and OAuth tokens are excluded from frontend serialization. CAPTCHA enforcement uses server settings, not a client flag. New OAuth accounts receive random passwords; legacy Google accounts with the former shared password cannot use password login until reset, while Google sign-in remains available.
 - Expanded automated suite: **77 passed, 263 assertions**. External SMTP/DNS and device-browser checks remain unverified.
+
+## Dashboard and terminology follow-up (2026-11-05)
+
+- Instructors without a linked profile now receive scoped empty dashboard statistics rather than institution-wide counts. Administrators see a real pending-application count. Monthly revenue aggregation supports SQLite tests alongside the existing production database expressions.
+- Dashboard and authentication layouts use existing theme colors and configured branding. Student learning lists include an actionable empty state.
+- Academic terminology now covers additional management headings, approval emails, certificate and marksheet display copy. Stored academic records remain unchanged; regression tests verify this. Request-scoped label memoization avoids repeated setting lookups.
+- The full suite passes: **81 tests, 275 assertions**. TypeScript checking passes. Browser preview could not start because the browser-control process failed; visual/device verification remains outstanding.
+- Production frontend build passed in 57.95 seconds; existing decorative-image and plugin-timing warnings remain.

@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/breadcrumbs';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 import TableFilter from '@/components/table/table-filter';
 import TableFooter from '@/components/table/table-footer';
 import TableHeader from '@/components/table/table-header';
@@ -23,6 +24,7 @@ import type { ReactNode } from 'react';
 import SubmissionsTableColumn from './partials/submissions-table-column';
 
 const SubmissionsPage = () => {
+   const academic = useAcademicTerminology();
    const { props } = usePage<CourseUpdateProps>();
    const { course, translate, submissions, assignment } = props;
    const [sorting, setSorting] = React.useState<SortingState>([]);
@@ -43,7 +45,7 @@ const SubmissionsPage = () => {
             title="Assignment Submissions"
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses', href: coursesIndex.url() },
+               { title: academic.plural, href: coursesIndex.url() },
                { title: 'Assignments', href: index.url(course.id) },
                { title: 'Submissions' },
             ]}

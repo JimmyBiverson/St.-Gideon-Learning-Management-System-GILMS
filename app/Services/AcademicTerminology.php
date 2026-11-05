@@ -10,10 +10,13 @@ class AcademicTerminology
 {
     private const CACHE_KEY = 'academic_terminology';
 
+    /** @var array{singular: string, plural: string}|null */
+    private ?array $resolvedLabels = null;
+
     /** @return array{singular: string, plural: string} */
     public function labels(): array
     {
-        return Cache::rememberForever(self::CACHE_KEY, function (): array {
+        return $this->resolvedLabels ??= Cache::rememberForever(self::CACHE_KEY, function (): array {
             $fields = Setting::where('type', 'academic_terminology')->first()?->fields ?? [];
 
             return [
@@ -32,6 +35,7 @@ class AcademicTerminology
         ]);
 
         Cache::forget(self::CACHE_KEY);
+        $this->resolvedLabels = null;
     }
 
     public function label(bool $plural = false, bool $lowercase = false): string

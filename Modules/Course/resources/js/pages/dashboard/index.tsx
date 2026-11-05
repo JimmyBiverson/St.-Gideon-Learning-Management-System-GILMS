@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/breadcrumbs';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 import TableFilter from '@/components/table/table-filter';
 import TableFooter from '@/components/table/table-footer';
 import TableHeader from '@/components/table/table-header';
@@ -27,6 +28,7 @@ interface Props extends SharedData {
 }
 
 const Index = (props: Props) => {
+   const academic = useAcademicTerminology();
    const { props: pageProps } = usePage<SharedData>();
    const { isAdmin } = useAuth();
    const { system } = pageProps;
@@ -51,10 +53,10 @@ const Index = (props: Props) => {
    return (
       <>
          <Breadcrumbs
-            title="Courses"
+            title={academic.plural}
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses' },
+               { title: academic.plural },
             ]}
             action={
                <Button asChild className="h-9 px-4">

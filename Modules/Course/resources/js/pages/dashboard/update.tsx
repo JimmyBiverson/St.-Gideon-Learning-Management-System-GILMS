@@ -1,4 +1,5 @@
 import Breadcrumbs from '@/components/breadcrumbs';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 import Tabs from '@/components/tabs';
 import { TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import DashboardLayout from '@/layouts/dashboard/layout';
@@ -25,6 +26,7 @@ import Pricing from './partials/pricing';
 import SEO from './partials/seo';
 
 const Update = (props: CourseUpdateProps) => {
+   const academic = useAcademicTerminology();
    const { tab, course, translate } = props;
    const { button } = translate;
 
@@ -83,11 +85,11 @@ const Update = (props: CourseUpdateProps) => {
    return (
       <section className="space-y-6">
          <Breadcrumbs
-            title={'Manage Course Contents'}
+            title={academic.text('Manage Course Contents')}
             breadcrumbs={[
                { title: 'Dashboard', href: '/dashboard' },
-               { title: 'Courses', href: index.url() },
-               { title: course.title || 'Edit Course' },
+               { title: academic.plural, href: index.url() },
+               { title: course.title || academic.text('Edit Course') },
             ]}
             action={<CourseUpdateHeader />}
             className="mb-4"

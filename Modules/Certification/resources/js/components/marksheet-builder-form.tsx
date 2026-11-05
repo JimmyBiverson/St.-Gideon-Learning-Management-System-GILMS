@@ -22,6 +22,7 @@ import { Form } from '@inertiajs/react';
 import { Save } from 'lucide-react';
 import { useState } from 'react';
 import MarksheetPreview from './marksheet-preview';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 
 const MarksheetBuilderForm = ({
    template,
@@ -29,6 +30,7 @@ const MarksheetBuilderForm = ({
    template?: MarksheetTemplate | null;
 }) => {
    const [logoPreview, setLogoPreview] = useState(template?.logo_path);
+   const academic = useAcademicTerminology();
 
    const [type, setType] = useState<string>(template?.type || 'course');
    const [name, setName] = useState<string>(
@@ -40,7 +42,7 @@ const MarksheetBuilderForm = ({
          secondaryColor: '#475569',
          backgroundColor: '#ffffff',
          borderColor: '#2563eb',
-         headerText: 'Course Marksheet',
+         headerText: academic.text('Course Marksheet'),
          institutionName: 'Institute Name',
          footerText: 'This is an official marksheet',
          fontFamily: 'sans-serif',
@@ -85,7 +87,9 @@ const MarksheetBuilderForm = ({
                                  <SelectValue placeholder="Select template type" />
                               </SelectTrigger>
                               <SelectContent>
-                                 <SelectItem value="course">Course</SelectItem>
+                                 <SelectItem value="course">
+                                    {academic.singular}
+                                 </SelectItem>
                                  {/* <SelectItem value="exam">Exam</SelectItem> */}
                               </SelectContent>
                            </Select>
@@ -357,7 +361,7 @@ const MarksheetBuilderForm = ({
                                     headerText: e.target.value,
                                  }))
                               }
-                              placeholder="Course Marksheet"
+                              placeholder={academic.text('Course Marksheet')}
                            />
                         </div>
 
@@ -432,7 +436,7 @@ const MarksheetBuilderForm = ({
                               } as any
                            }
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName={academic.text('Sample Course Name')}
                            completionDate="January 1, 2025"
                            logoUrl={logoPreview}
                         />

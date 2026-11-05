@@ -2,6 +2,7 @@
 
 namespace Modules\Course\Notifications;
 
+use App\Services\AcademicTerminology;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
@@ -35,12 +36,12 @@ class CourseApprovalNotification extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject('Course Approval Status Update')
+            ->subject(app(AcademicTerminology::class)->text('Course Approval Status Update'))
             ->view('course::mail.course-approval', [
                 'user' => $notifiable,
                 'course' => $this->course,
                 'status' => $this->data['status'],
-                'feedback' => $this->data['feedback'],
+                'feedback' => $this->data['feedback'] ?? '',
             ]);
     }
 
@@ -57,12 +58,12 @@ class CourseApprovalNotification extends Notification
         $url = route('course.details', [$slug, $id]);
 
         if ($this->course->created_from == 'api') {
-            $url = config('app.frontend_url') . "/courses/$slug/$id";
+            $url = config('app.frontend_url')."/courses/$slug/$id";
         }
 
         return [
-            'title' => $this->course->status . ': ' . $this->course->title,
-            'body' => $this->data['feedback'],
+            'title' => $this->course->status.': '.$this->course->title,
+            'body' => $this->data['feedback'] ?? '',
             'url' => $url,
         ];
     }

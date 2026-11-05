@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 
 interface DynamicCertificateProps {
    template: CertificateTemplate;
@@ -19,11 +20,20 @@ const DynamicCertificate = ({
    studentName,
    completionDate,
 }: DynamicCertificateProps) => {
+   const academic = useAcademicTerminology();
    const [downloadFormat, setDownloadFormat] = useState('png');
    const certificateRef = useRef<HTMLDivElement>(null);
    const dimensions = { width: 900, height: 600 };
 
-   const { template_data } = template;
+   const template_data =
+      template.type === 'course'
+         ? {
+              ...template.template_data,
+              completionText: academic.text(
+                 template.template_data.completionText,
+              ),
+           }
+         : template.template_data;
 
    const handleDownloadCertificate = async () => {
       if (!certificateRef.current) {

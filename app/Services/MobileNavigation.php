@@ -48,7 +48,9 @@ class MobileNavigation
             ];
 
         if ($user->role === 'admin') {
-            $more[] = ['Teacher applications', 'instructors.applications', 'users', []];
+            if (app('system')?->sub_type === 'collaborative') {
+                $more[] = ['Teacher applications', 'instructors.applications', 'users', []];
+            }
             $more[] = ['System settings', 'system.index', 'settings', []];
         }
 

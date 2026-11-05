@@ -22,6 +22,7 @@ import { Form } from '@inertiajs/react';
 import { Save } from 'lucide-react';
 import { useState } from 'react';
 import CertificatePreview from './certificate-preview';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 
 const CertificateBuilderForm = ({
    template,
@@ -29,6 +30,7 @@ const CertificateBuilderForm = ({
    template?: CertificateTemplate;
 }) => {
    const [logoPreview, setLogoPreview] = useState(template?.logo_path);
+   const academic = useAcademicTerminology();
 
    const [type, setType] = useState<string>(template?.type || 'course');
    const [name, setName] = useState<string>(
@@ -42,7 +44,9 @@ const CertificateBuilderForm = ({
          borderColor: '#f59e0b',
          titleText: 'Certificate of Completion',
          descriptionText: 'This certificate is proudly presented to',
-         completionText: 'for successfully completing the course',
+         completionText: academic.text(
+            'for successfully completing the course',
+         ),
          footerText: 'Authorized Certificate',
          fontFamily: 'serif',
       },
@@ -88,7 +92,9 @@ const CertificateBuilderForm = ({
                                  <SelectValue placeholder="Select template type" />
                               </SelectTrigger>
                               <SelectContent>
-                                 <SelectItem value="course">Course</SelectItem>
+                                 <SelectItem value="course">
+                                    {academic.singular}
+                                 </SelectItem>
                                  <SelectItem value="exam">Exam</SelectItem>
                               </SelectContent>
                            </Select>
@@ -400,7 +406,9 @@ const CertificateBuilderForm = ({
                                     completionText: e.target.value,
                                  }))
                               }
-                              placeholder="for successfully completing the course"
+                              placeholder={academic.text(
+                                 'for successfully completing the course',
+                              )}
                            />
                         </div>
 
@@ -456,7 +464,7 @@ const CertificateBuilderForm = ({
                               } as any
                            }
                            studentName="John Doe"
-                           courseName="Sample Course Name"
+                           courseName={academic.text('Sample Course Name')}
                            completionDate="January 1, 2025"
                            logoUrl={logoPreview}
                         />

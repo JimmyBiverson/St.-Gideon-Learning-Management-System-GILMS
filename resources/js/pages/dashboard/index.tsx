@@ -27,6 +27,8 @@ import DashboardLayout from '@/layouts/dashboard/layout';
 import { cn } from '@/lib/utils';
 import { index as payoutsIndex } from '@/routes/payouts';
 import { request as payoutsRequestIndex } from '@/routes/payouts';
+import { index as coursesIndex } from '@/routes/courses';
+import { applications } from '@/routes/instructors';
 import RevenueChart from './partials/revenue-chart';
 
 type StatisticsType = {
@@ -35,6 +37,7 @@ type StatisticsType = {
    enrollments: number;
    students: number;
    instructors: number;
+   pendingApplications: number;
 };
 
 type RevenueDataType = Record<string, number>;
@@ -81,6 +84,33 @@ const Dashboard = (props: DashboardProps) => {
    return (
       <div className="space-y-7">
          <Head title={frontend.dashboard} />
+         <section className="flex flex-col gap-5 rounded-2xl border border-primary/15 bg-linear-to-br from-primary/10 to-background p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div>
+               <p className="mb-2 text-xs font-semibold tracking-widest text-primary uppercase">
+                  {isAdmin ? 'Institution overview' : 'Teaching workspace'}
+               </p>
+               <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+                  Welcome back, {auth.user.name}
+               </h1>
+               <p className="mt-2 text-sm text-muted-foreground">
+                  Your learning community, progress and priorities in one place.
+               </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+               <Button asChild>
+                  <Link href={coursesIndex()}>
+                     Manage {props.academicTerminology?.plural ?? 'Subjects'}
+                  </Link>
+               </Button>
+               {isAdmin && system.sub_type === 'collaborative' && (
+                  <Button asChild variant="outline">
+                     <Link href={applications()}>
+                        Applications ({statistics.pendingApplications})
+                     </Link>
+                  </Button>
+               )}
+            </div>
+         </section>
 
          {/* Statistics Cards */}
          <div
@@ -237,7 +267,7 @@ type StatCardProps = {
 
 const StatCard = ({ title, value, icon }: StatCardProps) => {
    return (
-      <Card className="p-4 sm:p-6">
+      <Card className="rounded-2xl border-border/70 p-4 shadow-sm transition-shadow hover:shadow-md sm:p-6">
          <div className="flex items-center justify-between">
             <div>
                <p className="text-sm font-medium text-muted-foreground">
@@ -245,7 +275,7 @@ const StatCard = ({ title, value, icon }: StatCardProps) => {
                </p>
                <h4 className="mt-1 text-2xl font-semibold">{value}</h4>
             </div>
-            <div className="rounded-full bg-gray-100 p-3">{icon}</div>
+            <div className="rounded-2xl bg-muted p-3">{icon}</div>
          </div>
       </Card>
    );

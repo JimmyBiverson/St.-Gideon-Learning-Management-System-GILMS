@@ -6,8 +6,10 @@ import DynamicMarksheet from '@/components/dynamic-marksheet';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import useAcademicTerminology from '@/hooks/use-academic-terminology';
 
 const CourseCertificate = () => {
+   const academic = useAcademicTerminology();
    const { props } = usePage<StudentCourseProps>();
    const {
       course,
@@ -29,7 +31,9 @@ const CourseCertificate = () => {
             <Lock className="h-4 w-4" />
             <AlertTitle>Certificate & Marksheet Locked</AlertTitle>
             <AlertDescription>
-               Complete all course modules to unlock your certificate and
+               {academic.text(
+                  'Complete all course modules to unlock your certificate and',
+               )}{' '}
                marksheet. Your current progress: {completion?.completion || 0}%
             </AlertDescription>
          </Alert>
@@ -114,7 +118,9 @@ const CourseCertificate = () => {
                         </h3>
                         <p className="text-muted-foreground">
                            {!marksheetTemplate
-                              ? "The instructor hasn't set up marksheets for this course yet."
+                              ? academic.text(
+                                   "The instructor hasn't set up marksheets for this course yet.",
+                                )
                               : 'No marks data available. Complete assignments and quizzes to view your marksheet.'}
                         </p>
                      </CardContent>
