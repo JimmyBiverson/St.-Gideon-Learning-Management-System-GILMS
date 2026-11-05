@@ -8,7 +8,7 @@ use Modules\Frontend\Models\ProjectPage;
 uses(RefreshDatabase::class);
 
 beforeEach(function () {
-    $this->user = User::factory()->create();
+    $this->user = User::factory()->create(['role' => 'admin']);
 
     $this->project = Project::create([
         'type' => 'temporary',
@@ -110,9 +110,11 @@ it('renders the bulk translation screen with existing translations', function ()
         ]))
         ->assertOk()
         ->assertInertia(fn ($page) => $page
-            ->component('Frontend/translate')
+            ->component('Frontend/translate', false)
             ->where('locale', 'es')
             ->where('translations.el1.innerText', 'Hola Mundo'));
+
+    expect(is_file(base_path('Modules/Frontend/resources/js/pages/translate.tsx')))->toBeTrue();
 });
 
 it('overlays a saved translation into the public page content for a non-default locale', function () {

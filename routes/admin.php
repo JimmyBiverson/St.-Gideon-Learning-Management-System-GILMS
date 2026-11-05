@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcademicTerminologyController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\JobCircularController;
@@ -21,6 +22,9 @@ use Illuminate\Support\Facades\Route;
  */
 
 Route::prefix('dashboard')->group(function () {
+    Route::put('settings/academic-terminology', [AcademicTerminologyController::class, 'update'])
+        ->name('academic-terminology.update');
+
     // users
     Route::resource('users', UsersController::class)->only(['index', 'update']);
 

@@ -2,8 +2,10 @@
 
 namespace App\Http\Middleware;
 
+use App\Services\AcademicTerminology;
 use App\Services\GoogleAnalyticsService;
 use App\Services\MetaPixelService;
+use App\Services\MobileNavigation;
 use App\Services\NotificationService;
 use App\Services\SettingsService;
 use App\Services\SiteTranslationService;
@@ -121,6 +123,8 @@ class HandleInertiaRequests extends Middleware
             return [
                 ...parent::share($request),
                 'name' => config('app.name'),
+                'academicTerminology' => app(AcademicTerminology::class)->labels(),
+                'mobileNavigation' => app(MobileNavigation::class)->forUser($user),
                 'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
                 'auth' => ['user' => $user],
                 'system' => $system,
@@ -135,7 +139,7 @@ class HandleInertiaRequests extends Middleware
                 'langs' => $langs,
                 'locale' => $locale,
                 'direction' => $direction,
-                'translate' => [
+                'translate' => app(AcademicTerminology::class)->translations([
                     'auth' => trans('auth'),
                     'button' => trans('button'),
                     'common' => trans('common'),
@@ -144,7 +148,7 @@ class HandleInertiaRequests extends Middleware
                     'input' => trans('input'),
                     'settings' => trans('settings'),
                     'table' => trans('table'),
-                ],
+                ]),
                 'flash' => [
                     'error' => fn () => $request->session()->get('error'),
                     'warning' => fn () => $request->session()->get('warning'),

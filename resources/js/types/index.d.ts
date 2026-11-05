@@ -1,5 +1,10 @@
 // global.d.ts
 interface SharedData {
+   academicTerminology?: { singular: string; plural: string };
+   mobileNavigation?: {
+      items: { label: string; href: string; icon: string }[];
+      more: { label: string; href: string; icon: string }[];
+   };
    // page: Page;
    auth: Auth;
    customize: boolean;

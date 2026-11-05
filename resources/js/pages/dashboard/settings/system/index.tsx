@@ -9,6 +9,7 @@ import Footer from './partials/footer';
 import Navbar from './partials/navbar';
 import Style from './partials/style';
 import Website from './partials/website';
+import AcademicTerminology from './partials/academic-terminology';
 
 export interface SystemProps extends SharedData {
    system: Settings<SystemFields>;
@@ -34,6 +35,12 @@ const System = () => {
          <Tabs defaultValue="website" className="md:px-3">
             <div className="overflow-x-auto overflow-y-hidden">
                <TabsList className="h-13 px-2">
+                  <TabsTrigger
+                     value="academic-terminology"
+                     className="h-10 cursor-pointer px-6"
+                  >
+                     Academic Terminology
+                  </TabsTrigger>
                   <TabsTrigger
                      value="website"
                      className="h-10 cursor-pointer px-6"
@@ -63,6 +70,9 @@ const System = () => {
 
             <TabsContent value="website">
                <Website />
+            </TabsContent>
+            <TabsContent value="academic-terminology">
+               <AcademicTerminology />
             </TabsContent>
             <TabsContent value="navbar">
                <Navbar />

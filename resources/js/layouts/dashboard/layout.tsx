@@ -21,7 +21,7 @@ const DashboardLayout = (props: PropsWithChildren<Props>) => {
             <div className="relative flex h-svh w-full min-w-0 flex-1 flex-col overflow-hidden rounded-xl">
                <DashboardHeader />
 
-               <div className="flex-1 overflow-y-auto pt-16 pb-6">
+               <div className="flex-1 overflow-y-auto pt-16 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-6">
                   <div className="container mx-auto max-w-7xl px-4 py-6 md:px-6">
                      {children}
                   </div>

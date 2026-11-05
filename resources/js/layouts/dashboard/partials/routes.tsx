@@ -59,6 +59,10 @@ import users from '@/routes/users';
 const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
    const { translate, pluginStatuses } = page;
    const { button } = translate;
+   const optionalAiRoutes: { usage?: { url: () => string } } =
+      aiAssistant as typeof aiAssistant & {
+         usage?: { url: () => string };
+      };
 
    const aiAssistantNavItems = pluginEnabled(pluginStatuses, 'AIAssistant')
       ? [
@@ -71,15 +75,19 @@ const getDashboardRoutes = (page: SharedData): DashboardRoute[] => {
               access: ['admin', 'collaborative', 'administrative'],
               children: [],
            },
-           {
-              Icon: Bot,
-              name: 'AI Assistant',
-              path: aiAssistant.usage.url(),
-              slug: routeLastSegment(aiAssistant.usage.url()),
-              active: true,
-              access: ['instructor', 'collaborative', 'administrative'],
-              children: [],
-           },
+           ...(optionalAiRoutes.usage
+              ? [
+                   {
+                      Icon: Bot,
+                      name: 'AI Assistant',
+                      path: optionalAiRoutes.usage.url(),
+                      slug: routeLastSegment(optionalAiRoutes.usage.url()),
+                      active: true,
+                      access: ['instructor', 'collaborative', 'administrative'],
+                      children: [],
+                   },
+                ]
+              : []),
         ]
       : [];
 

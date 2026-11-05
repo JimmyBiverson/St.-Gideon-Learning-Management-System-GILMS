@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import type { PropsWithChildren } from 'react';
 import { toast } from 'sonner';
 import { Toaster } from '@/components/ui/sonner';
+import MobileBottomNavigation from '@/components/mobile-bottom-navigation';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import setGlobalColorTheme from '@/lib/theme-colors';
 
@@ -79,6 +80,13 @@ const Main = ({ children }: PropsWithChildren) => {
          <Toaster />
 
          <TooltipProvider>{children}</TooltipProvider>
+         {props.mobileNavigation?.items.length ? (
+            <div
+               className="h-[calc(4rem+env(safe-area-inset-bottom))] md:hidden"
+               aria-hidden="true"
+            />
+         ) : null}
+         <MobileBottomNavigation />
       </>
    );
 };

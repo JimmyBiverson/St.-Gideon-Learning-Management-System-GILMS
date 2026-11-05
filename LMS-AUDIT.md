@@ -30,3 +30,20 @@
 ## Verification status
 
 Implementation and testing are in progress. SMTP delivery, DNS authentication, production workers, and browser flows have not yet been verified. No inbox-delivery guarantee is made.
+
+## Verified implementation batches
+
+- `84d1907`: SMTP test configuration is restored on success and failure; cached mailers are refreshed, SMTP connections have a timeout, and application alerts include queued admin email with immediate database delivery. Nine regression tests passed.
+- Academic terminology now has an administrator-only settings tab, institution presets and custom singular/plural labels, persistent settings storage, cache invalidation, capitalization handling, shared academic translation labels, and mobile-navigation integration. No database migration is required. Hardcoded display wording still needs a complete pass before terminology coverage can be considered complete.
+- Mobile navigation provides distinct student, instructor and administrator destinations, unread badges, active states, a More drawer, and safe-area spacing using existing theme colors and routes. Browser/device verification remains outstanding.
+- Corrected the default test-user role and admin translation fixture. The module page test now verifies the actual module component path rather than asking Inertia's root-page finder to resolve a module alias.
+- Restored missing shared AI content types and guarded the optional AI usage navigation route.
+- Full automated suite: **55 passed, 201 assertions**. TypeScript passed and the final frontend build completed in **52.13 seconds**. Build warnings remain for two pre-existing decorative image references and plugin timing.
+
+## Remaining work
+
+- Complete teacher application ownership, duplicate-decision and audit-history checks.
+- Prevent SMTP credentials from being returned to frontend responses; review all email flows and worker configuration.
+- Complete academic terminology coverage in hardcoded UI copy, notifications, email and printable templates.
+- Continue dashboard/authentication visual polish and browser accessibility/responsiveness checks.
+- Verify external email delivery and sender DNS only with the required environment access.

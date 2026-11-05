@@ -1,0 +1,1 @@
+import{u as e}from"./app-ExnQlQCy.js";function t(){let{props:t}=e();return t.translate}export{t};
