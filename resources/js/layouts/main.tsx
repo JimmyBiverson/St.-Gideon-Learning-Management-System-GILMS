@@ -12,6 +12,20 @@ const Main = ({ children }: PropsWithChildren) => {
    const { frontend, direction } = props;
 
    useEffect(() => {
+      const favicon =
+         props.system?.fields?.favicon || props.system?.fields?.logo_light;
+      if (!favicon) return;
+      let icon = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+      if (!icon) {
+         icon = document.createElement('link');
+         icon.rel = 'icon';
+         document.head.appendChild(icon);
+      }
+      icon.removeAttribute('type');
+      icon.href = favicon;
+   }, [props.system?.fields?.favicon, props.system?.fields?.logo_light]);
+
+   useEffect(() => {
       if (props.flash.error) {
          toast.error(props.flash.error);
       }

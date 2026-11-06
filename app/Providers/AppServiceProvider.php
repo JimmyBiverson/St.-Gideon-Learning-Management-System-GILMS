@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Setting;
 use App\Models\User;
 use App\Services\AcademicTerminology;
+use App\Services\BrandingService;
 use Carbon\CarbonImmutable;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Notifications\Events\NotificationSending;
@@ -22,10 +23,10 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->scoped(AcademicTerminology::class);
 
-        $this->app->singleton('system', function (): ?Setting {
+        $this->app->scoped('system', function (): ?Setting {
             try {
                 if (isDBConnected() && Schema::hasTable('settings')) {
-                    return Setting::where('type', 'system')->first();
+                    return app(BrandingService::class)->apply(Setting::where('type', 'system')->first());
                 }
 
                 return null;

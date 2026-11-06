@@ -26,7 +26,7 @@ class SettingsService extends MediaService
                 })
                 ->first();
 
-            return $settings;
+            return app(BrandingService::class)->apply($settings);
         }, 5);
     }
 
@@ -73,12 +73,17 @@ class SettingsService extends MediaService
             // Remove multiple fields at once
             $filteredData = Arr::except($data, [
                 'new_logo',
+                'new_logo_dark',
+                'new_logo_light',
+                '_method',
+                '_token',
                 'new_favicon',
                 'new_banner',
                 'new_auth_banner',
             ]);
 
-            $setting->update(['fields' => $filteredData]);
+            $setting->update(['fields' => array_replace($setting->fields ?? [], $filteredData)]);
+            app()->forgetInstance('system');
 
             return $setting;
         }, 5);

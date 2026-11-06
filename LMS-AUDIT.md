@@ -62,3 +62,26 @@ Implementation and testing are in progress. SMTP delivery, DNS authentication, p
 - Academic terminology now covers additional management headings, approval emails, certificate and marksheet display copy. Stored academic records remain unchanged; regression tests verify this. Request-scoped label memoization avoids repeated setting lookups.
 - The full suite passes: **81 tests, 275 assertions**. TypeScript checking passes. Browser preview could not start because the browser-control process failed; visual/device verification remains outstanding.
 - Production frontend build passed in 57.95 seconds; existing decorative-image and plugin-timing warnings remain.
+
+## Active-project integration and branding (2026-11-06)
+
+- Confirmed both the running Artisan server and Laragon virtual host serve `C:/laragon/www/gilms.ac.ug`, whereas the earlier commits were made in the nested Git checkout. Merged the modernization changes into the active directory, retaining local changes and backing up affected files under `storage/app/private/modernization-backup-20261106`.
+- Repaired the active project's malformed installer route file using the GitHub version. Its `public/storage` was a disconnected ordinary directory. Preserved its 23 additional files, verified no file-content conflicts, and replaced it with a junction to `storage/app/public`. The previous directory remains in the private backup.
+- Branding settings now preserve unrelated fields on partial updates, exclude temporary upload/form fields, and invalidate the resolved system settings. System settings use a request-scoped binding. Existing local upload URLs resolve against the current host with file-version cache busting; external URLs remain unchanged when they do not correspond to a local upload. The favicon refreshes after Inertia navigation.
+- Live HTTP verification: login returned 200 with academic terminology props; dark logo, light logo, favicon and login banner each returned 200 with image/png content. Active frontend TypeScript and production build passed. Active modernization tests: 51 passed, 147 assertions. Git checkout full suite: 84 passed, 285 assertions.
+- The active folder's broader legacy suite is not green: its initial run had 101 failures and 129 passes, including missing AI classes and obsolete/missing routes. The specific integration failures were repaired and the focused tests rerun. This is not a claim that every original requirement or legacy feature is complete. Interactive browser automation was unavailable; authenticated device walkthroughs remain unverified.
+
+### Where to find the changes
+
+- Admin: Settings > System Settings > Academic Terminology (presets and custom singular/plural labels).
+- The fixed bottom navigation is for authenticated users below the `md` breakpoint (768px). Student, instructor and admin destinations differ; desktop navigation remains available above that width.
+- System settings control the logo variants, favicon and authentication banner independently. The dashboard retains clickable statistics and adds the overview/quick-action panel.
+
+### Uploading to a server
+
+Deploy the `lms-modernization` branch, including its built `public/build` assets. Preserve the server's `.env`, `APP_KEY`, database and `storage/app/public` uploads. Do not upload the private local backup, `public/hot`, or a Windows storage junction. The web document root must point to `public`.
+
+After installing the locked dependencies, run `php artisan storage:link` on the server, then `php artisan config:clear`, `php artisan route:clear` and `php artisan view:clear`. Set the server's correct HTTPS `APP_URL`, and ensure `storage` and `bootstrap/cache` are writable. Rebuild configuration caches only after reviewing the server environment. No new database migrations are required for these modernization changes; academic terminology uses the existing settings table.
+
+Queued mail requires a supervised queue worker and `php artisan queue:restart` after deployment. Check the login page, both logo themes, favicon, a new image upload, all three roles on mobile, and the SMTP test on the actual server. Server credentials, remote deployment and external email delivery were not available for verification.
+- Follow-up browser verification used isolated headless Chrome: the fully rendered login screen was inspected at 1440px and 390px. All three rendered images loaded; the mobile page had no horizontal overflow. No JavaScript exception was reported during this login check. The first immediate screenshot preceded frontend rendering; authenticated role walkthroughs remain outstanding.
