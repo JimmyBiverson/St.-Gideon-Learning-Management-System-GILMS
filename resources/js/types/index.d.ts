@@ -13,6 +13,7 @@ interface SharedData {
    frontend: Project | null;
    appearance: 'light' | 'dark' | 'system';
    notifications?: Notification[];
+   notificationFeed?: Notification[];
    unreadNotificationsCount?: number;
    notificationPollInterval: number;
    system: Settings<SystemFields>;

@@ -6,7 +6,7 @@ import {
    PopoverContent,
    PopoverTrigger,
 } from '@/components/ui/popover';
-import useNotificationPolling from '@/hooks/use-notification-polling';
+import NotificationSoundToggle from '@/components/notification-sound-toggle';
 import { cn } from '@/lib/utils';
 import { index, readAll, show } from '@/routes/notifications';
 
@@ -14,13 +14,11 @@ import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 
 const Notification = () => {
-   const { notifications, unreadNotificationsCount, translate } =
+   const { notificationFeed, unreadNotificationsCount, translate } =
       usePage<SharedData>().props;
    const { button, frontend, dashboard } = translate;
 
-   useNotificationPolling();
-
-   const items = notifications ?? [];
+   const items = notificationFeed ?? [];
    const unreadCount = unreadNotificationsCount ?? items.length;
 
    return (
@@ -30,6 +28,7 @@ const Notification = () => {
                size="icon"
                variant="ghost"
                className="relative h-9 w-9 rounded-full p-0"
+               aria-label={`Notifications (${unreadCount} unread)`}
             >
                <Bell className="!h-5 !w-5" />
                {unreadCount > 0 && (
@@ -39,9 +38,13 @@ const Notification = () => {
                )}
             </Button>
          </PopoverTrigger>
-         <PopoverContent align="end" className="w-80 p-0">
+         <PopoverContent
+            align="end"
+            className="w-80 max-w-[calc(100vw-1rem)] p-0"
+         >
             <div className="flex items-center justify-between border-b px-4 py-2">
                <h4 className="font-semibold">{dashboard.notifications}</h4>
+               <NotificationSoundToggle />
                <Button
                   variant="ghost"
                   size="sm"

@@ -1,99 +1,95 @@
 import { router, usePage } from '@inertiajs/react';
 import { useEffect } from 'react';
+import { toast } from 'sonner';
+import {
+   createNotificationTracker,
+   playNotificationSound,
+   unlockNotificationAudio,
+} from '@/lib/notification-sound';
+import { feed } from '@/routes/notifications';
 
-type PollHandle = { start: () => void; stop: () => void };
+let trackedUser: number | string | null = null;
+let track = createNotificationTracker();
 
-const only = ['notifications', 'unreadNotificationsCount'];
-
-// The bell can be mounted by more than one navbar on a page, and each mount
-// would otherwise start its own poll, so the poll is only ever started once.
-let poll: PollHandle | null = null;
-
-// When the poll was last paused because the tab was hidden. `null` means it is
-// running. Used to tell a quick tab switch apart from a genuinely stale bell.
-let stoppedAt: number | null = null;
-
-/**
- * Keeps the notification bell current without a page reload.
- *
- * A poll is used rather than a websocket so that no extra service, process or
- * configuration is needed to keep notifications live. Only the two
- * notification props are requested, so each tick is a small partial request
- * instead of a full page render.
- *
- * The poll is stopped entirely while the tab is hidden. A hidden tab is not
- * being looked at, so those requests produced nothing anyone could see, and
- * with every logged-in user polling they were the largest avoidable source of
- * request traffic as the user base grows.
- *
- * The poll is owned here rather than left to Inertia's built-in handling, which
- * still fires one request in ten while a tab is hidden and cannot catch the
- * bell up when the user comes back. On return, if at least one interval was
- * missed, the two props are refreshed immediately so a stale badge is never
- * left sitting there.
- *
- * The handle and the listener live at module scope on purpose: the bell
- * unmounts and remounts across Inertia navigations, and a poll that was torn
- * down with it would stop updating the bell.
- */
-const useNotificationPolling = () => {
-   const { auth, notificationPollInterval } = usePage<SharedData>().props;
-   const interval = notificationPollInterval || 15000;
-
+export default function useNotificationPolling() {
+   const { auth, notificationFeed, notificationPollInterval } =
+      usePage<SharedData>().props;
+   const userId = auth?.user?.id;
+   const interval = Math.max(2000, notificationPollInterval || 2000);
    useEffect(() => {
-      // Logged out: stop polling rather than keep requesting as a guest, and
-      // allow a later sign-in to start a fresh poll.
-      if (!auth?.user) {
-         if (poll) {
-            poll.stop();
-            poll = null;
-            stoppedAt = null;
-         }
-
-         return;
-      }
-
-      if (poll) {
-         return;
-      }
-
-      poll = router.poll(interval, { only }, { autoStart: false });
-
-      const syncWithVisibility = () => {
-         if (!poll) {
-            return;
-         }
-
-         if (document.hidden) {
-            poll.stop();
-            stoppedAt = Date.now();
-
-            return;
-         }
-
-         const hiddenFor = stoppedAt === null ? 0 : Date.now() - stoppedAt;
-         stoppedAt = null;
-         poll.start();
-
-         if (hiddenFor >= interval) {
-            router.reload({
-               only,
+      if (!userId) return;
+      let timer: ReturnType<typeof setTimeout>;
+      let active = true;
+      let inFlight = false;
+      let controller: AbortController;
+      const poll = async () => {
+         clearTimeout(timer);
+         if (!active || inFlight || document.hidden) return;
+         inFlight = true;
+         controller = new AbortController();
+         try {
+            const response = await fetch(feed.url(), {
+               signal: controller.signal,
+               credentials: 'same-origin',
+               cache: 'no-store',
+               headers: { Accept: 'application/json' },
+            });
+            if (!response.ok) return;
+            const data = await response.json();
+            if (!active || !Array.isArray(data.notificationFeed)) return;
+            router.replace({
+               props: (current) =>
+                  (current.auth as SharedData['auth'])?.user?.id === userId
+                     ? {
+                          ...current,
+                          notificationFeed: data.notificationFeed,
+                          unreadNotificationsCount:
+                             data.unreadNotificationsCount,
+                       }
+                     : current,
                preserveState: true,
                preserveScroll: true,
-               preserveErrors: true,
-               showProgress: false,
             });
+         } catch {
+            // A temporary network failure is retried without interrupting the page.
+         } finally {
+            inFlight = false;
+            if (active && !document.hidden) timer = setTimeout(poll, interval);
          }
       };
-
-      document.addEventListener('visibilitychange', syncWithVisibility);
-
-      // Mounted while the tab is already hidden: stay stopped, and let
-      // `syncWithVisibility` start the poll when the tab is actually used.
-      if (!document.hidden) {
-         syncWithVisibility();
+      const refresh = () => {
+         clearTimeout(timer);
+         if (!document.hidden) void poll();
+      };
+      document.addEventListener('visibilitychange', refresh);
+      window.addEventListener('online', refresh);
+      document.addEventListener('pointerdown', unlockNotificationAudio);
+      document.addEventListener('keydown', unlockNotificationAudio);
+      if (!document.hidden) timer = setTimeout(poll, interval);
+      return () => {
+         active = false;
+         clearTimeout(timer);
+         controller?.abort();
+         document.removeEventListener('visibilitychange', refresh);
+         window.removeEventListener('online', refresh);
+         document.removeEventListener('pointerdown', unlockNotificationAudio);
+         document.removeEventListener('keydown', unlockNotificationAudio);
+      };
+   }, [userId, interval]);
+   useEffect(() => {
+      if (trackedUser !== (userId ?? null)) {
+         trackedUser = userId ?? null;
+         track = createNotificationTracker();
       }
-   }, [auth?.user, interval]);
-};
-
-export default useNotificationPolling;
+      if (!userId || !notificationFeed) return;
+      const fresh = track(notificationFeed);
+      if (fresh.length && !document.hidden) {
+         toast.info(
+            fresh.length === 1
+               ? 'You have a new notification'
+               : `You have ${fresh.length} new notifications`,
+         );
+         void playNotificationSound();
+      }
+   }, [userId, notificationFeed]);
+}

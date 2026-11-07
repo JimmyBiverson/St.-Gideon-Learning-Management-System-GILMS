@@ -3,12 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Services\NotificationService;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class NotificationController extends Controller
 {
     public function __construct(private NotificationService $notificationService) {}
+
+    public function feed(): JsonResponse
+    {
+        return response()->json([
+            'notificationFeed' => $this->notificationService->unreadFeed(),
+            'unreadNotificationsCount' => $this->notificationService->unreadCount(),
+        ])->header('Cache-Control', 'no-store, private');
+    }
 
     /**
      * Display a listing of the resource.

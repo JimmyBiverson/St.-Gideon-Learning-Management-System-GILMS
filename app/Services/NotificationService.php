@@ -41,7 +41,7 @@ class NotificationService extends MediaService
             return new Collection;
         }
 
-        $limit = $limit ?? (int) config('notifications.unread_limit');
+        $limit = max(1, min(50, $limit ?? (int) config('notifications.unread_limit', 15)));
 
         return $user->unreadNotifications()->latest()->limit($limit)->get();
     }
@@ -66,7 +66,7 @@ class NotificationService extends MediaService
     // I want to return the read notification
     public function markAsRead(string $id)
     {
-        $notification = Auth::user()->notifications->find($id);
+        $notification = Auth::user()->notifications()->findOrFail($id);
 
         if ($notification) {
             $notification->markAsRead();

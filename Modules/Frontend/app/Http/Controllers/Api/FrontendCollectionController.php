@@ -114,7 +114,7 @@ class FrontendCollectionController extends Controller
             ], 404);
         }
 
-        $methodName = 'get' . ucfirst($category) . 'Data';
+        $methodName = 'get'.ucfirst($category).'Data';
 
         if (! method_exists($collection, $methodName)) {
             return response()->json([
@@ -129,7 +129,7 @@ class FrontendCollectionController extends Controller
             'success' => true,
             'collection' => $data,
             'ids' => $collection->$category,
-        ]);
+        ])->header('Cache-Control', 'no-store, private');
     }
 
     /**
@@ -257,7 +257,7 @@ class FrontendCollectionController extends Controller
                     $collection->best = null;
                 } else {
                     $currentIds = $collection->$category ?? [];
-                    $currentIds = array_values(array_filter($currentIds, fn($id) => $id != $itemId));
+                    $currentIds = array_values(array_filter($currentIds, fn ($id) => $id != $itemId));
                     $collection->$category = $currentIds;
                 }
             }
@@ -360,7 +360,7 @@ class FrontendCollectionController extends Controller
 
             if (in_array($id, $currentIds)) {
                 // Remove ID
-                $currentIds = array_values(array_filter($currentIds, fn($item) => $item != $id));
+                $currentIds = array_values(array_filter($currentIds, fn ($item) => $item != $id));
                 $action = 'removed';
             } else {
                 // Add ID
@@ -407,7 +407,7 @@ class FrontendCollectionController extends Controller
             }
 
             // Create the file path
-            $filePath = $directory . '/' . $slug . '.json';
+            $filePath = $directory.'/'.$slug.'.json';
 
             // Convert page data to JSON
             $jsonData = json_encode($request->pageData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);

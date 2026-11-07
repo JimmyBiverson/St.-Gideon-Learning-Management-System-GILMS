@@ -17,6 +17,7 @@ Route::controller(InstructorController::class)->middleware(['smtpConfig', 'colla
     Route::post('become-instructor/{id}', 'update')->name('become-instructor.update');
 });
 
+Route::get('notifications/feed', [NotificationController::class, 'feed'])->name('notifications.feed');
 Route::resource('notifications', NotificationController::class)->only(['index', 'show']);
 Route::put('notifications/read/all', [NotificationController::class, 'markAllAsRead'])->name('notifications.read-all');
 

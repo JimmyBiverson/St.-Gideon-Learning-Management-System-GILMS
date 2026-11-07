@@ -1,3 +1,4 @@
+import ProfilePhoto from '@/components/profile-photo';
 import { Link, usePage } from '@inertiajs/react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -55,19 +56,22 @@ const TopInstructors = () => {
                      >
                         <div className="px-1.5 py-5">
                            <Card className="group relative overflow-hidden rounded-2xl !shadow-card-lg">
-                              <Link href={instructors.show(instructor.id)}>
+                              <Link
+                                 href={instructors.show(instructor.id)}
+                                 className="block h-full"
+                              >
                                  <div className="relative h-[300px] overflow-hidden">
-                                    <img
+                                    <ProfilePhoto
+                                       src={instructor.user.photo}
+                                       name={instructor.user.name}
                                        className="h-full w-full object-cover object-center"
-                                       src={
-                                          instructor.user.photo ||
-                                          '/assets/images/intro/default/instructors/instructor-1.png'
-                                       }
-                                       alt=""
                                     />
 
-                                    <div className="absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-gradient-to-t from-primary p-4 text-center opacity-0 transition-all duration-200 group-hover:opacity-100 dark:from-primary-foreground">
-                                       <p className="mb-1 text-lg font-semibold text-white">
+                                    <div className="absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-gradient-to-t from-primary p-4 text-center opacity-100 transition-all duration-200 md:opacity-0 md:group-focus-within:opacity-100 md:group-hover:opacity-100 dark:from-primary-foreground">
+                                       <p
+                                          title={instructor.user.name}
+                                          className="mb-1 line-clamp-2 min-w-0 text-lg font-semibold break-words text-white"
+                                       >
                                           {instructor.user.name}
                                        </p>
                                        <p className="text-sm text-white">

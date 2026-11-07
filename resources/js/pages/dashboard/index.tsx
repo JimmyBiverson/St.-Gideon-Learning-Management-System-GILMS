@@ -88,11 +88,14 @@ const Dashboard = (props: DashboardProps) => {
       <div className="space-y-7">
          <Head title={frontend.dashboard} />
          <section className="flex flex-col gap-5 rounded-2xl border border-primary/15 bg-linear-to-br from-primary/10 to-background p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
-            <div>
+            <div className="min-w-0 flex-1">
                <p className="mb-2 text-xs font-semibold tracking-widest text-primary uppercase">
                   {isAdmin ? 'Institution overview' : 'Teaching workspace'}
                </p>
-               <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+               <h1
+                  title={`Welcome back, ${auth.user.name}`}
+                  className="line-clamp-2 text-2xl font-semibold tracking-tight break-words sm:text-3xl"
+               >
                   Welcome back, {auth.user.name}
                </h1>
                <p className="mt-2 text-sm text-muted-foreground">

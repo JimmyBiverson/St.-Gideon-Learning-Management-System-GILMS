@@ -11,19 +11,17 @@ import {
    SheetTitle,
    SheetTrigger,
 } from '@/components/ui/sheet';
-import useNotificationPolling from '@/hooks/use-notification-polling';
+import NotificationSoundToggle from '@/components/notification-sound-toggle';
 import { cn } from '@/lib/utils';
 import { index, readAll, show } from '@/routes/notifications';
 
 export function NotificationsDrawer() {
-   const { notifications, unreadNotificationsCount, translate, direction } =
+   const { notificationFeed, unreadNotificationsCount, translate, direction } =
       usePage<SharedData>().props;
    const { button, frontend, dashboard } = translate;
    const [open, setOpen] = useState(false);
 
-   useNotificationPolling();
-
-   const items = notifications ?? [];
+   const items = notificationFeed ?? [];
    const unreadCount = unreadNotificationsCount ?? items.length;
 
    return (
@@ -62,6 +60,7 @@ export function NotificationsDrawer() {
                      )}
                   </div>
                   <div className="flex items-center gap-1">
+                     <NotificationSoundToggle />
                      {unreadCount > 0 && (
                         <Button
                            size="sm"

@@ -17,23 +17,21 @@ class MediaService extends BaseService
     {
         if ($name) {
             $prevMedia = $model->getMedia('*', ['name' => $name])->first();
-            if ($prevMedia) {
-                $prevMedia->delete();
-            }
 
             $newMedia = $model
                 ->addMedia($image)
                 ->withCustomProperties(['name' => $name])
                 ->toMediaCollection();
         } else {
-            if ($model->hasMedia()) {
-                $model->getMedia()->first()->delete();
-            }
+            $prevMedia = $model->getMedia()->first();
 
             $newMedia = $model
                 ->addMedia($image)
                 ->toMediaCollection();
         }
+
+        $prevMedia?->delete();
+        $model->unsetRelation('media');
 
         return $newMedia->getFullUrl();
     }

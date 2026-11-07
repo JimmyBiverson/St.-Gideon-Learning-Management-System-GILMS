@@ -1,3 +1,4 @@
+import ProfilePhoto from '@/components/profile-photo';
 import InstructorSocials from '@/components/instructor-socials';
 import { Button } from '@/components/ui/button';
 import {
@@ -36,18 +37,21 @@ const TopInstructorsCarousel1 = ({
                      >
                         <div className="px-1.5 py-0.5">
                            <div className="group relative h-[380px] overflow-hidden rounded-2xl">
-                              <Link href={instructors.show(instructor.id)}>
-                                 <img
+                              <Link
+                                 href={instructors.show(instructor.id)}
+                                 className="block h-full"
+                              >
+                                 <ProfilePhoto
+                                    src={instructor.user.photo}
+                                    name={instructor.user.name}
                                     className="h-full w-full object-cover object-center"
-                                    src={
-                                       instructor.user.photo ||
-                                       '/assets/images/intro/default/instructors/instructor-1.png'
-                                    }
-                                    alt=""
                                  />
 
-                                 <div className="absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-gradient-to-t from-foreground/80 px-4 pt-4 pb-2 text-center opacity-0 transition-all duration-200 group-hover:opacity-100 dark:from-background/80">
-                                    <p className="mb-1 text-lg font-semibold text-white">
+                                 <div className="absolute bottom-0 left-1/2 flex h-full w-full -translate-x-1/2 flex-col justify-end bg-gradient-to-t from-foreground/80 px-4 pt-4 pb-2 text-center opacity-100 transition-all duration-200 md:opacity-0 md:group-focus-within:opacity-100 md:group-hover:opacity-100 dark:from-background/80">
+                                    <p
+                                       title={instructor.user.name}
+                                       className="mb-1 line-clamp-2 min-w-0 text-lg font-semibold break-words text-white"
+                                    >
                                        {instructor.user.name}
                                     </p>
                                     <p className="text-sm text-white">

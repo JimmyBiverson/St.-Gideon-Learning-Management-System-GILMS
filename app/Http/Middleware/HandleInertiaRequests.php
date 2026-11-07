@@ -67,6 +67,10 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        if ($request->routeIs('notifications.feed')) {
+            return [];
+        }
+
         if (! applicationInstalled()) {
             return [];
         }
@@ -134,6 +138,7 @@ class HandleInertiaRequests extends Middleware
                 'navbar' => $this->settingsService->getNavbar('navbar_1'),
                 'footer' => $this->settingsService->getFooter('footer_1'),
                 'notifications' => Inertia::always(fn () => $this->notificationService->unreadFeed()),
+                'notificationFeed' => Inertia::always(fn () => $this->notificationService->unreadFeed()),
                 'unreadNotificationsCount' => Inertia::always(fn () => $this->notificationService->unreadCount()),
                 'notificationPollInterval' => (int) config('notifications.poll_interval'),
                 'langs' => $langs,

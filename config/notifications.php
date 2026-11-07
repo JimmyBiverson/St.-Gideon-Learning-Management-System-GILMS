@@ -53,6 +53,6 @@ return [
     | or configuration is required to keep the bell current.
     */
 
-    'poll_interval' => (int) env('NOTIFICATIONS_POLL_INTERVAL', 15000),
+    'poll_interval' => (int) env('NOTIFICATIONS_POLL_INTERVAL', 2000),
 
 ];

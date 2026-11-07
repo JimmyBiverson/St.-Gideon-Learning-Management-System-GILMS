@@ -3,8 +3,10 @@
 namespace App\Models;
 
 use App\Notifications\VerifyEmailNotification;
+use App\Services\BrandingService;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -66,6 +68,13 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
         'social_links' => 'array',
         'status' => 'integer',
     ];
+
+    protected function photo(): Attribute
+    {
+        return Attribute::make(
+            get: fn (?string $value): ?string => app(BrandingService::class)->url($value),
+        );
+    }
 
     public function instructor(): BelongsTo
     {

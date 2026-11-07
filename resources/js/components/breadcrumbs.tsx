@@ -32,9 +32,12 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
             className,
          )}
       >
-         <div className="space-y-2">
+         <div className="min-w-0 flex-1 space-y-2">
             {title && (
-               <h1 className="text-2xl font-semibold tracking-tight text-foreground">
+               <h1
+                  title={title}
+                  className="line-clamp-2 text-xl font-semibold tracking-tight break-words text-foreground sm:text-2xl"
+               >
                   {title}
                </h1>
             )}
@@ -49,7 +52,10 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
                            <Fragment key={`breadcrumbs-${index}`}>
                               <BreadcrumbItem>
                                  {isLast || !item.href ? (
-                                    <BreadcrumbPage className="text-sm capitalize">
+                                    <BreadcrumbPage
+                                       title={item.title}
+                                       className="max-w-[45vw] truncate text-sm capitalize sm:max-w-xs"
+                                    >
                                        {item.title}
                                     </BreadcrumbPage>
                                  ) : (
@@ -76,7 +82,7 @@ const Breadcrumbs = (props: BreadcrumbsProps) => {
             )}
          </div>
 
-         {action}
+         <div className="flex shrink-0 flex-wrap gap-2">{action}</div>
       </div>
    );
 };

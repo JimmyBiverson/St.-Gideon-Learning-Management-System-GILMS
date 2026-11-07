@@ -209,8 +209,9 @@ class FrontendCollection extends Model
 
         $this->applyCourseListAggregates($query);
 
-        return $query->orderByRaw('FIELD(id, '.implode(',', $this->top).')')
-            ->get();
+        return $query->get()
+            ->sortBy(fn (Model $item): int => array_flip($this->top)[$item->getKey()] ?? PHP_INT_MAX)
+            ->values();
     }
 
     /**
@@ -241,8 +242,9 @@ class FrontendCollection extends Model
 
         $this->applyCourseListAggregates($query);
 
-        return $query->orderByRaw('FIELD(id, '.implode(',', $this->new).')')
-            ->get();
+        return $query->get()
+            ->sortBy(fn (Model $item): int => array_flip($this->new)[$item->getKey()] ?? PHP_INT_MAX)
+            ->values();
     }
 
     /**
@@ -274,8 +276,9 @@ class FrontendCollection extends Model
 
         $this->applyCourseListAggregates($query);
 
-        return $query->orderByRaw('FIELD(id, '.implode(',', $this->featured).')')
-            ->get();
+        return $query->get()
+            ->sortBy(fn (Model $item): int => array_flip($this->featured)[$item->getKey()] ?? PHP_INT_MAX)
+            ->values();
     }
 
     /**
@@ -306,8 +309,9 @@ class FrontendCollection extends Model
 
         $this->applyCourseListAggregates($query);
 
-        return $query->orderByRaw('FIELD(id, '.implode(',', $this->trending).')')
-            ->get();
+        return $query->get()
+            ->sortBy(fn (Model $item): int => array_flip($this->trending)[$item->getKey()] ?? PHP_INT_MAX)
+            ->values();
     }
 
     /**
@@ -338,8 +342,9 @@ class FrontendCollection extends Model
 
         $this->applyCourseListAggregates($query);
 
-        return $query->orderByRaw('FIELD(id, '.implode(',', $this->popular).')')
-            ->get();
+        return $query->get()
+            ->sortBy(fn (Model $item): int => array_flip($this->popular)[$item->getKey()] ?? PHP_INT_MAX)
+            ->values();
     }
 
     // ==================== Query Scopes ====================

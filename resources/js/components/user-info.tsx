@@ -12,7 +12,7 @@ export function UserInfo({
 
    return (
       <>
-         <Avatar className="h-8 w-8 overflow-hidden rounded-full">
+         <Avatar className="h-8 w-8 shrink-0 overflow-hidden rounded-full">
             <AvatarImage
                src={user.photo || ''}
                alt={user.name}
@@ -22,8 +22,10 @@ export function UserInfo({
                {getInitials(user.name)}
             </AvatarFallback>
          </Avatar>
-         <div className="grid flex-1 text-left text-sm leading-tight group-data-[collapsible=icon]:hidden">
-            <span className="truncate font-medium">{user.name}</span>
+         <div className="grid min-w-0 flex-1 text-left text-sm leading-tight group-data-[collapsible=icon]:hidden">
+            <span className="truncate font-medium" title={user.name}>
+               {user.name}
+            </span>
             {showEmail && (
                <span className="truncate text-xs text-muted-foreground">
                   {user.email}

@@ -1,3 +1,4 @@
+import ProfilePhoto from '@/components/profile-photo';
 import { Link, usePage } from '@inertiajs/react';
 import { Card } from '@/components/ui/card';
 import { getPageSection } from '@/lib/page';
@@ -32,21 +33,26 @@ const TopInstructors = () => {
                      key={instructor.id}
                      className="relative overflow-hidden rounded-2xl !shadow-card-lg"
                   >
-                     <Link href={instructors.show(instructor.id)}>
+                     <Link
+                        href={instructors.show(instructor.id)}
+                        className="block h-full"
+                     >
                         <div className="relative h-[300px] overflow-hidden">
-                           <img
+                           <ProfilePhoto
+                              src={instructor.user.photo}
+                              name={instructor.user.name}
                               className="h-full w-full object-cover object-center"
-                              src={
-                                 instructor.user.photo ||
-                                 '/assets/images/intro/default/instructors/instructor-1.png'
-                              }
-                              alt=""
                            />
                         </div>
                      </Link>
 
                      <div className="space-y-1 py-4 text-center">
-                        <p className="font-semibold">{instructor.user.name}</p>
+                        <p
+                           title={instructor.user.name}
+                           className="line-clamp-2 min-w-0 font-semibold break-words"
+                        >
+                           {instructor.user.name}
+                        </p>
                         <p className="text-sm text-muted-foreground">
                            {instructor.designation}
                         </p>

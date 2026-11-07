@@ -40,13 +40,18 @@ const DynamicWrapper: React.FC<DynamicWrapperProps> = ({ element }) => {
          return;
       }
 
-      const fetchData = async () => {
-         setLoading(true);
+      let controller: AbortController;
+      const fetchData = async (background = false) => {
+         controller?.abort();
+         controller = new AbortController();
+         if (!background) setLoading(true);
          setError(null);
 
          try {
             const response = await fetch(`${window.location.origin}/${api}`, {
                method: apiMethod,
+               cache: 'no-store',
+               signal: controller.signal,
                headers: {
                   'Content-Type': 'application/json',
                },
@@ -59,6 +64,9 @@ const DynamicWrapper: React.FC<DynamicWrapperProps> = ({ element }) => {
             const data = await response.json();
             setApiData(data);
          } catch (err) {
+            if (err instanceof DOMException && err.name === 'AbortError')
+               return;
+            if (background) return;
             setError(
                err instanceof Error ? err.message : 'Failed to fetch data',
             );
@@ -69,6 +77,15 @@ const DynamicWrapper: React.FC<DynamicWrapperProps> = ({ element }) => {
       };
 
       fetchData();
+      const refresh = () => {
+         if (!document.hidden && (apiMethod ?? 'GET').toUpperCase() === 'GET')
+            void fetchData(true);
+      };
+      document.addEventListener('visibilitychange', refresh);
+      return () => {
+         controller?.abort();
+         document.removeEventListener('visibilitychange', refresh);
+      };
    }, [api, apiMethod, editor.liveMode]);
 
    // Get the component

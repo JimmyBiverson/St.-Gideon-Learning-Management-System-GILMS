@@ -6,10 +6,12 @@ import { Toaster } from '@/components/ui/sonner';
 import MobileBottomNavigation from '@/components/mobile-bottom-navigation';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import setGlobalColorTheme from '@/lib/theme-colors';
+import useNotificationPolling from '@/hooks/use-notification-polling';
 
 const Main = ({ children }: PropsWithChildren) => {
    const { props, url, component } = usePage<SharedData>();
    const { frontend, direction } = props;
+   useNotificationPolling();
 
    useEffect(() => {
       const favicon =
